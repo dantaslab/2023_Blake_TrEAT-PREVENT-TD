@@ -1,0 +1,17 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_79_length_8894_cov_39.099240	8229..8345	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	astA	99.15	117 / 117	NODE_39_length_35534_cov_27.687565	2152..2268	 EAST-1 heat-stable toxin	AF161000
+virulence_ecoli	eatA	100.0	4095 / 4095	NODE_67_length_15360_cov_65.346202	6484..10578	 enterotoxigenic E. coli (ETEC) autotransporter A	CR942285
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_26_length_66562_cov_25.769617	27526..28926	  Glutamate decarboxylase	FN649414
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_14_length_126121_cov_26.784226	29988..31388	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	99.89	918 / 918	NODE_6_length_173003_cov_25.490580	146092..147009	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	99.66	294 / 294	NODE_86_length_6598_cov_33.981445	931..1224	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_19_length_83295_cov_33.268836	37022..38170	  Capsule polysaccharide export inner-membrane protein	AELA02000001
+virulence_ecoli	kpsM_K15	100.0	777 / 777	NODE_19_length_83295_cov_33.268836	53463..54239	  Polysialic acid transport protein; Group 3 capsule	AJ617685
+virulence_ecoli	lngA	100.0	711 / 711	NODE_52_length_22408_cov_124.893511	6264..6974	  Longus type IV pilus	FN822746
+virulence_ecoli	ltcA	100.0	777 / 777	NODE_105_length_4321_cov_61.762959	1798..2574	  Heat-labile enterotoxin A subunit	JX504011
+virulence_ecoli	ompT	100.0	954 / 954	NODE_74_length_9881_cov_29.532232	8584..9537	  Outer membrane protease (protein protease 7)	AQEU01000003
+virulence_ecoli	terC	100.0	714 / 714	NODE_30_length_52558_cov_24.319830	35484..36197	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.79	966 / 966	NODE_12_length_134783_cov_24.941658	10437..11402	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.84	627 / 627	NODE_22_length_73401_cov_52.893446	33668..34294	  Outer membrane protein complement resistance	MF156268
+virulence_ecoli	traT	100.0	735 / 735	NODE_61_length_17958_cov_50.150719	5806..6540	  Outer membrane protein complement resistance	NC_014232

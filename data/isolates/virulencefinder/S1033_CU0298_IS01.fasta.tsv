@@ -1,0 +1,11 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	gad	99.93	1401 / 1401	NODE_27_length_68867_cov_188.066637	21839..23239	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_4_length_226889_cov_205.637263	192947..194347	  Glutamate decarboxylase	CU928160
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_19_length_94496_cov_183.481704	54810..55726	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	98.98	294 / 294	NODE_6_length_224446_cov_194.499436	60282..60575	  Increased serum survival	CP001509
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_8_length_201590_cov_199.013865	30198..30770	  Long polar fimbriae	CP002185
+virulence_ecoli	ompT	100.0	954 / 954	NODE_6_length_224446_cov_194.499436	71991..72944	  Outer membrane protease (protein protease 7)	JHDO01000060
+virulence_ecoli	sta1	99.54	219 / 219	NODE_61_length_5560_cov_414.280868	2870..3088	  Heat-stabile enterotoxin ST-Ia	AJ555214
+virulence_ecoli	terC	99.02	714 / 714	NODE_14_length_134294_cov_191.095875	73749..74462	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.38	966 / 966	NODE_15_length_131959_cov_201.225080	94924..95889	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.86	735 / 735	NODE_25_length_71810_cov_800.845957	48438..49172	  Outer membrane protein complement resistance	UFYL01000002

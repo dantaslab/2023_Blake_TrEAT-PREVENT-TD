@@ -1,0 +1,21 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	98.97	97 / 117	E2348-69_Contig_1	1478690..1478786	 EAST-1 heat-stable toxin	HM099897
+virulence_ecoli	chuA	100.0	1983 / 1983	E2348-69_Contig_1	3892906..3894888	  Outer membrane hemin receptor	UGEE01000003
+virulence_ecoli	cif	100.0	655 / 849	E2348-69_Contig_1	768761..769415	  Type III secreted effector	AY128535
+virulence_ecoli	eae	100.0	2820 / 2820	E2348-69_Contig_1	4110343..4113162	  Intimin	FM180568
+virulence_ecoli	efa1	100.0	9672 / 9672	E2348-69_Contig_1	3353864..3363535	  EHEC factor for adherence	FM180568
+virulence_ecoli	espA	100.0	579 / 579	E2348-69_Contig_1	4107073..4107651	  Type III secretions system	AF022236
+virulence_ecoli	espC	100.0	3918 / 3918	E2348-69_Contig_1	3005494..3009411	 EPEC secreted protein C	FM180568
+virulence_ecoli	espF	100.0	621 / 621	E2348-69_Contig_1	4103271..4103891	  Type III secretion system	FM180568
+virulence_ecoli	espJ	100.0	654 / 654	E2348-69_Contig_1	770711..771364	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	gad	100.0	1401 / 1401	E2348-69_Contig_1	1673291..1674691	  Glutamate decarboxylase	FM180568
+virulence_ecoli	gad	100.0	1401 / 1401	E2348-69_Contig_1	3911757..3913157	  Glutamate decarboxylase	FM180568
+virulence_ecoli	nleA	100.0	1323 / 1323	E2348-69_Contig_1	1473581..1474903	  Non-LEE encoded effector A	FM180568
+virulence_ecoli	nleB	100.0	981 / 981	E2348-69_Contig_1	1085343..1086323	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleB	99.7	990 / 990	E2348-69_Contig_1	3350278..3351267	  Non-LEE encoded effector B	AP010960
+virulence_ecoli	nleB	98.48	990 / 990	E2348-69_Contig_1	1138758..1139746	  Non-LEE encoded effector B	FM986651
+virulence_ecoli	nleC	99.8	993 / 993	E2348-69_Contig_1	1086384..1087376	  Non-LEE encoded effector C	AE005174
+virulence_ecoli	ompT	100.0	954 / 954	E2348-69_Contig_1	517938..518891	  Outer membrane protease (protein protease 7)	AIEY01000031
+virulence_ecoli	terC	99.86	714 / 714	E2348-69_Contig_1	3207721..3208434	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	96.97	958 / 966	E2348-69_Contig_1	3522674..3523631	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	100.0	1653 / 1653	E2348-69_Contig_1	4113830..4115482	  Translocated intimin receptor protein	AF022236

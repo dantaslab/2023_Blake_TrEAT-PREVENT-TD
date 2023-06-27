@@ -1,0 +1,15 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_62_length_21605_cov_37.724498	7251..8339	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	eae	99.86	2829 / 2829	NODE_22_length_69098_cov_43.626201	10933..13761	  Intimin	EF204930
+virulence_ecoli	espA	92.4	579 / 579	NODE_22_length_69098_cov_43.626201	7610..8188	  Type III secretions system	AJ633130
+virulence_ecoli	espF	95.83	624 / 624	NODE_22_length_69098_cov_43.626201	3736..4359	  Type III secretion system	AJ633130
+virulence_ecoli	espJ	99.69	654 / 654	NODE_111_length_5828_cov_54.296644	1642..2295	  Prophage-encoded type III secretion system effector	AE005174
+virulence_ecoli	hlyE	97.71	919 / 918	NODE_74_length_14527_cov_44.219446	194..1100	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	NODE_10_length_100995_cov_37.850532	97341..99431	  Adherence protein	CU928162
+virulence_ecoli	iss	99.66	294 / 294	NODE_7_length_110294_cov_35.877033	101230..101523	  Increased serum survival	CP001846
+virulence_ecoli	nleB	95.93	713 / 981	NODE_172_length_861_cov_64.280612	74..786	  Non-LEE encoded effector B	CP001846
+virulence_ecoli	nleC	99.72	706 / 987	NODE_39_length_45766_cov_36.558384	1358..2062	  Non-LEE encoded effector C	AP010960
+virulence_ecoli	sigA	100.0	3858 / 3858	NODE_10_length_100995_cov_37.850532	87224..91081	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	terC	99.3	714 / 714	NODE_28_length_59644_cov_40.888344	22941..23654	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_1_length_256194_cov_35.959448	125001..125959	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.96	1728 / 1719	NODE_22_length_69098_cov_43.626201	14432..16159	  Translocated intimin receptor protein	AB288104

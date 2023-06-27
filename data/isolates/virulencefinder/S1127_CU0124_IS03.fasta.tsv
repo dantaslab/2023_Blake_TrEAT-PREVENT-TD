@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	gad	99.93	1401 / 1401	NODE_26_length_63881_cov_65.206884	40187..41587	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_3_length_235246_cov_58.371971	192424..193824	  Glutamate decarboxylase	CU928160
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_4_length_199270_cov_58.806780	116816..117732	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	NODE_7_length_185386_cov_64.461575	158190..160280	  Adherence protein	CU928162
+virulence_ecoli	iucC	99.89	1743 / 1743	NODE_7_length_185386_cov_64.461575	167310..169052	  Aerobactin synthetase	CU928162
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_7_length_185386_cov_64.461575	163775..165973	  Ferric aerobactin receptor	UGCV01000008
+virulence_ecoli	sigA	99.92	3858 / 3858	NODE_7_length_185386_cov_64.461575	148073..151930	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	99.92	3858 / 3858	NODE_7_length_185386_cov_64.461575	148073..151930	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	terC	99.02	714 / 714	NODE_11_length_159687_cov_63.427097	122317..123030	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.38	966 / 966	NODE_13_length_154330_cov_60.593700	94926..95891	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	714 / 714	NODE_29_length_54598_cov_176.472405	37654..38367	  Outer membrane protein complement resistance	LT985300
+virulence_ecoli	traT	99.34	303 / 303	NODE_51_length_15692_cov_133.002882	14876..15178	  Outer membrane protein complement resistance	UEKA01000045

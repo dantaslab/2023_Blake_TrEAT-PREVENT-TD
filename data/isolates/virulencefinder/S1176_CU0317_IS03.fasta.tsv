@@ -1,0 +1,16 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	99.51	1029 / 1029	NODE_15_length_111878_cov_182.316688	8545..9573	 Isoprenoid Biosynthesis	HE610901
+virulence_ecoli	ORF4	99.63	540 / 540	NODE_15_length_111878_cov_182.316688	8003..8541	 Putative isopentenyl-diphosphate delta-isomerase	AFRH01000026
+virulence_ecoli	aap	100.0	351 / 351	NODE_15_length_111878_cov_182.316688	2021..2371	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	aar	100.0	201 / 201	NODE_15_length_111878_cov_182.316688	1090..1290	 AggR-activated regulator	SSI_AA784
+virulence_ecoli	aatA	99.84	1239 / 1239	NODE_50_length_5457_cov_350.286803	2814..4052	 Dispersin transporter protein	CU928159
+virulence_ecoli	aggA	99.6	504 / 504	NODE_15_length_111878_cov_182.316688	13503..14006	 AAF/I major fimbrial subunit	SSI_AA801
+virulence_ecoli	aggB	99.54	438 / 438	NODE_15_length_111878_cov_182.316688	14108..14545	 AAF/I minor adhesin. Enterobacteria AfaD invasin protein	AFRH01000026
+virulence_ecoli	aggC	99.71	2385 / 2385	NODE_15_length_111878_cov_182.316688	14559..16943	 Usher, AAF/I assembly unit	AFRH01000026
+virulence_ecoli	aggD	99.21	630 / 630	NODE_15_length_111878_cov_182.316688	17101..17730	 Chaperone, AAF/I assembly unit	AFRH01000026
+virulence_ecoli	aggR	100.0	798 / 798	NODE_15_length_111878_cov_182.316688	3212..4009	 AraC transcriptional activator	55989
+virulence_ecoli	hlyE	98.69	918 / 918	NODE_10_length_156972_cov_65.231110	38770..39687	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	99.32	294 / 294	NODE_46_length_10195_cov_90.394643	8410..8703	  Increased serum survival	CP001509
+virulence_ecoli	terC	100.0	714 / 714	NODE_17_length_100034_cov_71.205308	35647..36360	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_2_length_429601_cov_62.567263	185065..186030	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	NODE_15_length_111878_cov_182.316688	69791..70525	  Outer membrane protein complement resistance	NZ_UIMJ01000043

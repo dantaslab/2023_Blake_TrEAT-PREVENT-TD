@@ -1,0 +1,5 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_3_length_274582_cov_15.615093	118628..119544	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_7_length_183660_cov_20.780034	30437..31009	  Long polar fimbriae	AP010953
+virulence_ecoli	terC	100.0	714 / 714	NODE_8_length_173802_cov_18.827060	22985..23698	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.75	959 / 966	NODE_12_length_135945_cov_18.616650	30480..31438	  Tellurium ion resistance protein	MG591698

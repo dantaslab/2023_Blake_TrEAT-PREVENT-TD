@@ -1,0 +1,43 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	240 / 240	CFT073_Contig_1	1168463..1168702	  Colicin E1	GG772217
+virulence_ecoli	chuA	99.95	1983 / 1983	CFT073_Contig_1	4086073..4088055	  Outer membrane hemin receptor	UFZT01000001
+virulence_ecoli	clbB	99.97	9622 / 9621	CFT073_Contig_1	2304280..2313901	  Hybrid non-ribosomal peptide / polyketide megasynthase	NZ_CP028714
+virulence_ecoli	clbB	99.97	9622 / 9621	CFT073_Contig_1	2304280..2313901	  Hybrid non-ribosomal peptide / polyketide megasynthase	NZ_QLAC01000024
+virulence_ecoli	focCsfaE	100.0	696 / 696	CFT073_Contig_1	1189406..1190101		CP002211
+virulence_ecoli	focG	100.0	504 / 504	CFT073_Contig_1	1193363..1193866	  F1C adhesion	DQ301498
+virulence_ecoli	focI	100.0	549 / 549	CFT073_Contig_1	1188817..1189365	  S fimbrial/F1C minor subunit	AM690762
+virulence_ecoli	fyuA	100.0	2022 / 2022	CFT073_Contig_1	2247129..2249150	  Siderophore receptor	ADTO01000058
+virulence_ecoli	gad	100.0	1401 / 1401	CFT073_Contig_1	1756318..1757718	  Glutamate decarboxylase	CP001671
+virulence_ecoli	gad	100.0	1401 / 1401	CFT073_Contig_1	4104924..4106324	  Glutamate decarboxylase	CP001671
+virulence_ecoli	hlyA	99.93	3075 / 3075	CFT073_Contig_1	3418896..3421970	  Haemolysin A	CP054232
+virulence_ecoli	iha	100.0	2091 / 2091	CFT073_Contig_1	3448776..3450866	  Adherence protein	AE014075
+virulence_ecoli	ireA	100.0	2049 / 2049	CFT073_Contig_1	4935990..4938038	  Siderophore receptor	AE014075
+virulence_ecoli	iroN	100.0	2178 / 2178	CFT073_Contig_1	1198162..1200339	  Enterobactin siderophore receptor protein	AE014075
+virulence_ecoli	irp2	99.98	4232 / 6108	CFT073_Contig_1	2227128..2231359	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PXVW01000053
+virulence_ecoli	irp2	99.98	4232 / 6108	CFT073_Contig_1	2227128..2231359	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QLAC01000001
+virulence_ecoli	irp2	99.98	4232 / 6108	CFT073_Contig_1	2227128..2231359	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UIHY01000010
+virulence_ecoli	irp2	99.98	4232 / 6108	CFT073_Contig_1	2227128..2231359	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UIKF01000007
+virulence_ecoli	iss	100.0	342 / 342	CFT073_Contig_1	1422880..1423221	  Increased serum survival	AE014075
+virulence_ecoli	iucC	100.0	1743 / 1743	CFT073_Contig_1	3464728..3466470	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	CFT073_Contig_1	3461193..3463391	  Ferric aerobactin receptor	UFZT01000001
+virulence_ecoli	kpsE	100.0	1149 / 1149	CFT073_Contig_1	3513147..3514295	  Capsule polysaccharide export inner-membrane protein	AE014075
+virulence_ecoli	kpsMII	100.0	777 / 777	CFT073_Contig_1	3528516..3529292	  Polysialic acid transport protein; Group 2 capsule	MG736912
+virulence_ecoli	mchB	100.0	294 / 294	CFT073_Contig_1	1176756..1177049	  Microcin H47 part of colicin H	AE014075
+virulence_ecoli	mchC	100.0	1551 / 1551	CFT073_Contig_1	1177321..1178871	  MchC protein	AE014075
+virulence_ecoli	mchF	100.0	2115 / 2115	CFT073_Contig_1	1180751..1182865	  ABC transporter protein MchF	AE014075
+virulence_ecoli	mcmA	100.0	279 / 279	CFT073_Contig_1	1183119..1183397	  Microcin M part of colicin H	AJ586887
+virulence_ecoli	ompT	99.9	954 / 954	CFT073_Contig_1	629100..630053	  Outer membrane protease (protein protease 7)	AE014075
+virulence_ecoli	papA_F7-1	100.0	585 / 585	CFT073_Contig_1	4948203..4948787	  Major pilin subunit F7-1	AF447814
+virulence_ecoli	papA_F7-2	100.0	567 / 567	CFT073_Contig_1	3436965..3437531	  Major pilin subunit F7-2	ECOFIMAA
+virulence_ecoli	papC	99.8	2511 / 2511	CFT073_Contig_1	4944977..4947487	  Outer membrane usher P fimbriae	ADTJ01000356
+virulence_ecoli	papC	99.88	2511 / 2511	CFT073_Contig_1	3433739..3436249	  Outer membrane usher P fimbriae	JNRA01000049
+virulence_ecoli	papC	99.8	2511 / 2511	CFT073_Contig_1	4944977..4947487	  Outer membrane usher P fimbriae	JOSS01000102
+virulence_ecoli	pic	100.0	4116 / 4116	CFT073_Contig_1	326209..330324	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AE014075
+virulence_ecoli	sat	100.0	3888 / 3888	CFT073_Contig_1	3456362..3460249	 Secreted autotransporter toxin	AE014075
+virulence_ecoli	sitA	100.0	858 / 858	CFT073_Contig_1	1449293..1450150	  Iron transport protein	AM072350
+virulence_ecoli	tcpC	100.0	924 / 924	CFT073_Contig_1	2202763..2203686	  Tir domain-containing protein	GQ903008
+virulence_ecoli	terC	99.86	714 / 714	CFT073_Contig_1	3277741..3278454	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.49	958 / 966	CFT073_Contig_1	3678652..3679609	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	100.0	1782 / 1782	CFT073_Contig_1	127216..128997	  Uropathogenic specific protein	FQSQ01000009
+virulence_ecoli	vat	100.0	4131 / 4131	CFT073_Contig_1	371877..376007	 Vacuolating autotransporter toxin	AE014075
+virulence_ecoli	yfcV	100.0	567 / 567	CFT073_Contig_1	2737155..2737721	  Fimbrial protein	UFZT01000001

@@ -1,0 +1,16 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_74_length_12713_cov_104.584995	1432..1548	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_109_length_3743_cov_123.083470	1259..2347	 Hexosyltransferase homolog	CP000795
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_109_length_3743_cov_123.083470	1259..2347	 Hexosyltransferase homolog	FN822745
+virulence_ecoli	eatA	100.0	4095 / 4095	NODE_77_length_11232_cov_75.684446	5625..9719	 enterotoxigenic E. coli (ETEC) autotransporter A	CR942285
+virulence_ecoli	gad	99.93	1401 / 1401	NODE_28_length_59848_cov_54.931338	39982..41382	  Glutamate decarboxylase	FN649414
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_6_length_125905_cov_58.004824	29987..31387	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_61_length_21466_cov_52.977044	5787..6704	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	98.93	747 / 747	NODE_49_length_32325_cov_56.371589	10083..10829	  Heat-resistant agglutinin	JF808724
+virulence_ecoli	iss	100.0	294 / 294	NODE_84_length_9793_cov_57.083368	6548..6841	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_51_length_31032_cov_50.445065	24648..25796	  Capsule polysaccharide export inner-membrane protein	AELA02000001
+virulence_ecoli	kpsM_K15	100.0	777 / 777	NODE_51_length_31032_cov_50.445065	8572..9348	  Polysialic acid transport protein; Group 3 capsule	AJ617685
+virulence_ecoli	ltcA	100.0	777 / 777	NODE_102_length_4866_cov_88.596367	1663..2439	  Heat-labile enterotoxin A subunit	JX504011
+virulence_ecoli	ompT	100.0	954 / 954	NODE_46_length_34206_cov_54.524744	32908..33861	  Outer membrane protease (protein protease 7)	AQEU01000003
+virulence_ecoli	terC	100.0	714 / 714	NODE_32_length_52555_cov_57.962327	16361..17074	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.79	966 / 966	NODE_15_length_95432_cov_57.909286	47515..48480	  Tellurium ion resistance protein	MG591698

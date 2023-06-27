@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_69_length_8208_cov_50.926454	2211..3299	 Hexosyltransferase homolog	CP001062
+virulence_ecoli	gad	100.0	1094 / 1401	NODE_18_length_99606_cov_23.952225	1..1094	  Glutamate decarboxylase	CU928160
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_14_length_120315_cov_22.858323	31178..32095	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	ipaD	99.2	999 / 999	NODE_45_length_34151_cov_74.832336	26789..27787	  Invasion protein Shigella flexneri	X60777
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_30_length_57292_cov_26.461942	26741..27313	  Long polar fimbriae	AP010953
+virulence_ecoli	senB	99.83	1176 / 1176	NODE_79_length_6476_cov_55.387873	4595..5770	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	senB	99.83	1176 / 1176	NODE_79_length_6476_cov_55.387873	4595..5770	  Plasmid-encoded enterotoxin	CP001062
+virulence_ecoli	sitA	99.89	915 / 915	NODE_29_length_59080_cov_20.632019	55263..56177	  Iron transport protein	UFYN01000008
+virulence_ecoli	terC	100.0	714 / 714	NODE_1_length_398375_cov_23.822746	205567..206280	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_31_length_55125_cov_23.632503	11190..12148	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	98.5	733 / 735	NODE_62_length_11262_cov_49.682968	4921..5653	  Outer membrane protein complement resistance	LCVH01000288
+virulence_ecoli	traT	98.5	733 / 735	NODE_62_length_11262_cov_49.682968	4921..5653	  Outer membrane protein complement resistance	NZ_UIHG01000030
+virulence_ecoli	virF	100.0	810 / 810	NODE_117_length_2088_cov_66.805072	855..1664	  VirF transcriptional activator	AF348706

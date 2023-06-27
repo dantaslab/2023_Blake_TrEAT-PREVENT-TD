@@ -1,0 +1,22 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	100.0	8802 / 8802	SMS-3-5_Contig_1	4104190..4112991	 Enteroaggregative immunoglobulin repeat protein	CP000970
+virulence_ecoli	astA	100.0	117 / 117	SMS-3-5_Contig_1	4881592..4881708	 EAST-1 heat-stable toxin	AF160998
+virulence_ecoli	chuA	100.0	1983 / 1983	SMS-3-5_Contig_1	3867974..3869956	  Outer membrane hemin receptor	UCZO01000002
+virulence_ecoli	eilA	100.0	1698 / 1698	SMS-3-5_Contig_1	4102441..4104138	 Salmonella HilA homolog	CP000970
+virulence_ecoli	gad	100.0	1401 / 1401	SMS-3-5_Contig_1	1680092..1681492	  Glutamate decarboxylase	CP000970
+virulence_ecoli	gad	100.0	1401 / 1401	SMS-3-5_Contig_1	3886816..3888216	  Glutamate decarboxylase	CP000970
+virulence_ecoli	hlyE	98.91	918 / 918	SMS-3-5_Contig_1	1991313..1992230	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	100.0	792 / 792	SMS-3-5_Contig_1	4854848..4855639	  Heat-resistant agglutinin	CP006636
+virulence_ecoli	ibeA	100.0	1371 / 1371	SMS-3-5_Contig_1	4979543..4980913	  Invasin of brain endothelial cells	CP000970
+virulence_ecoli	iha	100.0	2088 / 2088	SMS-3-5_Contig_1	3214175..3216262	  Adherence protein	CP000970
+virulence_ecoli	iucC	100.0	1743 / 1743	SMS-3-5_Contig_1	3260790..3262532	  Aerobactin synthetase	CP000970
+virulence_ecoli	iutA	100.0	2202 / 2202	SMS-3-5_Contig_1	3257233..3259434	  Ferric aerobactin receptor	CP000970
+virulence_ecoli	kpsE	100.0	1149 / 1149	SMS-3-5_Contig_1	3291344..3292492	  Capsule polysaccharide export inner-membrane protein	CP000970
+virulence_ecoli	kpsMII_K1	100.0	777 / 777	SMS-3-5_Contig_1	3306990..3307766	  Polysialic acid transport protein; Group 2 capsule	CP000970
+virulence_ecoli	lpfA	100.0	573 / 573	SMS-3-5_Contig_1	4190762..4191334	  Long polar fimbriae	CP000970
+virulence_ecoli	neuC	100.0	1176 / 1176	SMS-3-5_Contig_1	3302196..3303371	  Polysialic acid capsule biosynthesis protein	CP000970
+virulence_ecoli	sitA	100.0	915 / 915	SMS-3-5_Contig_1	3251173..3252087	  Iron transport protein	UGAW01000001
+virulence_ecoli	terC	98.46	714 / 714	SMS-3-5_Contig_1	3059052..3059765	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	97.3	964 / 966	SMS-3-5_Contig_1	3463370..3464333	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	98.94	1041 / 1041	SMS-3-5_Contig_1	129334..130374	  Uropathogenic specific protein	AB056439
+virulence_ecoli	yfcV	100.0	567 / 567	SMS-3-5_Contig_1	2543891..2544457	  Fimbrial protein	UFZN01000001

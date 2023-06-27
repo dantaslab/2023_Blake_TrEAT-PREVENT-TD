@@ -1,0 +1,17 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_80_length_8936_cov_71.448583	8271..8387	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_104_length_5434_cov_169.042001	2189..3277	 Hexosyltransferase homolog	FN822745
+virulence_ecoli	eatA	99.98	4095 / 4095	NODE_70_length_13249_cov_119.231476	5739..9833	 enterotoxigenic E. coli (ETEC) autotransporter A	CR942285
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_26_length_65772_cov_29.850049	37933..39333	  Glutamate decarboxylase	FN649414
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_19_length_84457_cov_30.994821	29988..31388	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_1_length_236904_cov_28.284351	117680..118597	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_91_length_6598_cov_34.569851	5375..5668	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_30_length_54322_cov_34.098498	47936..49084	  Capsule polysaccharide export inner-membrane protein	AELA02000001
+virulence_ecoli	kpsM_K15	100.0	777 / 777	NODE_30_length_54322_cov_34.098498	31895..32671	  Polysialic acid transport protein; Group 3 capsule	AJ617685
+virulence_ecoli	lngA	100.0	711 / 711	NODE_61_length_19294_cov_83.521257	6252..6962	  Longus type IV pilus	FN822746
+virulence_ecoli	ltcA	100.0	777 / 777	NODE_98_length_5708_cov_110.854378	2428..3204	  Heat-labile enterotoxin A subunit	JX504011
+virulence_ecoli	ompT	100.0	363 / 363	NODE_77_length_9354_cov_29.429234	345..707	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	terC	100.0	714 / 714	NODE_32_length_52668_cov_27.793025	35595..36308	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_12_length_125267_cov_40.792803	9661..10701	  Tellurium ion resistance protein	KU341381
+virulence_ecoli	terC	99.79	966 / 966	NODE_6_length_171866_cov_28.287131	47511..48476	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	NODE_78_length_9191_cov_89.191135	7422..8156	  Outer membrane protein complement resistance	NC_014232

@@ -1,0 +1,33 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	1566 / 1566	ECOR63_Contig_40	2636..4201	  Colicin E1	CYEM01000021
+virulence_ecoli	chuA	99.95	1983 / 1983	ECOR63_Contig_23	17310..19292	  Outer membrane hemin receptor	UGAO01000001
+virulence_ecoli	clbB	99.99	9621 / 9621	ECOR63_Contig_58	15219..24839	  Hybrid non-ribosomal peptide / polyketide megasynthase	NZ_PIJO01000014
+virulence_ecoli	fim41a	96.28	834 / 834	ECOR63_Contig_43	10899..11732	  Mature Fim41a/F41 protein	M21788
+virulence_ecoli	fim41a	96.28	834 / 834	ECOR63_Contig_43	10899..11732	  Mature Fim41a/F41 protein	X14354
+virulence_ecoli	focC	99.71	696 / 696	ECOR63_Contig_74	7033..7728	  S fimbrial/F1C minor subunit	CP010315
+virulence_ecoli	fyuA	100.0	2022 / 2022	ECOR63_Contig_58	79970..81991	  Siderophore receptor	ADTO01000058
+virulence_ecoli	hra	98.65	741 / 741	ECOR63_Contig_43	36812..37552	  Heat-resistant agglutinin	CP040456
+virulence_ecoli	ibeA	100.0	1371 / 1371	ECOR63_Contig_82	29717..31087	  Invasin of brain endothelial cells	NZ_PXVW01000042
+virulence_ecoli	iroN	99.82	2178 / 2178	ECOR63_Contig_91	271..2448	  Enterobactin siderophore receptor protein	AE014075
+virulence_ecoli	irp2	100.0	6108 / 6108	ECOR63_Contig_58	95179..101286	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QLAC01000001
+virulence_ecoli	iss	100.0	342 / 342	ECOR63_Contig_24	280..621	  Increased serum survival	AE014075
+virulence_ecoli	kpsE	100.0	1149 / 1149	ECOR63_Contig_73	161595..162743	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsMII_K1	100.0	777 / 777	ECOR63_Contig_73	147801..148577	  Polysialic acid transport protein; Group 2 capsule	UWVU01000001
+virulence_ecoli	mchB	98.98	294 / 294	ECOR63_Contig_74	21351..21644	  Microcin H47 part of colicin H	AJ009631
+virulence_ecoli	mchC	99.55	1551 / 1551	ECOR63_Contig_74	19530..21080	  MchC protein	FN554766
+virulence_ecoli	mchF	98.33	2097 / 2097	ECOR63_Contig_74	15538..17634	  ABC transporter protein MchF	AJ515252
+virulence_ecoli	mcmA	99.64	279 / 279	ECOR63_Contig_74	15006..15284	  Microcin M part of colicin H	CP000247
+virulence_ecoli	neuC	100.0	1176 / 1176	ECOR63_Contig_73	152196..153371	  Polysialic acid capsule biosynthesis protein	ADUG01000366
+virulence_ecoli	ompT	100.0	954 / 954	ECOR63_Contig_31	517374..518327	  Outer membrane protease (protein protease 7)	CU651637
+virulence_ecoli	ompT	92.58	364 / 363	ECOR63_Contig_78	5677..6039	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	papA_F14	100.0	570 / 570	ECOR63_Contig_43	23614..24183	  Major pilin subunit F14	CP001671
+virulence_ecoli	papC	100.0	2511 / 2511	ECOR63_Contig_43	24899..27409	  Outer membrane usher P fimbriae	DQ010312
+virulence_ecoli	pic	99.98	4116 / 4116	ECOR63_Contig_31	817913..822028	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AE014075
+virulence_ecoli	sfaD	100.0	447 / 447	ECOR63_Contig_74	7769..8215	  S fimbrial/F1C minor subunit	UFZO01000005
+virulence_ecoli	sitA	100.0	915 / 915	ECOR63_Contig_39	5567..6481	  Iron transport protein	DQ335213
+virulence_ecoli	tcpC	100.0	924 / 924	ECOR63_Contig_58	124689..125612	  Tir domain-containing protein	GQ903014
+virulence_ecoli	terC	99.16	714 / 714	ECOR63_Contig_73	291453..292166	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.6	958 / 966	ECOR63_Contig_1	25722..26679	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	99.71	1041 / 1041	ECOR63_Contig_99	102825..103865	  Uropathogenic specific protein	AB056435
+virulence_ecoli	vat	99.9	4131 / 4131	ECOR63_Contig_31	774573..778703	 Vacuolating autotransporter toxin	AE014075
+virulence_ecoli	yfcV	99.65	567 / 567	ECOR63_Contig_48	266226..266792	  Fimbrial protein	UGFJ01000003

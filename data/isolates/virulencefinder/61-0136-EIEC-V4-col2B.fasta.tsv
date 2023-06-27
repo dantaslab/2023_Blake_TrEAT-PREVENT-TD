@@ -1,0 +1,6 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_62_length_4801_cov_33.647968	1827..2915	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_12_length_135425_cov_25.482512	102468..103385	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	99.66	294 / 294	NODE_21_length_79422_cov_25.341168	56455..56748	  Increased serum survival	CP001846
+virulence_ecoli	terC	98.6	714 / 714	NODE_7_length_183564_cov_31.265114	28305..29018	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.75	959 / 966	NODE_11_length_136944_cov_28.811708	11321..12279	  Tellurium ion resistance protein	MG591698

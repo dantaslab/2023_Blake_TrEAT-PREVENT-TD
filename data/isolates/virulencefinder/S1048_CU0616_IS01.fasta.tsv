@@ -1,0 +1,15 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	100.0	679 / 1089	NODE_91_length_696_cov_46.234249	1..679	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_28_length_50972_cov_30.198094	45026..47047	  Siderophore receptor	AHAX01000032
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_24_length_79944_cov_25.975735	56563..57480	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	NODE_40_length_26360_cov_27.833885	7304..9394	  Adherence protein	AE005174
+virulence_ecoli	irp2	99.95	6108 / 6108	NODE_28_length_50972_cov_30.198094	25731..31838	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NNYK01000037
+virulence_ecoli	iss	100.0	294 / 294	NODE_14_length_143902_cov_28.742833	1549..1842	  Increased serum survival	CP001665
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_14_length_143902_cov_28.742833	137682..139424	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_14_length_143902_cov_28.742833	134147..136345	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_40_length_26360_cov_27.833885	11987..13027	  Tellurium ion resistance protein	CP006262
+virulence_ecoli	terC	100.0	714 / 714	NODE_1_length_375844_cov_31.807809	33630..34343	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_4_length_280589_cov_36.187079	100787..101752	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	423 / 423	NODE_46_length_15794_cov_22.595597	277..699	  Outer membrane protein complement resistance	AKKX01000148
+virulence_ecoli	traT	100.0	129 / 129	NODE_46_length_15794_cov_22.595597	10504..10632	  Outer membrane protein complement resistance	AMTE01000156
+virulence_ecoli	traT	100.0	627 / 627	NODE_25_length_64461_cov_39.166843	22956..23582	  Outer membrane protein complement resistance	MF156268

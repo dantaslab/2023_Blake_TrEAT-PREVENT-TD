@@ -1,0 +1,7 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	94.87	117 / 117	NODE_76_length_11916_cov_203.262607	1471..1587	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_69_length_16995_cov_34.074654	2656..3744	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_1_length_246106_cov_37.011434	237395..238311	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	papC	96.62	2512 / 2511	NODE_94_length_5186_cov_96.302995	1581..4090	  Outer membrane usher P fimbriae	MG692627
+virulence_ecoli	terC	100.0	714 / 714	NODE_43_length_44400_cov_36.369808	18676..19389	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_15_length_97044_cov_34.138016	88191..89156	  Tellurium ion resistance protein	MG591698

@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cia	100.0	1275 / 1275	NODE_20_length_92056_cov_177.622109	24132..25406	  Colicin ia	AMTQ01000007
+virulence_ecoli	cia	99.32	147 / 147	NODE_20_length_92056_cov_177.622109	23473..23619	  Colicin ia	QMGM01000002
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_7_length_205126_cov_86.547016	176562..177478	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	99.75	792 / 792	NODE_14_length_151068_cov_80.409389	131948..132739	  Heat-resistant agglutinin	CP043942
+virulence_ecoli	iss	92.13	267 / 342	NODE_2_length_301955_cov_85.552677	284421..284687	  Increased serum survival	AE014075
+virulence_ecoli	iss	92.13	267 / 309	NODE_2_length_301955_cov_85.552677	284421..284687	  Increased serum survival	CP000468
+virulence_ecoli	iss	92.13	267 / 294	NODE_2_length_301955_cov_85.552677	284421..284687	  Increased serum survival	CP002167
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_9_length_183287_cov_88.661389	152516..153088	  Long polar fimbriae	CP002185
+virulence_ecoli	ompT	96.2	948 / 948	NODE_23_length_77440_cov_122.186135	58909..59856	  Outer membrane protease (protein protease 7)	CDLB01000100
+virulence_ecoli	terC	99.02	714 / 714	NODE_4_length_244502_cov_83.202287	137664..138377	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.17	959 / 966	NODE_3_length_280308_cov_89.216539	94924..95882	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	NODE_23_length_77440_cov_122.186135	27258..27992	  Outer membrane protein complement resistance	HG977148

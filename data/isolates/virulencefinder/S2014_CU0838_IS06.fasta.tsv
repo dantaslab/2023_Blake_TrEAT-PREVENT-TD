@@ -1,0 +1,31 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	96.89	1029 / 1029	NODE_42_length_28734_cov_116.922113	1421..2449	 Isoprenoid Biosynthesis	HE610901
+virulence_ecoli	ORF4	98.7	540 / 540	NODE_42_length_28734_cov_116.922113	878..1417	 Putative isopentenyl-diphosphate delta-isomerase	AB255435
+virulence_ecoli	aap	99.72	351 / 351	NODE_42_length_28734_cov_116.922113	3968..4318	 Dispersin, antiaggregation protein	AB255435
+virulence_ecoli	aatA	99.76	1239 / 1239	NODE_42_length_28734_cov_116.922113	19607..20845	 Dispersin transporter protein	AB255435
+virulence_ecoli	afaD	100.0	429 / 429	NODE_42_length_28734_cov_116.922113	14030..14458	  Afimbrial adhesion	UGDH01000002
+virulence_ecoli	agg4A	99.23	522 / 522	NODE_42_length_28734_cov_116.922113	14532..15053	 AAF/IV major fimbrial subunit	SSI_AA799
+virulence_ecoli	agg4C	99.88	2529 / 2529	NODE_42_length_28734_cov_116.922113	11485..14013	 Usher, AAF/IV assembly unit	AB255435
+virulence_ecoli	agg4D	99.71	683 / 684	NODE_42_length_28734_cov_116.922113	10753..11435	 Chaperone, AAF/IV assembly unit	AB255435
+virulence_ecoli	aggR	100.0	798 / 798	NODE_75_length_8748_cov_113.403414	6650..7447	 AraC transcriptional activator	DIJ1
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_75_length_8748_cov_113.403414	2984..4072	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_75_length_8748_cov_113.403414	2984..4072	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	celb	100.0	141 / 141	NODE_101_length_3726_cov_198.975610	3330..3470	  Endonuclease colicin E2	CU928147
+virulence_ecoli	celb	100.0	144 / 144	NODE_83_length_7209_cov_397.938446	2968..3111	  Endonuclease colicin E2	D00021
+virulence_ecoli	gad	100.0	1094 / 1401	NODE_19_length_100847_cov_57.557348	1..1094	  Glutamate decarboxylase	CU928160
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_1_length_519468_cov_56.229033	416729..417645	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_57_length_11799_cov_61.468521	6872..8962	  Adherence protein	CP003289
+virulence_ecoli	ireA	99.8	2049 / 2049	NODE_93_length_4905_cov_169.570837	2592..4640	  Siderophore receptor	AE014075
+virulence_ecoli	iss	100.0	294 / 294	NODE_48_length_21750_cov_53.193282	4677..4970	  Increased serum survival	CP001665
+virulence_ecoli	iucC	100.0	1526 / 1743	NODE_122_length_2022_cov_49.699743	497..2022	  Aerobactin synthetase	CU928162
+virulence_ecoli	iucC	100.0	1526 / 1743	NODE_58_length_11619_cov_98.085340	1..1526	  Aerobactin synthetase	CXZO01000056
+virulence_ecoli	iutA	100.0	2202 / 2202	NODE_100_length_3780_cov_113.225493	1246..3447	  Ferric aerobactin receptor	NC_020271
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_57_length_11799_cov_61.468521	1211..3409	  Ferric aerobactin receptor	UGCV01000008
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_5_length_199455_cov_59.485450	44058..44630	  Long polar fimbriae	AP010953
+virulence_ecoli	ompT	99.87	784 / 783	NODE_72_length_9048_cov_55.162412	8044..8827	  Outer membrane protease (protein protease 7)	UGDC01000003
+virulence_ecoli	sigA	99.9	3858 / 3858	NODE_77_length_8603_cov_61.127141	1806..5663	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	99.9	3858 / 3858	NODE_77_length_8603_cov_61.127141	1806..5663	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	sitA	99.89	915 / 915	NODE_58_length_11619_cov_98.085340	10065..10979	  Iron transport protein	ADTK01000286
+virulence_ecoli	terC	100.0	714 / 714	NODE_14_length_113148_cov_58.804654	34404..35117	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_3_length_216528_cov_57.936032	72605..73570	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.68	627 / 627	NODE_35_length_43361_cov_184.672928	17744..18370	  Outer membrane protein complement resistance	AY686591

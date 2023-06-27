@@ -1,0 +1,18 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cia	95.26	253 / 264	NODE_18_length_90171_cov_37.519036	56532..56783	  Colicin ia	UGDH01000002
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_16_length_109151_cov_23.938803	42351..44372	  Siderophore receptor	UINR01000017
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_11_length_153865_cov_25.156033	112387..113303	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.52	2088 / 2088	NODE_42_length_6648_cov_30.527317	973..3060	  Adherence protein	AJ278144
+virulence_ecoli	ireA	99.71	2049 / 2049	NODE_38_length_13265_cov_29.155748	7175..9223	  Siderophore receptor	CU928162
+virulence_ecoli	irp2	99.98	6108 / 6108	NODE_16_length_109151_cov_23.938803	57560..63667	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_CP029579
+virulence_ecoli	iss	99.32	294 / 294	NODE_5_length_328375_cov_23.207190	295182..295475	  Increased serum survival	CP001509
+virulence_ecoli	kpsE	98.52	1149 / 1149	NODE_34_length_21550_cov_42.115447	11114..12262	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_15_length_111179_cov_23.841506	80613..81185	  Long polar fimbriae	AY646923
+virulence_ecoli	stx2A	100.0	960 / 960	NODE_25_length_46650_cov_24.527473	44600..45559	  Shiga toxin 2, subunit A, variant b	AB048224
+virulence_ecoli	stx2B	96.6	265 / 270	NODE_25_length_46650_cov_24.527473	45572..45836	 Shiga toxin 2, subunit B	FN252458
+virulence_ecoli	subA	97.8	1044 / 1044	NODE_37_length_14448_cov_37.891448	1487..2530	  Subtilase toxin subunit	JN638552
+virulence_ecoli	subA	97.8	1044 / 1044	NODE_37_length_14448_cov_37.891448	1487..2530	  Subtilase toxin subunit	JQ994271
+virulence_ecoli	terC	99.86	714 / 714	NODE_1_length_713896_cov_24.189122	224170..224883	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	100.0	966 / 966	NODE_1_length_713896_cov_24.189122	528198..529163	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	97.82	735 / 735	NODE_18_length_90171_cov_37.519036	33557..34291	  Outer membrane protein complement resistance	NZ_UILR01000016
+stx	stx2	99.51	1236 / 1236	NODE_25_length_46650_cov_24.527473	44600..45835	O40 5293-98, varinat b	AJ567997

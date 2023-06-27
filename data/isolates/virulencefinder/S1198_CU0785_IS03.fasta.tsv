@@ -1,0 +1,15 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	aggR	99.81	538 / 798	NODE_102_length_597_cov_1.855769	60..597	 AraC transcriptional activator	55989
+virulence_ecoli	aggR	99.81	538 / 798	NODE_102_length_597_cov_1.855769	60..597	 AraC transcriptional activator	z18751
+virulence_ecoli	cif	100.0	849 / 849	NODE_63_length_4545_cov_78.516786	2698..3546	  Type III secreted effector	AY128535
+virulence_ecoli	eae	96.02	2510 / 2823	NODE_26_length_58157_cov_66.587586	9203..11712	  Intimin	FJ609831
+virulence_ecoli	espA	92.06	579 / 579	NODE_26_length_58157_cov_66.587586	5554..6132	  Type III secretions system	AJ633130
+virulence_ecoli	espF	95.83	624 / 624	NODE_26_length_58157_cov_66.587586	1692..2315	  Type III secretion system	AJ633130
+virulence_ecoli	espJ	99.84	614 / 654	NODE_63_length_4545_cov_78.516786	78..691	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	gad	99.79	1401 / 1401	NODE_30_length_54883_cov_55.301226	40207..41607	  Glutamate decarboxylase	AP010953
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_3_length_223916_cov_51.021971	55656..56572	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_33_length_47630_cov_55.966038	17079..17651	  Long polar fimbriae	CP002185
+virulence_ecoli	nleB	94.7	981 / 981	NODE_25_length_67579_cov_54.796273	1807..2787	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	terC	99.02	714 / 714	NODE_5_length_194969_cov_52.546338	9670..10383	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.38	966 / 966	NODE_6_length_193075_cov_58.193676	156397..157362	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.97	1653 / 1653	NODE_26_length_58157_cov_66.587586	12383..14023	  Translocated intimin receptor protein	AB288103

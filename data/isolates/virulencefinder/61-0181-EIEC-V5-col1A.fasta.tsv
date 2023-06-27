@@ -1,0 +1,21 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	98.45	1029 / 1029	NODE_89_length_15871_cov_53.763771	1545..2573	 Isoprenoid Biosynthesis	FN554767
+virulence_ecoli	ORF4	98.7	540 / 540	NODE_89_length_15871_cov_53.763771	1002..1541	 Putative isopentenyl-diphosphate delta-isomerase	FN554767
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_50_length_28425_cov_32.038063	6028..6534	 Type VI secretion protein	FN554766
+virulence_ecoli	afaA	99.74	384 / 384	NODE_6_length_174848_cov_18.441818	147743..148126	  Transcriptional regulator	GQ916596
+virulence_ecoli	afaB	98.96	768 / 768	NODE_6_length_174848_cov_18.441818	148204..148971	  Periplasmic chaperone	GQ497943
+virulence_ecoli	afaB	98.96	768 / 768	NODE_6_length_174848_cov_18.441818	148204..148971	  Periplasmic chaperone	GQ497943
+virulence_ecoli	afaC	99.65	2589 / 2589	NODE_6_length_174848_cov_18.441818	149139..151727	  Outer membrane usher protein	AP017620
+virulence_ecoli	afaD	100.0	420 / 420	NODE_6_length_174848_cov_18.441818	151743..152162	  Afimbrial adhesion	GQ916596
+virulence_ecoli	afaE8	96.88	513 / 513	NODE_6_length_174848_cov_18.441818	152697..153209		GQ497943
+virulence_ecoli	gad	99.91	1079 / 1401	NODE_1151_length_1079_cov_26.893214	1..1079	  Glutamate decarboxylase	AP009240
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_2_length_257524_cov_15.478161	20270..21187	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	93.72	796 / 792	NODE_81_length_16632_cov_23.117427	13912..14702	  Heat-resistant agglutinin	CP028310
+virulence_ecoli	iss	92.13	267 / 342	NODE_3_length_246993_cov_15.890129	159126..159392	  Increased serum survival	AE014075
+virulence_ecoli	iss	92.13	267 / 309	NODE_3_length_246993_cov_15.890129	159126..159392	  Increased serum survival	CP000468
+virulence_ecoli	iss	92.13	267 / 294	NODE_3_length_246993_cov_15.890129	159126..159392	  Increased serum survival	CP002167
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_25_length_62172_cov_20.575570	31153..31725	  Long polar fimbriae	AP010953
+virulence_ecoli	sepA	99.8	4095 / 4095	NODE_186_length_8247_cov_35.116646	560..4654	 Shigella extracellular protein A	AB255435
+virulence_ecoli	terC	100.0	714 / 714	NODE_4_length_219238_cov_17.592774	147657..148370	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.27	959 / 966	NODE_9_length_120485_cov_17.664233	83329..84287	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	NODE_89_length_15871_cov_53.763771	14486..15220	  Outer membrane protein complement resistance	NZ_UIKU01000027

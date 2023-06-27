@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cia	100.0	147 / 147	NODE_40_length_32030_cov_67.119300	10512..10658	  Colicin ia	QMGM01000002
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_26_length_59791_cov_28.209750	18686..20707	  Siderophore receptor	ADTR01000532
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_3_length_258980_cov_27.350394	22961..23877	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	100.0	741 / 741	NODE_6_length_188439_cov_32.891857	27093..27833	  Heat-resistant agglutinin	CP040456
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_26_length_59791_cov_28.209750	33896..40003	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UEMO01000028
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_55_length_15675_cov_47.561931	4104..5846	  Aerobactin synthetase	CBTO010000002
+virulence_ecoli	iutA	100.0	2202 / 2202	NODE_55_length_15675_cov_47.561931	547..2748	  Ferric aerobactin receptor	CXZO01000056
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_23_length_69235_cov_34.437144	38668..39240	  Long polar fimbriae	AY646923
+virulence_ecoli	papA_F13	99.64	555 / 555	NODE_6_length_188439_cov_32.891857	16213..16767	  Major pilin subunit F13	JONC01000026
+virulence_ecoli	papC	100.0	2511 / 2511	NODE_6_length_188439_cov_32.891857	17477..19987	  Outer membrane usher P fimbriae	JONC01000026
+virulence_ecoli	sitA	100.0	915 / 915	NODE_55_length_15675_cov_47.561931	14385..15299	  Iron transport protein	AEZP02000013
+virulence_ecoli	terC	100.0	714 / 714	NODE_30_length_45818_cov_30.838569	22294..23007	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	100.0	966 / 966	NODE_2_length_315372_cov_31.146358	258741..259706	  Tellurium ion resistance protein	MG591698

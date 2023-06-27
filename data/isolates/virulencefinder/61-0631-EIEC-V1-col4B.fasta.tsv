@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	aap	97.44	351 / 351	NODE_69_length_6990_cov_86.614205	1733..2083	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	astA	100.0	88 / 117	NODE_79_length_2652_cov_85.931262	1005..1092	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	astA	97.44	117 / 117	NODE_69_length_6990_cov_86.614205	2517..2633	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	astA	100.0	88 / 117	NODE_79_length_2652_cov_85.931262	1005..1092	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	astA	100.0	88 / 117	NODE_79_length_2652_cov_85.931262	1005..1092	 EAST-1 heat-stable toxin	AF411067
+virulence_ecoli	hlyE	97.61	920 / 918	NODE_1_length_373480_cov_46.183804	161197..162104	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_73_length_4441_cov_45.765811	3069..3362	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	99.91	1149 / 1149	NODE_17_length_93497_cov_52.081867	84173..85321	  Capsule polysaccharide export inner-membrane protein	AAMK02000004
+virulence_ecoli	ompT	100.0	954 / 954	NODE_71_length_6112_cov_58.781442	5055..6008	  Outer membrane protease (protein protease 7)	AP009048
+virulence_ecoli	terC	98.88	714 / 714	NODE_39_length_40667_cov_50.394013	17032..17745	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.37	959 / 966	NODE_3_length_230507_cov_52.971028	50586..51544	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.73	735 / 735	NODE_29_length_55128_cov_73.216726	11666..12400	  Outer membrane protein complement resistance	NZ_UNPL01000128

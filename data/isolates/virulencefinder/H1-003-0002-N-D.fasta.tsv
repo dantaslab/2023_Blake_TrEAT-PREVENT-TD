@@ -1,0 +1,25 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	1569 / 1569	H1-003-0002-N-D_Contig_91	4777..6345	  Colicin E1	LAUC01000234
+virulence_ecoli	cib	100.0	1881 / 1881	H1-003-0002-N-D_Contig_46	8069..9949	  Colicin ib	KP198616
+virulence_ecoli	fyuA	99.95	2022 / 2022	H1-003-0002-N-D_Contig_32	25364..27385	  Siderophore receptor	CXZC01000008
+virulence_ecoli	gad	99.91	1133 / 1401	H1-003-0002-N-D_Contig_157	1..1133	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	99.91	1133 / 1401	H1-003-0002-N-D_Contig_157	1..1133	  Glutamate decarboxylase	CP002967
+virulence_ecoli	gad	99.91	1133 / 1401	H1-003-0002-N-D_Contig_157	1..1133	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	100.0	918 / 918	H1-003-0002-N-D_Contig_7	118494..119411	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.9	2091 / 2091	H1-003-0002-N-D_Contig_89	1082..3172	  Adherence protein	CP001671
+virulence_ecoli	irp2	99.93	4170 / 6108	H1-003-0002-N-D_Contig_32	40573..44742	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_CP013185
+virulence_ecoli	irp2	99.93	4170 / 6108	H1-003-0002-N-D_Contig_32	40573..44742	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NLXO01000005
+virulence_ecoli	irp2	99.93	4170 / 6108	H1-003-0002-N-D_Contig_32	40573..44742	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NTOI01000049
+virulence_ecoli	irp2	99.93	4170 / 6108	H1-003-0002-N-D_Contig_32	40573..44742	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UGCA01000002
+virulence_ecoli	irp2	99.93	4170 / 6108	H1-003-0002-N-D_Contig_32	40573..44742	  High molecular weight protein 2 non-ribosomal peptide synthetase	QODN01000001
+virulence_ecoli	iss	100.0	294 / 294	H1-003-0002-N-D_Contig_56	5959..6252	  Increased serum survival	CP001846
+virulence_ecoli	iucC	100.0	1743 / 1743	H1-003-0002-N-D_Contig_66	8751..10493	  Aerobactin synthetase	CP003034
+virulence_ecoli	iutA	100.0	2202 / 2202	H1-003-0002-N-D_Contig_66	5194..7395	  Ferric aerobactin receptor	CP003034
+virulence_ecoli	kpsE	100.0	1149 / 1149	H1-003-0002-N-D_Contig_1	284951..286099	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsMII	100.0	777 / 777	H1-003-0002-N-D_Contig_1	271157..271933	  Polysialic acid transport protein; Group 2 capsule	QONK01000308
+virulence_ecoli	neuC	100.0	1176 / 1176	H1-003-0002-N-D_Contig_1	275552..276727	  Polysialic acid capsule biosynthesis protein	NZ_QSVV01000010
+virulence_ecoli	sat	99.87	3888 / 3888	H1-003-0002-N-D_Contig_66	362..4249	 Secreted autotransporter toxin	CP001671
+virulence_ecoli	senB	100.0	1176 / 1176	H1-003-0002-N-D_Contig_76	550..1725	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	H1-003-0002-N-D_Contig_13	116459..117373	  Iron transport protein	ADTP01000122
+virulence_ecoli	terC	100.0	714 / 714	H1-003-0002-N-D_Contig_33	33629..34342	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	H1-003-0002-N-D_Contig_1	126893..127858	  Tellurium ion resistance protein	MG591698

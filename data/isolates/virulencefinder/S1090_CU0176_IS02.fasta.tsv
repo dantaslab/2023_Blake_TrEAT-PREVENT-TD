@@ -1,0 +1,27 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	96.89	1029 / 1029	NODE_38_length_6033_cov_123.462727	3939..4967	 Isoprenoid Biosynthesis	HE610901
+virulence_ecoli	ORF4	100.0	540 / 540	NODE_38_length_6033_cov_123.462727	4971..5510	 Putative isopentenyl-diphosphate delta-isomerase	AB255435
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_19_length_50627_cov_78.916756	16907..17413	 Type VI secretion protein	cp003301
+virulence_ecoli	aap	100.0	351 / 351	NODE_38_length_6033_cov_123.462727	1877..2227	 Dispersin, antiaggregation protein	AB255435
+virulence_ecoli	aatA	99.76	1239 / 1239	NODE_21_length_38250_cov_112.471878	21944..23182	 Dispersin transporter protein	AB255435
+virulence_ecoli	agg4A	100.0	513 / 513	NODE_21_length_38250_cov_112.471878	26654..27166	 AAF/IV major fimbrial subunit	SSI_AA803
+virulence_ecoli	agg4B	99.77	429 / 429	NODE_21_length_38250_cov_112.471878	27240..27667	 AAF/IV minor adhesin. Enterobacteria AfaD invasin protein	EU637023
+virulence_ecoli	agg4C	99.96	2529 / 2529	NODE_21_length_38250_cov_112.471878	27684..30212	 Usher, AAF/IV assembly unit	SSI_AA805
+virulence_ecoli	agg4D	99.85	684 / 684	NODE_21_length_38250_cov_112.471878	30261..30944	 Chaperone, AAF/IV assembly unit	EU637023
+virulence_ecoli	aggR	100.0	798 / 798	NODE_45_length_3423_cov_119.536163	1877..2674	 AraC transcriptional activator	DIJ1
+virulence_ecoli	air	99.99	10257 / 10257	NODE_2_length_542643_cov_91.652509	120775..131031	 Enteroaggregative immunoglobulin repeat protein	CU928163
+virulence_ecoli	chuA	99.29	1983 / 1983	NODE_2_length_542643_cov_91.652509	326719..328701	  Outer membrane hemin receptor	UGEY01000001
+virulence_ecoli	eilA	100.0	1698 / 1698	NODE_2_length_542643_cov_91.652509	131083..132780	 Salmonella HilA homolog	FN554766
+virulence_ecoli	gad	98.86	1401 / 1401	NODE_2_length_542643_cov_91.652509	308459..309859	  Glutamate decarboxylase	CU928163
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_6_length_328793_cov_79.035021	289226..290626	  Glutamate decarboxylase	CU928163
+virulence_ecoli	hlyE	98.69	918 / 918	NODE_7_length_319305_cov_80.803181	312021..312938	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	98.98	294 / 294	NODE_8_length_258811_cov_87.628217	257551..257844	  Increased serum survival	CP001665
+virulence_ecoli	iss	98.98	294 / 294	NODE_8_length_258811_cov_87.628217	257551..257844	  Increased serum survival	CP001846
+virulence_ecoli	kpsE	99.74	1149 / 1149	NODE_5_length_343517_cov_93.470993	7308..8456	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsMII	100.0	777 / 777	NODE_5_length_343517_cov_93.470993	21189..21965	  Polysialic acid transport protein; Group 2 capsule	JMGQ01000109
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_2_length_542643_cov_91.652509	30205..30777	  Long polar fimbriae	AB198066
+virulence_ecoli	sepA	99.71	4095 / 4095	NODE_21_length_38250_cov_112.471878	32160..36254	 Shigella extracellular protein A	AB255435
+virulence_ecoli	terC	97.62	714 / 714	NODE_4_length_362918_cov_88.905226	193830..194543	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.62	714 / 714	NODE_4_length_362918_cov_88.905226	193830..194543	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.23	959 / 966	NODE_5_length_343517_cov_93.470993	167378..168336	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.86	732 / 732	NODE_20_length_43972_cov_126.241258	15971..16702	  Outer membrane protein complement resistance	UGFZ01000004

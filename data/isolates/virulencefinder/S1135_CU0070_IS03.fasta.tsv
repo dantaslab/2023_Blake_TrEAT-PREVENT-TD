@@ -1,0 +1,17 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_31_length_66038_cov_26.915496	2483..4504	  Siderophore receptor	AHAX01000032
+virulence_ecoli	hlyA	99.97	3075 / 3075	NODE_51_length_11933_cov_54.636893	2632..5706	  Haemolysin A	LR134080
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_13_length_131762_cov_31.396423	31297..32214	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	93.72	796 / 792	NODE_9_length_142593_cov_36.997348	116092..116882	  Heat-resistant agglutinin	CP028310
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_69_length_3661_cov_86.917132	997..3087	  Adherence protein	AE014075
+virulence_ecoli	irp2	99.98	6108 / 6108	NODE_31_length_66038_cov_26.915496	17692..23799	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NNYK01000037
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_54_length_10247_cov_36.588594	4170..5912	  Aerobactin synthetase	CU928162
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_54_length_10247_cov_36.588594	7249..9447	  Ferric aerobactin receptor	UGCV01000008
+virulence_ecoli	mchB	99.66	294 / 294	NODE_43_length_24806_cov_51.184803	11211..11504	  Microcin H47 part of colicin H	AJ009631
+virulence_ecoli	mchC	100.0	1551 / 1551	NODE_43_length_24806_cov_51.184803	11776..13326	  MchC protein	AJ515252
+virulence_ecoli	mchF	99.95	2097 / 2097	NODE_43_length_24806_cov_51.184803	15225..17321	  ABC transporter protein MchF	AJ515252
+virulence_ecoli	mcmA	100.0	279 / 279	NODE_43_length_24806_cov_51.184803	17575..17853	  Microcin M part of colicin H	AJ586887
+virulence_ecoli	sigA	99.87	3858 / 3858	NODE_30_length_82762_cov_36.385845	75449..79306	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	99.87	3858 / 3858	NODE_30_length_82762_cov_36.385845	75449..79306	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	terC	100.0	714 / 714	NODE_6_length_151794_cov_37.315621	117452..118165	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_5_length_178663_cov_35.046291	128341..129306	  Tellurium ion resistance protein	MG591698

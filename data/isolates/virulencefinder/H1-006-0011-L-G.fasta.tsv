@@ -1,0 +1,23 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	99.9	1983 / 1983	H1-006-0011-L-G_Contig_7	177341..179323	  Outer membrane hemin receptor	UGAO01000001
+virulence_ecoli	clbB	100.0	9621 / 9621	H1-006-0011-L-G_Contig_25	25697..35317	  Hybrid non-ribosomal peptide / polyketide megasynthase	AM229678
+virulence_ecoli	fyuA	100.0	2022 / 2022	H1-006-0011-L-G_Contig_22	29820..31841	  Siderophore receptor	ADTO01000058
+virulence_ecoli	gad	99.61	1272 / 1401	H1-006-0011-L-G_Contig_67	1..1272	  Glutamate decarboxylase	CP000247
+virulence_ecoli	iha	100.0	2091 / 2091	H1-006-0011-L-G_Contig_35	23250..25340	  Adherence protein	CP001671
+virulence_ecoli	irp2	100.0	6108 / 6108	H1-006-0011-L-G_Contig_22	10525..16632	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QLAC01000001
+virulence_ecoli	iucC	100.0	1743 / 1743	H1-006-0011-L-G_Contig_35	4609..6351	  Aerobactin synthetase	CP002212
+virulence_ecoli	iutA	100.0	2202 / 2202	H1-006-0011-L-G_Contig_35	7707..9908	  Ferric aerobactin receptor	CP001671
+virulence_ecoli	kpsE	100.0	1149 / 1149	H1-006-0011-L-G_Contig_3	8563..9711	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	H1-006-0011-L-G_Contig_3	24297..25073	  Polysialic acid transport protein; Group 2 capsule	X53819
+virulence_ecoli	ompT	100.0	954 / 954	H1-006-0011-L-G_Contig_36	21291..22244	  Outer membrane protease (protein protease 7)	CP030111
+virulence_ecoli	papA_F43	98.9	543 / 564	H1-006-0011-L-G_Contig_52	78..619	  Major pilin subunit F43	JNMC01000043
+virulence_ecoli	sat	99.97	3888 / 3888	H1-006-0011-L-G_Contig_35	10852..14739	 Secreted autotransporter toxin	CP001671
+virulence_ecoli	senB	100.0	1176 / 1176	H1-006-0011-L-G_Contig_48	948..2123	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sitA	99.78	915 / 915	H1-006-0011-L-G_Contig_40	1208..2122	  Iron transport protein	CYGJ01000009
+virulence_ecoli	tcpC	100.0	924 / 924	H1-006-0011-L-G_Contig_26	5448..6371	  Tir domain-containing protein	GQ903008
+virulence_ecoli	terC	99.72	714 / 714	H1-006-0011-L-G_Contig_8	60983..61696	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.6	958 / 966	H1-006-0011-L-G_Contig_3	188713..189670	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	99.71	1041 / 1041	H1-006-0011-L-G_Contig_5	1605..2645	  Uropathogenic specific protein	AB056435
+virulence_ecoli	vat	99.76	4131 / 4131	H1-006-0011-L-G_Contig_19	68107..72237	 Vacuolating autotransporter toxin	AE014075
+virulence_ecoli	vat	99.76	4131 / 4131	H1-006-0011-L-G_Contig_19	68107..72237	 Vacuolating autotransporter toxin	X16664
+virulence_ecoli	yfcV	99.65	567 / 567	H1-006-0011-L-G_Contig_1	92056..92622	  Fimbrial protein	UGFJ01000003

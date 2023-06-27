@@ -1,0 +1,10 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	100.0	683 / 1089	NODE_92_length_1204_cov_1.713398	1..683	 Hexosyltransferase homolog	FN822745
+virulence_ecoli	clbB	100.0	9621 / 9621	NODE_30_length_63018_cov_13.163629	34526..44146	  Hybrid non-ribosomal peptide / polyketide megasynthase	AM229678
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_32_length_52932_cov_10.966739	16284..18305	  Siderophore receptor	CAY233333
+virulence_ecoli	iutA	99.27	2190 / 2190	NODE_19_length_95876_cov_8.692575	19907..22096	  Ferric aerobactin receptor	FLWH01000001
+virulence_ecoli	iutA	99.27	2190 / 2190	NODE_19_length_95876_cov_8.692575	19907..22096	  Ferric aerobactin receptor	FLXF01000001
+virulence_ecoli	mchF	99.86	2097 / 2097	NODE_30_length_63018_cov_13.163629	11257..13353	  ABC transporter protein MchF	AF063590
+virulence_ecoli	terC	97.97	887 / 1041	NODE_97_length_1003_cov_19.901728	1..887	  Tellurium ion resistance protein	UDHA01000026
+virulence_ecoli	terC	97.97	887 / 1041	NODE_97_length_1003_cov_19.901728	1..887	  Tellurium ion resistance protein	UGAE01000003
+virulence_ecoli	traT	99.44	178 / 177	NODE_211_length_470_cov_1.150127	138..315	  Outer membrane protein complement resistance	AIGY01000005

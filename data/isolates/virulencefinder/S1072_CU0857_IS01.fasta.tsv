@@ -1,0 +1,20 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	91.3	115 / 117	NODE_115_length_5300_cov_31.832472	88..202	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	eae	97.8	2094 / 2820	NODE_48_length_30509_cov_32.743198	967..3059	  Intimin	AB647391
+virulence_ecoli	eae	97.8	2094 / 2820	NODE_48_length_30509_cov_32.743198	967..3059	  Intimin	AB647460
+virulence_ecoli	eae	97.8	2094 / 2820	NODE_48_length_30509_cov_32.743198	967..3059	  Intimin	AF530555
+virulence_ecoli	ehxA	99.9	2997 / 2997	NODE_92_length_10411_cov_29.987710	5941..8937	 Enterohaemolysin	EF204923
+virulence_ecoli	espA	99.65	573 / 573	NODE_32_length_47427_cov_42.138099	2592..3164	  Type III secretions system	AJ225016
+virulence_ecoli	espF	99.51	615 / 615	NODE_32_length_47427_cov_42.138099	6341..6955	  Type III secretion system	AJ633129
+virulence_ecoli	espI	99.98	4092 / 4092	NODE_63_length_25098_cov_44.776708	321..4412	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	espP	98.05	3903 / 3903	NODE_113_length_5777_cov_45.018947	831..4730	 Extracellular serine protease plasmid-encoded	GQ259888
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_24_length_62100_cov_52.132016	20273..22294	  Siderophore receptor	ADTR01000532
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_24_length_62100_cov_52.132016	35483..41590	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NONT01000022
+virulence_ecoli	iss	97.96	294 / 294	NODE_98_length_9396_cov_50.230604	5964..6257	  Increased serum survival	CP001509
+virulence_ecoli	nleB	94.6	981 / 981	NODE_39_length_42194_cov_45.406226	595..1575	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleC	99.7	988 / 987	NODE_151_length_1829_cov_44.811073	721..1708	  Non-LEE encoded effector C	AP010953
+virulence_ecoli	nleC	99.7	988 / 987	NODE_151_length_1829_cov_44.811073	721..1708	  Non-LEE encoded effector C	AP010960
+virulence_ecoli	sta1	94.98	219 / 219	NODE_118_length_5145_cov_37.446922	2714..2931	  Heat-stabile enterotoxin ST-Ia	AJ555214
+virulence_ecoli	terC	99.3	714 / 714	NODE_16_length_92958_cov_44.200235	64460..65173	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_14_length_99961_cov_44.192473	51736..52701	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.19	1659 / 1659	NODE_48_length_30509_cov_32.743198	3722..5377	  Translocated intimin receptor protein	AB036053

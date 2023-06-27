@@ -1,0 +1,16 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cib	100.0	1881 / 1881	NODE_59_length_30311_cov_103.413144	24054..25934	  Colicin ib	KP198616
+virulence_ecoli	eae	95.94	2510 / 2823	NODE_3_length_160032_cov_41.067969	134008..136517	  Intimin	FJ609831
+virulence_ecoli	espA	91.88	579 / 579	NODE_3_length_160032_cov_41.067969	139588..140166	  Type III secretions system	AJ633130
+virulence_ecoli	espF	95.83	624 / 624	NODE_3_length_160032_cov_41.067969	143405..144028	  Type III secretion system	AJ633130
+virulence_ecoli	espJ	95.72	654 / 654	NODE_152_length_2360_cov_48.932545	1577..2230	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_29_length_54248_cov_32.373484	18848..20869	  Siderophore receptor	CYAZ01000026
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_129_length_4217_cov_41.490821	3157..4074	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	99.92	6108 / 6108	NODE_29_length_54248_cov_32.373484	34057..40164	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMAZ01000029
+virulence_ecoli	kpsE	98.96	1246 / 1248	NODE_54_length_33791_cov_42.621285	22039..23284	  Capsule polysaccharide export inner-membrane protein	AF007777
+virulence_ecoli	kpsMIII_K96	99.75	801 / 801	NODE_54_length_33791_cov_42.621285	20608..21408	  ABC-type polysaccharide/polyol phosphate export systems permease; Group 3 capsule	MG736915
+virulence_ecoli	pet	99.33	3888 / 3888	NODE_123_length_4901_cov_115.492537	458..4345	 Plasmid-encoded toxin	AF056581
+virulence_ecoli	senB	100.0	1176 / 1176	NODE_130_length_4188_cov_98.920701	1036..2211	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	terC	100.0	714 / 714	NODE_46_length_39213_cov_37.110665	22920..23633	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_11_length_87834_cov_35.894732	37889..38854	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.61	1653 / 1653	NODE_3_length_160032_cov_41.067969	131697..133337	  Translocated intimin receptor protein	AB288103

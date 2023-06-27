@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_132_length_4962_cov_29.754145	1399..2487	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_16_length_68140_cov_23.675316	48714..50735	  Siderophore receptor	AHAX01000032
+virulence_ecoli	hlyA	97.92	3075 / 3075	NODE_103_length_9803_cov_57.295394	2143..5217	  Haemolysin A	CP032936
+virulence_ecoli	hlyE	99.35	918 / 918	NODE_54_length_32742_cov_23.592775	5559..6476	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_16_length_68140_cov_23.675316	29419..35526	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEM01000039
+virulence_ecoli	iss	99.5	202 / 294	NODE_219_length_430_cov_60.753541	1..202	  Increased serum survival	CP001846
+virulence_ecoli	iss	99.08	217 / 342	NODE_210_length_482_cov_37.340741	1..217	  Increased serum survival	CU928158
+virulence_ecoli	iss	99.08	217 / 342	NODE_210_length_482_cov_37.340741	1..217	  Increased serum survival	CU928160
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_52_length_33176_cov_27.671501	29980..30552	  Long polar fimbriae	AY646923
+virulence_ecoli	sitA	100.0	915 / 915	NODE_89_length_16250_cov_23.944785	11833..12747	  Iron transport protein	HG977190
+virulence_ecoli	terC	100.0	714 / 714	NODE_40_length_39568_cov_24.945431	16045..16758	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	100.0	959 / 966	NODE_57_length_31015_cov_25.980445	19170..20128	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	831 / 831	NODE_46_length_34813_cov_42.962546	9639..10469	  Outer membrane protein complement resistance	NC_007675

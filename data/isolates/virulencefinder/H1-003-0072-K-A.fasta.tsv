@@ -1,0 +1,20 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaA	100.0	306 / 306	H1-003-0072-K-A_Contig_62	5298..5603	  Transcriptional regulator	X76688
+virulence_ecoli	afaB	99.0	798 / 798	H1-003-0072-K-A_Contig_62	5829..6626	  Periplasmic chaperone	KR338833
+virulence_ecoli	afaC	99.61	2583 / 2583	H1-003-0072-K-A_Contig_62	6666..9248	  Outer membrane usher protein	KR338832
+virulence_ecoli	afaD	99.08	436 / 444	H1-003-0072-K-A_Contig_62	9264..9699	  Afimbrial adhesion	AY525531
+virulence_ecoli	afaE	98.76	483 / 483	H1-003-0072-K-A_Contig_10	1143..1625	  Adhesin protein	DQ386073
+virulence_ecoli	air	95.22	4604 / 4605	H1-003-0072-K-A_Contig_9	106599..111202	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	capU	99.82	1089 / 1089	H1-003-0072-K-A_Contig_42	23517..24605	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	chuA	100.0	1983 / 1983	H1-003-0072-K-A_Contig_22	37678..39660	  Outer membrane hemin receptor	UFZU01000002
+virulence_ecoli	eilA	98.65	1698 / 1698	H1-003-0072-K-A_Contig_9	117780..119477	 Salmonella HilA homolog	FN554766
+virulence_ecoli	fyuA	100.0	2022 / 2022	H1-003-0072-K-A_Contig_23	23738..25759	  Siderophore receptor	CAY233333
+virulence_ecoli	gad	98.66	1116 / 1401	H1-003-0072-K-A_Contig_97	5..1120	  Glutamate decarboxylase	CU928163
+virulence_ecoli	hlyE	98.91	918 / 918	H1-003-0072-K-A_Contig_26	46805..47722	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	H1-003-0072-K-A_Contig_23	38947..45054	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_BGNW01000020
+virulence_ecoli	iss	99.66	294 / 294	H1-003-0072-K-A_Contig_14	100895..101188	  Increased serum survival	CU928163
+virulence_ecoli	kpsE	100.0	1149 / 1149	H1-003-0072-K-A_Contig_3	58403..59551	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	H1-003-0072-K-A_Contig_3	74053..74829	  Polysialic acid transport protein; Group 2 capsule	X53819
+virulence_ecoli	terC	98.46	714 / 714	H1-003-0072-K-A_Contig_20	75710..76423	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	98.54	959 / 966	H1-003-0072-K-A_Contig_3	222725..223683	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	777 / 777	H1-003-0072-K-A_Contig_34	16783..17559	  Outer membrane protein complement resistance	CYFX01000042

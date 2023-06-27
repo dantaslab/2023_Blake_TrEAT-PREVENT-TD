@@ -1,0 +1,12 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaD	99.77	435 / 435	NODE_36_length_32086_cov_27.146615	16987..17421	  Afimbrial adhesion	UGAK01000003
+virulence_ecoli	air	97.33	3826 / 4605	NODE_15_length_110179_cov_24.273810	5..3830	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	chuA	100.0	1983 / 1983	NODE_8_length_197973_cov_23.346642	17577..19559	  Outer membrane hemin receptor	UGFM01000001
+virulence_ecoli	eilA	99.0	1698 / 1698	NODE_21_length_89817_cov_26.749744	3566..5263	 Salmonella HilA homolog	FN554766
+virulence_ecoli	hlyE	98.8	918 / 918	NODE_2_length_318204_cov_21.839982	50783..51700	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	98.64	294 / 294	NODE_32_length_37851_cov_26.295388	8468..8761	  Increased serum survival	CP001665
+virulence_ecoli	iss	98.64	294 / 294	NODE_32_length_37851_cov_26.295388	8468..8761	  Increased serum survival	CP001846
+virulence_ecoli	kpsE	99.13	1149 / 1149	NODE_7_length_209109_cov_24.183168	5280..6428	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	kpsM_K15	100.0	777 / 777	NODE_7_length_209109_cov_24.183168	21664..22440	  Polysialic acid transport protein; Group 3 capsule	AEZL02000036
+virulence_ecoli	terC	99.02	714 / 714	NODE_9_length_195043_cov_24.592037	171408..172121	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	98.44	959 / 966	NODE_7_length_209109_cov_24.183168	171468..172426	  Tellurium ion resistance protein	MG591698

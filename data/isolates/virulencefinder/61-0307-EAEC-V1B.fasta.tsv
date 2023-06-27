@@ -1,0 +1,9 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	gad	100.0	935 / 1401	NODE_147_length_935_cov_14.872960	1..935	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	935 / 1401	NODE_147_length_935_cov_14.872960	1..935	  Glutamate decarboxylase	CP002967
+virulence_ecoli	gad	100.0	935 / 1401	NODE_147_length_935_cov_14.872960	1..935	  Glutamate decarboxylase	EF547380
+virulence_ecoli	gad	100.0	935 / 1401	NODE_147_length_935_cov_14.872960	1..935	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	97.82	919 / 918	NODE_5_length_134924_cov_10.373987	24907..25813	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	terC	100.0	714 / 714	NODE_14_length_90257_cov_11.272178	70133..70846	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_28_length_63774_cov_10.593293	49411..50369	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	732 / 732	NODE_35_length_47112_cov_21.778590	26507..27238	  Outer membrane protein complement resistance	NZ_QNSV01000002

@@ -1,0 +1,7 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	hlyE	97.82	918 / 918	NODE_1_length_313057_cov_27.147607	193160..194065	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	98.98	294 / 294	NODE_74_length_9555_cov_35.864423	2063..2356	  Increased serum survival	CP001509
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_19_length_80428_cov_33.223171	79501..80073	  Long polar fimbriae	CP002185
+virulence_ecoli	ompT	100.0	954 / 954	NODE_54_length_26174_cov_29.538759	22189..23142	  Outer membrane protease (protein protease 7)	JJMB01000012
+virulence_ecoli	terC	98.88	714 / 714	NODE_15_length_88141_cov_29.396802	17032..17745	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.27	959 / 966	NODE_13_length_106743_cov_30.485253	69855..70813	  Tellurium ion resistance protein	MG591698

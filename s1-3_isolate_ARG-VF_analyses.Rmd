@@ -1,0 +1,664 @@
+---
+title: "s1-3_isolate_ARG-VF_analyses"
+author: "Kevin S. Blake"
+date: "2022-11-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("_common.R")
+
+```
+
+
+## MLST
+
+```{r mlst prevalence}
+
+# MLST prevalence of TrEAT isolates
+TrEAT.mlst <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  select(sample_seqID, mlst)
+
+num_sampl.TrEAT <- length(TrEAT.mlst$sample_seqID)
+
+TrEAT.mlst_prev <- TrEAT.mlst %>% 
+  dplyr::group_by(mlst) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT.mlst_prev)
+
+TrEAT.mlst_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-mlst_TrEAT-prev_v1.csv")
+write.csv(TrEAT.mlst_prev, TrEAT.mlst_prev.fname, quote = F, row.names = FALSE)
+
+
+# MLST prev Cusco isolates 
+Cusco.mlst <- e00.isolates.main %>%
+  filter(cohort == "Cusco") %>%
+  select(sample_seqID, mlst)
+
+num_sampl.Cusco <- length(Cusco.mlst$sample_seqID)
+
+Cusco.mlst_prev <- Cusco.mlst %>% 
+  dplyr::group_by(mlst) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.Cusco, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(Cusco.mlst_prev)
+
+TrEAT_Cusco.mlst_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-mlst_Cusco-prev_v1.csv")
+write.csv(Cusco.mlst_prev, TrEAT_Cusco.mlst_prev.fname, quote = F, row.names = FALSE)
+
+
+# MLST prev TrEAT + Cusco isolates (i.e. all TD)
+TrEAT_Cusco.mlst <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" | cohort == "Cusco") %>%
+  select(sample_seqID, mlst)
+
+num_sampl.TrEAT_Cusco <- length(TrEAT_Cusco.mlst$sample_seqID)
+
+TrEAT_Cusco.mlst_prev <- TrEAT_Cusco.mlst %>% 
+  dplyr::group_by(mlst) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT_Cusco, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT_Cusco.mlst_prev)
+
+TrEAT_Cusco.mlst_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-mlst_TrEAT_Cusco-prev_v1.csv")
+write.csv(TrEAT_Cusco.mlst_prev, TrEAT_Cusco.mlst_prev.fname, quote = F, row.names = FALSE)
+
+# MLST prev TrEAT diarrheal (i.e. V1 / day 0) isolates
+TrEAT_D.mlst <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" & sample_timepoint == "V1") %>%
+  select(sample_seqID, mlst)
+
+num_sampl.TrEAT_D <- length(TrEAT_D.mlst$sample_seqID)
+
+TrEAT_D.mlst_prev <- TrEAT_D.mlst %>% 
+  dplyr::group_by(mlst) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT_D, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT_D.mlst_prev)
+
+TrEAT_D.mlst_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-mlst_TrEAT_D-prev_v1.csv")
+write.csv(TrEAT_D.mlst_prev, TrEAT_D.mlst_prev.fname, quote = F, row.names = FALSE)
+
+# MLST prev Cusco diarrheal (sample_code = D) isolates
+Cusco_D.mlst <- e00.isolates.main %>%
+  filter(cohort == "Cusco" & sample_code == "D") %>%
+  select(sample_seqID, mlst)
+
+num_sampl.Cusco_D <- length(Cusco_D.mlst$sample_seqID)
+
+Cusco_D.mlst_prev <- Cusco_D.mlst %>% 
+  dplyr::group_by(mlst) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.Cusco_D, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(Cusco_D.mlst_prev)
+
+Cusco_D.mlst_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-mlst_Cusco_D-prev_v1.csv")
+write.csv(Cusco_D.mlst_prev, Cusco_D.mlst_prev.fname, quote = F, row.names = FALSE)
+
+# MLST prev TrEAT + Cusco DIARRHEAL isolates
+TrEAT_Cusco_D.mlst <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" & sample_code == "D" | cohort == "Cusco" & sample_code == "D") %>%
+  select(sample_seqID, mlst)
+
+num_sampl.TrEAT_Cusco_D <- length(TrEAT_Cusco_D.mlst$sample_seqID)
+
+TrEAT_Cusco_D.mlst_prev <- TrEAT_Cusco_D.mlst %>% 
+  dplyr::group_by(mlst) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT_Cusco_D, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT_Cusco_D.mlst_prev)
+
+TrEAT_Cusco_D.mlst_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-mlst_TrEAT_Cusco_D-prev_v1.csv")
+write.csv(TrEAT_Cusco_D.mlst_prev, TrEAT_Cusco_D.mlst_prev.fname, quote = F, row.names = FALSE)
+
+```
+
+## PHYLOGROUP PREV
+
+```{r}
+# Phylo prevalence of TrEAT isolates
+TrEAT.phylo <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  select(sample_seqID, phylogroup)
+
+num_sampl.TrEAT <- length(TrEAT.phylo$sample_seqID)
+
+TrEAT.phylo_prev <- TrEAT.phylo %>% 
+  dplyr::group_by(phylogroup) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT.phylo_prev)
+
+TrEAT.phylo_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-phylo_TrEAT-prev_v1.csv")
+write.csv(TrEAT.phylo_prev, TrEAT.phylo_prev.fname, quote = F, row.names = FALSE)
+
+# Phylo prevalence of TrEAT_D diarrheal isolates
+TrEAT_D.phylo <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" & sample_timepoint == "V1") %>%
+  select(sample_seqID, phylogroup)
+
+num_sampl.TrEAT_D <- length(TrEAT_D.phylo$sample_seqID)
+
+TrEAT_D.phylo_prev <- TrEAT_D.phylo %>% 
+  dplyr::group_by(phylogroup) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT_D, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT_D.phylo_prev)
+
+TrEAT_D.phylo_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-phylo_TrEAT_D-prev_v1.csv")
+write.csv(TrEAT_D.phylo_prev, TrEAT_D.phylo_prev.fname, quote = F, row.names = FALSE)
+
+
+# Phylo prevalence of Cusco isolates
+Cusco.phylo <- e00.isolates.main %>%
+  filter(cohort == "Cusco") %>%
+  select(sample_seqID, phylogroup)
+
+num_sampl.Cusco <- length(Cusco.phylo$sample_seqID)
+
+Cusco.phylo_prev <- Cusco.phylo %>% 
+  dplyr::group_by(phylogroup) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.Cusco, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(Cusco.phylo_prev)
+
+Cusco.phylo_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-phylo_Cusco-prev_v1.csv")
+write.csv(Cusco.phylo_prev, Cusco.phylo_prev.fname, quote = F, row.names = FALSE)
+
+# Phylo prevalence of Cusco_D diarrheal isolates
+Cusco_D.phylo <- e00.isolates.main %>%
+  filter(cohort == "Cusco" & sample_code == "D") %>%
+  select(sample_seqID, phylogroup)
+
+num_sampl.Cusco_D <- length(Cusco_D.phylo$sample_seqID)
+
+Cusco_D.phylo_prev <- Cusco_D.phylo %>% 
+  dplyr::group_by(phylogroup) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.Cusco_D, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(Cusco_D.phylo_prev)
+
+Cusco_D.phylo_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-phylo_Cusco_D-prev_v1.csv")
+write.csv(Cusco_D.phylo_prev, Cusco_D.phylo_prev.fname, quote = F, row.names = FALSE)
+
+```
+
+## AR GENES
+
+```{r}
+
+amrfinder.df <- pathotypeR_process("data/isolates/amrfinder/bakta", ".tsv")
+
+amrfinder_args <- amrfinder.df %>%
+  filter(`Element type` == "AMR") %>%
+  mutate(Gene_name = `Gene symbol`) %>%
+  group_by(sample, Gene_name) %>%
+  filter(row_number() == 1) %>% 
+  ungroup() %>% 
+  mutate(Gene_name = stringr::str_replace_all(Gene_name, "[/-]", "_"))
+
+# ARG PREV TrEAT
+TrEAT.subs <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  select(sample_seqID)
+
+sample_seqID <- TrEAT.subs$sample_seqID
+                       
+amrfinder_args <- filter(amrfinder_args, sample %in% sample_seqID)
+
+main <- data.frame(sample_seqID)
+num_sampl <- length(sample_seqID)
+  
+TrEAT.arg_prev <- amrfinder_args %>% 
+  dplyr::group_by(Gene_name) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT.arg_prev)
+
+TrEAT.arg_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-arg_TrEAT-prev_v1.csv")
+write.csv(TrEAT.arg_prev, TrEAT.arg_prev.fname, quote = F, row.names = FALSE)
+
+# ARG PREV TrEAT diarrhea
+TrEAT.subs <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" & sample_timepoint == "V1") %>%
+  select(sample_seqID)
+
+sample_seqID <- TrEAT.subs$sample_seqID
+                       
+amrfinder_args <- filter(amrfinder_args, sample %in% sample_seqID)
+
+main <- data.frame(sample_seqID)
+num_sampl <- length(sample_seqID)
+  
+TrEAT_D.arg_prev <- amrfinder_args %>% 
+  dplyr::group_by(Gene_name) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT_D.arg_prev)
+
+TrEAT_D.arg_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-arg_TrEAT_D-prev_v1.csv")
+write.csv(TrEAT_D.arg_prev, TrEAT_D.arg_prev.fname, quote = F, row.names = FALSE)
+
+```
+
+```{r TrEAT ARG class}
+
+TrEAT.subs <- e00.isolates.main %>%
+  filter(cohort == "TrEAT")
+
+p01.arg.class <- ggplot(TrEAT.subs, aes(x=total_class, fill=pathotype3)) +
+  geom_histogram(stat="count") +
+  theme_pub() +
+  theme(#legend.position = "none",
+        aspect.ratio=0.75, 
+        panel.border = element_rect(fill=NA, color="black", size=1),
+        axis.line.x=element_blank(),
+        axis.line.y=element_blank(),
+        #axis.title.y=element_blank()
+        ) +
+   expand_limits(y = 15) +
+   scale_x_continuous(limits=c(0,11), breaks=c(0,1,2,3,4,5,6,7,8,9,10)) +
+   scale_y_continuous(breaks=c(0,5,10,15)) +
+   scale_fill_manual(values=patho.colors.v3) +
+   labs(y="# isolates", x="# antibiotic classes")
+
+TrEAT.arg.class.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-class_v2_KSB.pdf")
+ggsave(p01.arg.class, filename = TrEAT.arg.class.fname , device=cairo_pdf, height=2) #width=5 
+
+TrEAT.arg.class.stat <- aov(total_args ~ pathotype3, TrEAT.subs) %>%
+tukey_hsd()
+
+p1.TrEAT.class.pathotype.arg <- ggplot(TrEAT.subs, aes(x=pathotype3, y=total_args, fill=pathotype3)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=patho.colors.v3) +
+  geom_beeswarm(size=1.75, cex=2) +
+  ylim(0,20) +
+  labs(x = "pathotype", y = "total ARGs")
+
+TrEAT.arg.class.patho.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-arg-CLASS-patho_v1_KSB.pdf")
+ggsave(p1.TrEAT.class.pathotype.arg, filename = TrEAT.arg.class.patho.fname, device=cairo_pdf, height=2, width=4) #width=5
+
+```
+
+```{r TrEAT - ARG/VF count by type}
+
+# Subset by cohort
+TrEAT_Cusco.isolates.main <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" | cohort == "Cusco")
+
+TrEAT.isolates.main <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") 
+
+Cusco.isolates.main <- e00.isolates.main %>%
+  filter(cohort == "Cusco")
+
+###---TrEAT ARGs----------------------------------------------------------------
+TrEAT.timepoint.arg.stat <- aov(total_args ~ sample_timepoint, TrEAT.isolates.main) %>%
+tukey_hsd()
+
+p1.TrEAT.timepoint.arg <- ggplot(TrEAT.isolates.main, aes(x=sample_timepoint, y=total_args)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA) +
+  geom_beeswarm(size=1.25, cex=4) + #aes(shape=sample_timepoint)
+  ylim(0,20) +
+  labs(x = "timepoint", y = "total ARGs")
+
+print(p1.TrEAT.timepoint.arg)
+
+TrEAT.arg.timepoint.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-arg-timepoint_v2_KSB.pdf")
+ggsave(p1.TrEAT.timepoint.arg, filename = TrEAT.arg.timepoint.fname , device=cairo_pdf, height=2, width=1.75) #width=5
+
+TrEAT.pathotype.arg.stat <- aov(total_args ~ pathotype2, TrEAT.isolates.main) %>%
+tukey_hsd()
+
+p2.TrEAT.pathotype.arg <- ggplot(TrEAT.isolates.main, aes(x=pathotype2, y=total_args, fill=pathotype2)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=patho.colors.v2) +
+  geom_beeswarm(size=1.75, cex=2) +
+  ylim(0,20) +
+  labs(x = "pathotype", y = "total ARGs")
+
+TrEAT.arg.patho.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-arg-patho_v1_KSB.pdf")
+ggsave(p2.TrEAT.pathotype.arg, filename = TrEAT.arg.patho.fname, device=cairo_pdf, height=2, width=4) #width=5
+
+TrEAT.phylogroup.arg.stat <- aov(total_args ~ phylogroup, TrEAT.isolates.main) %>%
+tukey_hsd()
+
+p3.TrEAT.phylogroup.arg <- ggplot(TrEAT.isolates.main, aes(x=phylogroup, y=total_args, fill=phylogroup)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=phylogroup.colors.v2) +
+  geom_beeswarm(size=1.75, cex=2.25) +
+  ylim(0,20) +
+  labs(x = "phylogroup", y = "total ARGs")
+
+TrEAT.arg.phylo.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-arg-phylo_v1_KSB.pdf")
+ggsave(p3.TrEAT.phylogroup.arg, filename = TrEAT.arg.phylo.fname, device=cairo_pdf, height=2, width=3.6) #width=5
+
+TrEAT.TRT.arg.stat <- aov(total_args ~ subject_TRT, TrEAT.isolates.main) %>%
+tukey_hsd()
+
+p4.TrEAT.TRT.arg <- ggplot(TrEAT.isolates.main, aes(x=subject_TRT, y=total_args, fill=subject_TRT)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=TRT.colors) +
+  geom_beeswarm(size=1.75, cex=3.2) +
+  ylim(0,20) +
+  labs(x = "treatment", y = "total ARGs")
+
+TrEAT.arg.TRT.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-arg-TRT_v1_KSB.pdf")
+ggsave(p4.TrEAT.TRT.arg, filename = TrEAT.arg.TRT.fname, device=cairo_pdf, height=2, width=2.75) #width=5
+
+###---TrEAT VFs-----------------------------------------------------------------
+p1.TrEAT.timepoint.vf <- ggplot(TrEAT.isolates.main, aes(x=sample_timepoint, y=total_vfs)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA) +
+  geom_beeswarm(size=1.75, cex=5.25) + #aes(shape=sample_timepoint)
+  ylim(0,40) +
+  labs(x = "timepoint", y = "total VFs")
+
+TrEAT.VF.timepoint.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-VF-timepoint_v1_KSB.pdf")
+ggsave(p1.TrEAT.timepoint.vf, filename = TrEAT.VF.timepoint.fname, device=cairo_pdf, height=2, width=1.75) #width=5
+
+p2.TrEAT.pathotype.vf <- ggplot(TrEAT.isolates.main, aes(x=pathotype2, y=total_vfs, fill=pathotype2)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=patho.colors.v2) +
+  geom_beeswarm(size=1.75, cex=2) +
+  ylim(0,40) +
+  labs(x = "pathotype", y = "total VFs")
+
+TrEAT.VF.pathotype.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-VF-pathotype_v1_KSB.pdf")
+ggsave(p2.TrEAT.pathotype.vf , filename = TrEAT.VF.pathotype.fname, device=cairo_pdf, height=2, width=4) #width=5
+
+p3.TrEAT.phylogroup.vf <- ggplot(TrEAT.isolates.main, aes(x=phylogroup, y=total_vfs, fill=phylogroup)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=phylogroup.colors.v2) +
+  geom_beeswarm(size=1.75, cex=2.25) +
+  ylim(0,40) +
+  labs(x = "phylogroup", y = "total VFs")
+
+TrEAT.VF.phylogroup.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-VF-phylogroup_v1_KSB.pdf")
+ggsave(p3.TrEAT.phylogroup.vf, filename = TrEAT.VF.phylogroup.fname, device=cairo_pdf, height=2, width=3.6) #width=5
+
+p4.TrEAT.TRT.vf <- ggplot(TrEAT.isolates.main, aes(x=subject_TRT, y=total_vfs, fill=subject_TRT)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=TRT.colors) +
+  geom_beeswarm(size=1.75, cex=3.2) +
+  ylim(0,40) +
+  labs(x = "treatment", y = "total VFs")
+
+TrEAT.VF.treatment.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-VF-treatment_v1_KSB.pdf")
+ggsave(p4.TrEAT.TRT.vf, filename = TrEAT.VF.treatment.fname, device=cairo_pdf, height=2, width=2.75) #width=5
+
+###---Cusco ARGs----------------------------------------------------------------
+Cusco.pathotype.arg.stat <- aov(total_args ~ pathotype2, Cusco.isolates.main) %>%
+tukey_hsd()
+
+p2.Cusco.pathotype.arg <- ggplot(Cusco.isolates.main, aes(x=pathotype2, y=total_args, fill=pathotype2)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=patho.colors) +
+  geom_beeswarm(size=1.75, cex=2) +
+  ylim(0,20) +
+  labs(x = "pathotype", y = "total ARGs")
+
+Cusco.phylo.args.stat <- aov(total_args ~ phylogroup, Cusco.isolates.main) %>%
+tukey_hsd()
+
+p3.Cusco.phylogroup.vf <- ggplot(Cusco.isolates.main, aes(x=phylogroup, y=total_args, fill=phylogroup)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA, fill=phylogroup.colors) +
+  geom_beeswarm(size=1.75, cex=2.25) +
+  ylim(0,20) +
+  labs(x = "phylogroup", y = "total ARGs")
+
+###---TrEAT & Cusco ARGs--------------------------------------------------------
+TrEAT_Cusco.patho.arg.stat <- aov(total_args ~ pathotype2, TrEAT_Cusco.isolates.main) %>%
+tukey_hsd()
+
+p2.TrEAT_Cusco.pathotype.arg <- ggplot(TrEAT_Cusco.isolates.main, aes(x=pathotype2, y=total_args, fill=pathotype2)) +
+  theme_pub() +
+  theme(legend.position="none",
+        axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_boxplot(outlier.shape=NA, fill=patho.colors) +
+  #geom_beeswarm(size=.5, cex=1)
+  geom_jitter(size=1, width = 0.25)
+
+print(p2.TrEAT_Cusco.pathotype.arg)
+
+p3.TrEAT_Cusco.phylogroup.arg <- ggplot(TrEAT_Cusco.isolates.main, aes(x=phylogroup, y=total_args, fill=phylogroup)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(fill=phylogroup.colors.v3)
+
+###---TrEAT & Cusco VFs---------------------------------------------------------
+p2.TrEAT_Cusco.pathotype.vf <- ggplot(TrEAT_Cusco.isolates.main, aes(x=pathotype2, y=total_vfs, fill=pathotype2)) +
+  theme_pub() +
+  theme(legend.position="none",
+        axis.text.x = element_text(angle=45, hjust=1)) +
+  geom_boxplot(fill=patho.colors)
+
+p3.TrEAT_Cusco.phylogroup.vf <- ggplot(TrEAT_Cusco.isolates.main, aes(x=phylogroup, y=total_vfs, fill=phylogroup)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(fill=phylogroup.colors.v3) +
+  geom_beeswarm(aes(shape=cohort), size=.5, cex=.5)
+
+```
+
+```{r TrEAT vs Cusco isolates}
+
+# Subset by cohort
+TrEAT_Cusco.isolates.main <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" | cohort == "Cusco") %>%
+  filter(sample_timepoint == "V1" | sample_timepoint == "V4" | sample_timepoint == "V5" | sample_timepoint == "HT" | sample_timepoint == "TD")
+
+TrEAT.timepoint.HT.stat <- aov(total_args ~ sample_timepoint, TrEAT_Cusco.isolates.main ) %>%
+tukey_hsd()
+  TrEAT.timepoint.HT.stat.cut <- TrEAT.timepoint.HT.stat[!(TrEAT.timepoint.HT.stat$p.adj.signif=="ns"),]
+
+p1.TrEAT.HT.arg <- ggplot(TrEAT_Cusco.isolates.main, aes(x=sample_timepoint, y=total_args)) +
+  theme_pub() +
+  theme(legend.position="none") +
+  geom_boxplot(outlier.shape=NA) +
+  #geom_beeswarm(size=1.25) + #aes(shape=sample_timepoint)
+  ylim(0,25) +
+  stat_pvalue_manual(TrEAT.timepoint.HT.stat.cut, label="p.adj.signif", y.position=c(20, 22)) +
+  labs(x = "timepoint", y = "total ARGs")
+
+print(p1.TrEAT.HT.arg)
+
+TrEAT.arg.timepoint.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-TrEAT-arg-timepoint_v2_KSB.pdf")
+ggsave(p1.TrEAT.timepoint.arg, filename = TrEAT.arg.timepoint.fname , device=cairo_pdf, height=2, width=1.75) #width=5
+
+```
+
+```{r ARG HEATMAP = presence / absence}
+
+amrfinder.df <- pathotypeR_process("data/isolates/amrfinder/bakta", ".tsv")
+
+amrfinder_args <- amrfinder.df %>%
+  filter(`Element type` == "AMR") %>%
+  mutate(Gene_name = `Gene symbol`) %>%
+  group_by(sample, Gene_name) %>%
+  filter(row_number() == 1) %>% 
+  ungroup() %>% 
+  mutate(Gene_name = stringr::str_replace_all(Gene_name, "[/-]", "_"))
+
+# ARG PREV TrEAT
+TrEAT.subs <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  select(sample_seqID)
+
+sample_seqID <- TrEAT.subs$sample_seqID
+
+amrfinder_args <- filter(amrfinder_args, sample %in% sample_seqID)
+
+main <- data.frame(sample_seqID)
+num_sampl <- length(sample_seqID)
+
+TrEAT.arg_prev <- amrfinder_args %>%
+  dplyr::group_by(Gene_name) %>%
+  dplyr::summarise(Cnt = n(),
+                   prev = round(Cnt/num_sampl, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+# ARG presence/absence (1 = present, 0 = absent)
+sample_args.TrEAT <- sample_args.TrEAT %>%
+  filter(Gene_name %in% TrEAT.arg_prev$Gene_name) %>% 
+  inner_join(main, by=c("sample" = "sample_seqID")) %>%
+  group_by(sample, Gene_name) %>%
+  summarise(Cnt = n()) %>% 
+  reshape2::dcast(data = ., sample ~ Gene_name, value.var = "Cnt", fill=0, fun.aggregate = sum) %>% 
+  mutate_if(is.numeric, ~1 * (. > 0))
+
+# Make heatmap matrix
+args.heatmap <- column_to_rownames(sample_args.TrEAT, "sample")
+args.heatmap.mat <- t(as.matrix.noquote(args.heatmap))
+
+# Annotations
+annot_row.df <- data.frame("pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
+                           "phylogroup" = e00.isolates.main$phylogroup,
+                           "treatment" = e00.isolates.main$subject_TRT#,
+                           #"cluster" = e00.isolates.main$cluster
+                           )
+
+tmp.heatmap.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-heatmap_v1.pdf")
+
+heatmap.plot2 <- pheatmap(args.heatmap.mat,
+         color=c("white", "gray10"), 
+         cluster_rows=FALSE,
+         #annotation_col = tmp.annot_col.df,
+         #annotation_row = annot_row.df,
+         #annotation_colors=heatmap.colors,
+         #legend=FALSE,
+         filename=tmp.heatmap.fname,
+         cellheight=12, cellwidth=12
+         )
+
+```
+
+## PATHOTYPE
+
+```{r}
+# patho prevalence of TrEAT isolates
+TrEAT.patho <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  select(sample_seqID, pathotype)
+
+num_sampl.TrEAT <- length(TrEAT.patho$sample_seqID)
+
+TrEAT.patho_prev <- TrEAT.patho %>% 
+  dplyr::group_by(pathotype) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT.patho_prev)
+
+TrEAT.patho_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-patho_TrEAT-prev_v1.csv")
+write.csv(TrEAT.patho_prev, TrEAT.patho_prev.fname, quote = F, row.names = FALSE)
+
+# patho prevalence of TrEAT isolates diarrheal
+TrEAT_D.patho <- e00.isolates.main %>%
+  filter(cohort == "TrEAT" & sample_code == "D") %>%
+  select(sample_seqID, pathotype)
+
+num_sampl.TrEAT_D <- length(TrEAT_D.patho$sample_seqID)
+
+TrEAT_D.patho_prev <- TrEAT_D.patho %>% 
+  dplyr::group_by(pathotype) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.TrEAT_D, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(TrEAT_D.patho_prev)
+
+TrEAT_D.patho_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-patho_TrEAT_D-prev_v1.csv")
+write.csv(TrEAT_D.patho_prev, TrEAT_D.patho_prev.fname, quote = F, row.names = FALSE)
+
+# patho prev Cusco isolates
+Cusco.patho <- e00.isolates.main %>%
+  filter(cohort == "Cusco") %>%
+  select(sample_seqID, pathotype)
+
+num_sampl.Cusco <- length(Cusco.patho$sample_seqID)
+
+Cusco.patho_prev <- Cusco.patho %>% 
+  dplyr::group_by(pathotype) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.Cusco, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(Cusco.patho_prev)
+
+# patho prev Cusco DIARRHEAL
+# patho prevalence of TrEAT isolates diarrheal
+Cusco_D.patho <- e00.isolates.main %>%
+  filter(cohort == "Cusco" & sample_code == "D") %>%
+  select(sample_seqID, pathotype)
+
+num_sampl.Cusco_D <- length(Cusco_D.patho$sample_seqID)
+
+Cusco_D.patho_prev <- Cusco_D.patho %>% 
+  dplyr::group_by(pathotype) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl.Cusco_D, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+head(Cusco_D.patho_prev)
+
+```

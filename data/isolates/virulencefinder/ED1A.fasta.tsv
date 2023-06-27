@@ -1,0 +1,23 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	100.0	1089 / 1089	Ed1a_Contig_1	5078902..5079990	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	chuA	99.9	1983 / 1983	Ed1a_Contig_1	4083812..4085794	  Outer membrane hemin receptor	CXZI01000008
+virulence_ecoli	fyuA	100.0	2022 / 2022	Ed1a_Contig_1	2192582..2194603	  Siderophore receptor	CU928162
+virulence_ecoli	gad	100.0	1401 / 1401	Ed1a_Contig_1	1623462..1624862	  Glutamate decarboxylase	CU928162
+virulence_ecoli	gad	100.0	1401 / 1401	Ed1a_Contig_1	4102664..4104064	  Glutamate decarboxylase	CU928162
+virulence_ecoli	iha	100.0	2091 / 2091	Ed1a_Contig_1	3485005..3487095	  Adherence protein	CU928162
+virulence_ecoli	iha	100.0	2091 / 2091	Ed1a_Contig_1	4853058..4855148	  Adherence protein	CU928162
+virulence_ecoli	ireA	100.0	2049 / 2049	Ed1a_Contig_1	3476932..3478980	  Siderophore receptor	CU928162
+virulence_ecoli	irp2	99.97	6108 / 6108	Ed1a_Contig_1	2173287..2179394	  High molecular weight protein 2 non-ribosomal peptide synthetase	QFQC01000032
+virulence_ecoli	iucC	100.0	1743 / 1743	Ed1a_Contig_1	4862218..4863960	  Aerobactin synthetase	CU928162
+virulence_ecoli	iutA	99.95	2199 / 2199	Ed1a_Contig_1	4858683..4860881	  Ferric aerobactin receptor	UGCV01000008
+virulence_ecoli	kpsE	100.0	1149 / 1149	Ed1a_Contig_1	3512691..3513839	  Capsule polysaccharide export inner-membrane protein	CU928162
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	Ed1a_Contig_1	3524802..3525578	  Polysialic acid transport protein; Group 2 capsule	UGCV01000008
+virulence_ecoli	ompT	100.0	753 / 753	Ed1a_Contig_1	575865..576617	  Outer membrane protease (protein protease 7)	CU928162
+virulence_ecoli	sigA	98.0	3858 / 3858	Ed1a_Contig_1	3448048..3451905	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	98.0	3858 / 3858	Ed1a_Contig_1	3448048..3451905	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	Ed1a_Contig_1	1291742..1292656	  Iron transport protein	CU928162
+virulence_ecoli	terC	99.72	714 / 714	Ed1a_Contig_1	3233193..3233906	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.7	958 / 966	Ed1a_Contig_1	3687089..3688046	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	732 / 732	Ed1a_Contig_1	3470064..3470795	  Outer membrane protein complement resistance	NZ_QRQR01000004
+virulence_ecoli	usp	99.23	1041 / 1041	Ed1a_Contig_1	125002..126042	  Uropathogenic specific protein	AB056439
+virulence_ecoli	yfcV	100.0	567 / 567	Ed1a_Contig_1	2741691..2742257	  Fimbrial protein	CU928162

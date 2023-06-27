@@ -1,0 +1,19 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	aaiC	100.0	507 / 507	55989_Contig_1	3385125..3385631	 Type VI secretion protein	FN554766
+virulence_ecoli	capU	100.0	1089 / 1089	55989_Contig_1	5041420..5042508	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	100.0	2022 / 2022	55989_Contig_1	2261302..2263323	  Siderophore receptor	AHAU01000040
+virulence_ecoli	gad	100.0	1401 / 1401	55989_Contig_1	1683015..1684415	  Glutamate decarboxylase	CP003297
+virulence_ecoli	gad	100.0	1401 / 1401	55989_Contig_1	4031288..4032688	  Glutamate decarboxylase	CP003297
+virulence_ecoli	hlyE	99.02	918 / 918	55989_Contig_1	1325317..1326233	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	100.0	792 / 792	55989_Contig_1	4947716..4948507	  Heat-resistant agglutinin	CP006636
+virulence_ecoli	iha	100.0	2091 / 2091	55989_Contig_1	4784434..4786524	  Adherence protein	CU928162
+virulence_ecoli	irp2	99.98	6108 / 6108	55989_Contig_1	2242007..2248114	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NLXO01000005
+virulence_ecoli	iucC	100.0	1743 / 1743	55989_Contig_1	4758661..4760403	  Aerobactin synthetase	CU928145
+virulence_ecoli	iutA	100.0	2199 / 2199	55989_Contig_1	4755126..4757324	  Ferric aerobactin receptor	AHAV01000114
+virulence_ecoli	lpfA	100.0	573 / 573	55989_Contig_1	4291260..4291832	  Long polar fimbriae	CU928145
+virulence_ecoli	neuC	100.0	1164 / 1164	55989_Contig_1	2337896..2339059	  Polysialic acid capsule biosynthesis protein	JNPZ01000001
+virulence_ecoli	pic	100.0	4119 / 4119	55989_Contig_1	4773549..4777667	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	pic	100.0	4119 / 4119	55989_Contig_1	3360967..3365085	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	sigA	100.0	3858 / 3858	55989_Contig_1	4796367..4800224	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	terC	100.0	714 / 714	55989_Contig_1	3187571..3188284	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	55989_Contig_1	3586869..3587834	  Tellurium ion resistance protein	MG591698

@@ -1,0 +1,18 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cdtB	99.63	810 / 810	K7756_Contig_1	21171..21980	  Cytolethal distending toxin B	U04208
+virulence_ecoli	chuA	98.84	1983 / 1983	K7756_Contig_8	186732..188714	  Outer membrane hemin receptor	CYCK01000002
+virulence_ecoli	eae	92.69	2806 / 2805	K7756_Contig_6	151865..154669	  Intimin	AF071034
+virulence_ecoli	espA	100.0	579 / 579	K7756_Contig_6	157432..158010	  Type III secretions system	FM201463
+virulence_ecoli	espB	99.47	945 / 945	K7756_Contig_6	159186..160130	  Secreted protein B	AF054421
+virulence_ecoli	espF	92.69	616 / 624	K7756_Contig_6	161302..161917	  Type III secretion system	AF116900
+virulence_ecoli	espJ	97.71	654 / 654	K7756_Contig_3	668..1320	  Prophage-encoded type III secretion system effector	AE005174
+virulence_ecoli	gad	90.36	1224 / 1401	K7756_Contig_43	1..1224	  Glutamate decarboxylase	AP009240
+virulence_ecoli	gad	90.36	1224 / 1401	K7756_Contig_43	1..1224	  Glutamate decarboxylase	CP003297
+virulence_ecoli	gad	90.36	1224 / 1401	K7756_Contig_43	1..1224	  Glutamate decarboxylase	EF547380
+virulence_ecoli	gad	90.36	1224 / 1401	K7756_Contig_43	1..1224	  Glutamate decarboxylase	FN554766
+virulence_ecoli	nleA	92.62	1246 / 1326	K7756_Contig_20	84417..85661	  Non-LEE encoded effector A	AE005174
+virulence_ecoli	nleB	92.22	990 / 990	K7756_Contig_13	105047..106036	  Non-LEE encoded effector B	FN543502
+virulence_ecoli	nleC	96.75	984 / 987	K7756_Contig_33	343..1326	  Non-LEE encoded effector C	AP010960
+virulence_ecoli	ompT	95.47	949 / 951	K7756_Contig_16	97802..98750	  Outer membrane protease (protein protease 7)	NZ_PUTD01000017
+virulence_ecoli	terC	90.48	714 / 714	K7756_Contig_9	80330..81043	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	95.33	964 / 966	K7756_Contig_4	171068..172031	  Tellurium ion resistance protein	MG591698

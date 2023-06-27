@@ -1,0 +1,35 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cba	94.7	943 / 1536	NODE_93_length_7401_cov_227.723921	5..947	  Colicin B	FJ664721
+virulence_ecoli	cif	99.76	851 / 849	NODE_31_length_56167_cov_9.199733	54199..55049	  Type III secreted effector	AF497476
+virulence_ecoli	eae	100.0	2847 / 2847	NODE_43_length_40901_cov_14.375098	26035..28881	  Intimin	AJ303141
+virulence_ecoli	efa1	99.99	9672 / 9672	NODE_63_length_18047_cov_14.580412	672..10343	  EHEC factor for adherence	AJ303141
+virulence_ecoli	ehxA	100.0	2997 / 2997	NODE_74_length_12077_cov_47.360333	1343..4339	 Enterohaemolysin	HM138194
+virulence_ecoli	espA	100.0	579 / 579	NODE_43_length_40901_cov_14.375098	31631..32209	  Type III secretions system	AJ303141
+virulence_ecoli	espB	100.0	945 / 945	NODE_43_length_40901_cov_14.375098	33385..34329	  Secreted protein B	AP010958
+virulence_ecoli	espF	99.89	885 / 885	NODE_43_length_40901_cov_14.375098	35501..36385	  Type III secretion system	AP010958
+virulence_ecoli	espJ	99.24	654 / 654	NODE_41_length_41370_cov_9.630954	38299..38952	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	espP	100.0	3903 / 3903	NODE_101_length_5622_cov_52.975293	1239..5141	 Extracellular serine protease plasmid-encoded	GQ259888
+virulence_ecoli	gad	100.0	938 / 1401	NODE_50_length_33951_cov_10.276761	33014..33951	  Glutamate decarboxylase	AP009240
+virulence_ecoli	gad	100.0	938 / 1401	NODE_50_length_33951_cov_10.276761	33014..33951	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	938 / 1401	NODE_50_length_33951_cov_10.276761	33014..33951	  Glutamate decarboxylase	EF547380
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_10_length_134357_cov_9.819929	39610..40526	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	NODE_71_length_14594_cov_11.205208	4903..6993	  Adherence protein	AE005174
+virulence_ecoli	iss	98.98	294 / 294	NODE_92_length_7581_cov_11.488006	3411..3704	  Increased serum survival	CP001509
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_77_length_10653_cov_18.418211	3828..5570	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_77_length_10653_cov_18.418211	293..2491	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	katP	100.0	2211 / 2211	NODE_128_length_2961_cov_39.985437	207..2417	  Plasmid-encoded catalase peroxidase	AB011549
+virulence_ecoli	nleA	100.0	1239 / 1239	NODE_31_length_56167_cov_9.199733	51523..52761	  Non-LEE encoded effector A	AB303062
+virulence_ecoli	nleB	100.0	990 / 990	NODE_63_length_18047_cov_14.580412	12944..13933	  Non-LEE encoded effector B	AF453441
+virulence_ecoli	nleC	99.8	987 / 987	NODE_166_length_1945_cov_12.546574	374..1360	  Non-LEE encoded effector C	AP010953
+virulence_ecoli	ompT	100.0	954 / 954	NODE_66_length_17010_cov_11.206638	8011..8964	  Outer membrane protease (protein protease 7)	CYAG01000051
+virulence_ecoli	stx1A	100.0	948 / 948	NODE_163_length_2019_cov_15.496910	305..1252	  Shiga toxin 1, subunit A, variant a	AF461168
+virulence_ecoli	stx1B	100.0	270 / 270	NODE_163_length_2019_cov_15.496910	1262..1531	  Shiga toxin 1, subunit B, variant a	AM230663
+virulence_ecoli	tccP	100.0	502 / 753	NODE_56_length_26616_cov_9.664343	655..1156	  Tir-cytoskeleton coupling protein	AP010953
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_71_length_14594_cov_11.205208	1269..2309	  Tellurium ion resistance protein	CP006262
+virulence_ecoli	terC	100.0	714 / 714	NODE_14_length_92368_cov_11.397688	40703..41416	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.79	966 / 966	NODE_6_length_161032_cov_10.488559	94926..95891	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	100.0	1617 / 1617	NODE_43_length_40901_cov_14.375098	23755..25371	  Translocated intimin receptor protein	AJ303141
+virulence_ecoli	toxB	99.98	9501 / 9501	NODE_65_length_17284_cov_47.658627	2934..12433	  Toxin B	AB456530
+virulence_ecoli	traT	100.0	423 / 423	NODE_78_length_10256_cov_12.093428	9558..9980	  Outer membrane protein complement resistance	AKKX01000148
+virulence_ecoli	traT	100.0	129 / 129	NODE_64_length_17357_cov_9.489410	17155..17283	  Outer membrane protein complement resistance	AMTE01000156
+stx	stx1	100.0	1227 / 1227	NODE_163_length_2019_cov_15.496910	305..1531	O157 FLY16, variant a	AF461168

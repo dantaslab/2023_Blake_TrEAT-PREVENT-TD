@@ -1,0 +1,5 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	gad	100.0	1401 / 1401	ATCC35469T_Contig_1	1613670..1615070	  Glutamate decarboxylase	CU928158
+virulence_ecoli	gad	100.0	1401 / 1401	ATCC35469T_Contig_1	2883597..2884997	  Glutamate decarboxylase	CU928158
+virulence_ecoli	iss	100.0	342 / 342	ATCC35469T_Contig_1	2774865..2775206	  Increased serum survival	CU928158
+virulence_ecoli	terC	96.21	950 / 966	ATCC35469T_Contig_1	4491805..4492754	  Tellurium ion resistance protein	MG591698

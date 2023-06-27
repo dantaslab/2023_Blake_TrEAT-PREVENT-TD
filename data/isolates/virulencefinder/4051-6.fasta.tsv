@@ -1,0 +1,16 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cdtB	99.88	810 / 810	4051-6_Contig_25	57044..57853	  Cytolethal distending toxin B	AY696753
+virulence_ecoli	cdtB	99.88	810 / 810	4051-6_Contig_25	57044..57853	  Cytolethal distending toxin B	AY696755
+virulence_ecoli	chuA	99.24	1983 / 1983	4051-6_Contig_10	16222..18204	  Outer membrane hemin receptor	CYCK01000002
+virulence_ecoli	eae	96.06	2510 / 2823	4051-6_Contig_13	150876..153385	  Intimin	FJ609831
+virulence_ecoli	espA	92.57	579 / 579	4051-6_Contig_13	156456..157034	  Type III secretions system	AJ633130
+virulence_ecoli	espF	96.15	624 / 624	4051-6_Contig_13	160276..160899	  Type III secretion system	AJ633130
+virulence_ecoli	iss	90.44	293 / 294	4051-6_Contig_12	168188..168480	  Increased serum survival	CP001855
+virulence_ecoli	nleA	96.7	819 / 1326	4051-6_Contig_6	5791..6608	  Non-LEE encoded effector A	AE005174
+virulence_ecoli	nleA	97.26	1242 / 1242	4051-6_Contig_25	842..2083	  Non-LEE encoded effector A	JN159732
+virulence_ecoli	nleB	100.0	981 / 981	4051-6_Contig_7	3476..4456	  Non-LEE encoded effector B	CP001846
+virulence_ecoli	nleC	96.54	984 / 987	4051-6_Contig_23	3976..4959	  Non-LEE encoded effector C	AP010960
+virulence_ecoli	ompT	100.0	954 / 954	4051-6_Contig_3	9513..10466	  Outer membrane protease (protein protease 7)	AMVC01000243
+virulence_ecoli	terC	90.62	714 / 714	4051-6_Contig_2	123887..124600	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	94.79	959 / 966	4051-6_Contig_8	44787..45745	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	100.0	1653 / 1653	4051-6_Contig_13	148553..150205	  Translocated intimin receptor protein	AB288103

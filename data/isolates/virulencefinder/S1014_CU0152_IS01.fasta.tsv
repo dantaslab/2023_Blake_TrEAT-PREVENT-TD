@@ -1,0 +1,19 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	91.3	115 / 117	NODE_88_length_9514_cov_256.238847	4587..4701	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	eae	95.98	2510 / 2823	NODE_24_length_60927_cov_69.503418	46448..48957	  Intimin	FJ609831
+virulence_ecoli	espA	91.88	579 / 579	NODE_24_length_60927_cov_69.503418	52028..52606	  Type III secretions system	AJ633130
+virulence_ecoli	espF	95.83	624 / 624	NODE_24_length_60927_cov_69.503418	55845..56468	  Type III secretion system	AJ633130
+virulence_ecoli	espJ	95.72	654 / 654	NODE_84_length_11026_cov_66.538953	1332..1985	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_40_length_41486_cov_72.021107	3417..5438	  Siderophore receptor	UGCB01000003
+virulence_ecoli	gad	99.93	1401 / 1401	NODE_33_length_49575_cov_62.765526	8869..10269	  Glutamate decarboxylase	CP002967
+virulence_ecoli	hlyA	99.28	3075 / 3075	NODE_91_length_8558_cov_139.397005	3757..6831	  Haemolysin A	CP057971
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_82_length_11606_cov_139.459016	10544..11461	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_40_length_41486_cov_72.021107	18626..24733	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NBDE01000104
+virulence_ecoli	kpsE	100.0	1203 / 1203	NODE_68_length_19054_cov_67.777731	4097..5299	  Capsule polysaccharide export inner-membrane protein	MG736913
+virulence_ecoli	kpsM_K11	100.0	849 / 849	NODE_68_length_19054_cov_67.777731	2571..3419	  ABC-type polysaccharide/polyol phosphate export systems permease; Group 3 capsule	MG736913
+virulence_ecoli	nleB	96.53	981 / 981	NODE_101_length_6655_cov_163.909395	1519..2499	  Non-LEE encoded effector B	CP001846
+virulence_ecoli	pet	99.33	3888 / 3888	NODE_110_length_4991_cov_171.809931	557..4444	 Plasmid-encoded toxin	AF056581
+virulence_ecoli	senB	100.0	1176 / 1176	NODE_90_length_9062_cov_272.946689	2179..3354	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	terC	100.0	714 / 714	NODE_63_length_22836_cov_77.747528	6544..7257	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_8_length_123941_cov_85.000379	104752..105717	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.97	1653 / 1653	NODE_24_length_60927_cov_69.503418	44136..45776	  Translocated intimin receptor protein	AB288103

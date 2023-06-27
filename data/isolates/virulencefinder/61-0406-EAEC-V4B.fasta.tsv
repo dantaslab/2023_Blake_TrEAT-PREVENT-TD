@@ -1,0 +1,25 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	95.29	4607 / 4605	NODE_15_length_141087_cov_21.167116	111627..116232	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	astA	100.0	117 / 117	NODE_147_length_557_cov_48.100000	12..128	 EAST-1 heat-stable toxin	AY545598
+virulence_ecoli	astA	97.3	74 / 117	NODE_348_length_154_cov_45.220779	70..143	 EAST-1 heat-stable toxin	AY545598
+virulence_ecoli	cba	99.87	1536 / 1536	NODE_63_length_9179_cov_55.822896	752..2287	  Colicin B	FJ664743
+virulence_ecoli	cea	100.0	1566 / 1566	NODE_85_length_4239_cov_94.878664	1133..2698	  Colicin E1	CP000972
+virulence_ecoli	celb	92.36	144 / 144	NODE_71_length_6866_cov_21.024157	6444..6587	  Endonuclease colicin E2	AF540491
+virulence_ecoli	celb	92.36	144 / 144	NODE_71_length_6866_cov_21.024157	6444..6587	  Endonuclease colicin E2	X15858
+virulence_ecoli	chuA	100.0	1983 / 1983	NODE_4_length_203484_cov_18.955179	183921..185903	  Outer membrane hemin receptor	UCWI01000002
+virulence_ecoli	cma	99.63	816 / 816	NODE_73_length_6602_cov_54.944368	5328..6143	  Colicin M	FJ664718
+virulence_ecoli	cma	99.63	816 / 816	NODE_73_length_6602_cov_54.944368	5328..6143	  Colicin M	FJ664720
+virulence_ecoli	cma	99.63	816 / 816	NODE_73_length_6602_cov_54.944368	5328..6143	  Colicin M	FJ664744
+virulence_ecoli	eilA	98.59	1698 / 1698	NODE_15_length_141087_cov_21.167116	123099..124796	 Salmonella HilA homolog	FN554766
+virulence_ecoli	hlyE	98.69	918 / 918	NODE_7_length_167082_cov_17.850681	65685..66602	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	97.71	741 / 741	NODE_11_length_151040_cov_19.098428	148905..149645	  Heat-resistant agglutinin	CP040456
+virulence_ecoli	hra	96.92	747 / 747	NODE_6_length_169977_cov_20.070094	21730..22476	  Heat-resistant agglutinin	JF808724
+virulence_ecoli	iha	99.95	2088 / 2088	NODE_53_length_17273_cov_20.941091	10699..12786	  Adherence protein	CP000970
+virulence_ecoli	iucC	99.94	1743 / 1743	NODE_52_length_18797_cov_18.952831	6622..8364	  Aerobactin synthetase	UFZG01000001
+virulence_ecoli	iutA	99.95	2202 / 2202	NODE_52_length_18797_cov_18.952831	9720..11921	  Ferric aerobactin receptor	UDIE01000100
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_15_length_141087_cov_21.167116	30008..30580	  Long polar fimbriae	AB198066
+virulence_ecoli	sitA	100.0	915 / 915	NODE_52_length_18797_cov_18.952831	17067..17981	  Iron transport protein	UFZG01000001
+virulence_ecoli	terC	98.46	714 / 714	NODE_38_length_45118_cov_20.316734	22708..23421	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.54	959 / 966	NODE_37_length_50353_cov_18.165148	13188..14146	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	95.06	627 / 627	NODE_40_length_36648_cov_40.892675	18427..19053	  Outer membrane protein complement resistance	AY686591
+virulence_ecoli	traT	95.06	627 / 627	NODE_40_length_36648_cov_40.892675	18427..19053	  Outer membrane protein complement resistance	MF156268

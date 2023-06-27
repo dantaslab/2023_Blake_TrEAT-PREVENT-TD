@@ -1,0 +1,24 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	95.12	4588 / 4605	NODE_12_length_193128_cov_240.925807	111821..116408	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	chuA	100.0	1983 / 1983	NODE_13_length_185848_cov_241.668732	126112..128094	  Outer membrane hemin receptor	UDCC01000002
+virulence_ecoli	eilA	98.59	1698 / 1698	NODE_12_length_193128_cov_240.925807	122752..124449	 Salmonella HilA homolog	FN554766
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_1_length_449524_cov_176.305996	424253..426274	  Siderophore receptor	CAY233333
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_13_length_185848_cov_241.668732	107853..109253	  Glutamate decarboxylase	CU928163
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_9_length_234828_cov_171.236672	117730..119130	  Glutamate decarboxylase	FN554766
+virulence_ecoli	hlyE	98.69	918 / 918	NODE_11_length_202145_cov_178.190406	135807..136724	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	NODE_20_length_52604_cov_195.015402	17702..19792	  Adherence protein	AE014075
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_1_length_449524_cov_176.305996	404958..411065	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QHCX01000007
+virulence_ecoli	iss	100.0	294 / 294	NODE_18_length_125653_cov_209.746074	106101..106394	  Increased serum survival	CP001665
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_20_length_52604_cov_195.015402	35102..36844	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_20_length_52604_cov_195.015402	31567..33765	  Ferric aerobactin receptor	UFZT01000001
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_6_length_356697_cov_233.442749	345652..346800	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K52	100.0	777 / 777	NODE_6_length_356697_cov_233.442749	326433..327209	  Polysialic acid transport protein; Group 2 capsule	UGGK01000002
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_12_length_193128_cov_240.925807	30206..30778	  Long polar fimbriae	AB198066
+virulence_ecoli	ompT	100.0	954 / 954	NODE_10_length_203665_cov_199.269500	198146..199099	  Outer membrane protease (protein protease 7)	NZ_QHCX01000046
+virulence_ecoli	papA_fsiA_F16	100.0	537 / 537	NODE_20_length_52604_cov_195.015402	8336..8872	  Major pilin subunit F16	CU928163
+virulence_ecoli	papC	100.0	2511 / 2511	NODE_20_length_52604_cov_195.015402	5110..7620	  Outer membrane usher P fimbriae	ADTJ01000356
+virulence_ecoli	sat	100.0	3888 / 3888	NODE_20_length_52604_cov_195.015402	26736..30623	 Secreted autotransporter toxin	CU928163
+virulence_ecoli	sitA	100.0	915 / 915	NODE_9_length_234828_cov_171.236672	4607..5521	  Iron transport protein	ADTM01000098
+virulence_ecoli	terC	98.32	714 / 714	NODE_3_length_390105_cov_211.354603	218613..219326	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.23	959 / 966	NODE_6_length_356697_cov_233.442749	174941..175899	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	NODE_22_length_40699_cov_382.880582	21970..22704	  Outer membrane protein complement resistance	NZ_CP032205

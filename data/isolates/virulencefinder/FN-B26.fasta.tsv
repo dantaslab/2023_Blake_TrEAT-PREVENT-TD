@@ -1,0 +1,25 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	bfpA	100.0	582 / 582	FN-B26_Contig_49	5019..5600	  Major subunit of bundle-forming pili	AB247925
+virulence_ecoli	chuA	100.0	1983 / 1983	FN-B26_Contig_7	5547..7529	  Outer membrane hemin receptor	UGFS01000002
+virulence_ecoli	cia	99.24	264 / 264	FN-B26_Contig_44	21289..21551	  Colicin ia	UGDH01000002
+virulence_ecoli	cif	100.0	849 / 849	FN-B26_Contig_2	3330..4178	  Type III secreted effector	AF497476
+virulence_ecoli	eae	90.86	2822 / 2820	FN-B26_Contig_10	10205..13024	  Intimin	ECU59503
+virulence_ecoli	espA	100.0	573 / 573	FN-B26_Contig_10	6962..7534	  Type III secretions system	AJ225016
+virulence_ecoli	espJ	98.02	655 / 654	FN-B26_Contig_16	754..1408	  Prophage-encoded type III secretion system effector	AE005174
+virulence_ecoli	fyuA	99.95	2022 / 2022	FN-B26_Contig_35	31018..33039	  Siderophore receptor	CAY233333
+virulence_ecoli	gad	99.84	1272 / 1401	FN-B26_Contig_144	1..1272	  Glutamate decarboxylase	CP002167
+virulence_ecoli	hra	100.0	747 / 747	FN-B26_Contig_92	474..1220	  Heat-resistant agglutinin	LM995856
+virulence_ecoli	ibeA	100.0	1380 / 1380	FN-B26_Contig_1	173123..174502	  Invasin of brain endothelial cells	NZ_NJVU01000005
+virulence_ecoli	irp2	99.97	6123 / 6123	FN-B26_Contig_35	11723..17845	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NLZB01000042
+virulence_ecoli	nleA	99.92	1239 / 1239	FN-B26_Contig_2	5618..6856	  Non-LEE encoded effector A	AB303062
+virulence_ecoli	nleB	100.0	981 / 981	FN-B26_Contig_2	603..1583	  Non-LEE encoded effector B	AB303062
+virulence_ecoli	ompT	100.0	954 / 954	FN-B26_Contig_42	298..1251	  Outer membrane protease (protein protease 7)	NZ_NJVU01000041
+virulence_ecoli	perA	100.0	825 / 825	FN-B26_Contig_58	3075..3899	  EPEC adherence factor	EF011049
+virulence_ecoli	terC	99.72	714 / 714	FN-B26_Contig_3	247301..248014	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.49	958 / 966	FN-B26_Contig_18	34696..35653	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.94	1650 / 1650	FN-B26_Contig_10	13692..15341	  Translocated intimin receptor protein	DQ206455
+virulence_ecoli	toxB	98.08	9501 / 9501	FN-B26_Contig_38	3612..13112	  Toxin B	AB456530
+virulence_ecoli	traT	100.0	732 / 732	FN-B26_Contig_169	2..733	  Outer membrane protein complement resistance	AP014804
+virulence_ecoli	usp	99.62	1041 / 1041	FN-B26_Contig_1	383613..384653	  Uropathogenic specific protein	AB056440
+virulence_ecoli	vat	99.95	4131 / 4131	FN-B26_Contig_20	75517..79647	 Vacuolating autotransporter toxin	AE014075
+virulence_ecoli	yfcV	99.65	567 / 567	FN-B26_Contig_4	243772..244338	  Fimbrial protein	UGFJ01000003

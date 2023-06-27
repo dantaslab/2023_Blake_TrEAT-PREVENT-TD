@@ -1,0 +1,7 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	gad	94.52	1278 / 1401	ROAR19_Contig_34	5..1282	  Glutamate decarboxylase	CP002167
+virulence_ecoli	hlyE	98.15	918 / 918	ROAR19_Contig_1	34703..35620	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	kpsE	96.78	1149 / 1149	ROAR19_Contig_3	71266..72414	  Capsule polysaccharide export inner-membrane protein	AJ617685
+virulence_ecoli	kpsM_K15	100.0	777 / 777	ROAR19_Contig_3	87686..88462	  Polysialic acid transport protein; Group 3 capsule	AJ617685
+virulence_ecoli	terC	92.72	714 / 714	ROAR19_Contig_16	28310..29023	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	95.13	966 / 966	ROAR19_Contig_3	231183..232148	  Tellurium ion resistance protein	MG591698

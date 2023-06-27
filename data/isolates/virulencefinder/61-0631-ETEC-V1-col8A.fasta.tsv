@@ -1,0 +1,11 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_16_length_104224_cov_22.006731	103738..103854	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_31_length_49546_cov_19.768825	5639..6555	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_32_length_49243_cov_24.116117	30619..31191	  Long polar fimbriae	CP002185
+virulence_ecoli	ltcA	100.0	612 / 810	NODE_130_length_1312_cov_141.361134	701..1312	  Heat-labile enterotoxin A subunit	CP000795
+virulence_ecoli	ltcA	100.0	612 / 777	NODE_130_length_1312_cov_141.361134	701..1312	  Heat-labile enterotoxin A subunit	EU113248
+virulence_ecoli	ltcA	100.0	612 / 777	NODE_130_length_1312_cov_141.361134	701..1312	  Heat-labile enterotoxin A subunit	EU113251
+virulence_ecoli	ltcA	100.0	612 / 777	NODE_130_length_1312_cov_141.361134	701..1312	  Heat-labile enterotoxin A subunit	EU113252
+virulence_ecoli	terC	99.02	712 / 714	NODE_18_length_99548_cov_23.171176	37063..37774	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_16_length_104224_cov_22.006731	94927..95885	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.73	732 / 732	NODE_57_length_18629_cov_31.703159	7018..7749	  Outer membrane protein complement resistance	CYCV01000028

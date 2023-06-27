@@ -1,0 +1,11 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.82	1089 / 1089	NODE_137_length_3138_cov_4.190787	404..1492	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	100.0	1501 / 2022	NODE_245_length_1514_cov_3.565762	1..1501	  Siderophore receptor	UGBN01000001
+virulence_ecoli	hlyE	98.04	918 / 918	NODE_4_length_223430_cov_20.315039	118597..119502	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_357_length_873_cov_3.510050	383..676	  Increased serum survival	CP001665
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_18_length_92219_cov_23.871665	830..1402	  Long polar fimbriae	AP010953
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_18_length_92219_cov_23.871665	830..1402	  Long polar fimbriae	CP002185
+virulence_ecoli	sitA	100.0	915 / 915	NODE_201_length_1893_cov_2.033590	438..1352	  Iron transport protein	HG977190
+virulence_ecoli	terC	99.02	714 / 714	NODE_6_length_218888_cov_21.812185	152012..152725	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.27	959 / 966	NODE_1_length_329025_cov_21.852770	184503..185461	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_155_length_2729_cov_2.558069	579..1619	  Tellurium ion resistance protein	UINO01000028

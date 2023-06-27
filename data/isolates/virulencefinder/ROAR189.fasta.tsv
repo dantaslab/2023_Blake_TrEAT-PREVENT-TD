@@ -1,0 +1,21 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	ROAR189_Contig_27	66978..67094	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	astA	100.0	117 / 117	ROAR189_Contig_36	16482..16598	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	cdtB	99.88	810 / 810	ROAR189_Contig_36	3970..4779	  Cytolethal distending toxin B	AY365044
+virulence_ecoli	chuA	99.19	1983 / 1983	ROAR189_Contig_6	53277..55259	  Outer membrane hemin receptor	CYAV01000001
+virulence_ecoli	eilA	99.06	1698 / 1698	ROAR189_Contig_23	2695..4392	 Salmonella HilA homolog	FN554766
+virulence_ecoli	gad	98.22	1401 / 1401	ROAR189_Contig_15	40964..42364	  Glutamate decarboxylase	CP002167
+virulence_ecoli	gad	98.57	1401 / 1401	ROAR189_Contig_6	35017..36417	  Glutamate decarboxylase	CU928163
+virulence_ecoli	hlyE	98.37	918 / 918	ROAR189_Contig_4	9726..10643	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hlyF	100.0	1107 / 1107	ROAR189_Contig_35	31368..32474	  Hemolysin F	UINJ01000014
+virulence_ecoli	iss	92.13	267 / 342	ROAR189_Contig_18	13620..13886	  Increased serum survival	AE014075
+virulence_ecoli	iss	92.13	267 / 309	ROAR189_Contig_18	13620..13886	  Increased serum survival	CP000468
+virulence_ecoli	iss	92.13	267 / 294	ROAR189_Contig_18	13620..13886	  Increased serum survival	CP002167
+virulence_ecoli	kpsE	99.91	1149 / 1149	ROAR189_Contig_3	38384..39532	  Capsule polysaccharide export inner-membrane protein	AM946981
+virulence_ecoli	kpsMII	100.0	777 / 777	ROAR189_Contig_3	55931..56707	  Polysialic acid transport protein; Group 2 capsule	UGAW01000001
+virulence_ecoli	lpfA	99.48	573 / 573	ROAR189_Contig_13	30000..30572	  Long polar fimbriae	CP003034
+virulence_ecoli	ompT	96.1	949 / 948	ROAR189_Contig_40	4566..5514	  Outer membrane protease (protein protease 7)	CDLB01000100
+virulence_ecoli	papC	90.63	2475 / 2511	ROAR189_Contig_35	24479..26949	  Outer membrane usher P fimbriae	MG692627
+virulence_ecoli	terC	98.46	714 / 714	ROAR189_Contig_11	22790..23503	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	98.44	964 / 966	ROAR189_Contig_3	193788..194751	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	732 / 732	ROAR189_Contig_27	36082..36813	  Outer membrane protein complement resistance	CP010345

@@ -1,0 +1,9 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	92.79	1983 / 1983	E1118_Contig_1	3761489..3763471	  Outer membrane hemin receptor	UFZG01000001
+virulence_ecoli	gad	93.72	1401 / 1401	E1118_Contig_1	3743275..3744675	  Glutamate decarboxylase	AP009240
+virulence_ecoli	gad	92.72	1401 / 1401	E1118_Contig_1	1023988..1025388	  Glutamate decarboxylase	FM180568
+virulence_ecoli	hra	97.48	556 / 792	E1118_Contig_1	2767603..2768158	  Heat-resistant agglutinin	CP043942
+virulence_ecoli	kpsE	95.65	1149 / 1149	E1118_Contig_1	2713743..2714891	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	ompT	92.58	364 / 363	E1118_Contig_1	919570..919932	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	terC	92.58	714 / 714	E1118_Contig_1	2919865..2920578	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	92.9	958 / 966	E1118_Contig_1	2559811..2560768	  Tellurium ion resistance protein	MG591698

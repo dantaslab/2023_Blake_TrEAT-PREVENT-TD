@@ -1,0 +1,12 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	eae	99.93	2829 / 2829	NODE_31_length_56596_cov_52.794936	45105..47933	  Intimin	EF204930
+virulence_ecoli	espA	92.57	579 / 579	NODE_31_length_56596_cov_52.794936	50678..51256	  Type III secretions system	AJ633130
+virulence_ecoli	espF	95.83	624 / 624	NODE_31_length_56596_cov_52.794936	54507..55130	  Type III secretion system	AJ633130
+virulence_ecoli	espJ	99.69	654 / 654	NODE_130_length_2501_cov_56.268564	627..1280	  Prophage-encoded type III secretion system effector	AE005174
+virulence_ecoli	hlyE	97.71	919 / 918	NODE_33_length_53625_cov_40.394375	43221..44127	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	99.66	294 / 294	NODE_73_length_9758_cov_35.753125	1535..1828	  Increased serum survival	CP001846
+virulence_ecoli	nleB	96.13	981 / 981	NODE_120_length_3105_cov_50.835205	1788..2768	  Non-LEE encoded effector B	CP001846
+virulence_ecoli	sat	99.85	3888 / 3888	NODE_101_length_5500_cov_60.104001	1412..5299	 Secreted autotransporter toxin	JX050263
+virulence_ecoli	terC	99.3	714 / 714	NODE_14_length_93648_cov_41.386135	29258..29971	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_41_length_43896_cov_35.316050	12493..13451	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.13	1720 / 1719	NODE_31_length_56596_cov_52.794936	42716..44434	  Translocated intimin receptor protein	AB288104

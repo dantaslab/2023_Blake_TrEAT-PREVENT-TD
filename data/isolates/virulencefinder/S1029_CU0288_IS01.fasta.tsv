@@ -1,0 +1,19 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	aap	92.31	351 / 351	NODE_75_length_2103_cov_69.969398	886..1236	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	aatA	93.14	1239 / 1239	NODE_61_length_6741_cov_49.925270	2521..3759	 Dispersin transporter protein	CU928159
+virulence_ecoli	aatA	93.14	1239 / 1239	NODE_61_length_6741_cov_49.925270	2521..3759	 Dispersin transporter protein	FN554767
+virulence_ecoli	cea	99.0	1203 / 1203	NODE_59_length_6998_cov_181.676466	512..1714	  Colicin E1	CYCO01000082
+virulence_ecoli	cea	95.35	215 / 240	NODE_59_length_6998_cov_181.676466	1863..2071	  Colicin E1	GG772217
+virulence_ecoli	celb	100.0	144 / 144	NODE_60_length_6835_cov_337.396271	6563..6706	  Endonuclease colicin E2	D00021
+virulence_ecoli	cia	99.76	1275 / 1275	NODE_25_length_67286_cov_42.623711	61496..62770	  Colicin ia	AMTQ01000007
+virulence_ecoli	cia	100.0	147 / 147	NODE_25_length_67286_cov_42.623711	60837..60983	  Colicin ia	QMGM01000002
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_4_length_238697_cov_47.537000	115644..116561	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_35_length_43667_cov_44.162216	34274..36364	  Adherence protein	AE005174
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_43_length_31301_cov_60.692864	17063..18805	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_43_length_31301_cov_60.692864	20142..22340	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_35_length_43667_cov_44.162216	30641..31681	  Tellurium ion resistance protein	CP006262
+virulence_ecoli	terC	100.0	714 / 714	NODE_13_length_130317_cov_47.262178	83134..83847	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_7_length_194733_cov_50.822749	32752..33717	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	423 / 423	NODE_35_length_43667_cov_44.162216	277..699	  Outer membrane protein complement resistance	AKKX01000148
+virulence_ecoli	traT	100.0	129 / 129	NODE_35_length_43667_cov_44.162216	10503..10631	  Outer membrane protein complement resistance	AMTE01000156
+virulence_ecoli	traT	100.0	627 / 627	NODE_25_length_67286_cov_42.623711	22398..23024	  Outer membrane protein complement resistance	MF156268

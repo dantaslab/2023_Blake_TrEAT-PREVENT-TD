@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	1569 / 1569	B691_Contig_58	4712..6280	  Colicin E1	LAUC01000234
+virulence_ecoli	gad	99.71	1401 / 1401	B691_Contig_11	20371..21771	  Glutamate decarboxylase	CU928158
+virulence_ecoli	gad	99.71	1401 / 1401	B691_Contig_23	124478..125878	  Glutamate decarboxylase	CU928158
+virulence_ecoli	hra	99.6	747 / 747	B691_Contig_51	9468..10214	  Heat-resistant agglutinin	JF808724
+virulence_ecoli	ireA	99.95	2049 / 2049	B691_Contig_88	1381..3429	  Siderophore receptor	AE014075
+virulence_ecoli	iucC	95.93	1743 / 1743	B691_Contig_43	8470..10212	  Aerobactin synthetase	UGAI01000003
+virulence_ecoli	iutA	93.32	2199 / 2199	B691_Contig_43	11549..13747	  Ferric aerobactin receptor	UFZT01000001
+virulence_ecoli	iutA	93.32	2199 / 2199	B691_Contig_43	11549..13747	  Ferric aerobactin receptor	UGCQ01000002
+virulence_ecoli	papA_F19	100.0	294 / 372	B691_Contig_87	10684..10977	  Major pilin subunit F19	AP017620
+virulence_ecoli	papA_F20	100.0	294 / 324	B691_Contig_87	10684..10977	  Major pilin subunit F20	CP019944
+virulence_ecoli	terC	95.79	950 / 966	B691_Contig_39	168853..169802	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	98.63	146 / 177	B691_Contig_60	20936..21081	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	100.0	303 / 303	B691_Contig_60	20400..20702	  Outer membrane protein complement resistance	UEKA01000045

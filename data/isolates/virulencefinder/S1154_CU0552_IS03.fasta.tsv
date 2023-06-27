@@ -1,0 +1,15 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	eae	97.57	2060 / 2805	NODE_5_length_178904_cov_42.976972	85266..87325	  Intimin	AF071034
+virulence_ecoli	espA	99.83	573 / 573	NODE_5_length_178904_cov_42.976972	81379..81951	  Type III secretions system	AJ225016
+virulence_ecoli	espJ	99.69	654 / 654	NODE_32_length_53300_cov_37.371099	2029..2682	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	hlyE	99.24	918 / 918	NODE_11_length_144248_cov_39.280362	83539..84456	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_36_length_48406_cov_38.994475	29981..30553	  Long polar fimbriae	AY646923
+virulence_ecoli	nleA	92.83	1242 / 1242	NODE_95_length_3614_cov_49.033079	531..1772	  Non-LEE encoded effector A	AM422006
+virulence_ecoli	nleA	92.83	1242 / 1242	NODE_95_length_3614_cov_49.033079	531..1772	  Non-LEE encoded effector A	JN159732
+virulence_ecoli	nleB	100.0	981 / 981	NODE_65_length_13814_cov_55.455485	284..1264	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	sepA	94.85	4097 / 4092	NODE_79_length_7702_cov_109.105574	2745..6839	 Shigella extracellular protein A	AY604009
+virulence_ecoli	terC	99.86	714 / 714	NODE_17_length_98856_cov_41.630488	33627..34340	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.76	966 / 966	NODE_13_length_131626_cov_38.786224	35691..36656	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	95.89	1653 / 1653	NODE_5_length_178904_cov_42.976972	87990..89639	  Translocated intimin receptor protein	AF022236
+virulence_ecoli	traT	98.31	178 / 177	NODE_35_length_48689_cov_90.531535	6769..6946	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	100.0	303 / 303	NODE_35_length_48689_cov_90.531535	7180..7482	  Outer membrane protein complement resistance	UEKA01000045

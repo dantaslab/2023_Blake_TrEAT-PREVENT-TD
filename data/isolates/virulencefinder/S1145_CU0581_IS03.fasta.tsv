@@ -1,0 +1,11 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	95.85	4000 / 4605	NODE_15_length_111450_cov_42.153341	3..4002	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	capU	99.72	1089 / 1089	NODE_35_length_12753_cov_46.544730	1827..2915	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	chuA	99.63	1890 / 1890	NODE_5_length_300719_cov_37.123020	184625..186514	  Outer membrane hemin receptor	JH969488
+virulence_ecoli	eilA	97.59	1698 / 1698	NODE_20_length_89279_cov_44.050212	4771..6468	 Salmonella HilA homolog	CP000970
+virulence_ecoli	gad	99.07	1401 / 1401	NODE_14_length_115038_cov_37.661163	73745..75145	  Glutamate decarboxylase	AE005674
+virulence_ecoli	gad	99.5	1401 / 1401	NODE_5_length_300719_cov_37.123020	203474..204874	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	98.8	918 / 918	NODE_9_length_207370_cov_34.218526	60564..61481	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_36_length_7650_cov_40.499538	6525..6818	  Increased serum survival	CP001665
+virulence_ecoli	terC	100.0	714 / 714	NODE_1_length_519746_cov_38.267268	22810..23523	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.03	966 / 966	NODE_1_length_519746_cov_38.267268	343318..344283	  Tellurium ion resistance protein	MG591698

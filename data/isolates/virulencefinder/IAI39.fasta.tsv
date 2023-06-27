@@ -1,0 +1,25 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	98.68	4604 / 4605	IAI39_Contig_1	4430543..4435146	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	capU	100.0	1089 / 1089	IAI39_Contig_1	4965232..4966320	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	chuA	100.0	1983 / 1983	IAI39_Contig_1	4158658..4160640	  Outer membrane hemin receptor	CU928164
+virulence_ecoli	eilA	100.0	1698 / 1698	IAI39_Contig_1	4424887..4426584	 Salmonella HilA homolog	CP003034
+virulence_ecoli	fyuA	100.0	2022 / 2022	IAI39_Contig_1	1132569..1134590	  Siderophore receptor	CP003034
+virulence_ecoli	gad	100.0	1401 / 1401	IAI39_Contig_1	4177508..4178908	  Glutamate decarboxylase	CP003034
+virulence_ecoli	gad	100.0	1401 / 1401	IAI39_Contig_1	1847798..1849198	  Glutamate decarboxylase	CP003034
+virulence_ecoli	hlyE	98.91	918 / 918	IAI39_Contig_1	1972298..1973215	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	99.97	6108 / 6108	IAI39_Contig_1	1147778..1153885	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NNTJ01000030
+virulence_ecoli	iucC	100.0	1743 / 1743	IAI39_Contig_1	3571848..3573590	  Aerobactin synthetase	CP003034
+virulence_ecoli	iutA	100.0	2202 / 2202	IAI39_Contig_1	3574946..3577147	  Ferric aerobactin receptor	CP003034
+virulence_ecoli	kpsE	100.0	1149 / 1149	IAI39_Contig_1	3584271..3585419	  Capsule polysaccharide export inner-membrane protein	CU928164
+virulence_ecoli	kpsMII_K1	100.0	777 / 777	IAI39_Contig_1	3598437..3599213	  Polysialic acid transport protein; Group 2 capsule	UWVJ01000006
+virulence_ecoli	lpfA	100.0	573 / 573	IAI39_Contig_1	4514433..4515005	  Long polar fimbriae	CP003034
+virulence_ecoli	neuC	100.0	1176 / 1176	IAI39_Contig_1	3593643..3594818	  Polysialic acid capsule biosynthesis protein	ADUG01000366
+virulence_ecoli	ompT	100.0	954 / 954	IAI39_Contig_1	564494..565447	  Outer membrane protease (protein protease 7)	JHDO01000060
+virulence_ecoli	papA_F43	99.08	543 / 564	IAI39_Contig_1	3554965..3555506	  Major pilin subunit F43	JNMC01000043
+virulence_ecoli	papA_fteA_F10	99.62	531 / 531	IAI39_Contig_1	4785899..4786429	  Major pilin subunit F10	Y08927
+virulence_ecoli	papC	99.8	2511 / 2511	IAI39_Contig_1	4787139..4789649	  Outer membrane usher P fimbriae	CP002797
+virulence_ecoli	sitA	100.0	915 / 915	IAI39_Contig_1	1994537..1995451	  Iron transport protein	DQ335213
+virulence_ecoli	terC	97.48	714 / 714	IAI39_Contig_1	3398953..3399666	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.48	714 / 714	IAI39_Contig_1	3398953..3399666	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.27	959 / 966	IAI39_Contig_1	3744915..3745873	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	yfcV	100.0	567 / 567	IAI39_Contig_1	2577243..2577809	  Fimbrial protein	UGBC01000003

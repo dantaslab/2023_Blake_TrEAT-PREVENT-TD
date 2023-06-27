@@ -1,0 +1,34 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaA	100.0	306 / 306	ECOR37_Contig_33	149091..149396	  Transcriptional regulator	FM955458
+virulence_ecoli	afaB	99.62	798 / 798	ECOR37_Contig_33	148031..148828	  Periplasmic chaperone	KR338833
+virulence_ecoli	afaC	99.92	2583 / 2583	ECOR37_Contig_33	145409..147991	  Outer membrane usher protein	JN688153
+virulence_ecoli	afaD	100.0	444 / 444	ECOR37_Contig_33	144950..145393	  Afimbrial adhesion	FM955458
+virulence_ecoli	afaE	99.79	486 / 486	ECOR37_Contig_33	143712..144197	  Adhesin protein	JN688153
+virulence_ecoli	astA	91.3	115 / 117	ECOR37_Contig_66	242..356	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	astA	100.0	97 / 117	ECOR37_Contig_160	5572..5668	 EAST-1 heat-stable toxin	HM099897
+virulence_ecoli	chuA	100.0	1983 / 1983	ECOR37_Contig_128	113465..115447	  Outer membrane hemin receptor	UGGA01000003
+virulence_ecoli	cia	100.0	147 / 147	ECOR37_Contig_17	24156..24302	  Colicin ia	QMGM01000002
+virulence_ecoli	eae	99.89	2805 / 2805	ECOR37_Contig_250	9467..12271	  Intimin	AF071034
+virulence_ecoli	efa1	100.0	9672 / 9672	ECOR37_Contig_14	189..9860	  EHEC factor for adherence	CP001846
+virulence_ecoli	espA	99.83	579 / 579	ECOR37_Contig_250	6148..6726	  Type III secretions system	CP003109
+virulence_ecoli	espB	100.0	939 / 939	ECOR37_Contig_250	4052..4990	  Secreted protein B	AE005174
+virulence_ecoli	espF	91.81	623 / 621	ECOR37_Contig_250	2407..3012	  Type III secretion system	FM180568
+virulence_ecoli	espJ	100.0	654 / 654	ECOR37_Contig_168	1506..2159	  Prophage-encoded type III secretion system effector	AE005174
+virulence_ecoli	etpD	100.0	1761 / 1761	ECOR37_Contig_17	6471..8231	  Type II secretion protein	CP003111
+virulence_ecoli	gad	100.0	1401 / 1401	ECOR37_Contig_128	95195..96595	  Glutamate decarboxylase	CP001846
+virulence_ecoli	hlyE	98.37	918 / 918	ECOR37_Contig_200	5944..6861	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	ECOR37_Contig_85	7785..9875	  Adherence protein	AE005174
+virulence_ecoli	iss	98.3	294 / 294	ECOR37_Contig_58	224..517	  Increased serum survival	CP001509
+virulence_ecoli	iucC	100.0	1743 / 1743	ECOR37_Contig_91	4859..6601	  Aerobactin synthetase	AMUG01000109
+virulence_ecoli	iutA	99.95	2199 / 2199	ECOR37_Contig_91	7938..10136	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	nleA	92.83	1242 / 1242	ECOR37_Contig_157	156929..158170	  Non-LEE encoded effector A	AM422006
+virulence_ecoli	nleA	92.83	1242 / 1242	ECOR37_Contig_157	156929..158170	  Non-LEE encoded effector A	JN159732
+virulence_ecoli	nleB	99.9	981 / 981	ECOR37_Contig_7	642..1622	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleB	99.8	990 / 990	ECOR37_Contig_14	12458..13447	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleB	99.8	990 / 990	ECOR37_Contig_14	12458..13447	  Non-LEE encoded effector B	AP010958
+virulence_ecoli	nleB	99.9	981 / 981	ECOR37_Contig_288	4416..5396	  Non-LEE encoded effector B	CP001846
+virulence_ecoli	nleC	99.9	993 / 993	ECOR37_Contig_7	1683..2675	  Non-LEE encoded effector C	AE005174
+virulence_ecoli	ompT	100.0	954 / 954	ECOR37_Contig_32	9398..10351	  Outer membrane protease (protein protease 7)	AIFU01000004
+virulence_ecoli	terC	98.74	714 / 714	ECOR37_Contig_105	18971..19684	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.65	964 / 966	ECOR37_Contig_89	133277..134240	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.94	1677 / 1677	ECOR37_Contig_250	12939..14615	  Translocated intimin receptor protein	DQ007019

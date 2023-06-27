@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.78	919 / 1089	NODE_119_length_2350_cov_2.511659	1432..2350	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	100.0	1765 / 2022	NODE_155_length_1786_cov_1.283792	22..1786	  Siderophore receptor	UGBN01000001
+virulence_ecoli	gad	99.73	1094 / 1401	NODE_23_length_54408_cov_16.892179	1..1094	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	99.73	1094 / 1401	NODE_23_length_54408_cov_16.892179	1..1094	  Glutamate decarboxylase	EF547380
+virulence_ecoli	hlyE	98.04	918 / 918	NODE_5_length_221300_cov_17.893809	116701..117606	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_177_length_1631_cov_2.126770	1025..1318	  Increased serum survival	CP001665
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_16_length_97077_cov_16.993258	5688..6260	  Long polar fimbriae	AP010953
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_16_length_97077_cov_16.993258	5688..6260	  Long polar fimbriae	CP002185
+virulence_ecoli	sigA	97.98	3858 / 3858	NODE_82_length_4225_cov_2.737705	188..4045	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	97.98	3858 / 3858	NODE_82_length_4225_cov_2.737705	188..4045	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	terC	99.02	714 / 714	NODE_1_length_545272_cov_17.765234	66164..66877	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.27	959 / 966	NODE_1_length_545272_cov_17.765234	360376..361334	  Tellurium ion resistance protein	MG591698

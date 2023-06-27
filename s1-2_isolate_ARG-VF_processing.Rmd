@@ -1,0 +1,286 @@
+---
+title: "s1_ARG-VF_processing"
+author: "Kevin S. Blake"
+date: "2022-10-21"
+output: html_document
+---
+
+## PURPOSE
+This doc processes the raw data outputted from tools like AMRFinder etc. 
+Those results are inputted into the Tab-00_main tab of the excel sheet, to then be analyzed in s2_ARG-VF_analyses
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("_common.R")
+
+```
+
+## MLST
+
+```{r MLST}
+
+# MLST processing
+e00.isolates.mlst$sample_seqID <- gsub(".fasta", "", as.character(e00.isolates.mlst$sample_seqID))
+
+sample_seqID <- e00.isolates.main$sample_seqID
+    ecoli.mlst <- data.frame(sample_seqID)
+    num_sampl = length(sample_seqID)
+
+# Subset just those that made final list
+ecoli.mlst <- e00.isolates.mlst %>%
+  select(1,2,3) %>%
+  inner_join(ecoli.mlst, "sample_seqID")
+
+mlst.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-mlst_v1.csv")
+write.csv(ecoli.mlst, mlst.fname, quote = F, row.names = FALSE)
+
+```
+
+## VIRULENCE FACTORS / PATHOTYPE
+
+```{r process virulencefinder & amrfinder}
+
+# Merge virulencefinder and amrfinder individual sample output files into own dataframes
+virulencefinder.df <- pathotypeR_process("data/isolates/virulencefinder", ".fasta.tsv")
+amrfinder.df <- pathotypeR_process("data/isolates/amrfinder/bakta", ".tsv")
+
+# Pre-process
+virulencefinder_fil <- virulencefinder.df %>%
+  mutate(Gene_name = `Virulence factor`) %>%
+  group_by(sample, Gene_name) %>%
+  filter(row_number() == 1) %>% 
+  ungroup() %>% 
+  mutate(Gene_name = stringr::str_replace_all(Gene_name, "[/-]", "_")) %>%
+  select(sample, Gene_name)
+
+amrfinder_fil <- amrfinder.df %>%
+  filter(`Element type` == "VIRULENCE") %>%
+  mutate(Gene_name = `Gene symbol`) %>%
+  group_by(sample, Gene_name) %>%
+  filter(row_number() == 1) %>% 
+  ungroup() %>% 
+  mutate(Gene_name = stringr::str_replace_all(Gene_name, "[/-]", "_")) %>%
+  select(sample, Gene_name)
+
+# Combine the two, remove duplicates
+combine.df <- rbind(virulencefinder_fil, amrfinder_fil) %>%
+  mutate(Gene_name = recode(Gene_name,
+                          "stxA1a" = "stx1", "stxA1c" = "stx1", "stxB1a" = "stx1", "stxB1c" = "stx1", "stx1A" = "stx1", "stx1B" = "stx1", 
+                          "stxA2b" = "stx2", "stxA2c" = "stx2", "stxA2d" = "stx2", "stxA2f" = "stx2", "stx2A" = "stx2", "stx2B" = "stx2",
+                          "stxB2a" = "stx2", "stxB2b" = "stx2", "stxB2c" = "stx2", "stxB2f" = "stx2", 
+                          "ipaH1" = "ipaH", "ipaH2" = "ipaH", "ipaH3" = "ipaH", "ipaH4" = "ipaH", "ipaH5" = "ipaH", "ipaH9.8" = "ipaH",
+                          "aafA" = "aaf/II", "aafB" = "aaf/II", "aafC" = "aaf/II", "aafD" = "aaf/II",
+                          "afaE8" = "afaE",
+                          "agg3B" = "aaf/3", "agg3C" = "aaf/3", "agg3D" = "aaf/3",
+                          "agg4A" = "aaf/4", "agg4D" = "aaf/4",
+                          "agg5A" = "aaf/V",
+                          "aggA" = "aaf/I", "aggB" = "aaf/I", "aggC" = "aaf/I", "aggD" = "aaf/I",
+                          "hlyA_alpha" = "hlyA",
+                          "iroB" = "iro", "iroC" = "iro", "iroD" = "iro", "iroE" = "iro", "iroN" = "iro",
+                          "f17a" = "f17", "f17A" = "f17", "f17g" = "f17", "f17G" = "f17",
+                          "kpsM_K11" = "kpsM", "kpsM_K15" = "kpsM", "kpsMII" = "kpsM","kpsMII_K1" = "kpsM", "kpsMII_K4" = "kpsM", "kpsMII_K5" = "kpsM", "kpsMII_K52" = "kpsM", "kpsMII_K96" = "kpsM", "kpsMIII_K96" = "kpsM",
+                          "lpfA1" = "lpfA", "lpfA2" = "lpfA",
+                          "papA_F11" = "pap", "papA_F12" = "pap", "papA_F13" = "pap", "papA_F14" = "pap", "papA_F20" = "pap", "papA_F43" = "pap", "papA_F48" = "pap", "papA_F536" = "pap", "papA_F7_2" = "pap", "papA_F9" = "pap", "papA_feiA_F8" = "pap", "papA_fsiA_F16" = "pap", "papC" = "pap", "papE" = "pap", "papF" = "pap", "papH" = "pap",
+                          "papG_II" = "papG", "papG_III" = "papG",
+                          "ybtP" = "ybtPQXS", "ybtQ" = "ybtPQXS"
+                            )) %>%
+  group_by(sample, Gene_name) %>%
+  filter(row_number() == 1) %>% 
+  ungroup()
+
+# Only keep those in final set
+sample_seqID <- e00.isolates.main$sample_seqID
+combine.df <- filter(combine.df, sample %in% sample_seqID)
+
+main <- data.frame(sample_seqID)
+num_sampl <- length(sample_seqID)
+  
+# Calculate VF prevalence        
+vf_prev <- combine.df %>% 
+  dplyr::group_by(Gene_name) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl, 4)) %>%
+  dplyr::ungroup()
+  
+# VF presence/absence (1 = present, 0 = absent)
+sample_vfs <- combine.df %>%
+  filter(Gene_name %in% vf_prev$Gene_name) %>% 
+  inner_join(main, by=c("sample" = "sample_seqID")) %>%
+  group_by(sample, Gene_name) %>%
+  summarise(Cnt = n()) %>% 
+  reshape2::dcast(data = ., sample ~ Gene_name, value.var = "Cnt", fill=0, fun.aggregate = sum) %>% 
+  mutate_if(is.numeric, ~1 * (. > 0))
+
+  vfcols <- colnames(sample_vfs[-1])
+
+  # Count total number VFs per sample
+  main <-  sample_vfs %>% 
+    #inner_join(sample_vfs, by = c("sample_seqID" = "sample")) %>%  
+    rowwise %>% mutate(total_vfs = sum(c_across(where(is.numeric)))) %>%
+    dplyr::select(sample, total_vfs, everything())
+  
+  # Predict pathotype based on VFs present
+  vf.pred <- main %>% dplyr::select(sample, any_of(vfcols)) %>% 
+    mutate(
+      STEC = case_when(stx1 == 1 & eae == 0 ~ 1,
+                       stx2 == 1 & eae == 0 ~ 1,
+                       TRUE ~ 0),
+      EPEC = case_when(eae == 1 & stx1 == 0 & stx2 == 0 ~ 1,
+                       bfpA == 1 & stx1 == 0 & stx2 == 0 ~ 1,
+                       TRUE ~ 0),
+      EHEC = case_when(stx1 == 1 & eae == 1 ~ 1,
+                       stx2 == 1 & eae == 1 ~ 1,
+                       TRUE ~ 0),
+      EAEC = case_when(aggR == 1 ~ 1,
+                       aaiC == 1 ~ 1,
+                       aatA == 1 ~ 1,
+                       TRUE ~ 0),
+      ETEC = case_when(ltcA == 1 ~ 1,
+                       sta1 == 1 ~ 1,
+                       TRUE ~ 0),
+      DAEC = case_when(afaC == 1 ~ 1,
+                       afaE == 1 ~ 1,
+                       TRUE ~ 0),
+      EIEC = case_when(ipaH == 1 ~ 1,
+                       TRUE ~ 0),
+      none = case_when(stx1 == 0 & stx2 == 0 & eae == 0 & afaC == 0 & afaE == 0 & bfpA == 0 & aggR == 0 & aaiC == 0 & aatA == 0 &
+                       ltcA == 0 & sta1 == 0 & afaC == 0 & ipaH == 0 ~ 1, 
+                       TRUE ~ 0)) %>% 
+    dplyr::select(sample, 
+                  EAEC, ETEC, DAEC, EPEC, STEC, EHEC, EIEC, none)
+  
+  pathcols <- c("EAEC", "EPEC", "STEC", "ETEC", "EHEC", "EIEC", "DAEC", "none")
+  
+  tmp.df <- vf.pred %>% 
+    tidyr::gather(key="Pathotype", value="flag", any_of(pathcols)) %>%
+    filter(flag == 1) %>% 
+    group_by(sample) %>% 
+    summarise(pred = paste(Pathotype, collapse = "-"))
+  
+  # Predict pathotype
+  patho_pred <- main %>% 
+    inner_join(tmp.df, by ="sample") %>%  
+    dplyr::select(sample, total_vfs, pred)
+  
+vf.patho.pred.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-patho-pred.csv")
+write.csv(patho_pred, vf.patho.pred.fname, quote = F, row.names = FALSE)
+
+```
+
+## AR GENES
+```{r Total ARGs}
+
+amrfinder.df <- pathotypeR_process("data/isolates/amrfinder/bakta", ".tsv")
+
+amrfinder_args <- amrfinder.df %>%
+  filter(`Element type` == "AMR") %>%
+  mutate(Gene_name = `Gene symbol`) %>%
+  group_by(sample, Gene_name) %>%
+  filter(row_number() == 1) %>% 
+  ungroup() %>% 
+  mutate(Gene_name = stringr::str_replace_all(Gene_name, "[/-]", "_"))
+
+# Only keep those in final set
+sample_seqID <- e00.isolates.main$sample_seqID
+amrfinder_args <- filter(amrfinder_args, sample %in% sample_seqID)
+
+main <- data.frame(sample_seqID)
+num_sampl <- length(sample_seqID)
+  
+# Calculate ARG prevalence        
+arg_prev <- amrfinder_args %>% 
+  dplyr::group_by(Gene_name) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl, 4)) %>%
+  dplyr::ungroup()
+  
+# ARG presence/absence (1 = present, 0 = absent)
+sample_args <- amrfinder_args %>%
+  filter(Gene_name %in% arg_prev$Gene_name) %>% 
+  inner_join(main, by=c("sample" = "sample_seqID")) %>%
+  group_by(sample, Gene_name) %>%
+  summarise(Cnt = n()) %>% 
+  reshape2::dcast(data = ., sample ~ Gene_name, value.var = "Cnt", fill=0, fun.aggregate = sum) %>% 
+  mutate_if(is.numeric, ~1 * (. > 0))
+
+argcols <- colnames(sample_args[-1])
+
+# Count total number ARGs per sample
+sample_args_count <-  sample_args %>% 
+  rowwise %>% mutate(total_args = sum(c_across(where(is.numeric)))) %>%
+  dplyr::select(sample, total_args)
+  
+args.count.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-amrfinder-arg-count_v1.csv")
+write.csv(sample_args_count, args.count.fname, quote = F, row.names = FALSE)
+
+```
+
+```{r AMR class counts}
+
+amrfinder.df <- pathotypeR_process("data/isolates/amrfinder/bakta", ".tsv")
+
+amrfinder_class <- amrfinder.df %>%
+  filter(`Element type` == "AMR") %>%
+  group_by(sample, Class) %>%
+  filter(row_number() == 1) %>% 
+  ungroup()
+
+sample_seqID <- e00.isolates.main$sample_seqID
+main <- data.frame(sample_seqID)
+num_sampl <- length(sample_seqID)
+  
+amrfinder_class <- filter(amrfinder_class, sample %in% sample_seqID)
+
+class_prev <- amrfinder_class %>% 
+  dplyr::group_by(Class) %>% 
+  dplyr::summarise(Cnt = n(), 
+                   prev = round(Cnt/num_sampl, 4)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(Cnt))
+
+# ARG presence/absence (1 = present, 0 = absent)
+sample_class <- amrfinder_class %>%
+  filter(Class %in% class_prev$Class) %>% 
+  inner_join(main, by=c("sample" = "sample_seqID")) %>%
+  group_by(sample, Class) %>%
+  summarise(Cnt = n()) %>% 
+  reshape2::dcast(data = ., sample ~ Class, value.var = "Cnt", fill=0, fun.aggregate = sum) %>% 
+  mutate_if(is.numeric, ~1 * (. > 0))
+
+class <- colnames(sample_class[-1])
+
+# Count total number ARGs per sample
+sample_class_count <-  sample_class %>% 
+  rowwise %>% mutate(total_class = sum(c_across(where(is.numeric)))) %>%
+  dplyr::select(sample, total_class)
+
+class_prev.fname <- stringr::str_interp("${dat.path}/${fln.prfx}-isolates-class-prev_v1.csv")
+write.csv(sample_class_count, class_prev.fname , quote = F, row.names = FALSE)
+
+# Assign to none_low and none_high
+sample_none_group <- sample_class_count %>%
+  select(pathotype2 = "none") %>%
+  mutate(none_group = case_when(total_class > 5 ~ "none_high", 
+                                total_class < 5 ~ "none_low"))
+
+```
+
+
+```{r ARG co-occurence}
+
+amrfinder.df <- pathotypeR_process("data/isolates/amrfinder/bakta", ".tsv")
+
+amrfinder_args <- amrfinder.df %>%
+  filter(`Element type` == "AMR") %>%
+  mutate(Gene_name = `Gene symbol`) %>%
+  group_by(sample, Gene_name) %>%
+  filter(row_number() == 1) %>% 
+  ungroup() %>% 
+  mutate(Gene_name = stringr::str_replace_all(Gene_name, "[/-]", "_"))
+
+# Only keep those in final set
+sample_seqID <- e00.isolates.main$sample_seqID
+amrfinder_args <- filter(amrfinder_args, sample %in% sample_seqID)
+
+```

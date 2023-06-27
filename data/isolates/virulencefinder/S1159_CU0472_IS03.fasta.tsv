@@ -1,0 +1,18 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaA	100.0	306 / 306	NODE_29_length_13544_cov_45.924853	2822..3127	  Transcriptional regulator	X76688
+virulence_ecoli	afaB	99.87	798 / 798	NODE_29_length_13544_cov_45.924853	3388..4185	  Periplasmic chaperone	KR338833
+virulence_ecoli	afaC	99.92	2583 / 2583	NODE_29_length_13544_cov_45.924853	4225..6807	  Outer membrane usher protein	JN688153
+virulence_ecoli	afaD	100.0	444 / 444	NODE_29_length_13544_cov_45.924853	6823..7266	  Afimbrial adhesion	AY525516
+virulence_ecoli	afaE	99.66	884 / 884	NODE_29_length_13544_cov_45.924853	7711..8594	  Adhesin protein	M27725
+virulence_ecoli	chuA	100.0	1983 / 1983	NODE_10_length_191796_cov_44.690229	17589..19571	  Outer membrane hemin receptor	UGDM01000004
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_26_length_27852_cov_39.743006	21865..23886	  Siderophore receptor	ADTR01000532
+virulence_ecoli	irp2	100.0	5470 / 6108	NODE_26_length_27852_cov_39.743006	3207..8676	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QKNC01000001
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_5_length_359489_cov_46.843046	6636..7784	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	NODE_5_length_359489_cov_46.843046	20528..21304	  Polysialic acid transport protein; Group 2 capsule	UGDM01000004
+virulence_ecoli	ompT	100.0	954 / 954	NODE_1_length_506849_cov_46.324904	203161..204114	  Outer membrane protease (protein protease 7)	NZ_QKNC01000001
+virulence_ecoli	papA_F43	98.9	543 / 564	NODE_33_length_12711_cov_54.505778	12082..12623	  Major pilin subunit F43	JNMC01000043
+virulence_ecoli	sitA	99.89	915 / 915	NODE_9_length_246506_cov_48.996157	3645..4559	  Iron transport protein	CYGJ01000009
+virulence_ecoli	terC	99.3	714 / 714	NODE_13_length_159896_cov_46.216920	130715..131428	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.41	964 / 966	NODE_5_length_359489_cov_46.843046	182508..183471	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	94.73	1043 / 1041	NODE_7_length_295603_cov_45.676712	108471..109511	  Uropathogenic specific protein	AB056437
+virulence_ecoli	yfcV	100.0	567 / 567	NODE_19_length_53293_cov_51.415120	52230..52796	  Fimbrial protein	AP018784

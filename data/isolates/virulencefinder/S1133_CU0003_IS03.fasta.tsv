@@ -1,0 +1,15 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_57_length_5874_cov_40.288425	2629..3717	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_31_length_56617_cov_28.981376	18549..20570	  Siderophore receptor	AHAX01000032
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_4_length_177148_cov_30.534898	118312..119229	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	100.0	792 / 792	NODE_12_length_151813_cov_33.220258	115142..115933	  Heat-resistant agglutinin	CP043942
+virulence_ecoli	irp2	99.98	6108 / 6108	NODE_31_length_56617_cov_28.981376	33758..39865	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NNUE01000023
+virulence_ecoli	mchB	100.0	294 / 294	NODE_12_length_151813_cov_33.220258	140801..141094	  Microcin H47 part of colicin H	AJ009631
+virulence_ecoli	mchC	100.0	1551 / 1551	NODE_12_length_151813_cov_33.220258	138980..140530	  MchC protein	FN554766
+virulence_ecoli	mchF	99.95	2097 / 2097	NODE_12_length_151813_cov_33.220258	134986..137082	  ABC transporter protein MchF	FN554766
+virulence_ecoli	mcmA	100.0	222 / 222	NODE_12_length_151813_cov_33.220258	134512..134733	  Microcin M part of colicin H	FN554766
+virulence_ecoli	terC	100.0	714 / 714	NODE_19_length_102516_cov_30.603491	18669..19382	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_1_length_292865_cov_30.471703	184786..185751	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.44	178 / 177	NODE_36_length_45081_cov_105.227246	1186..1363	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	100.0	714 / 714	NODE_25_length_87706_cov_160.321823	63576..64289	  Outer membrane protein complement resistance	LT985300
+virulence_ecoli	traT	100.0	303 / 303	NODE_36_length_45081_cov_105.227246	650..952	  Outer membrane protein complement resistance	UEKA01000045

@@ -1,0 +1,5 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	hra	99.75	792 / 792	NODE_106_length_5277_cov_16.200192	1478..2269	  Heat-resistant agglutinin	CP006636
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_99_length_5663_cov_19.017902	378..950	  Long polar fimbriae	AP010953
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_99_length_5663_cov_19.017902	378..950	  Long polar fimbriae	CP002185
+virulence_ecoli	terC	100.0	620 / 714	NODE_2612_length_643_cov_29.314488	1..620	  Tellurium ion resistance protein	CP007491

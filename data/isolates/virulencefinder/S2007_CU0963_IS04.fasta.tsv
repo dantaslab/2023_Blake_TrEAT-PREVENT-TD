@@ -1,0 +1,32 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	96.79	1029 / 1029	NODE_115_length_4735_cov_115.422070	141..1169	 Isoprenoid Biosynthesis	HE610901
+virulence_ecoli	ORF4	98.98	491 / 540	NODE_172_length_1083_cov_133.540755	521..1011	 Putative isopentenyl-diphosphate delta-isomerase	AB255435
+virulence_ecoli	aaiC	99.8	507 / 507	NODE_42_length_37596_cov_36.068818	16120..16626	 Type VI secretion protein	cp003301
+virulence_ecoli	aap	99.43	351 / 351	NODE_115_length_4735_cov_115.422070	3211..3561	 Dispersin, antiaggregation protein	AB255435
+virulence_ecoli	aatA	99.84	1239 / 1239	NODE_82_length_15539_cov_120.184129	9880..11118	 Dispersin transporter protein	AB255435
+virulence_ecoli	agg4A	99.61	513 / 513	NODE_82_length_15539_cov_120.184129	5275..5787	 AAF/IV major fimbrial subunit	SSI_AA786
+virulence_ecoli	agg4B	99.77	429 / 429	NODE_82_length_15539_cov_120.184129	4774..5201	 AAF/IV minor adhesin. Enterobacteria AfaD invasin protein	EU637023
+virulence_ecoli	agg4C	99.72	2529 / 2529	NODE_82_length_15539_cov_120.184129	2229..4757	 Usher, AAF/IV assembly unit	SSI_AA805
+virulence_ecoli	agg4D	99.85	683 / 684	NODE_82_length_15539_cov_120.184129	1497..2179	 Chaperone, AAF/IV assembly unit	AB255435
+virulence_ecoli	aggR	99.87	798 / 798	NODE_122_length_4060_cov_124.225960	2857..3654	 AraC transcriptional activator	DIJ1
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_33_length_51971_cov_22.351813	18693..20714	  Siderophore receptor	AHAX01000032
+virulence_ecoli	gad	98.14	1401 / 1401	NODE_36_length_47633_cov_25.584217	6501..7901	  Glutamate decarboxylase	CP002167
+virulence_ecoli	gad	98.14	1401 / 1401	NODE_36_length_47633_cov_25.584217	6501..7901	  Glutamate decarboxylase	FN649414
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_13_length_98174_cov_25.166651	13796..14713	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	99.87	792 / 792	NODE_150_length_1937_cov_32.663441	730..1521	  Heat-resistant agglutinin	CP043942
+virulence_ecoli	iha	100.0	2091 / 2091	NODE_71_length_20375_cov_34.473347	9644..11734	  Adherence protein	CP003289
+virulence_ecoli	irp2	99.95	6108 / 6108	NODE_33_length_51971_cov_22.351813	33902..40009	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UEMW01000001
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_77_length_17343_cov_30.333835	9969..11711	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	99.86	2199 / 2199	NODE_77_length_17343_cov_30.333835	6434..8632	  Ferric aerobactin receptor	UGBU01000002
+virulence_ecoli	iutA	99.86	2199 / 2199	NODE_77_length_17343_cov_30.333835	6434..8632	  Ferric aerobactin receptor	UGEP01000007
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_54_length_30821_cov_23.137035	270..842	  Long polar fimbriae	AP010953
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_54_length_30821_cov_23.137035	270..842	  Long polar fimbriae	KC207123
+virulence_ecoli	mchB	96.39	305 / 294	NODE_75_length_17889_cov_36.024029	15858..16162	  Microcin H47 part of colicin H	AE014075
+virulence_ecoli	mchC	100.0	1551 / 1551	NODE_75_length_17889_cov_36.024029	14036..15586	  MchC protein	CP003289
+virulence_ecoli	mchF	99.95	2103 / 2103	NODE_75_length_17889_cov_36.024029	10036..12138	  ABC transporter protein MchF	CP003301
+virulence_ecoli	pic	100.0	2674 / 4119	NODE_136_length_2950_cov_29.061608	199..2872	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	sat	99.85	3888 / 3888	NODE_77_length_17343_cov_30.333835	1594..5481	 Secreted autotransporter toxin	JX050263
+virulence_ecoli	sepA	99.66	4095 / 4095	NODE_106_length_6328_cov_80.130219	625..4719	 Shigella extracellular protein A	AB255435
+virulence_ecoli	terC	99.86	714 / 714	NODE_1_length_283163_cov_24.111358	138544..139257	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_3_length_176547_cov_23.211101	140700..141665	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_55_length_30380_cov_25.166584	24964..26004	  Tellurium ion resistance protein	UINO01000028

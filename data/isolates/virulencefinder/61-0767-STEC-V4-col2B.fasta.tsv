@@ -1,0 +1,11 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	clbB	100.0	9621 / 9621	NODE_4_length_466082_cov_32.360741	437590..447210	  Hybrid non-ribosomal peptide / polyketide megasynthase	AM229678
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_3_length_483421_cov_28.919358	34628..36649	  Siderophore receptor	CAY233333
+virulence_ecoli	irp2	98.64	6108 / 6108	NODE_3_length_483421_cov_28.919358	49837..55944	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMCV01000036
+virulence_ecoli	irp2	98.64	6108 / 6108	NODE_3_length_483421_cov_28.919358	49837..55944	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NOPM01000014
+virulence_ecoli	irp2	98.64	6108 / 6108	NODE_3_length_483421_cov_28.919358	49837..55944	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PQJF01000011
+virulence_ecoli	iutA	99.27	2190 / 2190	NODE_11_length_203973_cov_28.263811	19907..22096	  Ferric aerobactin receptor	FLWH01000001
+virulence_ecoli	iutA	99.27	2190 / 2190	NODE_11_length_203973_cov_28.263811	19907..22096	  Ferric aerobactin receptor	FLXF01000001
+virulence_ecoli	mchF	99.86	2097 / 2097	NODE_4_length_466082_cov_32.360741	414321..416417	  ABC transporter protein MchF	AF063590
+virulence_ecoli	terC	97.97	887 / 1041	NODE_44_length_2984_cov_45.041624	2098..2984	  Tellurium ion resistance protein	UDHA01000026
+virulence_ecoli	terC	97.97	887 / 1041	NODE_44_length_2984_cov_45.041624	2098..2984	  Tellurium ion resistance protein	UGAE01000003

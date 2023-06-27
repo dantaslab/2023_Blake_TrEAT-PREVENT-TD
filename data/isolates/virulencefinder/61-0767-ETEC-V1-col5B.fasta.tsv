@@ -1,0 +1,25 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_1144_length_808_cov_375.105335	147..263	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_98_length_12627_cov_54.167171	10982..12070	 Hexosyltransferase homolog	FN822745
+virulence_ecoli	eatA	99.98	4095 / 4095	NODE_128_length_9525_cov_82.253810	1903..5997	 enterotoxigenic E. coli (ETEC) autotransporter A	CR942285
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_18_length_37023_cov_30.146592	7633..9654	  Siderophore receptor	UCZF01000015
+virulence_ecoli	gad	100.0	909 / 1401	NODE_686_length_1189_cov_74.625899	1..909	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	909 / 1401	NODE_686_length_1189_cov_74.625899	1..909	  Glutamate decarboxylase	EF547385
+virulence_ecoli	gad	100.0	909 / 1401	NODE_686_length_1189_cov_74.625899	1..909	  Glutamate decarboxylase	FN649414
+virulence_ecoli	gad	100.0	909 / 1401	NODE_686_length_1189_cov_74.625899	1..909	  Glutamate decarboxylase	U00096
+virulence_ecoli	irp2	99.93	6108 / 6108	NODE_18_length_37023_cov_30.146592	22842..28949	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMAY01000003
+virulence_ecoli	irp2	99.93	6108 / 6108	NODE_18_length_37023_cov_30.146592	22842..28949	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMCV01000036
+virulence_ecoli	iss	100.0	294 / 294	NODE_2601_length_401_cov_84.799383	96..389	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_25_length_30863_cov_26.413045	5239..6387	  Capsule polysaccharide export inner-membrane protein	AELA02000001
+virulence_ecoli	kpsM_K15	100.0	777 / 777	NODE_25_length_30863_cov_26.413045	21652..22428	  Polysialic acid transport protein; Group 3 capsule	AJ617685
+virulence_ecoli	lngA	100.0	711 / 711	NODE_70_length_16865_cov_49.163510	12334..13044	  Longus type IV pilus	FN822746
+virulence_ecoli	ltcA	100.0	611 / 777	NODE_1600_length_611_cov_246.222846	1..611	  Heat-labile enterotoxin A subunit	AP010910
+virulence_ecoli	ltcA	100.0	611 / 810	NODE_1600_length_611_cov_246.222846	1..611	  Heat-labile enterotoxin A subunit	CP000795
+virulence_ecoli	ltcA	100.0	611 / 777	NODE_1600_length_611_cov_246.222846	1..611	  Heat-labile enterotoxin A subunit	EU113248
+virulence_ecoli	ltcA	100.0	611 / 777	NODE_1600_length_611_cov_246.222846	1..611	  Heat-labile enterotoxin A subunit	EU113252
+virulence_ecoli	ltcA	100.0	611 / 777	NODE_1600_length_611_cov_246.222846	1..611	  Heat-labile enterotoxin A subunit	JX504011
+virulence_ecoli	ompT	100.0	363 / 363	NODE_457_length_1892_cov_25.393939	1184..1546	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	terC	100.0	714 / 714	NODE_14_length_40582_cov_50.621331	16584..17297	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.87	745 / 966	NODE_55_length_19485_cov_48.791622	18741..19485	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	738 / 738	NODE_15_length_38008_cov_69.271282	22799..23536	  Outer membrane protein complement resistance	AAJX02000076
+virulence_ecoli	traT	100.0	735 / 735	NODE_131_length_9191_cov_48.719991	7422..8156	  Outer membrane protein complement resistance	NC_014232

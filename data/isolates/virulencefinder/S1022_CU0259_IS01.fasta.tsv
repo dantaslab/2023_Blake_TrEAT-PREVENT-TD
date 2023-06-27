@@ -1,0 +1,6 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_37_length_39943_cov_82.956780	4865..6265	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	99.36	1401 / 1401	NODE_36_length_41254_cov_67.641742	25011..26411	  Glutamate decarboxylase	BA000007
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_2_length_259961_cov_69.286024	246084..247001	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	terC	98.88	714 / 714	NODE_13_length_105008_cov_78.323918	21168..21881	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.17	959 / 966	NODE_33_length_42318_cov_89.406619	31227..32185	  Tellurium ion resistance protein	MG591698

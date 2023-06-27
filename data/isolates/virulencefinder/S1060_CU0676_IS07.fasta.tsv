@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	99.15	117 / 117	NODE_40_length_35534_cov_69.875906	33267..33383	 EAST-1 heat-stable toxin	AF161000
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_47_length_30380_cov_150.141801	15899..16987	 Hexosyltransferase homolog	FN822745
+virulence_ecoli	eatA	100.0	4095 / 4095	NODE_47_length_30380_cov_150.141801	4859..8953	 enterotoxigenic E. coli (ETEC) autotransporter A	CR942285
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_31_length_52836_cov_71.419322	24997..26397	  Glutamate decarboxylase	FN649414
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_11_length_126121_cov_70.879217	94734..96134	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	99.89	918 / 918	NODE_1_length_306930_cov_69.659799	145615..146532	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_85_length_5226_cov_72.362983	4003..4296	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_15_length_92892_cov_77.517222	57865..59013	  Capsule polysaccharide export inner-membrane protein	AELA02000001
+virulence_ecoli	kpsM_K15	100.0	777 / 777	NODE_15_length_92892_cov_77.517222	74306..75082	  Polysialic acid transport protein; Group 3 capsule	AJ617685
+virulence_ecoli	lngA	100.0	711 / 711	NODE_51_length_28333_cov_166.558678	6264..6974	  Longus type IV pilus	FN822746
+virulence_ecoli	terC	100.0	714 / 714	NODE_38_length_39885_cov_72.014193	16363..17076	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.79	966 / 966	NODE_24_length_62076_cov_72.242165	10819..11784	  Tellurium ion resistance protein	MG591698

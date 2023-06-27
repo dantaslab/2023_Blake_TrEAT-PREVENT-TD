@@ -1,0 +1,29 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	95.27	4606 / 4605	ECOR49_Contig_148	2053..6658	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	capU	100.0	1089 / 1089	ECOR49_Contig_143	2170..3258	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	cea	100.0	1566 / 1566	ECOR49_Contig_102	2352..3917	  Colicin E1	CYEM01000021
+virulence_ecoli	chuA	100.0	1983 / 1983	ECOR49_Contig_268	17002..18984	  Outer membrane hemin receptor	UFZL01000002
+virulence_ecoli	eilA	98.47	1698 / 1698	ECOR49_Contig_84	124521..126218	 Salmonella HilA homolog	CP000970
+virulence_ecoli	eilA	98.47	1698 / 1698	ECOR49_Contig_84	124521..126218	 Salmonella HilA homolog	CP003034
+virulence_ecoli	fyuA	99.9	2022 / 2022	ECOR49_Contig_129	31052..33073	  Siderophore receptor	AHAX01000032
+virulence_ecoli	gad	98.89	1265 / 1401	ECOR49_Contig_282	1..1265	  Glutamate decarboxylase	CU928163
+virulence_ecoli	hlyE	98.58	918 / 918	ECOR49_Contig_201	46726..47643	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	ECOR49_Contig_280	5932..8022	  Adherence protein	CP003034
+virulence_ecoli	irp2	99.97	6108 / 6108	ECOR49_Contig_129	11757..17864	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NLXO01000005
+virulence_ecoli	irp2	99.97	6108 / 6108	ECOR49_Contig_129	11757..17864	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NTOI01000049
+virulence_ecoli	irp2	99.97	6108 / 6108	ECOR49_Contig_129	11757..17864	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UGCA01000002
+virulence_ecoli	irp2	99.97	6108 / 6108	ECOR49_Contig_129	11757..17864	  High molecular weight protein 2 non-ribosomal peptide synthetase	QODN01000001
+virulence_ecoli	iucC	100.0	1743 / 1743	ECOR49_Contig_130	5139..6881	  Aerobactin synthetase	CP003034
+virulence_ecoli	iutA	100.0	2202 / 2202	ECOR49_Contig_130	8237..10438	  Ferric aerobactin receptor	CP003034
+virulence_ecoli	kpsE	100.0	1149 / 1149	ECOR49_Contig_63	7574..8722	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	ECOR49_Contig_63	23308..24084	  Polysialic acid transport protein; Group 2 capsule	X53819
+virulence_ecoli	ompT	100.0	954 / 954	ECOR49_Contig_239	3538..4491	  Outer membrane protease (protein protease 7)	UGBX01000001
+virulence_ecoli	papA_F43	99.08	543 / 564	ECOR49_Contig_261	246..788	  Major pilin subunit F43	JNMC01000043
+virulence_ecoli	papA_F9	99.65	576 / 576	ECOR49_Contig_219	5285..5860	  Major pilin subunit F9	ECOPAPAA
+virulence_ecoli	papC	99.96	2511 / 2511	ECOR49_Contig_219	2065..4575	  Outer membrane usher P fimbriae	JONC01000026
+virulence_ecoli	sat	100.0	3888 / 3888	ECOR49_Contig_130	11383..15270	 Secreted autotransporter toxin	CP001671
+virulence_ecoli	senB	99.91	1176 / 1176	ECOR49_Contig_215	1210..2385	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	ECOR49_Contig_292	7668..8582	  Iron transport protein	ADTP01000122
+virulence_ecoli	terC	98.6	714 / 714	ECOR49_Contig_160	6251..6964	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.75	959 / 966	ECOR49_Contig_20	173637..174595	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	ECOR49_Contig_13	1453..2187	  Outer membrane protein complement resistance	NZ_CP032205

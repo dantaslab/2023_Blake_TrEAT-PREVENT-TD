@@ -1,0 +1,33 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	99.51	1029 / 1029	NODE_47_length_24415_cov_218.408867	1121..2149	 Isoprenoid Biosynthesis	HE610901
+virulence_ecoli	ORF4	99.81	540 / 540	NODE_47_length_24415_cov_218.408867	2153..2692	 Putative isopentenyl-diphosphate delta-isomerase	AFRH01000026
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_49_length_22729_cov_119.295868	16120..16626	 Type VI secretion protein	FN554766
+virulence_ecoli	aap	100.0	351 / 351	NODE_47_length_24415_cov_218.408867	8320..8670	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	aar	100.0	201 / 201	NODE_47_length_24415_cov_218.408867	9401..9601	 AggR-activated regulator	SSI_AA787
+virulence_ecoli	aatA	99.68	1239 / 1239	NODE_47_length_24415_cov_218.408867	15026..16264	 Dispersin transporter protein	CU928159
+virulence_ecoli	afaD	100.0	438 / 438	NODE_63_length_8254_cov_174.616974	6493..6930	  Afimbrial adhesion	UGCQ01000001
+virulence_ecoli	aggA	100.0	516 / 516	NODE_63_length_8254_cov_174.616974	7031..7546	 AAF/I major fimbrial subunit	SSI_AA804
+virulence_ecoli	aggC	99.71	2385 / 2385	NODE_63_length_8254_cov_174.616974	4095..6479	 Usher, AAF/I assembly unit	AFRH01000026
+virulence_ecoli	aggD	99.74	759 / 759	NODE_63_length_8254_cov_174.616974	3179..3937	 Chaperone, AAF/I assembly unit	U12894
+virulence_ecoli	aggR	100.0	798 / 798	NODE_47_length_24415_cov_218.408867	6685..7482	 AraC transcriptional activator	55989
+virulence_ecoli	astA	100.0	117 / 117	NODE_110_length_1114_cov_1147.297011	211..327	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_53_length_14664_cov_67.936656	10984..12072	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_1_length_320388_cov_65.422533	23735..25756	  Siderophore receptor	UGCQ01000002
+virulence_ecoli	hlyA	99.9	3075 / 3075	NODE_56_length_13596_cov_109.894667	6449..9523	  Haemolysin A	CP054232
+virulence_ecoli	hlyE	99.89	918 / 918	NODE_4_length_216737_cov_68.353291	116698..117615	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_1_length_320388_cov_65.422533	38944..45051	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NTPD01000023
+virulence_ecoli	iss	100.0	294 / 294	NODE_31_length_59073_cov_75.541003	5806..6099	  Increased serum survival	CP001846
+virulence_ecoli	kpsE	99.91	1149 / 1149	NODE_23_length_84443_cov_76.906503	7324..8472	  Capsule polysaccharide export inner-membrane protein	FBVS01000076
+virulence_ecoli	kpsMII	100.0	777 / 777	NODE_23_length_84443_cov_76.906503	22693..23469	  Polysialic acid transport protein; Group 2 capsule	MG736912
+virulence_ecoli	mchB	96.39	305 / 294	NODE_34_length_48605_cov_98.515002	10904..11208	  Microcin H47 part of colicin H	AE014075
+virulence_ecoli	mchC	100.0	1551 / 1551	NODE_34_length_48605_cov_98.515002	11480..13030	  MchC protein	CP003289
+virulence_ecoli	mchF	99.95	2103 / 2103	NODE_34_length_48605_cov_98.515002	14928..17030	  ABC transporter protein MchF	CP003301
+virulence_ecoli	ompT	100.0	954 / 954	NODE_45_length_25371_cov_68.989444	22324..23277	  Outer membrane protease (protein protease 7)	NZ_NKVD01000029
+virulence_ecoli	papA_fsiA_F16	99.81	537 / 537	NODE_60_length_11238_cov_86.334020	2373..2909	  Major pilin subunit F16	CU928163
+virulence_ecoli	papC	99.84	2511 / 2511	NODE_60_length_11238_cov_86.334020	3619..6129	  Outer membrane usher P fimbriae	CP002797
+virulence_ecoli	papC	99.84	2511 / 2511	NODE_60_length_11238_cov_86.334020	3619..6129	  Outer membrane usher P fimbriae	JONC01000026
+virulence_ecoli	pic	99.98	4119 / 4119	NODE_62_length_9988_cov_100.724649	5350..9468	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	terC	100.0	714 / 714	NODE_30_length_60306_cov_71.467333	38448..39161	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_24_length_76854_cov_68.531800	21219..22184	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_50_length_22686_cov_64.379583	5601..6641	  Tellurium ion resistance protein	UINO01000028
+virulence_ecoli	traT	100.0	738 / 738	NODE_39_length_43422_cov_151.383020	6466..7203	  Outer membrane protein complement resistance	CXZC01000023

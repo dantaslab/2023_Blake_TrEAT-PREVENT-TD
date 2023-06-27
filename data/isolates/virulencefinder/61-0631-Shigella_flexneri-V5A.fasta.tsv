@@ -1,0 +1,12 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cia	99.76	1275 / 1275	NODE_1_length_92889_cov_23.651726	29328..30602	  Colicin ia	AMTQ01000007
+virulence_ecoli	cia	100.0	147 / 147	NODE_1_length_92889_cov_23.651726	31115..31261	  Colicin ia	QMGM01000002
+virulence_ecoli	gad	100.0	1181 / 1401	NODE_114_length_11582_cov_23.215472	10402..11582	  Glutamate decarboxylase	AE005674
+virulence_ecoli	hlyE	97.82	918 / 918	NODE_57_length_27099_cov_20.449634	2576..3482	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iucC	99.94	1743 / 1743	NODE_112_length_11825_cov_25.780133	5261..7003	  Aerobactin synthetase	UFZP01000007
+virulence_ecoli	iutA	99.95	2199 / 2199	NODE_112_length_11825_cov_25.780133	1726..3924	  Ferric aerobactin receptor	UARU01000014
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_254_length_1311_cov_29.363857	386..958	  Long polar fimbriae	AE014073
+virulence_ecoli	sitA	100.0	915 / 915	NODE_183_length_4980_cov_20.347134	2880..3794	  Iron transport protein	UFYN01000008
+virulence_ecoli	terC	99.3	714 / 714	NODE_13_length_60174_cov_23.438558	16652..17365	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.06	959 / 966	NODE_36_length_35094_cov_23.175572	10695..11653	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	627 / 627	NODE_1_length_92889_cov_23.651726	69074..69700	  Outer membrane protein complement resistance	MF156268

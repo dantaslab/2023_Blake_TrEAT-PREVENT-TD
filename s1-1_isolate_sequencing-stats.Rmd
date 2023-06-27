@@ -1,0 +1,110 @@
+---
+title: "s0_source"
+author: "Kevin S. Blake"
+date: "2022-10-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("_common.R")
+```
+
+# isolate sampling
+
+```{r }
+
+e01.isolates.main <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  mutate(sample_date = as.Date(sample_date))
+  
+p01.sampling <- ggplot(e01.isolates.main, aes(x=sample_date, y=subject_ID, color=subject_TRT)) +
+   theme_pub() +
+   theme(aspect.ratio = 1,
+        axis.text.x = element_text(angle=45, hjust=1),
+        legend.position = "right") +
+        scale_color_manual(values=TRT.colors) +
+        scale_x_date(date_breaks="months", date_labels="%b %Y") +
+        scale_size(range=c(1,2)) +
+        #scale_size(range=c(2, 5)) +
+        scale_shape_manual(values=c(16, 1, 1)) +
+   geom_count()
+
+print(p01.sampling)
+
+tmp.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-sampling_v1_KSB.pdf")
+ggsave2(p01.sampling, filename = tmp.fname, device=cairo_pdf, height=3)
+
+# Num isolates by timepoint
+TrEAT.timepoint <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  select(sample_seqID, sample_timepoint)
+
+TrEAT.timepoint.p01 <- ggplot(TrEAT.timepoint, aes(x=sample_timepoint)) +
+  geom_histogram(stat="count")
+
+print(TrEAT.timepoint.p01)
+
+```
+
+# snp distances 54
+
+```{r SNP distances post-derep (54 samples), echo=FALSE}
+
+snp1 <- ggplot(e00.isolates.snpdists, aes(distance, fill=subject_timepoint)) +
+   geom_histogram(position="stack", binwidth=1000) +
+   theme_pub() +
+   scale_fill_manual(values=snp.colors) +
+   labs(y="count", x="SNP distance")
+
+print(snp1)
+
+snp2 <- ggplot(e00.isolates.snpdists , aes(distance, fill=subject)) +
+   geom_histogram(position="stack", binwidth=1000) +
+   theme_pub() +
+   ylim(NA,150) +
+   scale_fill_manual(breaks = c("same_subj", "diff_subj"), values=c("#00BFC4","#C7C8C7")) +
+   labs(y="count", x="SNP distance")
+
+print(snp2)
+
+# fname.snp2 <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-SNP-54_subj_v2_KSB.pdf")
+# ggsave2(snp2, filename = fname.snp2, device=cairo_pdf, height=3, width=5)
+
+snp3 <- ggplot(e00.isolates.snpdists, aes(distance, fill=subject)) +
+   geom_histogram(position="stack", binwidth=25) +
+   geom_vline(aes(xintercept=200, ),linetype="dashed") +
+   xlim(NA,1000) +
+   ylim(NA,11) +
+   theme_pub() +
+   scale_fill_manual(breaks = c("same_subj", "diff_subj"), values=c("#00BFC4","#C7C8C7"))
+
+print(snp3)
+
+# fname.snp3 <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-SNP-54_subj-ZOOM_v2_KSB.pdf")
+# ggsave2(snp3, filename = fname.snp3, device=cairo_pdf, height = 1.5, width = 1.5)
+
+```
+
+# strain persistence graph
+
+```{r}
+e01.isolates.clonal <- e00.isolates.clonal
+
+e01.isolates.clonal$sample_date <- as.Date(e01.isolates.clonal$sample_date)
+
+p02.clone <- ggplot(e01.isolates.clonal, aes(x=sample_date, y=subject_ID, color=Mlst_info)) +
+   theme_pub() +
+   theme(axis.text.x = element_text(angle=45, hjust=1)) +
+   geom_point() +
+   geom_line(aes(group=cluster)) +
+   #scale_color_manual(values=TRT.colors) +
+   scale_x_date(date_breaks="months", date_labels="%b %Y")
+   
+print(p02.clone)
+
+# p02.clone.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-clonal-persistence_v1_KSB.pdf")
+# ggsave2(p02.clone, filename = p02.clone.fname , device=cairo_pdf, height=3, width=5.5)
+
+```

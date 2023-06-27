@@ -1,0 +1,26 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	HIPH08472_Contig_19	12884..13000	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	cba	99.85	1337 / 1536	HIPH08472_Contig_30	9261..10597	  Colicin B	FJ664724
+virulence_ecoli	cba	99.85	1337 / 1536	HIPH08472_Contig_30	9261..10597	  Colicin B	FJ664737
+virulence_ecoli	cdtB	99.63	810 / 810	HIPH08472_Contig_2	19846..20655	  Cytolethal distending toxin B	AB472834
+virulence_ecoli	chuA	99.19	1983 / 1983	HIPH08472_Contig_10	16194..18175	  Outer membrane hemin receptor	CYCK01000002
+virulence_ecoli	cib	99.68	1881 / 1881	HIPH08472_Contig_25	26950..28830	  Colicin ib	AY258503
+virulence_ecoli	cma	99.51	816 / 816	HIPH08472_Contig_30	11386..12201	  Colicin M	FJ664718
+virulence_ecoli	cma	99.51	816 / 816	HIPH08472_Contig_30	11386..12201	  Colicin M	FJ664720
+virulence_ecoli	cma	99.51	816 / 816	HIPH08472_Contig_30	11386..12201	  Colicin M	FJ664744
+virulence_ecoli	eae	98.6	2070 / 2820	HIPH08472_Contig_1	531882..533951	  Intimin	AJ877230
+virulence_ecoli	espA	96.89	579 / 579	HIPH08472_Contig_1	527235..527813	  Type III secretions system	FM201463
+virulence_ecoli	espB	99.68	945 / 945	HIPH08472_Contig_1	525115..526059	  Secreted protein B	AP010958
+virulence_ecoli	espF	92.69	616 / 624	HIPH08472_Contig_1	523328..523943	  Type III secretion system	AF116900
+virulence_ecoli	gad	90.89	1218 / 1401	HIPH08472_Contig_62	1..1218	  Glutamate decarboxylase	FN554766
+virulence_ecoli	iss	90.1	293 / 294	HIPH08472_Contig_7	104740..105032	  Increased serum survival	CP001855
+virulence_ecoli	nleA	94.13	818 / 1326	HIPH08472_Contig_5	339318..340135	  Non-LEE encoded effector A	AE005174
+virulence_ecoli	nleB	92.32	990 / 990	HIPH08472_Contig_1	347976..348965	  Non-LEE encoded effector B	FN543502
+virulence_ecoli	ompT	99.9	954 / 954	HIPH08472_Contig_14	747..1700	  Outer membrane protease (protein protease 7)	HE962388
+virulence_ecoli	ompT	99.9	954 / 954	HIPH08472_Contig_14	747..1700	  Outer membrane protease (protein protease 7)	JNMR01000060
+virulence_ecoli	stx2A	100.0	960 / 960	HIPH08472_Contig_3	3065..4024	  Shiga toxin 2, subunit A, variant f	AB472687
+virulence_ecoli	stx2B	100.0	264 / 264	HIPH08472_Contig_3	2789..3052	  Shiga toxin 2, subunit B, variant f	AB472687
+virulence_ecoli	terC	90.62	714 / 714	HIPH08472_Contig_3	188907..189620	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	94.37	959 / 966	HIPH08472_Contig_4	199963..200921	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.58	1617 / 1617	HIPH08472_Contig_1	534615..536231	  Translocated intimin receptor protein	AB426060
+stx	stx2	100.0	1243 / 1243	HIPH08472_Contig_3	2782..4024	O115 F08-101-31, varinat f	AB472687

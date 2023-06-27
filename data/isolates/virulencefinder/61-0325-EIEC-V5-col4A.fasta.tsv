@@ -1,0 +1,24 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_15_length_97793_cov_98.781520	97079..97195	 EAST-1 heat-stable toxin	AF411067
+virulence_ecoli	chuA	99.95	1983 / 1983	NODE_7_length_303541_cov_28.393134	192391..194373	  Outer membrane hemin receptor	UFZT01000001
+virulence_ecoli	cia	100.0	1881 / 1881	NODE_15_length_97793_cov_98.781520	32104..33984	  Colicin ia	UGEO01000002
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_2_length_571860_cov_25.341187	150279..152300	  Siderophore receptor	ADTO01000058
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_2_length_571860_cov_25.341187	150279..152300	  Siderophore receptor	CAY233333
+virulence_ecoli	gad	100.0	1401 / 1401	NODE_7_length_303541_cov_28.393134	174122..175522	  Glutamate decarboxylase	CP001671
+virulence_ecoli	gad	99.43	1401 / 1401	NODE_4_length_344427_cov_24.086981	11492..12892	  Glutamate decarboxylase	CP002167
+virulence_ecoli	hra	99.75	792 / 792	NODE_3_length_383481_cov_26.027363	375565..376356	  Heat-resistant agglutinin	CP043942
+virulence_ecoli	irp2	99.98	6108 / 6108	NODE_2_length_571860_cov_25.341187	130984..137091	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NLZX01000039
+virulence_ecoli	mchB	99.66	294 / 294	NODE_21_length_46068_cov_36.972147	34865..35158	  Microcin H47 part of colicin H	AJ009631
+virulence_ecoli	mchC	99.74	1551 / 1551	NODE_21_length_46068_cov_36.972147	33044..34594	  MchC protein	FN554766
+virulence_ecoli	mchF	99.0	2097 / 2097	NODE_21_length_46068_cov_36.972147	29050..31146	  ABC transporter protein MchF	FN554766
+virulence_ecoli	mcmA	97.85	279 / 279	NODE_21_length_46068_cov_36.972147	28518..28796	  Microcin M part of colicin H	AJ586887
+virulence_ecoli	ompT	100.0	954 / 954	NODE_8_length_290747_cov_24.777758	140660..141613	  Outer membrane protease (protein protease 7)	NZ_JZQJ01000127
+virulence_ecoli	papC	94.46	2511 / 2511	NODE_15_length_97793_cov_98.781520	23361..25871	  Outer membrane usher P fimbriae	MG692627
+virulence_ecoli	pic	99.13	3784 / 4116	NODE_32_length_5112_cov_133.212910	1329..5112	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AE014075
+virulence_ecoli	terC	100.0	714 / 714	NODE_3_length_383481_cov_26.027363	245112..245825	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.2	964 / 966	NODE_5_length_337484_cov_26.592608	159729..160692	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	98.31	178 / 177	NODE_15_length_97793_cov_98.781520	75067..75244	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	100.0	303 / 303	NODE_15_length_97793_cov_98.781520	75478..75780	  Outer membrane protein complement resistance	UEKA01000045
+virulence_ecoli	vat	100.0	4131 / 4131	NODE_11_length_138295_cov_30.232994	113995..118125	 Vacuolating autotransporter toxin	AE014075
+virulence_ecoli	yfcV	99.47	567 / 567	NODE_16_length_92193_cov_26.883668	28451..29017	  Fimbrial protein	UFZT01000001
+virulence_ecoli	yfcV	99.47	567 / 567	NODE_16_length_92193_cov_26.883668	28451..29017	  Fimbrial protein	UGFJ01000003

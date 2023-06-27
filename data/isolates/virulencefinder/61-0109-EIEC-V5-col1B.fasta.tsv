@@ -1,0 +1,20 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	97.63	4606 / 4605	NODE_14_length_134824_cov_40.976920	34497..39102	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_32_length_38437_cov_42.202868	20205..21293	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	chuA	99.85	1983 / 1983	NODE_9_length_197425_cov_37.909454	177734..179716	  Outer membrane hemin receptor	UARX01000012
+virulence_ecoli	eilA	99.71	1698 / 1698	NODE_14_length_134824_cov_40.976920	45096..46793	 Salmonella HilA homolog	CP000970
+virulence_ecoli	eilA	99.71	1698 / 1698	NODE_14_length_134824_cov_40.976920	45096..46793	 Salmonella HilA homolog	CP003034
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_17_length_115998_cov_33.353266	81319..83340	  Siderophore receptor	ADTP01000030
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_1_length_515103_cov_33.419014	50235..51152	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_17_length_115998_cov_33.353266	62024..68131	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMCD01000015
+virulence_ecoli	iss	98.98	294 / 294	NODE_29_length_43308_cov_37.964840	38850..39143	  Increased serum survival	CP001665
+virulence_ecoli	iss	98.98	294 / 294	NODE_29_length_43308_cov_37.964840	38850..39143	  Increased serum survival	CP001846
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_23_length_67863_cov_39.794515	4957..6105	  Capsule polysaccharide export inner-membrane protein	AAMK02000004
+virulence_ecoli	kpsMII	100.0	777 / 777	NODE_23_length_67863_cov_39.794515	21773..22549	  Polysialic acid transport protein; Group 2 capsule	CP015834
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_21_length_70067_cov_40.858823	29984..30556	  Long polar fimbriae	CP003034
+virulence_ecoli	ompT	100.0	954 / 954	NODE_44_length_13747_cov_39.719678	4943..5896	  Outer membrane protease (protein protease 7)	CP015834
+virulence_ecoli	sitA	100.0	915 / 915	NODE_66_length_3956_cov_81.130704	2666..3580	  Iron transport protein	AEZP02000013
+virulence_ecoli	terC	98.46	714 / 714	NODE_15_length_134708_cov_39.503770	28327..29040	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	97.18	958 / 966	NODE_12_length_151761_cov_37.654051	110713..111670	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	732 / 732	NODE_48_length_11690_cov_72.530354	9757..10488	  Outer membrane protein complement resistance	NC_014615
+virulence_ecoli	yfcV	100.0	567 / 567	NODE_2_length_429417_cov_34.241673	54090..54656	  Fimbrial protein	UFZN01000001

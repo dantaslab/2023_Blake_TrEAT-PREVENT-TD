@@ -1,0 +1,34 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	aap	98.01	351 / 351	NODE_224_length_1600_cov_43.245568	415..765	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	afaA	100.0	306 / 306	NODE_78_length_13192_cov_20.765993	4733..5038	  Transcriptional regulator	X76688
+virulence_ecoli	afaB	99.87	798 / 798	NODE_78_length_13192_cov_20.765993	5313..6110	  Periplasmic chaperone	KR338833
+virulence_ecoli	afaC	99.92	2583 / 2583	NODE_78_length_13192_cov_20.765993	6150..8732	  Outer membrane usher protein	JN688153
+virulence_ecoli	afaD	100.0	444 / 444	NODE_78_length_13192_cov_20.765993	8748..9191	  Afimbrial adhesion	AY525516
+virulence_ecoli	afaE	99.77	884 / 884	NODE_78_length_13192_cov_20.765993	9636..10519	  Adhesin protein	M27725
+virulence_ecoli	air	95.16	4604 / 4605	NODE_22_length_91041_cov_21.123203	14539..19142	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	astA	99.15	117 / 117	NODE_451_length_804_cov_30.390646	55..171	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	astA	99.15	117 / 117	NODE_75_length_15916_cov_32.237136	13435..13551	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	astA	97.44	117 / 117	NODE_1312_length_294_cov_20.746544	55..171	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	capU	99.54	1089 / 1089	NODE_138_length_3687_cov_3.419668	1802..2890	 Hexosyltransferase homolog	CP001062
+virulence_ecoli	chuA	100.0	1983 / 1983	NODE_35_length_51924_cov_21.136343	32854..34836	  Outer membrane hemin receptor	UFZU01000002
+virulence_ecoli	eatA	98.97	4095 / 4095	NODE_76_length_15795_cov_33.338720	6086..10180	 enterotoxigenic E. coli (ETEC) autotransporter A	CR942285
+virulence_ecoli	eilA	98.65	1698 / 1698	NODE_22_length_91041_cov_21.123203	6264..7961	 Salmonella HilA homolog	FN554766
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_18_length_100558_cov_15.543008	87270..89291	  Siderophore receptor	UGCQ01000002
+virulence_ecoli	hlyE	98.91	918 / 918	NODE_33_length_53411_cov_15.256984	5635..6552	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.86	2091 / 2091	NODE_64_length_22670_cov_20.276900	791..2881	  Adherence protein	CP001671
+virulence_ecoli	ipaD	99.2	999 / 999	NODE_81_length_12372_cov_4.587963	314..1312	  Invasion protein Shigella flexneri	X60777
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_18_length_100558_cov_15.543008	67975..74082	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NTPD01000023
+virulence_ecoli	iss	99.66	294 / 294	NODE_82_length_12116_cov_14.535094	11643..11936	  Increased serum survival	CU928163
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_80_length_12591_cov_26.618108	4103..5845	  Aerobactin synthetase	CBTO010000002
+virulence_ecoli	iutA	100.0	2202 / 2202	NODE_80_length_12591_cov_26.618108	546..2747	  Ferric aerobactin receptor	CXZO01000056
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_5_length_176955_cov_18.689950	4126..5274	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	NODE_5_length_176955_cov_18.689950	19776..20552	  Polysialic acid transport protein; Group 2 capsule	X53819
+virulence_ecoli	lpfA	99.65	573 / 573	NODE_194_length_1993_cov_3.293319	973..1545	  Long polar fimbriae	AP010953
+virulence_ecoli	senB	99.83	1172 / 1176	NODE_276_length_1225_cov_3.466028	1..1172	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	senB	99.83	1172 / 1176	NODE_276_length_1225_cov_3.466028	1..1172	  Plasmid-encoded enterotoxin	CP001062
+virulence_ecoli	sitA	98.56	623 / 648	NODE_145_length_3244_cov_16.139880	1..623	  Iron transport protein	UFYX01000005
+virulence_ecoli	terC	98.46	714 / 714	NODE_51_length_33305_cov_17.751595	22923..23636	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	98.54	959 / 966	NODE_5_length_176955_cov_18.689950	168447..169405	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.44	178 / 177	NODE_93_length_9421_cov_32.937286	200..377	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	100.0	204 / 303	NODE_101_length_6921_cov_29.632379	1..204	  Outer membrane protein complement resistance	UEKA01000045
+virulence_ecoli	virF	100.0	810 / 810	NODE_158_length_2862_cov_6.328905	1974..2783	  VirF transcriptional activator	AF348706

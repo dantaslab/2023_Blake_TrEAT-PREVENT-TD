@@ -1,0 +1,19 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_128_length_4962_cov_40.919754	1399..2487	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_16_length_68140_cov_32.013987	48714..50735	  Siderophore receptor	AHAX01000032
+virulence_ecoli	gad	99.9	1016 / 1401	NODE_158_length_1714_cov_39.546121	699..1714	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	99.9	1016 / 1401	NODE_158_length_1714_cov_39.546121	699..1714	  Glutamate decarboxylase	AP010958
+virulence_ecoli	gad	99.9	1016 / 1401	NODE_158_length_1714_cov_39.546121	699..1714	  Glutamate decarboxylase	CP001063
+virulence_ecoli	gad	99.9	1016 / 1401	NODE_158_length_1714_cov_39.546121	699..1714	  Glutamate decarboxylase	EF551359
+virulence_ecoli	gad	99.9	1016 / 1401	NODE_158_length_1714_cov_39.546121	699..1714	  Glutamate decarboxylase	EF551360
+virulence_ecoli	hlyA	97.92	3075 / 3075	NODE_101_length_9803_cov_70.273802	2143..5217	  Haemolysin A	CP032936
+virulence_ecoli	hlyE	99.35	918 / 918	NODE_55_length_32742_cov_31.531394	26267..27184	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_16_length_68140_cov_32.013987	29419..35526	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEM01000039
+virulence_ecoli	iss	99.5	202 / 294	NODE_214_length_430_cov_78.133144	229..430	  Increased serum survival	CP001846
+virulence_ecoli	iss	99.08	217 / 342	NODE_143_length_2920_cov_45.067183	1..217	  Increased serum survival	CU928158
+virulence_ecoli	iss	99.08	217 / 342	NODE_143_length_2920_cov_45.067183	1..217	  Increased serum survival	CU928160
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_52_length_33176_cov_38.248165	2625..3197	  Long polar fimbriae	AY646923
+virulence_ecoli	sitA	100.0	915 / 915	NODE_88_length_15692_cov_30.377586	2946..3860	  Iron transport protein	HG977190
+virulence_ecoli	terC	100.0	714 / 714	NODE_18_length_65702_cov_34.302491	16046..16759	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	100.0	959 / 966	NODE_59_length_31015_cov_35.751277	10888..11846	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	831 / 831	NODE_23_length_56344_cov_52.469547	9639..10469	  Outer membrane protein complement resistance	NC_007675

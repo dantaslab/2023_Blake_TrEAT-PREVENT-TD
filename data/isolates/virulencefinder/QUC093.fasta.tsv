@@ -1,0 +1,20 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	96.71	4625 / 4605	QUC093_Contig_1	4109743..4114367	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	chuA	99.85	1983 / 1983	QUC093_Contig_1	3894571..3896553	  Outer membrane hemin receptor	UARX01000012
+virulence_ecoli	eilA	99.71	1698 / 1698	QUC093_Contig_1	4102069..4103766	 Salmonella HilA homolog	CP000970
+virulence_ecoli	eilA	99.71	1698 / 1698	QUC093_Contig_1	4102069..4103766	 Salmonella HilA homolog	CP003034
+virulence_ecoli	fyuA	100.0	2022 / 2022	QUC093_Contig_1	1066264..1068285	  Siderophore receptor	CP027134
+virulence_ecoli	gad	99.71	1401 / 1401	QUC093_Contig_1	3913423..3914823	  Glutamate decarboxylase	CP001671
+virulence_ecoli	gad	99.07	1401 / 1401	QUC093_Contig_1	1616504..1617904	  Glutamate decarboxylase	CP003034
+virulence_ecoli	hlyE	99.02	918 / 918	QUC093_Contig_1	1922497..1923414	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	QUC093_Contig_1	1081473..1087580	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_CP029579
+virulence_ecoli	iucC	100.0	1743 / 1743	QUC093_Contig_1	3275144..3276886	  Aerobactin synthetase	CXZO01000056
+virulence_ecoli	iutA	100.0	2202 / 2202	QUC093_Contig_1	3278242..3280443	  Ferric aerobactin receptor	CXZO01000056
+virulence_ecoli	kpsE	100.0	1149 / 1149	QUC093_Contig_1	3336026..3337174	  Capsule polysaccharide export inner-membrane protein	FN554766
+virulence_ecoli	lpfA	99.83	573 / 573	QUC093_Contig_1	4192106..4192678	  Long polar fimbriae	CP003034
+virulence_ecoli	ompT	100.0	954 / 954	QUC093_Contig_1	524183..525136	  Outer membrane protease (protein protease 7)	CP015834
+virulence_ecoli	sitA	100.0	915 / 915	QUC093_Contig_1	3265728..3266642	  Iron transport protein	ADTK01000286
+virulence_ecoli	terC	98.46	714 / 714	QUC093_Contig_1	3086172..3086885	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	97.18	958 / 966	QUC093_Contig_1	3501040..3501997	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	777 / 777	QUC093_Contig_1	5196197..5196973	  Outer membrane protein complement resistance	CXZO01000046
+virulence_ecoli	yfcV	99.82	567 / 567	QUC093_Contig_1	2556574..2557140	  Fimbrial protein	UFZN01000001

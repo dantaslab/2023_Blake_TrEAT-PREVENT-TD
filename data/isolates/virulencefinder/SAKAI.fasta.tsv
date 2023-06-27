@@ -1,0 +1,35 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	91.3	115 / 117	SAKAI_Contig_1	2206074..2206188	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	astA	100.0	97 / 117	SAKAI_Contig_1	1806659..1806755	 EAST-1 heat-stable toxin	HM099897
+virulence_ecoli	chuA	100.0	1983 / 1983	SAKAI_Contig_1	4389464..4391446	  Outer membrane hemin receptor	JH959976
+virulence_ecoli	eae	100.0	2805 / 2805	SAKAI_Contig_1	4596458..4599262	  Intimin	AF071034
+virulence_ecoli	espA	100.0	579 / 579	SAKAI_Contig_1	4593139..4593717	  Type III secretions system	AE005174
+virulence_ecoli	espB	100.0	939 / 939	SAKAI_Contig_1	4591043..4591981	  Secreted protein B	AE005174
+virulence_ecoli	espF	100.0	747 / 747	SAKAI_Contig_1	4589257..4590003	  Type III secretion system	AE005174
+virulence_ecoli	espJ	100.0	654 / 654	SAKAI_Contig_1	2668573..2669226	  Prophage-encoded type III secretion system effector	AE005174
+virulence_ecoli	gad	100.0	1401 / 1401	SAKAI_Contig_1	2091890..2093290	  Glutamate decarboxylase	BA000007
+virulence_ecoli	gad	100.0	1401 / 1401	SAKAI_Contig_1	4408316..4409716	  Glutamate decarboxylase	BA000007
+virulence_ecoli	hlyE	98.47	918 / 918	SAKAI_Contig_1	1670969..1671886	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	SAKAI_Contig_1	1418370..1420460	  Adherence protein	BA000007
+virulence_ecoli	iss	98.3	294 / 294	SAKAI_Contig_1	1627848..1628141	  Increased serum survival	CP001509
+virulence_ecoli	iss	97.96	294 / 294	SAKAI_Contig_1	1274890..1275183	  Increased serum survival	CP001509
+virulence_ecoli	nleA	100.0	1326 / 1326	SAKAI_Contig_1	1801541..1802866	  Non-LEE encoded effector A	AE005174
+virulence_ecoli	nleB	100.0	990 / 990	SAKAI_Contig_1	3863614..3864603	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleB	100.0	981 / 981	SAKAI_Contig_1	924621..925601	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleC	100.0	993 / 993	SAKAI_Contig_1	925662..926654	  Non-LEE encoded effector C	AE005174
+virulence_ecoli	ompT	100.0	954 / 954	SAKAI_Contig_1	1661177..1662130	  Outer membrane protease (protein protease 7)	AKKX01000238
+virulence_ecoli	stx1A	100.0	948 / 948	SAKAI_Contig_1	2924769..2925716	  Shiga toxin 1, subunit A, variant a	EF079675
+virulence_ecoli	stx1B	100.0	270 / 270	SAKAI_Contig_1	2924490..2924759	  Shiga toxin 1, subunit B, variant a	AM230663
+virulence_ecoli	stx2A	100.0	960 / 960	SAKAI_Contig_1	1266965..1267924	  Shiga toxin 2, subunit A, variant a	AB048837
+virulence_ecoli	stx2B	100.0	270 / 270	SAKAI_Contig_1	1267936..1268205	  Shiga toxin 2, subunit B, variant a	AE005174
+virulence_ecoli	tccP	100.0	1014 / 1014	SAKAI_Contig_1	2669551..2670564	  Tir-cytoskeleton coupling protein	AB253537
+virulence_ecoli	tccP	99.78	894 / 894	SAKAI_Contig_1	1209251..1210143	  Tir-cytoskeleton coupling protein	AB253557
+virulence_ecoli	tccP	100.0	1014 / 1014	SAKAI_Contig_1	2669551..2670564	  Tir-cytoskeleton coupling protein	CP001368
+virulence_ecoli	terC	100.0	1041 / 1041	SAKAI_Contig_1	1414737..1415777	  Tellurium ion resistance protein	AE005174
+virulence_ecoli	terC	98.74	714 / 714	SAKAI_Contig_1	3692820..3693533	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.65	964 / 966	SAKAI_Contig_1	3978212..3979175	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	100.0	1677 / 1677	SAKAI_Contig_1	4599930..4601606	  Translocated intimin receptor protein	AE005174
+virulence_ecoli	traT	100.0	423 / 423	SAKAI_Contig_1	1385815..1386237	  Outer membrane protein complement resistance	AKKX01000148
+virulence_ecoli	traT	100.0	129 / 129	SAKAI_Contig_1	1396041..1396169	  Outer membrane protein complement resistance	AMTE01000156
+stx	stx1	100.0	1227 / 1227	SAKAI_Contig_1	2924490..2925716	O157 GPU96MM, variant a	AB035142
+stx	stx2	100.0	1241 / 1241	SAKAI_Contig_1	1266965..1268205	O157 EDL933, varinat a	X07865

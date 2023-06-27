@@ -1,0 +1,18 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	98.45	1029 / 1029	NODE_42_length_10353_cov_22.573375	6990..8018	 Isoprenoid Biosynthesis	FN554767
+virulence_ecoli	ORF4	98.7	540 / 540	NODE_42_length_10353_cov_22.573375	8022..8561	 Putative isopentenyl-diphosphate delta-isomerase	FN554767
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_8_length_23197_cov_10.301211	6350..6856	 Type VI secretion protein	FN554766
+virulence_ecoli	afaA	99.74	384 / 384	NODE_40_length_10458_cov_8.249109	8932..9315	  Transcriptional regulator	GQ916596
+virulence_ecoli	afaB	98.96	768 / 768	NODE_40_length_10458_cov_8.249109	8088..8854	  Periplasmic chaperone	GQ497943
+virulence_ecoli	afaB	98.96	768 / 768	NODE_40_length_10458_cov_8.249109	8088..8854	  Periplasmic chaperone	GQ497943
+virulence_ecoli	afaC	99.65	2589 / 2589	NODE_40_length_10458_cov_8.249109	5332..7920	  Outer membrane usher protein	AP017620
+virulence_ecoli	afaD	100.0	420 / 420	NODE_40_length_10458_cov_8.249109	4897..5316	  Afimbrial adhesion	GQ916596
+virulence_ecoli	afaE8	96.88	513 / 513	NODE_40_length_10458_cov_8.249109	3850..4362		GQ497943
+virulence_ecoli	hlyE	99.32	879 / 918	NODE_672_length_1640_cov_9.178503	762..1640	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	92.13	267 / 342	NODE_3_length_32136_cov_5.360492	14013..14279	  Increased serum survival	AE014075
+virulence_ecoli	iss	92.13	267 / 309	NODE_3_length_32136_cov_5.360492	14013..14279	  Increased serum survival	CP000468
+virulence_ecoli	iss	92.13	267 / 294	NODE_3_length_32136_cov_5.360492	14013..14279	  Increased serum survival	CP002167
+virulence_ecoli	lpfA	99.83	573 / 573	NODE_88_length_7258_cov_9.491993	553..1125	  Long polar fimbriae	AP010953
+virulence_ecoli	sepA	99.8	4095 / 4095	NODE_68_length_8029_cov_11.784457	3594..7688	 Shigella extracellular protein A	AB255435
+virulence_ecoli	terC	100.0	714 / 714	NODE_61_length_8493_cov_9.822600	3523..4236	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	traT	100.0	735 / 735	NODE_213_length_4071_cov_15.114922	1371..2105	  Outer membrane protein complement resistance	NZ_UIKU01000027

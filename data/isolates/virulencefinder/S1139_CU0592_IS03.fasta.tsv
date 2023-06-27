@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	eae	100.0	2847 / 2847	NODE_32_length_48281_cov_94.607605	7677..10523	  Intimin	FJ609811
+virulence_ecoli	espA	97.41	579 / 579	NODE_32_length_48281_cov_94.607605	4239..4817	  Type III secretions system	AJ303141
+virulence_ecoli	espA	97.41	579 / 579	NODE_32_length_48281_cov_94.607605	4239..4817	  Type III secretions system	AY223511
+virulence_ecoli	espF	100.0	440 / 621	NODE_32_length_48281_cov_94.607605	619..1058	  Type III secretion system	FM180568
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_44_length_37702_cov_51.485741	198..2219	  Siderophore receptor	CYAI01000021
+virulence_ecoli	hlyE	96.8	657 / 918	NODE_67_length_9747_cov_77.125129	9027..9671	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_44_length_37702_cov_51.485741	15407..21514	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_MVDJ01000001
+virulence_ecoli	nleA	100.0	1326 / 1326	NODE_68_length_9681_cov_233.979488	7337..8662	  Non-LEE encoded effector A	CP003111
+virulence_ecoli	nleB	100.0	981 / 981	NODE_15_length_92115_cov_68.116278	90330..91310	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	terC	99.3	714 / 714	NODE_21_length_78111_cov_63.350424	67726..68439	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_6_length_195190_cov_63.364830	144386..145344	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	96.87	1659 / 1659	NODE_32_length_48281_cov_94.607605	11187..12836	  Translocated intimin receptor protein	AB036053

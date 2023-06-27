@@ -1,0 +1,24 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	aap	98.01	351 / 351	NODE_366_length_3156_cov_18.987334	1912..2262	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	astA	100.0	117 / 117	NODE_111_length_11666_cov_45.915782	550..666	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	astA	97.39	115 / 117	NODE_4470_length_238_cov_14.577640	1..115	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	astA	97.39	115 / 117	NODE_4472_length_238_cov_13.310559	1..115	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	astA	98.7	77 / 117	NODE_10019_length_133_cov_23.464286	55..131	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_307_length_4106_cov_78.736907	2189..3277	 Hexosyltransferase homolog	FN822745
+virulence_ecoli	cib	100.0	1881 / 1881	NODE_148_length_9009_cov_24.899015	6566..8446	  Colicin ib	KP198616
+virulence_ecoli	eatA	99.98	4095 / 4095	NODE_102_length_12669_cov_71.924873	2831..6925	 enterotoxigenic E. coli (ETEC) autotransporter A	CR942285
+virulence_ecoli	gad	100.0	909 / 1401	NODE_820_length_1189_cov_36.516187	281..1189	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	909 / 1401	NODE_820_length_1189_cov_36.516187	281..1189	  Glutamate decarboxylase	EF547385
+virulence_ecoli	gad	100.0	909 / 1401	NODE_820_length_1189_cov_36.516187	281..1189	  Glutamate decarboxylase	FN649414
+virulence_ecoli	gad	100.0	909 / 1401	NODE_820_length_1189_cov_36.516187	281..1189	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_121_length_10810_cov_24.629554	9470..10387	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_1217_length_884_cov_20.957869	544..837	  Increased serum survival	CP001665
+virulence_ecoli	kpsMII	100.0	777 / 777	NODE_113_length_11424_cov_15.387856	9717..10493	  Polysialic acid transport protein; Group 2 capsule	FN554766
+virulence_ecoli	kpsM_K15	100.0	777 / 777	NODE_79_length_14859_cov_25.447368	12544..13320	  Polysialic acid transport protein; Group 3 capsule	AJ617685
+virulence_ecoli	lngA	100.0	711 / 711	NODE_49_length_19587_cov_45.026550	6545..7255	  Longus type IV pilus	FN822746
+virulence_ecoli	ltcA	100.0	777 / 777	NODE_320_length_3890_cov_62.831366	2350..3126	  Heat-labile enterotoxin A subunit	JX504011
+virulence_ecoli	ompT	100.0	363 / 363	NODE_519_length_1892_cov_20.946006	347..709	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_1_length_125267_cov_15.269383	9661..10701	  Tellurium ion resistance protein	KU341381
+virulence_ecoli	terC	99.87	745 / 966	NODE_23_length_26659_cov_25.773757	13696..14440	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	738 / 738	NODE_10_length_34711_cov_22.257637	22484..23221	  Outer membrane protein complement resistance	CXZC01000023
+virulence_ecoli	traT	100.0	735 / 735	NODE_143_length_9191_cov_44.590410	1036..1770	  Outer membrane protein complement resistance	NC_014232

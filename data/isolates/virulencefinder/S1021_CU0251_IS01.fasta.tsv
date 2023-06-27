@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cma	100.0	816 / 816	NODE_30_length_9414_cov_55.571276	6365..7180	  Colicin M	FJ664752
+virulence_ecoli	cvaC	100.0	93 / 93	NODE_30_length_9414_cov_55.571276	9268..9360	  Microcin C	UDAL01000039
+virulence_ecoli	gad	99.93	1401 / 1401	NODE_7_length_295901_cov_63.215787	59678..61078	  Glutamate decarboxylase	AP009240
+virulence_ecoli	gad	99.86	1401 / 1401	NODE_13_length_163103_cov_48.422338	122868..124268	  Glutamate decarboxylase	CP002967
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_3_length_382937_cov_50.955373	265202..266118	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hlyF	100.0	1110 / 1110	NODE_28_length_10134_cov_45.958337	3380..4489	  Hemolysin F	NC_004998
+virulence_ecoli	iroN	100.0	2178 / 2178	NODE_24_length_22541_cov_57.377537	569..2746	  Enterobactin siderophore receptor protein	AF449498
+virulence_ecoli	iss	100.0	309 / 309	NODE_24_length_22541_cov_57.377537	13231..13539	  Increased serum survival	DQ381420
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_10_length_241194_cov_64.039396	210465..211037	  Long polar fimbriae	AP010953
+virulence_ecoli	ompT	99.9	954 / 954	NODE_28_length_10134_cov_45.958337	1994..2947	  Outer membrane protease (protein protease 7)	LT985319
+virulence_ecoli	sitA	100.0	915 / 915	NODE_31_length_8488_cov_45.622043	7199..8113	  Iron transport protein	ADTK01000286
+virulence_ecoli	terC	99.86	714 / 714	NODE_11_length_199292_cov_57.511076	139332..140045	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.27	959 / 966	NODE_12_length_164884_cov_59.096349	35930..36888	  Tellurium ion resistance protein	MG591698

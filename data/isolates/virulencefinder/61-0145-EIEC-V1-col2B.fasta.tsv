@@ -1,0 +1,7 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	eatA	98.2	4107 / 4101	NODE_260_length_7271_cov_32.847095	711..4817	 enterotoxigenic E. coli (ETEC) autotransporter A	CP000799
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_9_length_105243_cov_33.603589	82503..84524	  Siderophore receptor	UGCQ01000002
+virulence_ecoli	hlyE	97.82	919 / 918	NODE_34_length_58086_cov_31.889259	253..1159	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_9_length_105243_cov_33.603589	63220..69327	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NTPD01000023
+virulence_ecoli	terC	100.0	714 / 714	NODE_13_length_103477_cov_38.199545	16781..17494	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_76_length_36534_cov_36.749979	31206..32164	  Tellurium ion resistance protein	MG591698

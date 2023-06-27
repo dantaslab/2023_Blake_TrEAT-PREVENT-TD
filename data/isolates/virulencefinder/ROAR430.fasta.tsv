@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	99.5	1983 / 1983	ROAR430_Contig_5	60282..62264	  Outer membrane hemin receptor	UDCC01000002
+virulence_ecoli	gad	97.79	1401 / 1401	ROAR430_Contig_5	42012..43412	  Glutamate decarboxylase	CP000247
+virulence_ecoli	hra	99.75	792 / 792	ROAR430_Contig_9	35338..36129	  Heat-resistant agglutinin	CP043942
+virulence_ecoli	iss	99.32	294 / 294	ROAR430_Contig_15	11954..12247	  Increased serum survival	CP001665
+virulence_ecoli	iss	99.32	294 / 294	ROAR430_Contig_15	11954..12247	  Increased serum survival	CP001846
+virulence_ecoli	ompT	96.2	948 / 948	ROAR430_Contig_20	71926..72873	  Outer membrane protease (protein protease 7)	CDLB01000100
+virulence_ecoli	ompT	99.79	954 / 954	ROAR430_Contig_1	385805..386758	  Outer membrane protease (protein protease 7)	NZ_NOSO01000003
+virulence_ecoli	terC	98.74	714 / 714	ROAR430_Contig_9	173378..174091	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.12	959 / 966	ROAR430_Contig_2	184315..185273	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	ROAR430_Contig_20	26454..27188	  Outer membrane protein complement resistance	HG977148
+virulence_ecoli	yfcV	98.06	567 / 567	ROAR430_Contig_15	27310..27876	  Fimbrial protein	CU928162
+virulence_ecoli	yfcV	98.06	567 / 567	ROAR430_Contig_15	27310..27876	  Fimbrial protein	UGFJ01000003

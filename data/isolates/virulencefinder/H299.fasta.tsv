@@ -1,0 +1,37 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	1566 / 1566	H299_Contig_181	436..2001	  Colicin E1	CYEM01000021
+virulence_ecoli	chuA	100.0	1983 / 1983	H299_Contig_145	56619..58601	  Outer membrane hemin receptor	UINR01000007
+virulence_ecoli	cia	98.67	675 / 867	H299_Contig_194	339..1013	  Colicin ia	APXL01000039
+virulence_ecoli	cia	94.07	253 / 264	H299_Contig_188	501..753	  Colicin ia	UGDH01000002
+virulence_ecoli	cma	100.0	816 / 816	H299_Contig_180	1496..2311	  Colicin M	FJ664756
+virulence_ecoli	cvaC	100.0	312 / 312	H299_Contig_179	6705..7016	  Microcin C	AF062845
+virulence_ecoli	etsC	99.68	942 / 942	H299_Contig_177	426..1367	  Putative type I secretion outer membrane protein	KU664810
+virulence_ecoli	etsC	100.0	1308 / 1308	H299_Contig_176	4645..5952	  Putative type I secretion outer membrane protein	UGFJ01000001
+virulence_ecoli	fyuA	100.0	2022 / 2022	H299_Contig_127	31263..33284	  Siderophore receptor	UINR01000017
+virulence_ecoli	hlyF	100.0	1110 / 1110	H299_Contig_175	3346..4455	  Hemolysin F	UGFJ01000001
+virulence_ecoli	ireA	99.95	2049 / 2049	H299_Contig_28	2327..4375	  Siderophore receptor	AE014075
+virulence_ecoli	iroN	98.85	2178 / 2178	H299_Contig_177	16624..18801	  Enterobactin siderophore receptor protein	AF449498
+virulence_ecoli	irp2	100.0	6108 / 6108	H299_Contig_127	11968..18075	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEB01000023
+virulence_ecoli	iss	100.0	294 / 294	H299_Contig_48	248..541	  Increased serum survival	CP001846
+virulence_ecoli	iss	99.32	294 / 294	H299_Contig_47	272..565	  Increased serum survival	CP004009
+virulence_ecoli	iss	100.0	309 / 309	H299_Contig_177	5838..6146	  Increased serum survival	DQ381420
+virulence_ecoli	iucC	100.0	1743 / 1743	H299_Contig_174	4229..5971	  Aerobactin synthetase	CBTO010000002
+virulence_ecoli	iutA	100.0	2202 / 2202	H299_Contig_174	672..2873	  Ferric aerobactin receptor	MG649032
+virulence_ecoli	lpfA	98.95	573 / 573	H299_Contig_152	80298..80870	  Long polar fimbriae	CP003034
+virulence_ecoli	mchF	99.86	2097 / 2097	H299_Contig_179	4439..6535	  ABC transporter protein MchF	JX077110
+virulence_ecoli	mcmA	100.0	279 / 279	H299_Contig_150	15333..15611	  Microcin M part of colicin H	AJ586887
+virulence_ecoli	neuC	100.0	1188 / 1188	H299_Contig_130	14038..15225	  Polysialic acid capsule biosynthesis protein	NZ_UINR01000001
+virulence_ecoli	ompT	99.84	636 / 636	H299_Contig_52	28..663	  Outer membrane protease (protein protease 7)	CYCR01000060
+virulence_ecoli	ompT	99.79	954 / 954	H299_Contig_175	1960..2913	  Outer membrane protease (protein protease 7)	MG692627
+virulence_ecoli	ompT	95.82	263 / 363	H299_Contig_50	500..762	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	ompT	92.03	364 / 363	H299_Contig_178	513..875	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	papA_F48	99.82	552 / 552	H299_Contig_150	8052..8603	  Major pilin subunit F48	CXWG01000029
+virulence_ecoli	papC	99.96	2559 / 2559	H299_Contig_150	4834..7392	  Outer membrane usher P fimbriae	AP017617
+virulence_ecoli	pic	100.0	4116 / 4116	H299_Contig_41	786..4901	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AE014075
+virulence_ecoli	sitA	100.0	915 / 915	H299_Contig_174	14510..15424	  Iron transport protein	AEZP02000013
+virulence_ecoli	terC	98.88	714 / 714	H299_Contig_136	189090..189803	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	98.12	959 / 966	H299_Contig_136	474220..475178	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	98.88	178 / 177	H299_Contig_169	4734..4911	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	94.85	524 / 714	H299_Contig_5	5832..6355	  Outer membrane protein complement resistance	LT985300
+virulence_ecoli	traT	100.0	303 / 303	H299_Contig_169	4198..4500	  Outer membrane protein complement resistance	UEKA01000045
+virulence_ecoli	vat	100.0	4131 / 4131	H299_Contig_42	28392..32522	 Vacuolating autotransporter toxin	AE014075

@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_256_length_1050_cov_117.731757	788..904	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_142_length_12928_cov_12.393744	11283..12371	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_5_length_227889_cov_11.186320	18725..20746	  Siderophore receptor	UCZF01000015
+virulence_ecoli	hlyE	98.69	918 / 918	NODE_80_length_44155_cov_13.114275	33503..34408	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	99.93	6108 / 6108	NODE_5_length_227889_cov_11.186320	33934..40041	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMAY01000003
+virulence_ecoli	irp2	99.93	6108 / 6108	NODE_5_length_227889_cov_11.186320	33934..40041	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMCV01000036
+virulence_ecoli	iss	100.0	294 / 294	NODE_257_length_1009_cov_15.906652	181..474	  Increased serum survival	CP001665
+virulence_ecoli	iutA	100.0	2190 / 2190	NODE_94_length_37774_cov_7.903096	19690..21879	  Ferric aerobactin receptor	FLXF01000001
+virulence_ecoli	ltcA	100.0	777 / 777	NODE_218_length_2372_cov_39.054902	870..1646	  Heat-labile enterotoxin A subunit	EU113252
+virulence_ecoli	terC	100.0	714 / 714	NODE_67_length_50923_cov_13.724147	27401..28114	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_96_length_35370_cov_11.670728	18599..19564	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	738 / 738	NODE_69_length_49769_cov_25.019923	27124..27861	  Outer membrane protein complement resistance	AAJX02000076
+virulence_ecoli	traT	98.5	732 / 732	NODE_47_length_76926_cov_28.619696	40175..40906	  Outer membrane protein complement resistance	FLWH01000012

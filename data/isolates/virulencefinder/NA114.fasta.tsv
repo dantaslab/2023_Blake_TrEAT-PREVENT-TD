@@ -1,0 +1,20 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	100.0	1983 / 1983	NA114_Contig_1	3704899..3706881	  Outer membrane hemin receptor	UGDM01000004
+virulence_ecoli	fyuA	100.0	2022 / 2022	NA114_Contig_1	2054814..2056835	  Siderophore receptor	HG941718
+virulence_ecoli	gad	97.5	1242 / 1401	NA114_Contig_1	3751211..3752449	  Glutamate decarboxylase	AP009378
+virulence_ecoli	hra	99.33	747 / 747	NA114_Contig_1	4818670..4819416	  Heat-resistant agglutinin	JF808724
+virulence_ecoli	iha	100.0	2091 / 2091	NA114_Contig_1	4663147..4665237	  Adherence protein	CP001671
+virulence_ecoli	ireA	100.0	2049 / 2049	NA114_Contig_1	4692205..4694253	  Siderophore receptor	CP002797
+virulence_ecoli	irp2	100.0	6108 / 6108	NA114_Contig_1	2035509..2041616	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_BGNI01000004
+virulence_ecoli	iucC	100.0	1743 / 1743	NA114_Contig_1	4845987..4847729	  Aerobactin synthetase	HG941718
+virulence_ecoli	iutA	100.0	2202 / 2202	NA114_Contig_1	4842430..4844631	  Ferric aerobactin receptor	HG941718
+virulence_ecoli	kpsE	100.0	1149 / 1149	NA114_Contig_1	3104289..3105437	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	NA114_Contig_1	3111902..3112678	  Polysialic acid transport protein; Group 2 capsule	CP030337
+virulence_ecoli	papA_F43	98.78	492 / 564	NA114_Contig_1	2587474..2587964	  Major pilin subunit F43	JNMC01000043
+virulence_ecoli	papA_F9	100.0	576 / 576	NA114_Contig_1	4810373..4810948	  Major pilin subunit F9	ECOPAPAA
+virulence_ecoli	papC	100.0	2511 / 2511	NA114_Contig_1	4811658..4814168	  Outer membrane usher P fimbriae	CP002797
+virulence_ecoli	sitA	100.0	915 / 915	NA114_Contig_1	1315006..1315920	  Iron transport protein	UGBZ01000001ADUG01000044
+virulence_ecoli	terC	99.3	714 / 714	NA114_Contig_1	2967492..2968205	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.41	964 / 966	NA114_Contig_1	3271146..3272109	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	94.73	1043 / 1041	NA114_Contig_1	114825..115865	  Uropathogenic specific protein	AB056437
+virulence_ecoli	yfcV	100.0	567 / 567	NA114_Contig_1	2465489..2466055	  Fimbrial protein	AP018784

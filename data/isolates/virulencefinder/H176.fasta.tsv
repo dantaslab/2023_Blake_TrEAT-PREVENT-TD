@@ -1,0 +1,35 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaD	99.77	435 / 435	H176_Contig_159	10718..11152	  Afimbrial adhesion	UGAK01000003
+virulence_ecoli	chuA	99.95	1983 / 1983	H176_Contig_36	17589..19571	  Outer membrane hemin receptor	UGFS01000002
+virulence_ecoli	fyuA	100.0	2022 / 2022	H176_Contig_12	34284..36305	  Siderophore receptor	CAY233333
+virulence_ecoli	hlyA	99.95	2149 / 3075	H176_Contig_161	1389..3537	  Haemolysin A	CP036245
+virulence_ecoli	hlyA	99.95	2149 / 3075	H176_Contig_161	1389..3537	  Haemolysin A	CP054232
+virulence_ecoli	hlyA	99.95	2149 / 3075	H176_Contig_161	1389..3537	  Haemolysin A	CP069882
+virulence_ecoli	hlyA	99.95	2149 / 3075	H176_Contig_161	1389..3537	  Haemolysin A	LR134246
+virulence_ecoli	irp2	99.98	6108 / 6108	H176_Contig_12	14989..21096	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NOTM01000030
+virulence_ecoli	iucC	99.94	1743 / 1743	H176_Contig_41	13792..15534	  Aerobactin synthetase	UFZP01000007
+virulence_ecoli	iutA	100.0	2199 / 2199	H176_Contig_41	16871..19069	  Ferric aerobactin receptor	UARU01000014
+virulence_ecoli	kpsE	100.0	1149 / 1149	H176_Contig_34	6699..7847	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	kpsMII_K1	99.87	777 / 777	H176_Contig_11	41594..42370	  Polysialic acid transport protein; Group 2 capsule	M57382
+virulence_ecoli	neuC	100.0	1126 / 1176	H176_Contig_201	1..1126	  Polysialic acid capsule biosynthesis protein	ADUG01000366
+virulence_ecoli	neuC	100.0	1126 / 1176	H176_Contig_201	1..1126	  Polysialic acid capsule biosynthesis protein	NZ_BGTG01000004
+virulence_ecoli	neuC	100.0	1126 / 1131	H176_Contig_201	1..1126	  Polysialic acid capsule biosynthesis protein	NZ_NJKG01000006
+virulence_ecoli	neuC	100.0	1126 / 1176	H176_Contig_201	1..1126	  Polysialic acid capsule biosynthesis protein	NZ_PQAX01000031
+virulence_ecoli	neuC	100.0	1126 / 1176	H176_Contig_201	1..1126	  Polysialic acid capsule biosynthesis protein	NZ_UIJU01000012
+virulence_ecoli	neuC	100.0	1126 / 1176	H176_Contig_201	1..1126	  Polysialic acid capsule biosynthesis protein	NZ_UIMN01000031
+virulence_ecoli	ompT	100.0	954 / 954	H176_Contig_2	233720..234673	  Outer membrane protease (protein protease 7)	QOOE01000048
+virulence_ecoli	papA_F12	99.21	504 / 504	H176_Contig_19	2695..3198	  Major pilin subunit F12	AF247357
+virulence_ecoli	papC	99.72	2511 / 2511	H176_Contig_19	3914..6424	  Outer membrane usher P fimbriae	ADTJ01000356
+virulence_ecoli	papC	99.72	2511 / 2511	H176_Contig_19	3914..6424	  Outer membrane usher P fimbriae	CP002797
+virulence_ecoli	papC	99.72	2511 / 2511	H176_Contig_19	3914..6424	  Outer membrane usher P fimbriae	JONC01000026
+virulence_ecoli	papC	99.72	2511 / 2511	H176_Contig_19	3914..6424	  Outer membrane usher P fimbriae	JOSS01000102
+virulence_ecoli	sat	99.95	3888 / 3888	H176_Contig_41	20014..23901	 Secreted autotransporter toxin	CU928163
+virulence_ecoli	senB	99.91	1176 / 1176	H176_Contig_160	2380..3555	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	H176_Contig_4	38481..39395	  Iron transport protein	ADUC01000392
+virulence_ecoli	tcpC	100.0	924 / 924	H176_Contig_99	669..1592	  Tir domain-containing protein	GQ902994
+virulence_ecoli	terC	99.86	714 / 714	H176_Contig_15	93792..94505	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.49	958 / 966	H176_Contig_62	21216..22173	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	H176_Contig_20	27615..28349	  Outer membrane protein complement resistance	NZ_CP032205
+virulence_ecoli	usp	99.62	1043 / 1041	H176_Contig_50	38955..39997	  Uropathogenic specific protein	AB056439
+virulence_ecoli	vat	99.88	4131 / 4131	H176_Contig_163	129..4259	 Vacuolating autotransporter toxin	CU651637
+virulence_ecoli	yfcV	100.0	567 / 567	H176_Contig_8	106916..107482	  Fimbrial protein	UGFJ01000003

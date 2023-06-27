@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	92.86	3923 / 4605	H442_Contig_1	4493561..4497482	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	eilA	96.88	1698 / 1698	H442_Contig_1	4488546..4490243	 Salmonella HilA homolog	CP000970
+virulence_ecoli	gad	97.22	1401 / 1401	H442_Contig_1	1419238..1420638	  Glutamate decarboxylase	CU928163
+virulence_ecoli	gad	96.93	1399 / 1401	H442_Contig_1	4301298..4302696	  Glutamate decarboxylase	CU928163
+virulence_ecoli	hlyE	98.15	918 / 918	H442_Contig_1	1108406..1109323	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	H442_Contig_1	394774..395067	  Increased serum survival	CU928163
+virulence_ecoli	kpsE	99.74	1149 / 1149	H442_Contig_1	3062944..3064092	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsE	99.74	1149 / 1149	H442_Contig_1	3062944..3064092	  Capsule polysaccharide export inner-membrane protein	MG739438
+virulence_ecoli	kpsMII	98.58	777 / 777	H442_Contig_1	3075061..3075837	  Polysialic acid transport protein; Group 2 capsule	QOOE01000085
+virulence_ecoli	ompT	100.0	954 / 954	H442_Contig_1	422465..423418	  Outer membrane protease (protein protease 7)	QMGM01000001
+virulence_ecoli	terC	97.06	714 / 714	H442_Contig_1	2896414..2897127	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	94.72	966 / 966	H442_Contig_1	3222925..3223890	  Tellurium ion resistance protein	MG591698

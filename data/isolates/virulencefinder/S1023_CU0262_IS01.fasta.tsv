@@ -1,0 +1,23 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaA	100.0	306 / 306	NODE_74_length_8411_cov_49.165827	6551..6856	  Transcriptional regulator	X76688
+virulence_ecoli	afaC	100.0	2583 / 2583	NODE_74_length_8411_cov_49.165827	2904..5486	  Outer membrane usher protein	FJ843076
+virulence_ecoli	afaD	100.0	444 / 444	NODE_74_length_8411_cov_49.165827	2445..2888	  Afimbrial adhesion	X76688
+virulence_ecoli	afaE	99.79	483 / 483	NODE_74_length_8411_cov_49.165827	1209..1691	  Adhesin protein	DQ386058
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_15_length_111843_cov_37.809361	81765..83786	  Siderophore receptor	AHAX01000032
+virulence_ecoli	hlyE	98.69	918 / 918	NODE_24_length_72136_cov_38.396800	38770..39687	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	100.0	747 / 747	NODE_92_length_3135_cov_47.673970	1785..2531	  Heat-resistant agglutinin	LM995856
+virulence_ecoli	iha	99.76	2091 / 2091	NODE_16_length_103383_cov_45.777370	77873..79963	  Adherence protein	AE014075
+virulence_ecoli	irp2	99.89	6108 / 6108	NODE_15_length_111843_cov_37.809361	62471..68577	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PGIU01000028
+virulence_ecoli	irp2	99.89	6108 / 6108	NODE_15_length_111843_cov_37.809361	62471..68577	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QGIE01000012
+virulence_ecoli	iss	99.57	231 / 294	NODE_141_length_337_cov_36.223077	1..231	  Increased serum survival	CP001846
+virulence_ecoli	iss	100.0	294 / 294	NODE_23_length_72948_cov_41.410643	17467..17760	  Increased serum survival	CP004009
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_72_length_9915_cov_52.179406	4330..6072	  Aerobactin synthetase	CBTO010000002
+virulence_ecoli	iutA	99.95	2202 / 2202	NODE_72_length_9915_cov_52.179406	7428..9629	  Ferric aerobactin receptor	CP003034
+virulence_ecoli	nfaE	99.87	745 / 744	NODE_74_length_8411_cov_49.165827	5579..6323	  Diffuse adherence fibrillar adhesin gene	X76688
+virulence_ecoli	ompT	100.0	954 / 954	NODE_50_length_25314_cov_39.302730	22324..23277	  Outer membrane protease (protein protease 7)	CU928161
+virulence_ecoli	senB	99.91	1176 / 1176	NODE_78_length_7568_cov_48.394206	5369..6544	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	NODE_77_length_7632_cov_49.462078	6343..7257	  Iron transport protein	UGBE01000001
+virulence_ecoli	terC	100.0	714 / 714	NODE_13_length_122411_cov_42.508191	83135..83848	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_1_length_358230_cov_46.488149	173484..174449	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	732 / 732	NODE_63_length_14145_cov_53.927779	12711..13442	  Outer membrane protein complement resistance	CP000971
+virulence_ecoli	traT	100.0	732 / 732	NODE_37_length_39358_cov_51.400295	29872..30603	  Outer membrane protein complement resistance	NZ_QWDB01000034

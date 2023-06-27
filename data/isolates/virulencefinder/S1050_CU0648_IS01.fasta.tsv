@@ -1,0 +1,23 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	aap	92.31	351 / 351	NODE_121_length_2031_cov_90.069089	258..608	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	aatA	93.14	1239 / 1239	NODE_79_length_7384_cov_87.083482	2265..3503	 Dispersin transporter protein	CU928159
+virulence_ecoli	aatA	93.14	1239 / 1239	NODE_79_length_7384_cov_87.083482	2265..3503	 Dispersin transporter protein	FN554767
+virulence_ecoli	air	94.7	4607 / 4605	NODE_30_length_62760_cov_77.229424	3143..7748	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	cea	99.09	1203 / 1203	NODE_81_length_6885_cov_325.485636	5229..6431	  Colicin E1	CYCO01000082
+virulence_ecoli	cea	95.35	215 / 240	NODE_81_length_6885_cov_325.485636	4872..5080	  Colicin E1	GG772217
+virulence_ecoli	chuA	100.0	1983 / 1983	NODE_4_length_187694_cov_78.865268	2730..4712	  Outer membrane hemin receptor	UGBN01000001
+virulence_ecoli	espI	99.29	4092 / 4092	NODE_59_length_17114_cov_108.996478	9778..13869	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_11_length_144309_cov_68.837720	18212..20233	  Siderophore receptor	UGCB01000003
+virulence_ecoli	gad	99.07	1401 / 1401	NODE_7_length_154531_cov_66.623085	92138..93538	  Glutamate decarboxylase	CP000802
+virulence_ecoli	gad	99.57	1401 / 1401	NODE_4_length_187694_cov_78.865268	21581..22981	  Glutamate decarboxylase	CP001846
+virulence_ecoli	hlyE	98.91	918 / 918	NODE_39_length_43426_cov_63.405430	11335..12252	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.9	2091 / 2091	NODE_49_length_23131_cov_61.837816	1261..3351	  Adherence protein	AE005174
+virulence_ecoli	irp2	99.98	6108 / 6108	NODE_11_length_144309_cov_68.837720	33421..39528	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PGIU01000028
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_71_length_10539_cov_77.989486	3826..5568	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_71_length_10539_cov_77.989486	291..2489	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	ompT	100.0	599 / 954	NODE_12_length_143347_cov_72.863195	142672..143270	  Outer membrane protease (protein protease 7)	JJLU01000094
+virulence_ecoli	ompT	100.0	360 / 363	NODE_120_length_2138_cov_34.307132	1704..2063	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	terC	99.3	714 / 714	NODE_23_length_82838_cov_75.372470	65913..66626	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.85	959 / 966	NODE_1_length_220235_cov_81.377456	174438..175396	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.68	627 / 627	NODE_37_length_53126_cov_74.373221	43891..44517	  Outer membrane protein complement resistance	AY686591
+virulence_ecoli	traT	99.68	627 / 627	NODE_37_length_53126_cov_74.373221	43891..44517	  Outer membrane protein complement resistance	MF156268

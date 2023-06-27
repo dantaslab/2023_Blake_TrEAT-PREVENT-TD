@@ -1,0 +1,17 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	100.0	1983 / 1983	LF82_Contig_1	3692692..3694674	  Outer membrane hemin receptor	UCVY01000005
+virulence_ecoli	fyuA	100.0	2022 / 2022	LF82_Contig_1	2036175..2038196	  Siderophore receptor	UEYM01000018
+virulence_ecoli	gad	100.0	1401 / 1401	LF82_Contig_1	1528689..1530089	  Glutamate decarboxylase	CP001855
+virulence_ecoli	gad	100.0	1401 / 1401	LF82_Contig_1	3711544..3712944	  Glutamate decarboxylase	CP001855
+virulence_ecoli	ibeA	100.0	1371 / 1371	LF82_Contig_1	4690533..4691903	  Invasin of brain endothelial cells	UCVY01000004
+virulence_ecoli	irp2	99.98	6108 / 6108	LF82_Contig_1	2016879..2022986	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PYQR01000002
+virulence_ecoli	iss	100.0	342 / 342	LF82_Contig_1	1193403..1193744	  Increased serum survival	AE014075
+virulence_ecoli	kpsE	99.65	1149 / 1149	LF82_Contig_1	3112499..3113647	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	LF82_Contig_1	3127250..3128026	  Polysialic acid transport protein; Group 2 capsule	UEYM01000023
+virulence_ecoli	ompT	100.0	954 / 954	LF82_Contig_1	559187..560140	  Outer membrane protease (protein protease 7)	CU651637
+virulence_ecoli	sitA	100.0	915 / 915	LF82_Contig_1	1220194..1221108	  Iron transport protein	UGBZ01000001ADUG01000044
+virulence_ecoli	terC	99.16	714 / 714	LF82_Contig_1	2983197..2983910	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.49	958 / 966	LF82_Contig_1	3288835..3289792	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	99.71	1041 / 1041	LF82_Contig_1	123906..124946	  Uropathogenic specific protein	AB056435
+virulence_ecoli	vat	100.0	4131 / 4131	LF82_Contig_1	301160..305290	 Vacuolating autotransporter toxin	CU651637
+virulence_ecoli	yfcV	100.0	567 / 567	LF82_Contig_1	2464240..2464806	  Fimbrial protein	UFZT01000001

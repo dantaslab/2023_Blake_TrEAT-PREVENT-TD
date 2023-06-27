@@ -1,0 +1,21 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	100.0	1983 / 1983	S88_Contig_1	3861642..3863624	  Outer membrane hemin receptor	UGFD01000001
+virulence_ecoli	fyuA	100.0	2022 / 2022	S88_Contig_1	2026729..2028750	  Siderophore receptor	CP000468
+virulence_ecoli	gad	100.0	1401 / 1401	S88_Contig_1	1572275..1573675	  Glutamate decarboxylase	CP002167
+virulence_ecoli	gad	100.0	1401 / 1401	S88_Contig_1	3880493..3881893	  Glutamate decarboxylase	CP002167
+virulence_ecoli	ireA	100.0	2049 / 2049	S88_Contig_1	3259200..3261248	  Siderophore receptor	CP000468
+virulence_ecoli	irp2	100.0	6108 / 6108	S88_Contig_1	2007434..2013541	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEX01000002
+virulence_ecoli	iss	100.0	342 / 342	S88_Contig_1	1200324..1200665	  Increased serum survival	AE014075
+virulence_ecoli	kpsE	100.0	1149 / 1149	S88_Contig_1	3277941..3279089	  Capsule polysaccharide export inner-membrane protein	CP000468
+virulence_ecoli	kpsMII_K1	100.0	777 / 777	S88_Contig_1	3292107..3292883	  Polysialic acid transport protein; Group 2 capsule	M57382
+virulence_ecoli	neuC	100.0	1176 / 1176	S88_Contig_1	3287313..3288488	  Polysialic acid capsule biosynthesis protein	ADUG01000366
+virulence_ecoli	ompT	100.0	954 / 954	S88_Contig_1	611093..612046	  Outer membrane protease (protein protease 7)	CP000243
+virulence_ecoli	ompT	100.0	954 / 954	S88_Contig_1	607720..608673	  Outer membrane protease (protein protease 7)	CU928161
+virulence_ecoli	papA_F11	100.0	570 / 570	S88_Contig_1	3238143..3238712	  Major pilin subunit F11	GG773022
+virulence_ecoli	papC	100.0	2520 / 2520	S88_Contig_1	3234924..3237443	  Outer membrane usher P fimbriae	CP026853
+virulence_ecoli	sitA	100.0	915 / 915	S88_Contig_1	1226690..1227604	  Iron transport protein	DQ335213
+virulence_ecoli	terC	100.0	714 / 714	S88_Contig_1	3092736..3093449	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.49	958 / 966	S88_Contig_1	3452884..3453841	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	99.81	1041 / 1041	S88_Contig_1	125141..126181	  Uropathogenic specific protein	AB056439
+virulence_ecoli	vat	100.0	4131 / 4131	S88_Contig_1	296717..300847	 Vacuolating autotransporter toxin	CU928161
+virulence_ecoli	yfcV	100.0	750 / 750	S88_Contig_1	2483370..2484119	  Fimbrial protein	UGFD01000001

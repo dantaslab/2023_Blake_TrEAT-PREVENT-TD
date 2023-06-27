@@ -1,0 +1,11 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_19_length_92416_cov_19.787739	55154..57175	  Siderophore receptor	CAY233333
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_14_length_128300_cov_20.150238	24198..25115	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_19_length_92416_cov_19.787739	35859..41966	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMKL01000024
+virulence_ecoli	mcbA	95.65	207 / 207	NODE_38_length_20328_cov_34.422893	6876..7073	  Bacteriocin microcin B17	QOOR01000165
+virulence_ecoli	senB	100.0	1176 / 1176	NODE_45_length_10524_cov_34.555702	948..2123	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	terC	100.0	714 / 714	NODE_6_length_279815_cov_21.898015	245474..246187	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_4_length_292923_cov_24.355743	244565..245530	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	98.88	178 / 177	NODE_43_length_11479_cov_43.703824	9145..9322	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	100.0	735 / 735	NODE_42_length_12830_cov_41.988160	2776..3510	  Outer membrane protein complement resistance	NZ_CP032205
+virulence_ecoli	traT	100.0	303 / 303	NODE_43_length_11479_cov_43.703824	8609..8911	  Outer membrane protein complement resistance	UEKA01000045

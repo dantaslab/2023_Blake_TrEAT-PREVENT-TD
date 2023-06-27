@@ -1,0 +1,16 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	100.0	1983 / 1983	NODE_8_length_187050_cov_50.482396	168124..170106	  Outer membrane hemin receptor	CXZV01000007
+virulence_ecoli	eae	99.81	2069 / 2805	NODE_13_length_126751_cov_49.691642	123714..125782	  Intimin	AF071034
+virulence_ecoli	espA	99.83	579 / 579	NODE_24_length_52999_cov_50.505253	2709..3287	  Type III secretions system	CP003109
+virulence_ecoli	espB	99.68	939 / 939	NODE_24_length_52999_cov_50.505253	4445..5383	  Secreted protein B	AE005174
+virulence_ecoli	espC	99.97	3918 / 3918	NODE_14_length_105203_cov_50.901708	3981..7898	 EPEC secreted protein C	FM180568
+virulence_ecoli	espJ	95.11	654 / 654	NODE_12_length_150240_cov_48.610437	2394..3047	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	gad	99.6	1010 / 1401	NODE_22_length_61941_cov_48.955515	1..1010	  Glutamate decarboxylase	CP001671
+virulence_ecoli	gad	99.6	1010 / 1401	NODE_22_length_61941_cov_48.955515	1..1010	  Glutamate decarboxylase	FM180568
+virulence_ecoli	nleB	96.23	981 / 981	NODE_6_length_250730_cov_49.010241	951..1930	  Non-LEE encoded effector B	CP001846
+virulence_ecoli	ompT	100.0	954 / 954	NODE_2_length_428075_cov_49.424623	172673..173626	  Outer membrane protease (protein protease 7)	CYBG01000003
+virulence_ecoli	tccP	99.41	508 / 753	NODE_10_length_161946_cov_50.032384	159081..159587	  Tir-cytoskeleton coupling protein	AB253559
+virulence_ecoli	terC	99.72	714 / 714	NODE_1_length_535757_cov_49.241094	446839..447552	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.49	958 / 966	NODE_1_length_535757_cov_49.241094	167613..168570	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.64	1689 / 1683	NODE_13_length_126751_cov_49.691642	121358..123046	  Translocated intimin receptor protein	EU871628
+virulence_ecoli	yfcV	99.82	567 / 567	NODE_4_length_344148_cov_48.945715	286295..286861	  Fimbrial protein	CU928162

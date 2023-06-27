@@ -1,0 +1,5 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	kpsE	95.39	1149 / 1149	B1147_Contig_33	306974..308122	  Capsule polysaccharide export inner-membrane protein	AJ617685
+virulence_ecoli	kpsMII	96.02	778 / 777	B1147_Contig_33	323896..324672	  Polysialic acid transport protein; Group 2 capsule	QOLT01000089
+virulence_ecoli	terC	93.7	714 / 714	B1147_Contig_33	151423..152136	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	94.57	958 / 966	B1147_Contig_33	471622..472579	  Tellurium ion resistance protein	MG591698

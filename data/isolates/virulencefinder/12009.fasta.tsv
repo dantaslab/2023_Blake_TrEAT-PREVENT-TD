@@ -1,0 +1,33 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cif	99.76	851 / 849	12009_Contig_1	877186..878036	  Type III secreted effector	AF497476
+virulence_ecoli	eae	100.0	2847 / 2847	12009_Contig_1	3686375..3689221	  Intimin	AJ303141
+virulence_ecoli	efa1	100.0	9672 / 9672	12009_Contig_1	5095047..5104718	  EHEC factor for adherence	AP010958
+virulence_ecoli	efa1	100.0	9672 / 9672	12009_Contig_1	3642322..3651993	  EHEC factor for adherence	AP010958
+virulence_ecoli	espA	100.0	579 / 579	12009_Contig_1	3683047..3683625	  Type III secretions system	AJ303141
+virulence_ecoli	espB	100.0	945 / 945	12009_Contig_1	3680927..3681871	  Secreted protein B	AP010958
+virulence_ecoli	espF	100.0	885 / 885	12009_Contig_1	3678871..3679755	  Type III secretion system	AP010958
+virulence_ecoli	espI	100.0	4092 / 4092	12009_Contig_1	3873591..3877682	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	gad	100.0	1401 / 1401	12009_Contig_1	4333390..4334790	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	1401 / 1401	12009_Contig_1	1713347..1714747	  Glutamate decarboxylase	AP010958
+virulence_ecoli	hlyE	99.13	918 / 918	12009_Contig_1	1362940..1363856	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	98.98	294 / 294	12009_Contig_1	587275..587568	  Increased serum survival	CP001509
+virulence_ecoli	nleA	100.0	1239 / 1239	12009_Contig_1	879476..880714	  Non-LEE encoded effector A	AB303062
+virulence_ecoli	nleB	100.0	981 / 981	12009_Contig_1	874459..875439	  Non-LEE encoded effector B	AB303062
+virulence_ecoli	nleB	100.0	981 / 981	12009_Contig_1	2285571..2286551	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleB	100.0	990 / 990	12009_Contig_1	5107316..5108305	  Non-LEE encoded effector B	AP010958
+virulence_ecoli	nleB	100.0	990 / 990	12009_Contig_1	3638735..3639724	  Non-LEE encoded effector B	AP010958
+virulence_ecoli	ompT	100.0	954 / 954	12009_Contig_1	617011..617964	  Outer membrane protease (protein protease 7)	CYAG01000051
+virulence_ecoli	stx1A	100.0	948 / 948	12009_Contig_1	5387704..5388651	  Shiga toxin 1, subunit A, variant a	AF461168
+virulence_ecoli	stx1B	100.0	270 / 270	12009_Contig_1	5388661..5388930	  Shiga toxin 1, subunit B, variant a	AM230663
+virulence_ecoli	stx2A	100.0	960 / 960	12009_Contig_1	2897129..2898088	  Shiga toxin 2, subunit A, variant a	AB048837
+virulence_ecoli	stx2B	100.0	270 / 270	12009_Contig_1	2896848..2897117	  Shiga toxin 2, subunit B, variant a	AE005174
+virulence_ecoli	tccP	100.0	753 / 753	12009_Contig_1	2388096..2388848	  Tir-cytoskeleton coupling protein	AB253581
+virulence_ecoli	tccP	100.0	753 / 753	12009_Contig_1	2388096..2388848	  Tir-cytoskeleton coupling protein	AP010958
+virulence_ecoli	terC	99.9	1041 / 1041	12009_Contig_1	3844456..3845496	  Tellurium ion resistance protein	CP006262
+virulence_ecoli	terC	100.0	714 / 714	12009_Contig_1	3465475..3466188	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	1041 / 1041	12009_Contig_1	3844456..3845496	  Tellurium ion resistance protein	CYEF01000040
+virulence_ecoli	terC	99.79	966 / 966	12009_Contig_1	3913773..3914738	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	100.0	1617 / 1617	12009_Contig_1	3689885..3691501	  Translocated intimin receptor protein	AJ303141
+virulence_ecoli	traT	99.38	322 / 423	12009_Contig_1	3861470..3861790	  Outer membrane protein complement resistance	AKKX01000148
+stx	stx1	100.0	1227 / 1227	12009_Contig_1	5387704..5388930	O157 FLY16, variant a	AF461168
+stx	stx2	100.0	1241 / 1241	12009_Contig_1	2896848..2898088	O157 EDL933, varinat a	X07865

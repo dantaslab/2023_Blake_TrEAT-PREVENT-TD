@@ -1,0 +1,20 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaA	100.0	258 / 258	CIP61-11_Contig_1	4699704..4699961	  Transcriptional regulator	M98766
+virulence_ecoli	afaB	99.12	798 / 798	CIP61-11_Contig_1	4859620..4860417	  Periplasmic chaperone	KR338833
+virulence_ecoli	afaC	99.46	2584 / 2583	CIP61-11_Contig_1	4860457..4863040	  Outer membrane usher protein	KR338832
+virulence_ecoli	afaD	100.0	444 / 444	CIP61-11_Contig_1	4863056..4863499	  Afimbrial adhesion	OEDS01000007
+virulence_ecoli	afaD	99.77	435 / 435	CIP61-11_Contig_1	4849256..4849690	  Afimbrial adhesion	UGAK01000003
+virulence_ecoli	afaE	99.17	483 / 483	CIP61-11_Contig_1	4790821..4791303	  Adhesin protein	DQ386078
+virulence_ecoli	capU	99.91	1089 / 1089	CIP61-11_Contig_1	4110711..4111799	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	fyuA	100.0	2022 / 2022	CIP61-11_Contig_1	1437905..1439926	  Siderophore receptor	OEEX01000169
+virulence_ecoli	hlyE	100.0	918 / 918	CIP61-11_Contig_1	4324121..4325038	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	100.0	792 / 792	CIP61-11_Contig_1	3428876..3429667	  Heat-resistant agglutinin	CP043942
+virulence_ecoli	iha	98.71	2091 / 2091	CIP61-11_Contig_1	4692275..4694362	  Adherence protein	CP001063
+virulence_ecoli	iha	98.71	2091 / 2091	CIP61-11_Contig_1	4692275..4694362	  Adherence protein	CU928162
+virulence_ecoli	irp2	99.98	6108 / 6108	CIP61-11_Contig_1	1453117..1459223	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PQJF01000011
+virulence_ecoli	iss	100.0	294 / 294	CIP61-11_Contig_1	1237330..1237623	  Increased serum survival	CP001846
+virulence_ecoli	kpsE	100.0	1149 / 1149	CIP61-11_Contig_1	4689263..4690411	  Capsule polysaccharide export inner-membrane protein	FBVS01000076
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	CIP61-11_Contig_1	4213568..4214344	  Polysialic acid transport protein; Group 2 capsule	OEEX01000063
+virulence_ecoli	ompT	100.0	954 / 954	CIP61-11_Contig_1	3747950..3748903	  Outer membrane protease (protein protease 7)	JHDO01000060
+virulence_ecoli	terC	100.0	714 / 714	CIP61-11_Contig_1	1621119..1621832	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	CIP61-11_Contig_1	2532514..2533479	  Tellurium ion resistance protein	MG591698

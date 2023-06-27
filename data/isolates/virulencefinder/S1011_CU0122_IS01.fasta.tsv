@@ -1,0 +1,17 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_66_length_7738_cov_28.528782	2211..3299	 Hexosyltransferase homolog	CP001062
+virulence_ecoli	gad	99.7	1016 / 1401	NODE_21_length_99528_cov_15.776443	98513..99528	  Glutamate decarboxylase	AP009240
+virulence_ecoli	gad	99.7	1016 / 1401	NODE_21_length_99528_cov_15.776443	98513..99528	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	99.7	1016 / 1401	NODE_21_length_99528_cov_15.776443	98513..99528	  Glutamate decarboxylase	CU928160
+virulence_ecoli	gad	99.7	1016 / 1401	NODE_21_length_99528_cov_15.776443	98513..99528	  Glutamate decarboxylase	EF547380
+virulence_ecoli	hlyE	99.02	918 / 918	NODE_3_length_222588_cov_12.712109	190494..191411	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	ipaD	99.2	999 / 999	NODE_36_length_37939_cov_28.306085	30577..31575	  Invasion protein Shigella flexneri	X60777
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_25_length_57292_cov_18.105007	26741..27313	  Long polar fimbriae	AP010953
+virulence_ecoli	senB	99.83	1176 / 1176	NODE_72_length_6229_cov_35.717653	4595..5770	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	senB	99.83	1176 / 1176	NODE_72_length_6229_cov_35.717653	4595..5770	  Plasmid-encoded enterotoxin	CP001062
+virulence_ecoli	sitA	99.89	915 / 915	NODE_24_length_59080_cov_12.361304	55263..56177	  Iron transport protein	UFYN01000008
+virulence_ecoli	terC	100.0	714 / 714	NODE_1_length_398319_cov_14.450186	205561..206274	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_26_length_55124_cov_14.597907	11191..12149	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	98.5	733 / 735	NODE_65_length_8368_cov_32.618140	2719..3451	  Outer membrane protein complement resistance	LCVH01000288
+virulence_ecoli	traT	98.5	733 / 735	NODE_65_length_8368_cov_32.618140	2719..3451	  Outer membrane protein complement resistance	NZ_UIHG01000030
+virulence_ecoli	virF	100.0	810 / 810	NODE_98_length_2088_cov_32.866236	425..1234	  VirF transcriptional activator	AF348706

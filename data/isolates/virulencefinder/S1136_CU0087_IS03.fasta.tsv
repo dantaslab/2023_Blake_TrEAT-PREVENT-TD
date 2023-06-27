@@ -1,0 +1,23 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cba	100.0	1536 / 1536	NODE_29_length_60771_cov_84.703501	2233..3768	  Colicin B	FJ664724
+virulence_ecoli	cia	94.47	253 / 264	NODE_55_length_8557_cov_112.826384	8157..8409	  Colicin ia	UGDH01000002
+virulence_ecoli	cma	100.0	816 / 816	NODE_29_length_60771_cov_84.703501	630..1445	  Colicin M	FJ664724
+virulence_ecoli	cvaC	100.0	312 / 312	NODE_43_length_26422_cov_99.424786	16195..16506	  Microcin C	X57525
+virulence_ecoli	etsC	99.92	1308 / 1308	NODE_39_length_30479_cov_118.872475	13831..15138	  Putative type I secretion outer membrane protein	UGCO01000002
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_2_length_259561_cov_41.483887	153500..155521	  Siderophore receptor	UDIT01000001
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_4_length_240180_cov_40.976748	2736..3652	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hlyF	100.0	1110 / 1110	NODE_39_length_30479_cov_118.872475	23118..24227	  Hemolysin F	CP006635
+virulence_ecoli	hra	100.0	792 / 792	NODE_13_length_146737_cov_41.126026	127019..127810	  Heat-resistant agglutinin	CP006636
+virulence_ecoli	iroN	100.0	2178 / 2178	NODE_43_length_26422_cov_99.424786	6571..8748	  Enterobactin siderophore receptor protein	AF449498
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_2_length_259561_cov_41.483887	168709..174816	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NOAS01000001
+virulence_ecoli	iss	99.68	309 / 309	NODE_59_length_6172_cov_96.212797	4068..4376	  Increased serum survival	DQ381420
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_49_length_19918_cov_84.525982	14072..15814	  Aerobactin synthetase	CBTO010000002
+virulence_ecoli	iutA	100.0	2202 / 2202	NODE_49_length_19918_cov_84.525982	17170..19371	  Ferric aerobactin receptor	NC_011964
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_2_length_259561_cov_41.483887	30344..30916	  Long polar fimbriae	AP010953
+virulence_ecoli	mchF	100.0	2097 / 2097	NODE_43_length_26422_cov_99.424786	13929..16025	  ABC transporter protein MchF	X57524
+virulence_ecoli	ompT	99.9	954 / 954	NODE_39_length_30479_cov_118.872475	21732..22685	  Outer membrane protease (protein protease 7)	LT985319
+virulence_ecoli	sitA	100.0	915 / 915	NODE_49_length_19918_cov_84.525982	378..1292	  Iron transport protein	ADTP01000122
+virulence_ecoli	terC	99.02	714 / 714	NODE_6_length_213532_cov_41.105526	26183..26896	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_1_length_280582_cov_39.889332	184636..185594	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	831 / 831	NODE_29_length_60771_cov_84.703501	44332..45162	  Outer membrane protein complement resistance	NC_011964
+virulence_ecoli	tsh	99.95	4134 / 4134	NODE_43_length_26422_cov_99.424786	22147..26280	 Temperature-sensitive hemagglutinin	AF218073

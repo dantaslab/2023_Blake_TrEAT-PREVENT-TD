@@ -1,0 +1,31 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	99.61	1029 / 1029	NODE_34_length_43575_cov_61.727252	42314..43342	 Isoprenoid Biosynthesis	CU928159
+virulence_ecoli	ORF4	99.63	540 / 540	NODE_34_length_43575_cov_61.727252	41771..42310	 Putative isopentenyl-diphosphate delta-isomerase	AFRH01000026
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_25_length_68558_cov_39.414144	45458..45964	 Type VI secretion protein	FN554766
+virulence_ecoli	aap	99.72	351 / 351	NODE_34_length_43575_cov_61.727252	35790..36140	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	aar	100.0	201 / 201	NODE_34_length_43575_cov_61.727252	34859..35059	 AggR-activated regulator	SSI_AA784
+virulence_ecoli	aatA	99.84	1239 / 1239	NODE_34_length_43575_cov_61.727252	28198..29436	 Dispersin transporter protein	CU928159
+virulence_ecoli	afaD	100.0	396 / 396	NODE_65_length_5607_cov_75.931646	4063..4458	  Afimbrial adhesion	JNQU01000050
+virulence_ecoli	agg3C	100.0	2550 / 2550	NODE_65_length_5607_cov_75.931646	1455..4004	 Usher, AAF/III assembly unit	SSI_AA800
+virulence_ecoli	agg3D	99.73	753 / 753	NODE_65_length_5607_cov_75.931646	648..1400	 Chaperone, AAF/III assembly unit	CU928159
+virulence_ecoli	agg5A	100.0	516 / 516	NODE_65_length_5607_cov_75.931646	4633..5148		SSI_AA800
+virulence_ecoli	aggR	99.75	798 / 798	NODE_34_length_43575_cov_61.727252	36981..37778	 AraC transcriptional activator	55989
+virulence_ecoli	astA	100.0	117 / 117	NODE_109_length_1020_cov_171.924708	211..327	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	espI	99.29	4092 / 4092	NODE_71_length_4826_cov_35.708149	154..4245	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_29_length_51221_cov_26.388100	31040..33061	  Siderophore receptor	UGCQ01000002
+virulence_ecoli	hlyA	99.9	3075 / 3075	NODE_54_length_13249_cov_41.121925	6157..9231	  Haemolysin A	CP054232
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_5_length_212367_cov_28.344453	127665..128582	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_29_length_51221_cov_26.388100	11745..17852	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NTPD01000023
+virulence_ecoli	iss	100.0	294 / 294	NODE_28_length_54444_cov_31.406349	53169..53462	  Increased serum survival	CP001846
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_41_length_26704_cov_37.307282	15726..17468	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_41_length_26704_cov_37.307282	18805..21003	  Ferric aerobactin receptor	UGCQ01000002
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_23_length_84442_cov_32.470906	7324..8472	  Capsule polysaccharide export inner-membrane protein	FBVS01000076
+virulence_ecoli	kpsMII	100.0	777 / 777	NODE_23_length_84442_cov_32.470906	22693..23469	  Polysialic acid transport protein; Group 2 capsule	MG736912
+virulence_ecoli	ompT	100.0	954 / 954	NODE_40_length_26803_cov_29.456597	22325..23278	  Outer membrane protease (protein protease 7)	NZ_NKVD01000029
+virulence_ecoli	papA_fsiA_F16	99.81	537 / 537	NODE_48_length_17838_cov_37.020832	8549..9085	  Major pilin subunit F16	CU928163
+virulence_ecoli	papC	99.84	2511 / 2511	NODE_48_length_17838_cov_37.020832	9795..12305	  Outer membrane usher P fimbriae	CP002797
+virulence_ecoli	papC	99.84	2511 / 2511	NODE_48_length_17838_cov_37.020832	9795..12305	  Outer membrane usher P fimbriae	JONC01000026
+virulence_ecoli	pic	100.0	4119 / 4119	NODE_66_length_5605_cov_40.628799	472..4590	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	sat	99.97	3888 / 3888	NODE_41_length_26704_cov_37.307282	21947..25834	 Secreted autotransporter toxin	AE014075
+virulence_ecoli	terC	100.0	714 / 714	NODE_8_length_176625_cov_31.306551	22810..23523	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_3_length_255129_cov_31.579309	185070..186035	  Tellurium ion resistance protein	MG591698

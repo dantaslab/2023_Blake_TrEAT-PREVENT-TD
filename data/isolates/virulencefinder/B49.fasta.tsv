@@ -1,0 +1,8 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	93.7	1983 / 1983	B49_Contig_68	17451..19433	  Outer membrane hemin receptor	UCZM01000007
+virulence_ecoli	kpsE	95.13	1149 / 1149	B49_Contig_107	303719..304867	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	kpsE	95.13	1149 / 1149	B49_Contig_107	303719..304867	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII	98.71	777 / 777	B49_Contig_107	319540..320316	  Polysialic acid transport protein; Group 2 capsule	JHDF01000027
+virulence_ecoli	terC	98.74	714 / 714	B49_Contig_107	130217..130930	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	95.62	958 / 966	B49_Contig_107	492096..493053	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	B49_Contig_42	33499..34233	  Outer membrane protein complement resistance	HG977148

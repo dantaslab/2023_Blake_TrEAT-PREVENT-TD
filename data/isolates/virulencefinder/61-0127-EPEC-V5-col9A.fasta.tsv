@@ -1,0 +1,18 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	eae	99.86	2829 / 2829	NODE_7_length_192828_cov_33.162370	178946..181774	  Intimin	EF204930
+virulence_ecoli	espA	92.57	579 / 579	NODE_7_length_192828_cov_33.162370	184519..185097	  Type III secretions system	AJ633130
+virulence_ecoli	espF	95.83	624 / 624	NODE_7_length_192828_cov_33.162370	188348..188971	  Type III secretion system	AJ633130
+virulence_ecoli	espI	99.32	4093 / 4092	NODE_62_length_9870_cov_38.214133	3350..7442	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	etpD	100.0	1761 / 1761	NODE_41_length_31896_cov_76.430686	6878..8638	  Type II secretion protein	CP003111
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_20_length_83598_cov_27.825445	18500..20521	  Siderophore receptor	ADTR01000532
+virulence_ecoli	hlyE	97.71	919 / 918	NODE_3_length_217261_cov_28.990317	84621..85527	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_61_length_10349_cov_37.109424	5326..7416	  Adherence protein	AE005174
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_20_length_83598_cov_27.825445	33710..39817	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PQJF01000011
+virulence_ecoli	iss	99.66	294 / 294	NODE_16_length_124153_cov_27.368975	1362..1655	  Increased serum survival	CP001846
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_59_length_10555_cov_34.751384	3825..5567	  Aerobactin synthetase	AMUG01000109
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_59_length_10555_cov_34.751384	290..2488	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	nleA	96.32	815 / 1326	NODE_12_length_146474_cov_29.692405	144874..145682	  Non-LEE encoded effector A	GQ845116
+virulence_ecoli	nleB	96.13	981 / 981	NODE_110_length_1956_cov_42.806812	625..1605	  Non-LEE encoded effector B	CP001846
+virulence_ecoli	terC	99.3	714 / 714	NODE_1_length_326341_cov_31.845971	22811..23524	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	959 / 966	NODE_9_length_169652_cov_30.611900	23609..24567	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.65	1722 / 1719	NODE_7_length_192828_cov_33.162370	176554..178275	  Translocated intimin receptor protein	AB288104

@@ -1,0 +1,67 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	240 / 240	H223_Contig_1	1236800..1237039	  Colicin E1	GG772217
+virulence_ecoli	chuA	100.0	1983 / 1983	H223_Contig_1	4127689..4129671	  Outer membrane hemin receptor	UGAO01000001
+virulence_ecoli	cib	99.47	1881 / 1881	H223_Contig_1	3022763..3024643	  Colicin ib	KP198616
+virulence_ecoli	clbB	100.0	9621 / 9621	H223_Contig_1	2276491..2286111	  Hybrid non-ribosomal peptide / polyketide megasynthase	AM229678
+virulence_ecoli	focC	99.71	696 / 696	H223_Contig_1	1257748..1258443	  S fimbrial/F1C minor subunit	CP010315
+virulence_ecoli	fyuA	100.0	2022 / 2022	H223_Contig_1	2220650..2222671	  Siderophore receptor	ADTO01000058
+virulence_ecoli	gad	99.89	888 / 1401	H223_Contig_1	4146874..4147761	  Glutamate decarboxylase	CP001671
+virulence_ecoli	gad	99.77	871 / 1401	H223_Contig_1	1731990..1732860	  Glutamate decarboxylase	CU928162
+virulence_ecoli	gad	99.89	888 / 1401	H223_Contig_1	4146874..4147761	  Glutamate decarboxylase	FM180568
+virulence_ecoli	iroN	100.0	2178 / 2178	H223_Contig_1	1266071..1268248	  Enterobactin siderophore receptor protein	AE014075
+virulence_ecoli	irp2	100.0	6108 / 6108	H223_Contig_1	2201355..2207462	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QLAC01000001
+virulence_ecoli	iss	100.0	342 / 342	H223_Contig_1	1416059..1416400	  Increased serum survival	AE014075
+virulence_ecoli	iss	100.0	294 / 294	H223_Contig_1	704663..704956	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	100.0	1149 / 1149	H223_Contig_1	3505702..3506850	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	kpsMII_K1	100.0	777 / 777	H223_Contig_1	3519869..3520645	  Polysialic acid transport protein; Group 2 capsule	UWVJ01000006
+virulence_ecoli	mchB	100.0	294 / 294	H223_Contig_1	1245092..1245385	  Microcin H47 part of colicin H	AE014075
+virulence_ecoli	mchC	99.94	1551 / 1551	H223_Contig_1	1245657..1247207	  MchC protein	AE014075
+virulence_ecoli	mchF	99.95	2115 / 2115	H223_Contig_1	1249087..1251201	  ABC transporter protein MchF	AE014075
+virulence_ecoli	mcmA	99.64	279 / 279	H223_Contig_1	1251455..1251733	  Microcin M part of colicin H	AJ586887
+virulence_ecoli	neuC	100.0	1176 / 1176	H223_Contig_1	3515075..3516250	  Polysialic acid capsule biosynthesis protein	ADUG01000366
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	ACGN01000009
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	CAIGY01000025
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	CCYBW01000007
+virulence_ecoli	ompT	99.32	587 / 753	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	CU928162
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	CXZC01000001
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	CYGA01000006
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	JJLJ01000007
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	JJMB01000012
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_CP027103
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_CP027591
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_JZPT01000244
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NBCB01000127
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NJVS01000056
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NJVU01000041
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NLOR01000025
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NLOU01000043
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NLWG01000014
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NLZV01000108
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NMBX01000051
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NMEP01000002
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NMLG01000041
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NNTK01000066
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NOES01000004
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_NOOA01000003
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_PXZJ01000044
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_QODO01000003
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_UDGD01000039
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	NZ_UGFL01000005
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	QOER01000034
+virulence_ecoli	ompT	96.97	363 / 363	H223_Contig_1	726259..726621	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	ompT	95.59	363 / 363	H223_Contig_1	707168..707530	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	UDHK01000003
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	UGAU01000003
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	UGEZ01000005
+virulence_ecoli	ompT	99.32	587 / 954	H223_Contig_1	728510..729096	  Outer membrane protease (protein protease 7)	UGFB01000004
+virulence_ecoli	papC	98.96	2511 / 2511	H223_Contig_1	5035135..5037645	  Outer membrane usher P fimbriae	JNPN01000012
+virulence_ecoli	pic	95.53	3510 / 4119	H223_Contig_1	3486113..3489622	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	pic	95.53	3510 / 4119	H223_Contig_1	3486113..3489622	  serine protease autotransporters of Enterobacteriaceae (SPATE)	FN554766
+virulence_ecoli	sfaD	99.81	540 / 540	H223_Contig_1	1257168..1257707	  S fimbrial/F1C minor subunit	CP010315
+virulence_ecoli	sitA	100.0	915 / 915	H223_Contig_1	1436125..1437039	  Iron transport protein	UGBZ01000001ADUG01000044
+virulence_ecoli	tcpC	100.0	924 / 924	H223_Contig_1	2176854..2177777	  Tir domain-containing protein	GQ903008
+virulence_ecoli	terC	100.0	714 / 714	H223_Contig_1	3336999..3337712	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.49	958 / 966	H223_Contig_1	3681309..3682266	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	100.0	1041 / 1041	H223_Contig_1	248832..249872	  Uropathogenic specific protein	AB056440
+virulence_ecoli	vat	100.0	4131 / 4131	H223_Contig_1	424180..428310	 Vacuolating autotransporter toxin	CU651637
+virulence_ecoli	yfcV	100.0	567 / 567	H223_Contig_1	2716599..2717165	  Fimbrial protein	UGAO01000001

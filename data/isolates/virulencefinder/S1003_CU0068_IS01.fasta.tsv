@@ -1,0 +1,18 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaA	100.0	306 / 306	NODE_15_length_121166_cov_22.700617	10895..11200	  Transcriptional regulator	FM955458
+virulence_ecoli	afaB	99.75	798 / 798	NODE_15_length_121166_cov_22.700617	11491..12288	  Periplasmic chaperone	KR338833
+virulence_ecoli	afaC	100.0	2583 / 2583	NODE_15_length_121166_cov_22.700617	12328..14910	  Outer membrane usher protein	KR338833
+virulence_ecoli	afaD	100.0	444 / 444	NODE_15_length_121166_cov_22.700617	14926..15369	  Afimbrial adhesion	KR338833
+virulence_ecoli	chuA	99.34	1983 / 1983	NODE_26_length_72338_cov_21.829991	31166..33148	  Outer membrane hemin receptor	FN554766
+virulence_ecoli	cia	98.86	264 / 264	NODE_25_length_76247_cov_22.697650	61215..61477	  Colicin ia	UGDH01000002
+virulence_ecoli	eilA	98.76	1698 / 1698	NODE_20_length_95160_cov_22.286718	48095..49792	 Salmonella HilA homolog	FN554766
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_11_length_142398_cov_19.333240	40326..42347	  Siderophore receptor	CAY233333
+virulence_ecoli	gad	98.36	1401 / 1401	NODE_2_length_264394_cov_17.795189	49806..51206	  Glutamate decarboxylase	CP002167
+virulence_ecoli	gad	98.64	1401 / 1401	NODE_26_length_72338_cov_21.829991	50008..51408	  Glutamate decarboxylase	CU928163
+virulence_ecoli	hlyE	98.58	918 / 918	NODE_5_length_217722_cov_18.130534	146463..147380	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_11_length_142398_cov_19.333240	21031..27138	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NOTZ01000001
+virulence_ecoli	kpsE	99.74	1149 / 1149	NODE_1_length_493534_cov_21.467869	198696..199844	  Capsule polysaccharide export inner-membrane protein	AM946981
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	NODE_1_length_493534_cov_21.467869	210798..211574	  Polysialic acid transport protein; Group 2 capsule	UFZG01000001
+virulence_ecoli	terC	98.18	714 / 714	NODE_1_length_493534_cov_21.467869	38518..39231	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.86	964 / 966	NODE_1_length_493534_cov_21.467869	354026..354989	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.86	735 / 735	NODE_25_length_76247_cov_22.697650	28173..28907	  Outer membrane protein complement resistance	NZ_UIKU01000027

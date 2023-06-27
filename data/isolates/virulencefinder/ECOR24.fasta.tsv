@@ -1,0 +1,26 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.91	1089 / 1089	ECOR24_Contig_44	2170..3258	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	cea	99.92	1203 / 1203	ECOR24_Contig_164	87..1289	  Colicin E1	CYCO01000082
+virulence_ecoli	cea	97.67	215 / 240	ECOR24_Contig_164	4877..5091	  Colicin E1	GG772217
+virulence_ecoli	fyuA	100.0	2022 / 2022	ECOR24_Contig_111	36290..38311	  Siderophore receptor	AHAX01000032
+virulence_ecoli	gad	100.0	1401 / 1401	ECOR24_Contig_60	39716..41116	  Glutamate decarboxylase	AP010953
+virulence_ecoli	hlyA	99.97	3075 / 3075	ECOR24_Contig_81	1360..4434	  Haemolysin A	CP053731
+virulence_ecoli	iha	99.9	2091 / 2091	ECOR24_Contig_56	434..2524	  Adherence protein	AE014075
+virulence_ecoli	ireA	100.0	2049 / 2049	ECOR24_Contig_65	18115..20163	  Siderophore receptor	CP000468
+virulence_ecoli	irp2	99.95	6108 / 6108	ECOR24_Contig_111	17065..23172	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NNYK01000037
+virulence_ecoli	iss	98.98	294 / 294	ECOR24_Contig_116	12269..12562	  Increased serum survival	CP001665
+virulence_ecoli	iss	98.98	294 / 294	ECOR24_Contig_116	12269..12562	  Increased serum survival	CP001846
+virulence_ecoli	iucC	100.0	1743 / 1743	ECOR24_Contig_19	6256..7998	  Aerobactin synthetase	UFZP01000007
+virulence_ecoli	iutA	99.95	2199 / 2199	ECOR24_Contig_19	9335..11533	  Ferric aerobactin receptor	UGAH01000002
+virulence_ecoli	kpsE	100.0	1149 / 1149	ECOR24_Contig_152	7415..8563	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsMII_K1	100.0	777 / 777	ECOR24_Contig_152	21581..22357	  Polysialic acid transport protein; Group 2 capsule	UWVJ01000006
+virulence_ecoli	neuC	100.0	1176 / 1176	ECOR24_Contig_152	16787..17962	  Polysialic acid capsule biosynthesis protein	ADUG01000366
+virulence_ecoli	papA_F48	98.53	546 / 546	ECOR24_Contig_175	284..829	  Major pilin subunit F48	AF287159
+virulence_ecoli	papA_F7-2	97.35	567 / 567	ECOR24_Contig_58	1617..2174	  Major pilin subunit F7-2	ECOFIMAA
+virulence_ecoli	papC	99.88	1699 / 2511	ECOR24_Contig_172	2247..3945	  Outer membrane usher P fimbriae	ADTJ01000356
+virulence_ecoli	sat	99.82	3888 / 3888	ECOR24_Contig_19	12477..16364	 Secreted autotransporter toxin	CP001671
+virulence_ecoli	senB	99.91	1176 / 1176	ECOR24_Contig_68	4282..5457	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	ECOR24_Contig_180	2938..3852	  Iron transport protein	ADTP01000122
+virulence_ecoli	terC	98.88	714 / 714	ECOR24_Contig_121	216535..217248	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.17	959 / 966	ECOR24_Contig_152	165092..166050	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	714 / 714	ECOR24_Contig_24	12242..12955	  Outer membrane protein complement resistance	LT985300

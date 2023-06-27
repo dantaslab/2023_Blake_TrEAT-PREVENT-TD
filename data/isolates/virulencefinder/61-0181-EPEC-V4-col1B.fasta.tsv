@@ -1,0 +1,19 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	eae	99.81	2069 / 2805	NODE_49_length_37804_cov_35.382538	27471..29539	  Intimin	AF071034
+virulence_ecoli	espA	99.14	579 / 579	NODE_49_length_37804_cov_35.382538	33697..34275	  Type III secretions system	CP003109
+virulence_ecoli	espB	99.68	939 / 939	NODE_49_length_37804_cov_35.382538	35433..36371	  Secreted protein B	AE005174
+virulence_ecoli	espI	99.27	4092 / 4092	NODE_99_length_7797_cov_29.362435	3350..7441	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_31_length_58456_cov_21.957331	19371..21392	  Siderophore receptor	ADTP01000030
+virulence_ecoli	hlyE	98.8	918 / 918	NODE_42_length_41089_cov_23.440895	14164..15081	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_112_length_4577_cov_24.565111	1548..3638	  Adherence protein	AE005174
+virulence_ecoli	irp2	99.95	6108 / 6108	NODE_31_length_58456_cov_21.957331	34580..40687	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEM01000039
+virulence_ecoli	iss	99.32	294 / 294	NODE_44_length_40217_cov_24.266442	3354..3647	  Increased serum survival	CP001509
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_41_length_41467_cov_26.728703	35247..36989	  Aerobactin synthetase	AMUG01000109
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_41_length_41467_cov_26.728703	31712..33910	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	terC	100.0	714 / 714	NODE_38_length_46005_cov_25.680979	22483..23196	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_24_length_66599_cov_21.680181	18059..19024	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.16	1683 / 1683	NODE_49_length_37804_cov_35.382538	25140..26804	  Translocated intimin receptor protein	EU871628
+virulence_ecoli	traT	99.44	178 / 177	NODE_221_length_314_cov_112.151899	128..305	  Outer membrane protein complement resistance	AIGY01000005
+virulence_ecoli	traT	98.31	118 / 117	NODE_138_length_1859_cov_61.941077	68..185	  Outer membrane protein complement resistance	AQEY01000048
+virulence_ecoli	traT	98.35	303 / 303	NODE_75_length_18254_cov_61.013864	184..486	  Outer membrane protein complement resistance	UEKA01000045
+virulence_ecoli	traT	99.49	197 / 303	NODE_198_length_380_cov_45.115512	1..197	  Outer membrane protein complement resistance	UEKA01000045

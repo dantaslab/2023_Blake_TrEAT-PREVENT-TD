@@ -1,0 +1,16 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	98.15	1029 / 1029	NODE_115_length_4079_cov_202.164418	2430..3458	 Isoprenoid Biosynthesis	FN554767
+virulence_ecoli	ORF4	98.33	540 / 540	NODE_115_length_4079_cov_202.164418	1887..2426	 Putative isopentenyl-diphosphate delta-isomerase	FN554767
+virulence_ecoli	aaiC	99.8	507 / 507	NODE_47_length_39146_cov_58.342138	17066..17572	 Type VI secretion protein	cp003301
+virulence_ecoli	astA	100.0	117 / 117	NODE_90_length_9064_cov_128.245688	156..272	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	99.87	788 / 1089	NODE_135_length_2116_cov_249.546837	1329..2116	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_50_length_30693_cov_47.970571	27142..29163	  Siderophore receptor	UGBN01000001
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_8_length_119196_cov_48.512177	32622..33539	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	100.0	2091 / 2091	NODE_66_length_19848_cov_53.739669	10431..12521	  Adherence protein	CP003289
+virulence_ecoli	irp2	99.97	6108 / 6108	NODE_50_length_30693_cov_47.970571	7847..13954	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NNWT01000053
+virulence_ecoli	iucC	99.94	1743 / 1743	NODE_95_length_6880_cov_47.202999	3825..5567	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_95_length_6880_cov_47.202999	290..2488	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	pic	100.0	4119 / 4119	NODE_107_length_4788_cov_66.937805	472..4590	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	sat	99.85	3888 / 3888	NODE_105_length_5257_cov_66.287066	1021..4908	 Secreted autotransporter toxin	JX050263
+virulence_ecoli	terC	99.86	714 / 714	NODE_11_length_112538_cov_49.398734	28691..29404	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_29_length_61981_cov_48.755331	47031..47996	  Tellurium ion resistance protein	MG591698

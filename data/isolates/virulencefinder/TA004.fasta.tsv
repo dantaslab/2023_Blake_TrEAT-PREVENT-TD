@@ -1,0 +1,13 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	93.55	1983 / 1983	TA004_Contig_1	1653607..1655589	  Outer membrane hemin receptor	UCZM01000007
+virulence_ecoli	chuA	93.55	1983 / 1983	TA004_Contig_1	1653607..1655589	  Outer membrane hemin receptor	UGCR01000001
+virulence_ecoli	gad	92.93	1401 / 1401	TA004_Contig_1	1672408..1673808	  Glutamate decarboxylase	CU928163
+virulence_ecoli	gad	92.43	1401 / 1401	TA004_Contig_1	4090278..4091678	  Glutamate decarboxylase	CU928163
+virulence_ecoli	gad	92.43	1401 / 1401	TA004_Contig_1	4090278..4091678	  Glutamate decarboxylase	FN554766
+virulence_ecoli	iss	100.0	294 / 294	TA004_Contig_1	4888..5181	  Increased serum survival	CP001665
+virulence_ecoli	kpsE	95.39	1149 / 1149	TA004_Contig_1	2682756..2683904	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	kpsE	95.39	1149 / 1149	TA004_Contig_1	2682756..2683904	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K5	98.58	777 / 777	TA004_Contig_1	2668508..2669284	  Polysialic acid transport protein; Group 2 capsule	UGDM01000004
+virulence_ecoli	ompT	99.9	954 / 954	TA004_Contig_1	4421535..4422488	  Outer membrane protease (protein protease 7)	NZ_NLOR01000025
+virulence_ecoli	terC	92.86	714 / 714	TA004_Contig_1	2855111..2855824	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	94.26	958 / 966	TA004_Contig_1	2519861..2520818	  Tellurium ion resistance protein	MG591698

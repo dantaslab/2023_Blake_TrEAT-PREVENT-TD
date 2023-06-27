@@ -1,0 +1,972 @@
+---
+title: "TDcodeforpublication"
+author: "Sri Paruthiyil"
+date: "6/20/2023"
+output: html_document
+---
+
+```{r}
+#Metaphlan Analysis Figures 1A and 1B and accompanying statistics
+
+source("TrEAT-PREVENT-TD/_common.R")
+
+library(ggplot2)
+library(vegan)
+library(labdsv)
+library(tidyr)
+library(RColorBrewer)
+library(scales)
+library(plyr)
+library(reshape2)
+library(dplyr)
+library(gtools)
+library(vegan)
+library(ape)
+library(lme4)
+library(pheatmap)
+library(tidyverse)
+library(robustlmm)
+library(nlme)
+library(lmerTest)
+library(tibble)
+
+
+dfwide <- read.table("220502_alphaDiv_metaphlanStandard_species.txt", header = TRUE)
+mapping<- read.csv("220524_TreatTDmetadata.csv", header = TRUE)
+
+.rowNamesDF(dfwide)<-dfwide$Sample
+dfwide$Sample<-NULL
+.rowNamesDF(mapping)<-mapping$SAMPLE_ID
+mapping$SAMPLE_ID<-NULL
+
+
+joined<-merge(dfwide,mapping, by = 0)
+.rowNamesDF(joined)<-joined$Row.names
+joined$Row.names<-NULL
+
+
+
+joined<- subset(joined, DIAR_CLASS != "Acute Dysentery/Fever")
+joined<- subset(joined, PAIREDFF == "n")
+
+
+#PLotting richness and Shannon for whole data set by timepoint and treatment
+p1<-ggplot(joined, aes(x=as.factor(TIMEPOINT),y=richness, color=TRT)) + geom_boxplot()+geom_point(position = position_jitterdodge(jitter.width = 0.1)) + ggtitle("Richness")+xlab("Visit(Days after TD onset)")+ylab("Number of Species") + theme(axis.text.x = element_text(angle = 45, hjust = 1))+theme(axis.text.x = element_text(size=16), axis.title.x=element_text(size=20), axis.title.y = element_text(size=20), axis.text.y = element_text(size=16), axis.title = element_text(size=24))+ggtitle("Microbiome Species Richness over time")+scale_color_manual(values = c("AZI" = "#132F5D", "LEV" = "#648FBB","RIF" = "#D4E5F0"))+theme_pub()
+print(p1)
+
+p2<- ggplot(joined, aes(x=as.factor(TIMEPOINT),y=shannon, color=TRT)) + geom_boxplot()+geom_point(position = position_jitterdodge(jitter.width = 0.1)) +xlab("Timepoint")+ylab("Shannon Diversity") + theme(axis.text.x = element_text(angle = 45, hjust = 1))+theme(axis.text.x = element_text(size=16), axis.title.x=element_text(size=20), axis.title.y = element_text(size=20), axis.text.y = element_text(size=16), axis.title = element_text(size=24))+ggtitle("Microbiome Shannon Diversity over time")+scale_color_manual(values = c("AZI" = "#132F5D", "LEV" = "#648FBB","RIF" = "#D4E5F0", "PLA" = "#A32A31", "LOP" = "#F4A582"))+theme_pub()
+
+print(p2)
+
+
+joined[, 'treatmenttime'] = NA
+joined$treatmenttime <- paste(joined$TRT,joined$TIMEPOINT)
+
+fit <- lmer(richness~treatmenttime+ (1|STUDY_ID), data=joined)
+anova(fit)
+
+
+Tukfit<- lsmeans(fit, pairwise~treatmenttime, adjust="tukey")
+Tukfit
+
+# $lsmeans
+#  treatmenttime lsmean   SE   df lower.CL upper.CL
+#  AZI 0           40.8 4.46 66.6     31.9     49.7
+#  AZI 21          40.0 4.46 66.6     31.1     48.9
+#  AZI 7           35.5 4.46 66.6     26.6     44.4
+#  LEV 0           41.3 3.95 66.6     33.4     49.2
+#  LEV 21          42.2 4.05 70.2     34.1     50.3
+#  LEV 7           44.9 4.17 74.1     36.6     53.2
+#  RIF 0           40.3 4.27 66.6     31.8     48.9
+#  RIF 21          38.5 4.27 66.6     30.0     47.0
+#  RIF 7           39.5 4.27 66.6     31.0     48.0
+# 
+# Degrees-of-freedom method: kenward-roger 
+# Confidence level used: 0.95 
+# 
+# $contrasts
+#  contrast        estimate   SE   df t.ratio p.value
+#  AZI 0 - AZI 21      0.82 4.45 65.0   0.184  1.0000
+#  AZI 0 - AZI 7       5.27 4.45 65.0   1.186  0.9570
+#  AZI 0 - LEV 0      -0.47 5.96 66.6  -0.078  1.0000
+#  AZI 0 - LEV 21     -1.38 6.02 68.2  -0.229  1.0000
+#  AZI 0 - LEV 7      -4.09 6.10 70.1  -0.671  0.9990
+#  AZI 0 - RIF 0       0.48 6.17 66.6   0.079  1.0000
+#  AZI 0 - RIF 21      2.32 6.17 66.6   0.376  1.0000
+#  AZI 0 - RIF 7       1.32 6.17 66.6   0.214  1.0000
+#  AZI 21 - AZI 7      4.45 4.45 65.0   1.002  0.9840
+#  AZI 21 - LEV 0     -1.29 5.96 66.6  -0.216  1.0000
+#  AZI 21 - LEV 21    -2.20 6.02 68.2  -0.365  1.0000
+#  AZI 21 - LEV 7     -4.91 6.10 70.1  -0.805  0.9960
+#  AZI 21 - RIF 0     -0.33 6.17 66.6  -0.054  1.0000
+#  AZI 21 - RIF 21     1.50 6.17 66.6   0.243  1.0000
+#  AZI 21 - RIF 7      0.50 6.17 66.6   0.081  1.0000
+#  AZI 7 - LEV 0      -5.74 5.96 66.6  -0.964  0.9880
+#  AZI 7 - LEV 21     -6.65 6.02 68.2  -1.104  0.9720
+#  AZI 7 - LEV 7      -9.37 6.10 70.1  -1.535  0.8350
+#  AZI 7 - RIF 0      -4.79 6.17 66.6  -0.776  0.9970
+#  AZI 7 - RIF 21     -2.95 6.17 66.6  -0.479  1.0000
+#  AZI 7 - RIF 7      -3.95 6.17 66.6  -0.641  0.9990
+#  LEV 0 - LEV 21     -0.91 4.04 65.8  -0.226  1.0000
+#  LEV 0 - LEV 7      -3.63 4.16 66.5  -0.872  0.9940
+#  LEV 0 - RIF 0       0.95 5.82 66.6   0.164  1.0000
+#  LEV 0 - RIF 21      2.79 5.82 66.6   0.479  1.0000
+#  LEV 0 - RIF 7       1.79 5.82 66.6   0.307  1.0000
+#  LEV 21 - LEV 7     -2.71 4.27 67.5  -0.636  0.9990
+#  LEV 21 - RIF 0      1.87 5.89 68.3   0.317  1.0000
+#  LEV 21 - RIF 21     3.70 5.89 68.3   0.628  0.9990
+#  LEV 21 - RIF 7      2.70 5.89 68.3   0.459  1.0000
+#  LEV 7 - RIF 0       4.58 5.97 70.2   0.768  0.9970
+#  LEV 7 - RIF 21      6.41 5.97 70.2   1.075  0.9760
+#  LEV 7 - RIF 7       5.41 5.97 70.2   0.907  0.9920
+#  RIF 0 - RIF 21      1.83 4.26 65.0   0.431  1.0000
+#  RIF 0 - RIF 7       0.83 4.26 65.0   0.196  1.0000
+#  RIF 21 - RIF 7     -1.00 4.26 65.0  -0.235  1.0000
+# 
+# Degrees-of-freedom method: kenward-roger 
+# P value adjustment: tukey method for comparing a family of 9 estimates 
+
+
+fit2 <- lmer(shannon~treatmenttime+ (1|STUDY_ID), data=joined)
+anova(fit2)
+
+
+Tukfit2<- lsmeans(fit2, pairwise~treatmenttime, adjust="tukey")
+Tukfit2
+# $lsmeans
+#  treatmenttime lsmean     SE   df lower.CL upper.CL
+#  AZI 0           2.10 0.1074 93.2     1.89     2.31
+#  AZI 21          2.10 0.1074 93.2     1.89     2.31
+#  AZI 7           2.11 0.1074 93.2     1.90     2.32
+#  LEV 0           2.02 0.0952 93.2     1.83     2.21
+#  LEV 21          2.13 0.0987 94.5     1.93     2.33
+#  LEV 7           2.31 0.1026 95.7     2.11     2.51
+#  RIF 0           1.94 0.1028 93.2     1.74     2.15
+#  RIF 21          2.22 0.1028 93.2     2.02     2.42
+#  RIF 7           2.27 0.1028 93.2     2.07     2.48
+# 
+# Degrees-of-freedom method: kenward-roger 
+# Confidence level used: 0.95 
+# 
+# $contrasts
+#  contrast        estimate    SE   df t.ratio p.value
+#  AZI 0 - AZI 21    -0.004 0.138 65.2  -0.028  1.0000
+#  AZI 0 - AZI 7     -0.010 0.138 65.2  -0.075  1.0000
+#  AZI 0 - LEV 0      0.076 0.143 93.2   0.531  1.0000
+#  AZI 0 - LEV 21    -0.032 0.146 93.8  -0.217  1.0000
+#  AZI 0 - LEV 7     -0.212 0.148 94.5  -1.426  0.8850
+#  AZI 0 - RIF 0      0.155 0.149 93.2   1.043  0.9800
+#  AZI 0 - RIF 21    -0.123 0.149 93.2  -0.830  0.9960
+#  AZI 0 - RIF 7     -0.173 0.149 93.2  -1.164  0.9620
+#  AZI 21 - AZI 7    -0.007 0.138 65.2  -0.047  1.0000
+#  AZI 21 - LEV 0     0.080 0.143 93.2   0.558  1.0000
+#  AZI 21 - LEV 21   -0.028 0.146 93.8  -0.190  1.0000
+#  AZI 21 - LEV 7    -0.208 0.148 94.5  -1.400  0.8950
+#  AZI 21 - RIF 0     0.159 0.149 93.2   1.069  0.9770
+#  AZI 21 - RIF 21   -0.120 0.149 93.2  -0.804  0.9960
+#  AZI 21 - RIF 7    -0.169 0.149 93.2  -1.137  0.9670
+#  AZI 7 - LEV 0      0.086 0.143 93.2   0.603  1.0000
+#  AZI 7 - LEV 21    -0.021 0.146 93.8  -0.146  1.0000
+#  AZI 7 - LEV 7     -0.201 0.148 94.5  -1.356  0.9110
+#  AZI 7 - RIF 0      0.165 0.149 93.2   1.113  0.9710
+#  AZI 7 - RIF 21    -0.113 0.149 93.2  -0.760  0.9980
+#  AZI 7 - RIF 7     -0.163 0.149 93.2  -1.094  0.9740
+#  LEV 0 - LEV 21    -0.108 0.125 66.5  -0.864  0.9940
+#  LEV 0 - LEV 7     -0.288 0.128 67.9  -2.252  0.3850
+#  LEV 0 - RIF 0      0.079 0.140 93.2   0.564  1.0000
+#  LEV 0 - RIF 21    -0.200 0.140 93.2  -1.424  0.8860
+#  LEV 0 - RIF 7     -0.249 0.140 93.2  -1.778  0.6960
+#  LEV 21 - LEV 7    -0.180 0.131 69.5  -1.379  0.9020
+#  LEV 21 - RIF 0     0.187 0.142 93.9   1.310  0.9260
+#  LEV 21 - RIF 21   -0.092 0.142 93.9  -0.644  0.9990
+#  LEV 21 - RIF 7    -0.141 0.142 93.9  -0.992  0.9860
+#  LEV 7 - RIF 0      0.367 0.145 94.5   2.526  0.2330
+#  LEV 7 - RIF 21     0.088 0.145 94.5   0.609  1.0000
+#  LEV 7 - RIF 7      0.039 0.145 94.5   0.268  1.0000
+#  RIF 0 - RIF 21    -0.278 0.132 65.2  -2.114  0.4730
+#  RIF 0 - RIF 7     -0.328 0.132 65.2  -2.490  0.2560
+#  RIF 21 - RIF 7    -0.050 0.132 65.2  -0.376  1.0000
+# 
+# Degrees-of-freedom method: kenward-roger 
+# P value adjustment: tukey method for comparing a family of 9 estimates 
+
+
+
+################################################################################################################################################
+################################################################################################################################################
+
+#Figure 1C and 1F, metaphlan stacked bars, figure creation and stats
+
+mappingTreat<- read.csv("220524_TreatTDmetadata.csv", header = TRUE)
+mappingTreat[, 'Study'] = "Treat"
+LongmetafamilyTreat<-read.delim(sep='',header=T,'220502_metaphlanStandard_phyla.txt',stringsAsFactors = F)
+mappingTreat <- mappingTreat %>% dplyr::rename(Sample = SAMPLE_ID)
+LongmetafamilyTreat<-join(LongmetafamilyTreat,mappingTreat, by ='Sample')
+# Remove readcounts less than 200K and clean up
+LongmetafamilyTreat<- subset(LongmetafamilyTreat, PAIREDFF == 'n')
+LongmetafamilyTreat<- subset(LongmetafamilyTreat, DIAR_CLASS != "Acute Dysentery/Fever")
+LongmetafamilyTreat = LongmetafamilyTreat[which(LongmetafamilyTreat$r07_READCOUNT > 200000),]
+
+LongmetafamilyTreattime0 = LongmetafamilyTreat[which(LongmetafamilyTreat$TIMEPOINT == 0),]
+LongmetafamilyTreattime7 = LongmetafamilyTreat[which(LongmetafamilyTreat$TIMEPOINT == 7),]
+LongmetafamilyTreattime21 = LongmetafamilyTreat[which(LongmetafamilyTreat$TIMEPOINT == 21),]
+
+
+
+
+
+
+
+#Average by treatment condition within timepoint and pool <1% RA to 'Other'
+LongmetafamilyTreattimepoint<- aggregate(abundance~Sample + TIMEPOINT + taxa, data= LongmetafamilyTreat, FUN=sum)
+LongmetafamilyTreattimepoint<- aggregate(abundance~taxa + TIMEPOINT, data= LongmetafamilyTreat, FUN=mean)
+#LongmetafamilyTreattimepoint$uniqID <- LongmetafamilyTreattimepoint$TIMEPOINT
+LongmetafamilyTreatOTHERtimepoint<-ldply(
+lapply(unique(LongmetafamilyTreattimepoint$TIMEPOINT),function(x){rbind(LongmetafamilyTreattimepoint[LongmetafamilyTreattimepoint$abundance>=1 & LongmetafamilyTreattimepoint$TIMEPOINT==x,c('taxa','TIMEPOINT','abundance')],
+                                                data.frame(taxa=c('Other'),
+                                                #TIMEPOINT=x,
+                                                
+                                                abundance=sum(LongmetafamilyTreattimepoint$abundance[LongmetafamilyTreattimepoint$TIMEPOINT==x & LongmetafamilyTreattimepoint$abundance<1]),
+                                                TIMEPOINT=x
+                                                ))})
+)
+p2<-ggplot(LongmetafamilyTreatOTHERtimepoint, aes(as.character(TIMEPOINT), abundance, fill=taxa)) + geom_bar(stat = 'identity', position='fill')+ theme(axis.text.x = element_text(angle = 90, hjust = 1)) +theme_pub() + scale_x_discrete(limits=c('0','7','21'))
+
+
+
+
+
+mappingPrevent<- read.csv("PreventTD_sample_metadata.csv", header = TRUE)
+mappingPrevent[, 'Study'] = "Prevent"
+LongmetafamilyPrevent<-read.delim(sep='',header=T,'220415_metaphlanStandard_phyla.txt',stringsAsFactors = F)
+
+LongmetafamilyPrevent<-join(LongmetafamilyPrevent,mappingPrevent, by ='Sample')
+
+LongmetafamilyPrevent<- subset(LongmetafamilyPrevent, COMP_PPX == 'YES')
+
+LongmetafamilyPrevent = LongmetafamilyPrevent[which(LongmetafamilyPrevent$Post.processed_reads > 200000),]
+
+#Subset by timepoint and treatment
+LongmetafamilyPreventtime1 = LongmetafamilyPrevent[which(LongmetafamilyPrevent$Visit == 1),]
+#LongmetafamilyPreventtime7 = LongmetafamilyPrevent[which(LongmetafamilyPrevent$TIMEPOINT == 7),]
+LongmetafamilyPreventtime2 = LongmetafamilyPrevent[which(LongmetafamilyPrevent$Visit == 2),]
+
+
+
+
+
+
+
+#Average by treatment condition within timepoint and pool <1% RA to 'Other'
+LongmetafamilyPrevent<- aggregate(abundance~Sample + Visit + taxa + Randomisation, data= LongmetafamilyPrevent, FUN=sum)
+LongmetafamilyPrevent<- aggregate(abundance~taxa + Visit + Randomisation, data= LongmetafamilyPrevent, FUN=mean)
+LongmetafamilyPrevent_filtered<- LongmetafamilyPrevent[which(LongmetafamilyPrevent$abundance > 0),]
+LongmetafamilyPrevent_filtered$uniqID<-paste(LongmetafamilyPrevent_filtered$Visit,LongmetafamilyPrevent_filtered$Randomisation,sep='_')
+#LongmetafamilyPrevent_filtered$abundance<-LongmetafamilyPrevent_filtered$abundance/sum(LongmetafamilyPrevent_filtered$abundance)*100
+LongmetafamilyPreventOTHER<-ldply(
+lapply(unique(LongmetafamilyPrevent_filtered$uniqID),function(x){rbind(LongmetafamilyPrevent_filtered[LongmetafamilyPrevent_filtered$abundance>=1 & LongmetafamilyPrevent_filtered$uniqID==x,c('taxa','Visit','Randomisation','abundance','uniqID')],
+                                                data.frame(taxa=c('Other'),
+                                                Visit=c(strsplit(x,'_')[[1]][1]),
+                                                Randomisation=strsplit(x,'_')[[1]][2],
+                                                abundance=sum(LongmetafamilyPrevent_filtered$abundance[LongmetafamilyPrevent_filtered$uniqID==x & LongmetafamilyPrevent_filtered$abundance<1]),
+                                                uniqID=x
+                                                ))})
+)
+
+
+
+
+p3<-ggplot(LongmetafamilyPreventOTHER, aes(as.character(uniqID), abundance, fill=taxa)) + geom_bar(stat = 'identity', position='fill')+ theme(axis.text.x = element_text(angle = 90, hjust = 1)) +theme_pub() + scale_x_discrete(limits=c('1_Placebo', '2_Placebo', '1_Rifaximin 550 mg daily','2_Rifaximin 550 mg daily', '1_Rifaximin 550 mg twice a day', '2_Rifaximin 550 mg twice a day'))
+
+
+
+
+
+
+
+LongmetafamilyTreattime0_Firmicutes <-LongmetafamilyTreattime0[which(LongmetafamilyTreattime0$taxa == "p__Firmicutes"),]
+LongmetafamilyTreattime21_Firmicutes <-LongmetafamilyTreattime21[which(LongmetafamilyTreattime21$taxa == "p__Firmicutes"),]
+LongmetafamilyTreattime021_Firmicutes <- rbind(LongmetafamilyTreattime0_Firmicutes,LongmetafamilyTreattime21_Firmicutes)
+
+LongmetafamilyTreattime0_Proteobacteria <-LongmetafamilyTreattime0[which(LongmetafamilyTreattime0$taxa == "p__Proteobacteria"),]
+LongmetafamilyTreattime21_Proteobacteria <-LongmetafamilyTreattime21[which(LongmetafamilyTreattime21$taxa == "p__Proteobacteria"),]
+LongmetafamilyTreattime021_Proteobacteria <- rbind(LongmetafamilyTreattime0_Proteobacteria, LongmetafamilyTreattime21_Proteobacteria)
+
+LongmetafamilyTreattime0_Bacteroidetes <-LongmetafamilyTreattime0[which(LongmetafamilyTreattime0$taxa == "p__Bacteroidetes"),]
+LongmetafamilyTreattime21_Bacteroidetes <-LongmetafamilyTreattime21[which(LongmetafamilyTreattime21$taxa == "p__Bacteroidetes"),]
+LongmetafamilyTreattime021_Bacteroidetes <- rbind(LongmetafamilyTreattime0_Bacteroidetes, LongmetafamilyTreattime21_Bacteroidetes)
+
+stat.test_Firmicutes <- LongmetafamilyTreattime021_Firmicutes %>% wilcox_test(abundance ~ TIMEPOINT) %>% add_significance()
+# p =0.0101
+stat.test_Proteobacteria <- LongmetafamilyTreattime021_Proteobacteria %>% wilcox_test(abundance ~ TIMEPOINT) %>% add_significance()
+# p =0.00561
+stat.test_Bacteroides <- LongmetafamilyTreattime021_Bacteroidetes %>% wilcox_test(abundance ~ TIMEPOINT) %>% add_significance()
+# p = 0.0408
+
+sd(LongmetafamilyTreattime0_Firmicutes$abundance)
+#24.1
+sd(LongmetafamilyTreattime21_Firmicutes$abundance)
+#17.3
+sd(LongmetafamilyTreattime0_Proteobacteria$abundance)
+#19.1
+sd(LongmetafamilyTreattime21_Proteobacteria$abundance)
+#1.15
+sd(LongmetafamilyTreattime0_Bacteroidetes$abundance)
+#15
+sd(LongmetafamilyTreattime21_Bacteroidetes$abundance)
+#0.0985
+LongmetafamilyPreventtime1_Firmicutes <-LongmetafamilyPreventtime1[which(LongmetafamilyPreventtime1$taxa == "p__Firmicutes"),]
+LongmetafamilyPreventtime2_Firmicutes <-LongmetafamilyPreventtime2[which(LongmetafamilyPreventtime2$taxa == "p__Firmicutes"),]
+LongmetafamilyPreventtime12_Firmicutes <- rbind(LongmetafamilyPreventtime1_Firmicutes,LongmetafamilyPreventtime2_Firmicutes)
+
+LongmetafamilyPreventtime1_Bacteroidetes <-LongmetafamilyPreventtime1[which(LongmetafamilyPreventtime1$taxa == "p__Bacteroidetes"),]
+LongmetafamilyPreventtime2_Bacteroidetes <-LongmetafamilyPreventtime2[which(LongmetafamilyPreventtime2$taxa == "p__Bacteroidetes"),]
+LongmetafamilyPreventtime12_Bacteroidetes <- rbind(LongmetafamilyPreventtime1_Bacteroidetes, LongmetafamilyPreventtime2_Bacteroidetes)
+
+stat.test_Firmicutes_prevent <- LongmetafamilyPreventtime12_Firmicutes %>% wilcox_test(abundance ~ Visit) %>% add_significance()
+# p = 0.000499
+stat.test_Bacteroides_prevent <- LongmetafamilyPreventtime12_Bacteroidetes %>% wilcox_test(abundance ~ Visit) %>% add_significance()
+# p = 0.0536
+
+sd(LongmetafamilyPreventtime1_Bacteroidetes$abundance)
+#12.8
+sd(LongmetafamilyPreventtime2_Bacteroidetes$abundance)
+#13.2
+sd(LongmetafamilyPreventtime1_Firmicutes$abundance)
+#12.6
+sd(LongmetafamilyPreventtime2_Firmicutes$abundance)
+#11.9
+
+LongmetafamilyPreventALL_Bacteroidetes <-LongmetafamilyPrevent[which(LongmetafamilyPrevent$taxa == "p__Bacteroidetes"),]
+LongmetafamilyTreatALL_Bacteroidetes <-LongmetafamilyTreat[which(LongmetafamilyTreat$taxa == "p__Bacteroidetes"),]
+
+LongmetafamilyPreventALL_Bacteroidetes[, 'Study'] = "Prevent"
+LongmetafamilyTreatALL_Bacteroidetes[, 'Study'] = "Treat"
+
+common_cols <- intersect(colnames(LongmetafamilyTreatALL_Bacteroidetes), colnames(LongmetafamilyPreventALL_Bacteroidetes))
+
+LongmetafamilyTreatPreventBacteroidetes<- rbind(
+  subset(LongmetafamilyPreventALL_Bacteroidetes, select = common_cols), 
+  subset(LongmetafamilyTreatALL_Bacteroidetes, select = common_cols)
+)
+
+stat.test_Bacteroides_preventtreat <- LongmetafamilyTreatPreventBacteroidetes %>% wilcox_test(abundance ~ Study) %>% add_significance()
+# p = 1.98e-05
+
+#For specific values
+LongmetafamilyPrevent
+LongmetafamilyTreattimepoint
+
+
+
+
+###########################################################################################################################################
+###########################################################################################################################################
+#Figure2AB
+
+Treat_genussig <- read.csv('significant_results.tsv', sep="\t")
+
+#treatment only
+Treat_genussigTime<-subset(Treat_genussig, metadata=="TIMEPOINT")
+#Sort by descending coefficient (doesn’t actually relevel factors though)
+Treat_genussigTime <- Treat_genussigTime %>% arrange((coef))
+#COEFFICIENT PLOT
+Treat_genussigTime$CI95upper <- Treat_genussigTime$coef + 1.96*Treat_genussigTime$stderr
+Treat_genussigTime$CI95lower <- Treat_genussigTime$coef - 1.96*Treat_genussigTime$stderr
+Treat_genussigTime$Interaction<-paste(Treat_genussigTime$feature,Treat_genussigTime$value)
+
+temp<-ggplot(Treat_genussigTime,aes(x=reorder(Interaction, coef), y = coef, fill=value))+ 
+  geom_bar(stat="identity", position="identity")+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 15))+
+  geom_errorbar(aes(ymin=CI95lower, ymax=CI95upper), width=.2, position=position_dodge(.9)) +
+  scale_x_discrete(label = Treat_genussigTime$feature)+
+  coord_flip()+
+  theme_pub()
+
+print(temp)
+
+Prevent_genussig <- read.csv('significant_results.tsv', sep="\t")
+
+#treatmenttime only
+Prevent_genussigTreatmenttime<-subset(Prevent_genussig, metadata=="treatmenttime")
+#Sort by descending coefficient (doesn’t actually relevel factors though)
+Prevent_genussigTreatmenttime <- Prevent_genussigTreatmenttime %>% arrange((coef))
+#COEFFICIENT PLOT
+Prevent_genussigTreatmenttime$CI95upper <- Prevent_genussigTreatmenttime$coef + 1.96*Prevent_genussigTreatmenttime$stderr
+Prevent_genussigTreatmenttime$CI95lower <- Prevent_genussigTreatmenttime$coef - 1.96*Prevent_genussigTreatmenttime$stderr
+Prevent_genussigTreatmenttime$Interaction<-paste(Prevent_genussigTreatmenttime$feature,Prevent_genussigTreatmenttime$value)
+
+prevent1 <- ggplot(Prevent_genussigTreatmenttime,aes(x=reorder(Interaction, coef), y = coef, fill=value))+ 
+  theme_pub() +
+  geom_bar(stat="identity", position="identity")+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 15))+
+  geom_errorbar(aes(ymin=CI95lower, ymax=CI95upper), width=.2, position=position_dodge(.9)) +
+  scale_x_discrete(label = Prevent_genussigTreatmenttime$feature)+
+  coord_flip()
+print(prevent1)
+
+
+###########################################################################################################################################
+###########################################################################################################################################
+#Figure2C
+
+dfcytokine <- read.csv("220520_TreatTDBioplexCalculation.csv", header = TRUE)
+mapping<- read.csv("220524_TreatTDmetadata.csv", header = TRUE)
+.rowNamesDF(dfcytokine)<-dfcytokine$X.2
+dfcytokine$X.1<-NULL
+dfcytokine$X<-NULL
+dfcytokine$X.2<-NULL
+.rowNamesDF(mapping)<-mapping$SAMPLE_ID
+mapping$SAMPLE_ID<-NULL
+
+joinedCK<-merge(dfcytokine,mapping, by = 0)
+.rowNamesDF(joinedCK)<-joinedCK$Row.names
+joinedCK$Row.names<-NULL
+#Creating columns for the bacteri and parasite and virus positivity
+##########
+###### collapse all positive cultures then all bacteria ll together, all viruses together, all parasite
+
+joinedCK[, 'Allpositiveculture'] = NA
+joinedCK[, 'Allpositivebacteria'] = NA
+joinedCK[, 'Allpositivevirus'] = NA
+joinedCK[, 'Allpositiveparasite'] = NA
+
+joinedCK$Allpositiveculture <- ifelse(joinedCK$CBOCAMPY=="Positive"|	joinedCK$CBOVIBRIO=="Positive"|	joinedCK$CBOSHIGELLA=="Positive"|	joinedCK$CBOSALMONELLA=="Positive"|	joinedCK$CBOYERSINIA=="Positive"|	joinedCK$CBOETEC1=="Positive"|	joinedCK$CBOEAEC1=="Positive"|	joinedCK$CBOEHEC1=="Positive"|	joinedCK$CBOEPEC1=="Positive"|	joinedCK$CBOEIEC1=="Positive"|	joinedCK$CBOETEC2=="Positive"|	joinedCK$CBOEAEC2=="Positive"|	joinedCK$CBOEHEC2=="Positive"|	joinedCK$CBOEPEC2=="Positive"|	joinedCK$CBOEIEC2=="Positive"|	joinedCK$CBOETEC3=="Positive"|	joinedCK$CBOEAEC3=="Positive"|	joinedCK$CBOEHEC3=="Positive"|	joinedCK$CBOEPEC3=="Positive"|	joinedCK$CBOEIEC3=="Positive"|	joinedCK$CBOETEC4=="Positive"|	joinedCK$CBOEAEC4=="Positive"|	joinedCK$CBOEHEC4=="Positive"|	joinedCK$CBOEPEC4=="Positive"|	joinedCK$CBOEIEC4=="Positive"|	joinedCK$CBOETEC5=="Positive"|	joinedCK$CBOEAEC5=="Positive"|	joinedCK$CBOEHEC5=="Positive"|	joinedCK$CBOEPEC5=="Positive"|	joinedCK$CBOEIEC5=="Positive"|	joinedCK$ETEC_OVERALL_CULTURE=="Positive"|	joinedCK$EAEC_OVERALL_CULTURE=="Positive"|	joinedCK$EHEC_OVERALL_CULTURE=="Positive"|	joinedCK$EPEC_OVERALL_CULTURE=="Positive"|	joinedCK$EIEC_OVERALL_CULTURE=="Positive"|	joinedCK$CBOEHISTOLYTICA=="Positive"|	joinedCK$CBOCPARVUM=="Positive"|	joinedCK$CBOGLAMBLIA=="Positive"|	joinedCK$CBONOROGI=="Positive"|	joinedCK$CBONOROGII=="Positive"|	joinedCK$CBONOROOTH=="Positive"|	joinedCK$Norovirus_OVERALL_CULTURE=="Positive"|	joinedCK$CBOROTAVIRUS=="Positive"|	joinedCK$Adenovirus_40_41_STOOL=="Positive"|	joinedCK$Aeromonas_STOOL=="Positive"|	joinedCK$Astrovirus_STOOL=="Positive"|	joinedCK$C_coli_STOOL=="Positive"|	joinedCK$C_jejuni_STOOL=="Positive"|	joinedCK$C_jejuni_coli_STOOL=="Positive"|	joinedCK$Campylobacter_pan_STOOL=="Positive"|	joinedCK$C_jejuni_coli_OVERALL_STOOL=="Positive"|	joinedCK$Campylobacter_OVERALL_STOOL=="Positive"|	joinedCK$Cryptosporidium_STOOL=="Positive"|	joinedCK$Cyclospora_STOOL=="Positive"|	joinedCK$E_histolytica_STOOL=="Positive"|	joinedCK$EAEC_aaiC_STOOL=="Positive"|	joinedCK$EAEC_aatA_STOOL=="Positive"|	joinedCK$EAEC_aggR_STOOL=="Positive"|	joinedCK$EAEC_OVERALL_STOOL=="Positive"|	joinedCK$EPEC_bfpA_STOOL=="Positive"|	joinedCK$EPEC_eae_STOOL=="Positive"|	joinedCK$Typical_EPEC_STOOL=="Positive"|	joinedCK$Atypical_EPEC_STOOL=="Positive"|	joinedCK$EPEC_OVERALL_STOOL=="Positive"|	joinedCK$ETEC_LT_STOOL=="Positive"|	joinedCK$ETEC_STh_STOOL=="Positive"|	joinedCK$ETEC_STp_STOOL=="Positive"|	joinedCK$ETEC_OVERALL_STOOL=="Positive"|	joinedCK$ETEC_LT_only_STOOL=="Positive"|	joinedCK$ETEC_ST_only_STOOL=="Positive"|	joinedCK$ETEC_LT_ST_STOOL=="Positive"|	joinedCK$Giardia_STOOL=="Positive"|	joinedCK$Norovirus_GI_STOOL=="Positive"|	joinedCK$Norovirus_GI_1_STOOL=="Positive"|	joinedCK$Norovirus_GII_STOOL=="Positive"|	joinedCK$Norovirus_GII_4_STOOL=="Positive"|	joinedCK$Norovirus_OVERALL_STOOL=="Positive"|	joinedCK$O157_H7_STOOL=="Positive"|	joinedCK$Rotavirus_STOOL=="Positive"|	joinedCK$Shigella_EIEC_STOOL=="Positive"|	joinedCK$Salmonella_STOOL=="Positive"|	joinedCK$Sapovirus_STOOL=="Positive"|	joinedCK$STEC_stx1_STOOL=="Positive"|	joinedCK$STEC_stx2_STOOL=="Positive"|	joinedCK$STEC_OVERALL_STOOL=="Positive"|	joinedCK$V_parahaemolytics_STOOL=="Positive"|	joinedCK$C_difficile_STOOL=="Positive","Positive", "Negative")
+
+
+joinedCK$Allpositivebacteria <- ifelse(joinedCK$CBOCAMPY=="Positive"|	joinedCK$CBOVIBRIO=="Positive"|	joinedCK$CBOSHIGELLA=="Positive"|	joinedCK$CBOSALMONELLA=="Positive"|	joinedCK$CBOYERSINIA=="Positive"|	joinedCK$CBOETEC1=="Positive"|	joinedCK$CBOEAEC1=="Positive"|	joinedCK$CBOEHEC1=="Positive"|	joinedCK$CBOEPEC1=="Positive"|	joinedCK$CBOEIEC1=="Positive"|	joinedCK$CBOETEC2=="Positive"|	joinedCK$CBOEAEC2=="Positive"|	joinedCK$CBOEHEC2=="Positive"|	joinedCK$CBOEPEC2=="Positive"|	joinedCK$CBOEIEC2=="Positive"|	joinedCK$CBOETEC3=="Positive"|	joinedCK$CBOEAEC3=="Positive"|	joinedCK$CBOEHEC3=="Positive"|	joinedCK$CBOEPEC3=="Positive"|	joinedCK$CBOEIEC3=="Positive"|	joinedCK$CBOETEC4=="Positive"|	joinedCK$CBOEAEC4=="Positive"|	joinedCK$CBOEHEC4=="Positive"|	joinedCK$CBOEPEC4=="Positive"|	joinedCK$CBOEIEC4=="Positive"|	joinedCK$CBOETEC5=="Positive"|	joinedCK$CBOEAEC5=="Positive"|	joinedCK$CBOEHEC5=="Positive"|	joinedCK$CBOEPEC5=="Positive"|	joinedCK$CBOEIEC5=="Positive"|	joinedCK$ETEC_OVERALL_CULTURE=="Positive"|	joinedCK$EAEC_OVERALL_CULTURE=="Positive"|	joinedCK$EHEC_OVERALL_CULTURE=="Positive"|	joinedCK$EPEC_OVERALL_CULTURE=="Positive"|	joinedCK$EIEC_OVERALL_CULTURE=="Positive"|		joinedCK$Aeromonas_STOOL=="Positive"|		joinedCK$C_coli_STOOL=="Positive"|	joinedCK$C_jejuni_STOOL=="Positive"|	joinedCK$C_jejuni_coli_STOOL=="Positive"|	joinedCK$Campylobacter_pan_STOOL=="Positive"|	joinedCK$C_jejuni_coli_OVERALL_STOOL=="Positive"|	joinedCK$Campylobacter_OVERALL_STOOL=="Positive"|	joinedCK$EAEC_aaiC_STOOL=="Positive"|	joinedCK$EAEC_aatA_STOOL=="Positive"|	joinedCK$EAEC_aggR_STOOL=="Positive"|	joinedCK$EAEC_OVERALL_STOOL=="Positive"|	joinedCK$EPEC_bfpA_STOOL=="Positive"|	joinedCK$EPEC_eae_STOOL=="Positive"|	joinedCK$Typical_EPEC_STOOL=="Positive"|	joinedCK$Atypical_EPEC_STOOL=="Positive"|	joinedCK$EPEC_OVERALL_STOOL=="Positive"|	joinedCK$ETEC_LT_STOOL=="Positive"|	joinedCK$ETEC_STh_STOOL=="Positive"|	joinedCK$ETEC_STp_STOOL=="Positive"|	joinedCK$ETEC_OVERALL_STOOL=="Positive"|	joinedCK$ETEC_LT_only_STOOL=="Positive"|	joinedCK$ETEC_ST_only_STOOL=="Positive"|	joinedCK$ETEC_LT_ST_STOOL=="Positive"|		joinedCK$O157_H7_STOOL=="Positive"|		joinedCK$Shigella_EIEC_STOOL=="Positive"|	joinedCK$Salmonella_STOOL=="Positive"|		joinedCK$STEC_stx1_STOOL=="Positive"|	joinedCK$STEC_stx2_STOOL=="Positive"|	joinedCK$STEC_OVERALL_STOOL=="Positive"|	joinedCK$V_parahaemolytics_STOOL=="Positive"|	joinedCK$C_difficile_STOOL=="Positive","Positive", "Negative")
+
+joinedCK$Allpositivevirus <- ifelse(	joinedCK$CBONOROGI=="Positive"|	joinedCK$CBONOROGII=="Positive"|	joinedCK$CBONOROOTH=="Positive"|	joinedCK$Norovirus_OVERALL_CULTURE=="Positive"|	joinedCK$CBOROTAVIRUS=="Positive"|	joinedCK$Adenovirus_40_41_STOOL=="Positive"|		joinedCK$Astrovirus_STOOL=="Positive"|	joinedCK$Norovirus_GI_STOOL=="Positive"|	joinedCK$Norovirus_GI_1_STOOL=="Positive"|	joinedCK$Norovirus_GII_STOOL=="Positive"|	joinedCK$Norovirus_GII_4_STOOL=="Positive"|	joinedCK$Norovirus_OVERALL_STOOL=="Positive"|	joinedCK$Rotavirus_STOOL=="Positive"|		joinedCK$Sapovirus_STOOL=="Positive","Positive", "Negative")
+
+joinedCK$Allpositiveparasite <- ifelse(	joinedCK$CBOEHISTOLYTICA=="Positive"|	joinedCK$CBOCPARVUM=="Positive"|	joinedCK$CBOGLAMBLIA=="Positive"|	joinedCK$Cryptosporidium_STOOL=="Positive"|	joinedCK$Cyclospora_STOOL=="Positive"|	joinedCK$E_histolytica_STOOL=="Positive"|		joinedCK$Giardia_STOOL=="Positive","Positive", "Negative")
+
+
+
+
+################
+#Figures to just show that FF doesnt have an issue
+joinedCKFFsamples <- subset (joinedCK, PAIREDFF == "y")
+FFsamples <- rownames(joinedCKFFsamples)
+FFsamples
+FFsamplescomp <- str_sub(FFsamples, 1,6)
+FFsamplesyesno <- c(FFsamples, FFsamplescomp)
+FFsamplesyesno <- data.frame(FFsamplesyesno)
+joinedCKFFcomp <- filter(joinedCK, X.5 %in% FFsamplesyesno$FFsamplesyesno)
+
+colsFF <- colnames(joinedCKFFcomp[,c(1:40)])
+
+
+for(i in 1:length(colsFF)){
+  test<- pairwise.wilcox.test(as.numeric(joinedCKFFcomp[,colsFF[i]]), joinedCKFFcomp$PAIREDFF, p.adjust.method = "bonf")
+  x <- ggplot(joinedCKFFcomp, aes(y= as.numeric(joinedCKFFcomp[,colsFF[i]]), x=as.factor(PAIREDFF))) + geom_boxplot() + geom_point() + ggtitle(colsFF[i]) + labs(subtitle = (signif(test$p.value, digits = 3)))
+  print(x)
+  #ggsave(paste0("BoxplotsCytokine/FFtest/Boxplot_", colsFF[i], ".png"))
+}
+
+#for stats
+result_list <- list()
+
+for(i in 1:length(colsFF)){
+  test <- pairwise.wilcox.test(as.numeric(joinedCKFFcomp[,colsFF[i]]), joinedCKFFcomp$PAIREDFF, p.adjust.method = "bonf")
+  
+  # Store the output in a data frame
+  result_df <- data.frame(colsFF = colsFF[i], p_value = test$p.value)
+  
+  # Append the data frame to the list
+  result_list[[i]] <- result_df
+  
+  x <- ggplot(joinedCKFFcomp, aes(y= as.numeric(joinedCKFFcomp[,colsFF[i]]), x=as.factor(PAIREDFF))) + geom_boxplot() + geom_point() + ggtitle(colsFF[i]) + labs(subtitle = (signif(test$p.value, digits = 3)))
+  
+  print(x)
+  
+  #ggsave(paste0("BoxplotsCytokine/FFtest/Boxplot_", colsFF[i], ".png"))
+}
+
+# Combine all data frames in the list into a single data frame
+results <- do.call(rbind, result_list)
+# 
+# colsFF          pval
+# y         Hu.6Ckine.CCL21..12. 0.43628137
+# y1        Hu.BCA.1.CXCL13..74. 0.54570136
+# y2         Hu.CTACK.CCL27..72. 0.34010695
+# y3        Hu.ENA.78.CXCL5..73. 0.66647470
+# y4     Hu.Eotaxin.2.CCL24..30. 0.22241876
+# y5     Hu.Eotaxin.3.CCL26..65. 0.48942822
+# y6       Hu.Eotaxin.CCL11..43. 0.03998355
+# y7  Hu.Fractalkine.CX3CL1..77. 0.79617441
+# y8         Hu.GCP.2.CXCL6..15. 0.60481283
+# y9              Hu.GM.CSF..34. 0.60481283
+# y10        Hu.Gro.a.CXCL1..61. 0.93142740
+# y11        Hu.Gro.b.CXCL2..78. 0.60481283
+# y12         Hu.I.309.CCL1..20. 0.25808309
+# y13       Hu.I.TAC.CXCL11..25. 0.48942822
+# y14              Hu.IFN.g..21. 1.00000000
+# y15              Hu.IL.1b..39. 0.54570136
+# y16               Hu.IL.2..38. 0.34010695
+# y17               Hu.IL.4..52. 0.54570136
+# y18               Hu.IL.6..19. 0.25808309
+# y19         Hu.IL.8.CXCL8..54. 0.79617441
+# y20              Hu.IL.10..56. 0.73044015
+# y21              Hu.IL.16..27. 0.38650761
+# y22       Hu.IP.10.CXCL10..48. 0.48942822
+# y23         Hu.MCP.1.CCL2..53. 0.29732620
+# y24         Hu.MCP.2.CCL8..57. 0.25808309
+# y25         Hu.MCP.3.CCL7..26. 0.54570136
+# y26        Hu.MCP.4.CCL13..28. 0.86330728
+# y27          Hu.MDC.CCL22..29. 1.00000000
+# y28                Hu.MIF..35. 0.07700535
+# y29          Hu.MIG.CXCL9..14. 0.73044015
+# y30        Hu.MIP.1a.CCL3..55. 0.93142740
+# y31       Hu.MIP.1d.CCL15..66. 0.86330728
+# y32       Hu.MIP.3a.CCL20..62. 0.47901989
+# y33       Hu.MIP.3b.CCL19..76. 0.07700535
+# y34       Hu.MPIF.1.CCL23..37. 0.93142740
+# y35      Hu.SCYB16.CXCL16..64. 0.48942822
+# y36     Hu.SDF1a.b.CXCL12..22. 0.73044015
+# y37         Hu.TARC.CCL17..67. 0.54570136
+# y38         Hu.TECK.CCL25..46. 0.38650761
+# y39              Hu.TNF.a..36. 0.48942822
+
+
+
+
+
+##################################################################
+#Cutting out the freezer failure samples 
+joinedCK <- subset(joinedCK, PAIREDFF == "n")
+
+joinedCK <- subset(joinedCK, DIAR_CLASS != "Acute Dysentery/Fever")
+# subset to 0 and 21 for later, then just get a list of CK to loop through
+joinedCK0<-subset(joinedCK, TIMEPOINT == "0")
+joinedCK21<-subset(joinedCK, TIMEPOINT == "21")
+
+
+
+
+cols <- colnames(joinedCK[,c(1:40)])
+
+
+
+
+
+#######################################################################################################################################
+##BUilding LMER for cytokine
+##Ok here is just trying it with a test case
+lmer1 <- lmer(as.numeric(Hu.TNF.a..36.) ~ TRT + TIMEPOINT + (1|STUDY_ID), 
+                     data = joinedCK) 
+lmer1_res <- summary(lmer1)
+print(lmer1_res)
+lmer1_res
+
+#Creating a df that can hold just the pvalues, replacing the column name with the test case cytokine then making a row with the rownames so that i can build up the df in the loop
+y <- data.frame(coef(summary(lmer1)))
+keeps<- c("Pr...t..")
+ysub <- y[keeps]
+names(ysub)[names(ysub) == 'Pr...t..'] <- ('Hu.TNF.a..36.')
+#names(ysub)[names(ysub) == 'Pr...t..'] <- (cols[i])
+
+cytokinepval <- ysub
+cytokinepval<- tibble::rownames_to_column(cytokinepval, 'Row')
+#Looping through the lmers and taking out the pvalues for each cytokine with each variable, note 11:52 am May 26 dont include TRT here
+for(i in 1:length(cols)){
+  print (cols[i])
+  lmer1 <- lmer(as.numeric(joinedCK[,cols[i]]) ~ TRT + TIMEPOINT + (1|STUDY_ID), 
+                     data = joinedCK) 
+  lmer1_res <- summary(lmer1)
+  print(lmer1_res)
+  
+  y <- data.frame(coef(summary(lmer1)))
+  keeps<- c("Pr...t..")
+  ysub <- y[keeps]
+  names(ysub)[names(ysub) == 'Pr...t..'] <- (cols[i])
+  print (ysub)
+  print(cytokinepval)
+  ysub<- tibble::rownames_to_column(ysub, 'Row')
+  #cytokinepval<- tibble::rownames_to_column(cytokinepval, 'Row')
+  print (ysub)
+  #print(cytokinepval)
+  #cytokinepval$Row.names.y <- NULL
+  cytokinepval<-merge(cytokinepval,ysub, by = 'Row')
+  #cytokinepval<-merge(cytokinepval,ysub, by = ('row.names'))
+  print(cytokinepval)
+    
+  
+  
+}
+
+##The loop leaves you with an extra copy of whatever your test case was, and then you wanna change the testcase.y to just the original testcase name
+cytokinepval$Hu.TNF.a..36..x<- NULL
+#cytokinepval <- cytokinepval %>% rename(Hu.TNF.a..36. =  Hu.TNF.a..36..y)
+#Transposing (because now basically the cytokines are our samples of interest) then putting the correct column names and then erasing the row that has column names notable that t() doesnt make things into a df
+
+cytokinepvalTranspose <- t(cytokinepval)
+colnames(cytokinepvalTranspose) <- cytokinepvalTranspose[1,]
+cytokinepvalTranspose = cytokinepvalTranspose[-1,]
+cytokinepvalTranspose <- as.data.frame(cytokinepvalTranspose)
+#colnames(cytokinepvalTranspose)
+cytokinepvalSig<-cytokinepvalTranspose[cytokinepvalTranspose$TIMEPOINT <= .05 , ]
+
+significantcytokines <- rownames(cytokinepvalSig)
+
+###############
+
+print(significantcytokines)
+
+# "Hu.CTACK.CCL27..72."    "Hu.ENA.78.CXCL5..73."   "Hu.Gro.a.CXCL1..61."    "Hu.I.309.CCL1..20."     "Hu.IL.6..19."           "Hu.IL.10..56."          "Hu.MDC.CCL22..29."      "Hu.MPIF.1.CCL23..37."   "Hu.SDF1a.b.CXCL12..22."
+
+listsigcytokines <- list ("Hu.CTACK.CCL27..72."  ,  "Hu.ENA.78.CXCL5..73.",   "Hu.Gro.a.CXCL1..61."   , "Hu.I.309.CCL1..20."   ,  "Hu.IL.6..19.",           "Hu.IL.10..56.",          "Hu.MDC.CCL22..29."  ,    "Hu.MPIF.1.CCL23..37." ,  "Hu.SDF1a.b.CXCL12..22.")
+
+
+
+
+
+joinedCK0Transpose <- t(joinedCK0)
+colnames(joinedCK0Transpose) <- joinedCK0Transpose[43,]
+joinedCK0Transpose <- as.data.frame(head(joinedCK0Transpose, 40))
+
+joinedCK21Transpose <- t(joinedCK21)
+colnames(joinedCK21Transpose) <- joinedCK21Transpose[43,]
+joinedCK21Transpose <- as.data.frame(head(joinedCK21Transpose, 40))
+
+#From here imported into excel to get means and do radar plot
+
+###########################################################################################################################################
+###########################################################################################################################################
+#Figure2D
+
+library(mixOmics)
+
+input_metadata<-read.delim(sep=',',"220524_TreatTDmetadata.csv",header=TRUE,stringsAsFactors = F)
+data_species <- read.delim("220502_wide_metaphlanStandard_species.txt", header = TRUE) #The abundance
+data_genus<-read.delim("220502_wide_metaphlanStandard_genus.txt", header = TRUE)
+#Give all sample columns the same name
+data_genus <- data_genus %>% dplyr::rename(SAMPLE_ID =  Sample)
+data_species <- data_species %>% dplyr::rename(SAMPLE_ID =  Sample)
+#Read in cytokines then clean up
+cytokine<-read.csv("220520_TreatTDBioplexCalculation.csv", header = TRUE)
+.rowNamesDF(cytokine)<-cytokine$X.2
+cytokine$X.1<-NULL
+cytokine$X<-NULL
+cytokine$X.2<-NULL
+cytokine <- cytokine[-c(1), ]
+
+
+metadata <- subset(input_metadata, PAIREDFF == "n")
+metadata <- subset(input_metadata, DIAR_CLASS != "Acute Dysentery/Fever")
+
+
+samplenames <- (metadata$SAMPLE_ID)
+
+#Subset by remaining samples
+data_genus <- data_genus[data_genus$SAMPLE_ID %in% samplenames, ]
+data_species <- data_species[data_species$SAMPLE_ID %in% samplenames, ]
+cytokine <- cytokine[cytokine$X.5 %in% samplenames, ]
+
+#get the names of samples that have cytokines remaining
+samplenames <- (rownames(cytokine))
+
+#Subset out genus and species and metadata by whichever are in cytokines
+data_genus <- data_genus[data_genus$SAMPLE_ID %in% samplenames, ]
+data_species <- data_species[data_species$SAMPLE_ID %in% samplenames, ]
+
+metadata <- metadata[metadata$SAMPLE_ID %in% samplenames, ]
+
+
+
+
+
+data_genus<-data.frame(data_genus, row.names = 1)
+data_species<-data.frame(data_species, row.names = 1)
+metadata<-data.frame(metadata, row.names = 1)
+
+row.names(cytokine) == row.names(data_species)
+
+
+dataDIABLO = list(cytokinedf = cytokine, # set a list of all the X dataframes
+            data_genusdf= data_genus,
+            data_speciesdf = data_species)
+
+lapply(dataDIABLO, dim) # check their dimensions
+
+
+
+nzvCytokine <- mixOmics::nearZeroVar(dataDIABLO$cytokinedf, freqCut = 90/10, uniqueCut = 10)
+view(dataDIABLO$cytokinedf[(nzvCytokine$Position)])
+dataDIABLO$cytokinedf_filt <- dataDIABLO$cytokinedf[,-(nzvCytokine$Position)]
+view(dataDIABLO$cytokinedf_filt)
+
+
+nzvgenus <- mixOmics::nearZeroVar(dataDIABLO$data_genusdf, freqCut = 90/10, uniqueCut = 10)
+dataDIABLO$data_genus_filt <- dataDIABLO$data_genusdf[-(nzvgenus$Position)]
+
+nzvspecies <- mixOmics::nearZeroVar(dataDIABLO$data_speciesdf, freqCut = 90/10, uniqueCut = 10)
+dataDIABLO$data_species_filt <- dataDIABLO$data_speciesdf[-(nzvspecies$Position)]
+
+
+
+metadata[, 'Allpositiveculture'] = NA
+metadata[, 'Allpositivebacteria'] = NA
+metadata[, 'Allpositivevirus'] = NA
+metadata[, 'Allpositiveparasite'] = NA
+
+metadata$Allpositiveculture <- ifelse(metadata$CBOCAMPY=="Positive"|	metadata$CBOVIBRIO=="Positive"|	metadata$CBOSHIGELLA=="Positive"|	metadata$CBOSALMONELLA=="Positive"|	metadata$CBOYERSINIA=="Positive"|	metadata$CBOETEC1=="Positive"|	metadata$CBOEAEC1=="Positive"|	metadata$CBOEHEC1=="Positive"|	metadata$CBOEPEC1=="Positive"|	metadata$CBOEIEC1=="Positive"|	metadata$CBOETEC2=="Positive"|	metadata$CBOEAEC2=="Positive"|	metadata$CBOEHEC2=="Positive"|	metadata$CBOEPEC2=="Positive"|	metadata$CBOEIEC2=="Positive"|	metadata$CBOETEC3=="Positive"|	metadata$CBOEAEC3=="Positive"|	metadata$CBOEHEC3=="Positive"|	metadata$CBOEPEC3=="Positive"|	metadata$CBOEIEC3=="Positive"|	metadata$CBOETEC4=="Positive"|	metadata$CBOEAEC4=="Positive"|	metadata$CBOEHEC4=="Positive"|	metadata$CBOEPEC4=="Positive"|	metadata$CBOEIEC4=="Positive"|	metadata$CBOETEC5=="Positive"|	metadata$CBOEAEC5=="Positive"|	metadata$CBOEHEC5=="Positive"|	metadata$CBOEPEC5=="Positive"|	metadata$CBOEIEC5=="Positive"|	metadata$ETEC_OVERALL_CULTURE=="Positive"|	metadata$EAEC_OVERALL_CULTURE=="Positive"|	metadata$EHEC_OVERALL_CULTURE=="Positive"|	metadata$EPEC_OVERALL_CULTURE=="Positive"|	metadata$EIEC_OVERALL_CULTURE=="Positive"|	metadata$CBOEHISTOLYTICA=="Positive"|	metadata$CBOCPARVUM=="Positive"|	metadata$CBOGLAMBLIA=="Positive"|	metadata$CBONOROGI=="Positive"|	metadata$CBONOROGII=="Positive"|	metadata$CBONOROOTH=="Positive"|	metadata$Norovirus_OVERALL_CULTURE=="Positive"|	metadata$CBOROTAVIRUS=="Positive"|	metadata$Adenovirus_40_41_STOOL=="Positive"|	metadata$Aeromonas_STOOL=="Positive"|	metadata$Astrovirus_STOOL=="Positive"|	metadata$C_coli_STOOL=="Positive"|	metadata$C_jejuni_STOOL=="Positive"|	metadata$C_jejuni_coli_STOOL=="Positive"|	metadata$Campylobacter_pan_STOOL=="Positive"|	metadata$C_jejuni_coli_OVERALL_STOOL=="Positive"|	metadata$Campylobacter_OVERALL_STOOL=="Positive"|	metadata$Cryptosporidium_STOOL=="Positive"|	metadata$Cyclospora_STOOL=="Positive"|	metadata$E_histolytica_STOOL=="Positive"|	metadata$EAEC_aaiC_STOOL=="Positive"|	metadata$EAEC_aatA_STOOL=="Positive"|	metadata$EAEC_aggR_STOOL=="Positive"|	metadata$EAEC_OVERALL_STOOL=="Positive"|	metadata$EPEC_bfpA_STOOL=="Positive"|	metadata$EPEC_eae_STOOL=="Positive"|	metadata$Typical_EPEC_STOOL=="Positive"|	metadata$Atypical_EPEC_STOOL=="Positive"|	metadata$EPEC_OVERALL_STOOL=="Positive"|	metadata$ETEC_LT_STOOL=="Positive"|	metadata$ETEC_STh_STOOL=="Positive"|	metadata$ETEC_STp_STOOL=="Positive"|	metadata$ETEC_OVERALL_STOOL=="Positive"|	metadata$ETEC_LT_only_STOOL=="Positive"|	metadata$ETEC_ST_only_STOOL=="Positive"|	metadata$ETEC_LT_ST_STOOL=="Positive"|	metadata$Giardia_STOOL=="Positive"|	metadata$Norovirus_GI_STOOL=="Positive"|	metadata$Norovirus_GI_1_STOOL=="Positive"|	metadata$Norovirus_GII_STOOL=="Positive"|	metadata$Norovirus_GII_4_STOOL=="Positive"|	metadata$Norovirus_OVERALL_STOOL=="Positive"|	metadata$O157_H7_STOOL=="Positive"|	metadata$Rotavirus_STOOL=="Positive"|	metadata$Shigella_EIEC_STOOL=="Positive"|	metadata$Salmonella_STOOL=="Positive"|	metadata$Sapovirus_STOOL=="Positive"|	metadata$STEC_stx1_STOOL=="Positive"|	metadata$STEC_stx2_STOOL=="Positive"|	metadata$STEC_OVERALL_STOOL=="Positive"|	metadata$V_parahaemolytics_STOOL=="Positive"|	metadata$C_difficile_STOOL=="Positive","Positive", "Negative")
+
+
+metadata$Allpositivebacteria <- ifelse(metadata$CBOCAMPY=="Positive"|	metadata$CBOVIBRIO=="Positive"|	metadata$CBOSHIGELLA=="Positive"|	metadata$CBOSALMONELLA=="Positive"|	metadata$CBOYERSINIA=="Positive"|	metadata$CBOETEC1=="Positive"|	metadata$CBOEAEC1=="Positive"|	metadata$CBOEHEC1=="Positive"|	metadata$CBOEPEC1=="Positive"|	metadata$CBOEIEC1=="Positive"|	metadata$CBOETEC2=="Positive"|	metadata$CBOEAEC2=="Positive"|	metadata$CBOEHEC2=="Positive"|	metadata$CBOEPEC2=="Positive"|	metadata$CBOEIEC2=="Positive"|	metadata$CBOETEC3=="Positive"|	metadata$CBOEAEC3=="Positive"|	metadata$CBOEHEC3=="Positive"|	metadata$CBOEPEC3=="Positive"|	metadata$CBOEIEC3=="Positive"|	metadata$CBOETEC4=="Positive"|	metadata$CBOEAEC4=="Positive"|	metadata$CBOEHEC4=="Positive"|	metadata$CBOEPEC4=="Positive"|	metadata$CBOEIEC4=="Positive"|	metadata$CBOETEC5=="Positive"|	metadata$CBOEAEC5=="Positive"|	metadata$CBOEHEC5=="Positive"|	metadata$CBOEPEC5=="Positive"|	metadata$CBOEIEC5=="Positive"|	metadata$ETEC_OVERALL_CULTURE=="Positive"|	metadata$EAEC_OVERALL_CULTURE=="Positive"|	metadata$EHEC_OVERALL_CULTURE=="Positive"|	metadata$EPEC_OVERALL_CULTURE=="Positive"|	metadata$EIEC_OVERALL_CULTURE=="Positive"|		metadata$Aeromonas_STOOL=="Positive"|		metadata$C_coli_STOOL=="Positive"|	metadata$C_jejuni_STOOL=="Positive"|	metadata$C_jejuni_coli_STOOL=="Positive"|	metadata$Campylobacter_pan_STOOL=="Positive"|	metadata$C_jejuni_coli_OVERALL_STOOL=="Positive"|	metadata$Campylobacter_OVERALL_STOOL=="Positive"|	metadata$EAEC_aaiC_STOOL=="Positive"|	metadata$EAEC_aatA_STOOL=="Positive"|	metadata$EAEC_aggR_STOOL=="Positive"|	metadata$EAEC_OVERALL_STOOL=="Positive"|	metadata$EPEC_bfpA_STOOL=="Positive"|	metadata$EPEC_eae_STOOL=="Positive"|	metadata$Typical_EPEC_STOOL=="Positive"|	metadata$Atypical_EPEC_STOOL=="Positive"|	metadata$EPEC_OVERALL_STOOL=="Positive"|	metadata$ETEC_LT_STOOL=="Positive"|	metadata$ETEC_STh_STOOL=="Positive"|	metadata$ETEC_STp_STOOL=="Positive"|	metadata$ETEC_OVERALL_STOOL=="Positive"|	metadata$ETEC_LT_only_STOOL=="Positive"|	metadata$ETEC_ST_only_STOOL=="Positive"|	metadata$ETEC_LT_ST_STOOL=="Positive"|		metadata$O157_H7_STOOL=="Positive"|		metadata$Shigella_EIEC_STOOL=="Positive"|	metadata$Salmonella_STOOL=="Positive"|		metadata$STEC_stx1_STOOL=="Positive"|	metadata$STEC_stx2_STOOL=="Positive"|	metadata$STEC_OVERALL_STOOL=="Positive"|	metadata$V_parahaemolytics_STOOL=="Positive"|	metadata$C_difficile_STOOL=="Positive","Positive", "Negative")
+
+metadata$Allpositivevirus <- ifelse(	metadata$CBONOROGI=="Positive"|	metadata$CBONOROGII=="Positive"|	metadata$CBONOROOTH=="Positive"|	metadata$Norovirus_OVERALL_CULTURE=="Positive"|	metadata$CBOROTAVIRUS=="Positive"|	metadata$Adenovirus_40_41_STOOL=="Positive"|		metadata$Astrovirus_STOOL=="Positive"|	metadata$Norovirus_GI_STOOL=="Positive"|	metadata$Norovirus_GI_1_STOOL=="Positive"|	metadata$Norovirus_GII_STOOL=="Positive"|	metadata$Norovirus_GII_4_STOOL=="Positive"|	metadata$Norovirus_OVERALL_STOOL=="Positive"|	metadata$Rotavirus_STOOL=="Positive"|		metadata$Sapovirus_STOOL=="Positive","Positive", "Negative")
+
+metadata$Allpositiveparasite <- ifelse(	metadata$CBOEHISTOLYTICA=="Positive"|	metadata$CBOCPARVUM=="Positive"|	metadata$CBOGLAMBLIA=="Positive"|	metadata$Cryptosporidium_STOOL=="Positive"|	metadata$Cyclospora_STOOL=="Positive"|	metadata$E_histolytica_STOOL=="Positive"|		metadata$Giardia_STOOL=="Positive","Positive", "Negative")
+
+
+#get rid of non numerical stuff
+dataDIABLO$cytokinedf_filt = subset(dataDIABLO$cytokinedf_filt, select = -c(X.4,X.5,X.6) )
+
+
+#CLR transofmration 
+
+dataDIABLO$cytokinedf_filt_clr = compositions::clr(dataDIABLO$cytokinedf_filt)
+view(dataDIABLO[["cytokinedf_filt_clr"]])
+dataDIABLO$data_genus_filt_clr = compositions::clr(dataDIABLO$data_genus_filt)
+view(dataDIABLO[["data_genus_filt_clr"]])
+dataDIABLO$data_species_filt_clr = compositions::clr(dataDIABLO$data_species_filt)
+
+
+Y = as.character((metadata$TIMEPOINT))
+summary(Y)
+
+design <- data.frame(subject = metadata$STUDY_ID)
+
+
+row.names(dataDIABLO$data_genus_filt_clr) == row.names(dataDIABLO$cytokinedf_filt_clr)
+
+
+trainID=Y
+inputX<-list(dataA=dataDIABLO$data_genus_filt_clr,dataB=dataDIABLO$cytokinedf_filt_clr)
+inputY<-trainID
+
+#need to do this for permutational analyses in training the model 
+set.seed(30)
+#this part figures out what the number of components are that minimizes the error 
+des=matrix(0.8,ncol=length(inputX),nrow=length(inputX),dimnames=list(names(inputX),names(inputX)))
+block=block.splsda(X = inputX, Y = inputY, ncomp = 3,design = des)
+perf.diablo = perf(block, validation = 'Mfold', folds = 10, nrepeat = 10)
+plot(perf.diablo) 
+ncomp = perf.diablo$choice.ncomp$WeightedVote["Overall.BER", "centroids.dist"]
+
+
+t.keepX = list(genus = seq(10,20,2), cytokine = seq(10,20,2))
+tune.splsda.srbct1 <- tune.block.splsda(X = inputX, Y = inputY, ncomp = 1, test.keepX = t.keepX, design = des,validation = 'Mfold', folds = 10, nrepeat = 10, dist = "centroids.dist", multilevel = design)
+error <- tune.splsda.srbct1$error.rate
+plot(tune.splsda.srbct1)
+#quartz.save('211115_metaphlan_nvaribales_diablo.pdf',type="pdf")
+
+select=tune.splsda.srbct1$choice.keepX
+
+res.diablo<-block.splsda(inputX,inputY,design = des,ncomp = 1,near.zero.var = TRUE,keepX =list(dataA=c(14),dataB=c(18)))
+
+circosPlot(res.diablo,cutoff=0.40,color.blocks= c('darkorchid', 'brown1'), color.cor = c("chocolate3","grey20"), size.labels = .001,size.variables = .70, size.legend = .6,ncol.legend = 2)
+circosPlot(res.diablo,cutoff=0.30,color.blocks= c('darkorchid', 'brown1'), color.cor = c("chocolate3","grey20"), size.labels = .001,size.variables = .70, size.legend = .6,ncol.legend = 2)
+circosPlot(res.diablo,cutoff=0.20,color.blocks= c('darkorchid', 'brown1'), color.cor = c("chocolate3","grey20"), size.labels = .001,size.variables = .70, size.legend = .6,ncol.legend = 2)
+
+###########################################################################################################################
+#3AB
+
+Shortbredlong<-read.delim("220518_TreatTDshortbred.txt", header=TRUE)
+metadata <- read.delim(sep=',',"220524_TreatTDmetadata.csv",header=TRUE,stringsAsFactors = F)
+#Ok here just gotta do this as described with the whole file but then repeaat the analysis based on resistance to the drugs used in the study
+#create wide shortbred table for RPKM data
+Shortbredwide<-Shortbredlong[-c(4:20)]
+Shortbredwide<-reshape(Shortbredwide, idvar="Sample", timevar = "Family", direction ="wide")
+Shortbredwide[is.na(Shortbredwide)] <- 0
+rownames(Shortbredwide)=Shortbredwide$Sample
+Shortbredwide$Sample=NULL
+Shortbredwide$Sum<-rowSums(Shortbredwide)
+Shortbredwide$Sample<-row.names(Shortbredwide)
+#write.csv(Shortbredwide,"FilezillaTransfers/Shortbred/Data_tables/220530_ShortbredwideCount.csv")
+
+metadata <- metadata %>% dplyr::rename(Sample = SAMPLE_ID)
+
+Shortbredmetadata<-join(Shortbredwide, metadata, by ="Sample")
+Shortbredmetadata<- subset(Shortbredmetadata, PAIREDFF == 'n')
+Shortbredmetadata<- subset(Shortbredmetadata, DIAR_CLASS != "Acute Dysentery/Fever")
+
+p1<-ggplot(Shortbredmetadata, aes(as.factor(TIMEPOINT), y=Sum, color=TRT)) + geom_boxplot(outlier.shape = NA) +geom_point(position = position_jitterdodge(jitter.width = 0.1)) +ggtitle("Antibiotic Resistance Genes")+xlab("TIMEPOINT")+ylab("Sum RPKM ARGs") + theme(axis.text.x = element_text(angle = 45, hjust = 1))+theme(axis.text.x = element_text(size=16), axis.title.x=element_text(size=20), axis.title.y = element_text(size=20), axis.text.y = element_text(size=16), axis.title = element_text(size=24))+theme_pub()+scale_color_manual(values = c("AZI" =	"#0A4451","LEV" =	"#1B7D85","RIF" = "#8ACCC4")) 
+
+print (p1)
+
+
+#Linear mixed effect model
+#create column concatenated treatment plus time column
+
+Shortbredmetadata[, 'treatmenttime'] = NA
+Shortbredmetadata$treatmenttime <- paste(Shortbredmetadata$TRT,Shortbredmetadata$TIMEPOINT)
+fitARG<- lmer(Sum~treatmenttime+ (1|STUDY_ID), data=Shortbredmetadata)
+anova(fitARG)
+# #Type III Analysis of Variance Table with Satterthwaite's method
+#                 Sum Sq  Mean Sq NumDF DenDF F value Pr(>F)
+# treatmenttime 1.03e+08 12889412     8  64.9     0.7   0.69
+#
+TukfitARG<-lsmeans(fitARG, pairwise~treatmenttime, adjust="tukey")
+TukfitARG
+
+# $lsmeans
+#  treatmenttime lsmean   SE   df lower.CL upper.CL
+#  AZI 0          11020 1381 96.1     8278    13762
+#  AZI 21          8437 1381 96.1     5695    11179
+#  AZI 7           8395 1381 96.1     5653    11137
+#  LEV 0           8098 1224 96.1     5667    10528
+#  LEV 21          8653 1271 96.8     6131    11176
+#  LEV 7           7651 1323 97.4     5025    10277
+#  RIF 0           7372 1322 96.1     4747     9997
+#  RIF 21          9015 1322 96.1     6390    11641
+#  RIF 7           9543 1322 96.1     6918    12168
+# 
+# Degrees-of-freedom method: kenward-roger 
+# Confidence level used: 0.95 
+# 
+# $contrasts
+#  contrast        estimate   SE   df t.ratio p.value
+#  AZI 0 - AZI 21      2583 1828 65.2   1.413  0.8890
+#  AZI 0 - AZI 7       2625 1828 65.2   1.436  0.8800
+#  AZI 0 - LEV 0       2922 1846 96.1   1.583  0.8110
+#  AZI 0 - LEV 21      2367 1877 96.5   1.261  0.9400
+#  AZI 0 - LEV 7       3369 1913 96.8   1.761  0.7070
+#  AZI 0 - RIF 0       3648 1912 96.1   1.908  0.6100
+#  AZI 0 - RIF 21      2004 1912 96.1   1.048  0.9800
+#  AZI 0 - RIF 7       1477 1912 96.1   0.772  0.9970
+#  AZI 21 - AZI 7        42 1828 65.2   0.023  1.0000
+#  AZI 21 - LEV 0       339 1846 96.1   0.184  1.0000
+#  AZI 21 - LEV 21     -216 1877 96.5  -0.115  1.0000
+#  AZI 21 - LEV 7       786 1913 96.8   0.411  1.0000
+#  AZI 21 - RIF 0      1065 1912 96.1   0.557  1.0000
+#  AZI 21 - RIF 21     -579 1912 96.1  -0.303  1.0000
+#  AZI 21 - RIF 7     -1106 1912 96.1  -0.579  1.0000
+#  AZI 7 - LEV 0        297 1846 96.1   0.161  1.0000
+#  AZI 7 - LEV 21      -258 1877 96.5  -0.138  1.0000
+#  AZI 7 - LEV 7        744 1913 96.8   0.389  1.0000
+#  AZI 7 - RIF 0       1023 1912 96.1   0.535  1.0000
+#  AZI 7 - RIF 21      -621 1912 96.1  -0.325  1.0000
+#  AZI 7 - RIF 7      -1148 1912 96.1  -0.600  1.0000
+#  LEV 0 - LEV 21      -556 1656 66.6  -0.336  1.0000
+#  LEV 0 - LEV 7        447 1696 68.2   0.263  1.0000
+#  LEV 0 - RIF 0        726 1802 96.1   0.403  1.0000
+#  LEV 0 - RIF 21      -918 1802 96.1  -0.509  1.0000
+#  LEV 0 - RIF 7      -1446 1802 96.1  -0.802  0.9970
+#  LEV 21 - LEV 7      1003 1732 69.9   0.579  1.0000
+#  LEV 21 - RIF 0      1282 1834 96.5   0.699  0.9990
+#  LEV 21 - RIF 21     -362 1834 96.5  -0.197  1.0000
+#  LEV 21 - RIF 7      -890 1834 96.5  -0.485  1.0000
+#  LEV 7 - RIF 0        279 1871 96.8   0.149  1.0000
+#  LEV 7 - RIF 21     -1365 1871 96.8  -0.729  0.9980
+#  LEV 7 - RIF 7      -1892 1871 96.8  -1.012  0.9840
+#  RIF 0 - RIF 21     -1644 1750 65.2  -0.939  0.9900
+#  RIF 0 - RIF 7      -2171 1750 65.2  -1.241  0.9440
+#  RIF 21 - RIF 7      -528 1750 65.2  -0.302  1.0000
+# 
+# Degrees-of-freedom method: kenward-roger 
+# P value adjustment: tukey method for comparing a family of 9 estimates 
+#no stat significant
+
+fitARG<- lmer(Sum~TIMEPOINT+ (1|STUDY_ID), data=Shortbredmetadata)
+anova(fitARG)
+# Type III Analysis of Variance Table with Satterthwaite's method
+#           Sum Sq Mean Sq NumDF DenDF F value Pr(>F)
+# TIMEPOINT   2778    2778     1  71.4       0   0.99
+
+
+
+
+
+
+Shortbredmetadata_countadded<-read.csv("TreatTD/JoinedShortbreddataTrEAT.csv", header=TRUE)
+
+p1<-ggplot(Shortbredmetadata_countadded, aes(as.factor(TIMEPOINT), y=CountARG, color=TRT)) + geom_boxplot(outlier.shape = NA) +geom_point(position = position_jitterdodge(jitter.width = 0.1)) +ggtitle("Antibiotic Resistance Genes")+xlab("TIMEPOINT")+ylab("Sum RPKM ARGs") + theme(axis.text.x = element_text(angle = 45, hjust = 1))+theme(axis.text.x = element_text(size=16), axis.title.x=element_text(size=20), axis.title.y = element_text(size=20), axis.text.y = element_text(size=16), axis.title = element_text(size=24))+scale_color_manual(values = c("AZI" =	"#0A4451","LEV" =	"#1B7D85","RIF" = "#8ACCC4")) +theme_pub()
+print (p1)
+
+
+Shortbredmetadata_countadded[, 'treatmenttime'] = NA
+Shortbredmetadata_countadded$treatmenttime <- paste(Shortbredmetadata_countadded$TRT,Shortbredmetadata_countadded$TIMEPOINT)
+
+fitARG<- lmer(CountARG~treatmenttime+ (1|STUDY_ID), data=Shortbredmetadata_countadded)
+anova(fitARG)
+#Type III Analysis of Variance Table with Satterthwaite's method
+#              Sum Sq Mean Sq NumDF DenDF F value Pr(>F)
+#treatmenttime  28565    3571     8  57.4    1.07   0.39
+
+TukfitARG<-lsmeans(fitARG, pairwise~treatmenttime, adjust="tukey")
+TukfitARG
+
+
+# $lsmeans
+#  treatmenttime lsmean   SE   df lower.CL upper.CL
+#  AZI 0            200 20.0 88.9      160      239
+#  AZI 21           160 20.0 88.9      120      199
+#  AZI 7            147 20.0 88.9      108      187
+#  LEV 0            149 17.7 88.9      114      184
+#  LEV 21           167 18.3 91.0      131      204
+#  LEV 7            173 19.0 92.9      135      211
+#  RIF 0            139 19.1 88.9      101      177
+#  RIF 21           144 19.1 88.9      106      182
+#  RIF 7            164 19.1 88.9      126      202
+# 
+# Degrees-of-freedom method: kenward-roger 
+# Confidence level used: 0.95 
+# 
+# $contrasts
+#  contrast        estimate   SE   df t.ratio p.value
+#  AZI 0 - AZI 21      40.0 24.6 65.1   1.626  0.7870
+#  AZI 0 - AZI 7       52.2 24.6 65.1   2.121  0.4680
+#  AZI 0 - LEV 0       50.3 26.7 88.9   1.882  0.6270
+#  AZI 0 - LEV 21      32.2 27.1 89.9   1.187  0.9570
+#  AZI 0 - LEV 7       26.6 27.6 90.9   0.965  0.9880
+#  AZI 0 - RIF 0       61.0 27.7 88.9   2.204  0.4120
+#  AZI 0 - RIF 21      55.7 27.7 88.9   2.014  0.5380
+#  AZI 0 - RIF 7       35.1 27.7 88.9   1.270  0.9370
+#  AZI 21 - AZI 7      12.2 24.6 65.1   0.495  1.0000
+#  AZI 21 - LEV 0      10.3 26.7 88.9   0.384  1.0000
+#  AZI 21 - LEV 21     -7.8 27.1 89.9  -0.288  1.0000
+#  AZI 21 - LEV 7     -13.4 27.6 90.9  -0.484  1.0000
+#  AZI 21 - RIF 0      21.0 27.7 88.9   0.758  0.9980
+#  AZI 21 - RIF 21     15.7 27.7 88.9   0.568  1.0000
+#  AZI 21 - RIF 7      -4.9 27.7 88.9  -0.176  1.0000
+#  AZI 7 - LEV 0       -1.9 26.7 88.9  -0.072  1.0000
+#  AZI 7 - LEV 21     -20.0 27.1 89.9  -0.737  0.9980
+#  AZI 7 - LEV 7      -25.5 27.6 90.9  -0.925  0.9910
+#  AZI 7 - RIF 0        8.8 27.7 88.9   0.317  1.0000
+#  AZI 7 - RIF 21       3.5 27.7 88.9   0.128  1.0000
+#  AZI 7 - RIF 7      -17.1 27.7 88.9  -0.616  0.9990
+#  LEV 0 - LEV 21     -18.1 22.3 66.3  -0.810  0.9960
+#  LEV 0 - LEV 7      -23.6 22.9 67.6  -1.031  0.9810
+#  LEV 0 - RIF 0       10.7 26.1 88.9   0.411  1.0000
+#  LEV 0 - RIF 21       5.5 26.1 88.9   0.209  1.0000
+#  LEV 0 - RIF 7      -15.1 26.1 88.9  -0.580  1.0000
+#  LEV 21 - LEV 7      -5.5 23.4 69.1  -0.237  1.0000
+#  LEV 21 - RIF 0      28.8 26.5 89.9   1.086  0.9750
+#  LEV 21 - RIF 21     23.5 26.5 89.9   0.888  0.9930
+#  LEV 21 - RIF 7       2.9 26.5 89.9   0.111  1.0000
+#  LEV 7 - RIF 0       34.3 27.0 91.0   1.271  0.9370
+#  LEV 7 - RIF 21      29.1 27.0 91.0   1.077  0.9760
+#  LEV 7 - RIF 7        8.5 27.0 91.0   0.314  1.0000
+#  RIF 0 - RIF 21      -5.3 23.6 65.1  -0.223  1.0000
+#  RIF 0 - RIF 7      -25.8 23.6 65.1  -1.097  0.9730
+#  RIF 21 - RIF 7     -20.6 23.6 65.1  -0.874  0.9940
+# 
+# Degrees-of-freedom method: kenward-roger 
+# P value adjustment: tukey method for comparing a family of 9 estimates 
+
+#For numbers used in text since they are across all treatment groups
+joinedshortbred0<-summarise_all(subset(Shortbredmetadata, TIMEPOINT == "0"), mean)
+joinedshortbred7<-summarise_all(subset(Shortbredmetadata, TIMEPOINT == "7"), mean)
+joinedshortbred21<-summarise_all(subset(Shortbredmetadata, TIMEPOINT == "21"), mean)
+
+
+joinedshortbredcount0<-summarise_all(subset(Shortbredmetadata_countadded, TIMEPOINT == "0"), mean)
+joinedshortbredcount7<-summarise_all(subset(Shortbredmetadata_countadded, TIMEPOINT == "7"), mean)
+joinedshortbredcount21<-summarise_all(subset(Shortbredmetadata_countadded, TIMEPOINT == "21"), mean)
+
+
+
+```
+
+

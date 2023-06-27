@@ -1,0 +1,20 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cif	99.88	849 / 849	NODE_35_length_43887_cov_29.332755	41921..42769	  Type III secreted effector	AF497476
+virulence_ecoli	cif	99.88	849 / 849	NODE_35_length_43887_cov_29.332755	41921..42769	  Type III secreted effector	AY128535
+virulence_ecoli	eae	99.68	2808 / 2808	NODE_41_length_33121_cov_35.964956	7915..10722	  Intimin	FM872418
+virulence_ecoli	espA	100.0	579 / 579	NODE_41_length_33121_cov_35.964956	4572..5150	  Type III secretions system	AP010960
+virulence_ecoli	espF	96.91	324 / 513	NODE_41_length_33121_cov_35.964956	727..1050	  Type III secretion system	AF041809
+virulence_ecoli	gad	100.0	926 / 1401	NODE_25_length_76834_cov_30.640645	1..926	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	926 / 1401	NODE_25_length_76834_cov_30.640645	1..926	  Glutamate decarboxylase	AP010958
+virulence_ecoli	gad	100.0	926 / 1401	NODE_25_length_76834_cov_30.640645	1..926	  Glutamate decarboxylase	CP001063
+virulence_ecoli	gad	100.0	926 / 1401	NODE_25_length_76834_cov_30.640645	1..926	  Glutamate decarboxylase	EF551359
+virulence_ecoli	gad	100.0	926 / 1401	NODE_25_length_76834_cov_30.640645	1..926	  Glutamate decarboxylase	EF551360
+virulence_ecoli	gad	100.0	926 / 1401	NODE_25_length_76834_cov_30.640645	1..926	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_17_length_113232_cov_28.860492	16355..17272	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	100.0	294 / 294	NODE_34_length_46353_cov_31.125270	41989..42282	  Increased serum survival	CP001665
+virulence_ecoli	nleB	99.9	981 / 981	NODE_9_length_168466_cov_27.954765	164481..165461	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	nleB	100.0	990 / 990	NODE_53_length_7929_cov_40.727331	5265..6254	  Non-LEE encoded effector B	FM986650
+virulence_ecoli	sepA	93.97	4097 / 4092	NODE_52_length_8412_cov_73.458668	428..4522	 Shigella extracellular protein A	AY604009
+virulence_ecoli	terC	100.0	714 / 714	NODE_7_length_178491_cov_28.332009	83306..84019	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_2_length_290499_cov_27.314935	184694..185659	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.94	1656 / 1656	NODE_41_length_33121_cov_35.964956	11384..13039	  Translocated intimin receptor protein	AF025311

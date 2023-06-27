@@ -1,0 +1,29 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_162_length_1374_cov_102.043418	622..738	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_101_length_10196_cov_55.592153	1860..2948	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	cea	99.87	1566 / 1566	NODE_105_length_8746_cov_118.019149	4490..6055	  Colicin E1	CYEM01000021
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_11_length_100625_cov_36.909874	14878..16899	  Siderophore receptor	ADTR01000532
+virulence_ecoli	gad	99.5	1401 / 1401	NODE_16_length_86264_cov_44.837539	15349..16749	  Glutamate decarboxylase	CP001671
+virulence_ecoli	gad	99.86	1401 / 1401	NODE_30_length_51734_cov_39.442341	28289..29689	  Glutamate decarboxylase	CP001671
+virulence_ecoli	gad	99.5	1401 / 1401	NODE_16_length_86264_cov_44.837539	15349..16749	  Glutamate decarboxylase	FM180568
+virulence_ecoli	iha	97.42	2091 / 2091	NODE_42_length_38904_cov_41.978881	17969..20059	  Adherence protein	AE005174
+virulence_ecoli	irp2	99.93	6108 / 6108	NODE_11_length_100625_cov_36.909874	30088..36195	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PQJF01000011
+virulence_ecoli	iucC	99.89	1743 / 1743	NODE_82_length_15654_cov_42.270848	4084..5826	  Aerobactin synthetase	CBTO010000002
+virulence_ecoli	iutA	99.95	2202 / 2202	NODE_82_length_15654_cov_42.270848	527..2728	  Ferric aerobactin receptor	NC_020271
+virulence_ecoli	kpsE	99.91	1149 / 1149	NODE_48_length_34949_cov_52.975711	15169..16317	  Capsule polysaccharide export inner-membrane protein	CP000243
+virulence_ecoli	kpsMII_K1	99.87	777 / 777	NODE_48_length_34949_cov_52.975711	1375..2151	  Polysialic acid transport protein; Group 2 capsule	UWVJ01000006
+virulence_ecoli	neuC	100.0	1176 / 1176	NODE_48_length_34949_cov_52.975711	5770..6945	  Polysialic acid capsule biosynthesis protein	ADUG01000366
+virulence_ecoli	ompT	100.0	954 / 954	NODE_138_length_3246_cov_58.364468	1656..2609	  Outer membrane protease (protein protease 7)	NZ_UEMK01000030
+virulence_ecoli	senB	100.0	1176 / 1176	NODE_97_length_10784_cov_128.047819	399..1574	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sigA	98.0	3858 / 3858	NODE_23_length_59658_cov_42.763314	55239..59096	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	98.0	3858 / 3858	NODE_23_length_59658_cov_42.763314	55239..59096	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	NODE_82_length_15654_cov_42.270848	14365..15279	  Iron transport protein	ADTK01000286
+virulence_ecoli	sitA	99.87	792 / 792	NODE_7_length_121026_cov_38.859420	7910..8701	  Iron transport protein	CP002797
+virulence_ecoli	stx1A	99.79	949 / 948	NODE_66_length_23861_cov_44.223133	7194..8142	  Shiga toxin 1, subunit A, variant a	EF079675
+virulence_ecoli	stx1B	100.0	270 / 270	NODE_66_length_23861_cov_44.223133	6915..7184	  Shiga toxin 1, subunit B, variant a	AM230663
+virulence_ecoli	terC	99.72	714 / 714	NODE_24_length_56640_cov_42.370224	21908..22621	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	96.89	964 / 966	NODE_20_length_71821_cov_41.218903	17804..18767	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	714 / 714	NODE_26_length_55073_cov_128.805931	38919..39632	  Outer membrane protein complement resistance	LT985300
+virulence_ecoli	usp	99.71	1041 / 1041	NODE_1_length_260536_cov_39.786600	157073..158113	  Uropathogenic specific protein	AB056439
+virulence_ecoli	yfcV	100.0	567 / 567	NODE_13_length_95272_cov_35.602658	8750..9316	  Fimbrial protein	UFZT01000001
+stx	stx1	99.92	1228 / 1227	NODE_66_length_23861_cov_44.223133	6915..8142	S.dysenteriae 3818T	M19437

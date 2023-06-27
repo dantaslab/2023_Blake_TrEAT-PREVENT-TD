@@ -1,0 +1,42 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	97 / 117	NODE_16_length_114759_cov_41.850064	6264..6360	 EAST-1 heat-stable toxin	HM099897
+virulence_ecoli	cba	94.49	943 / 1536	NODE_92_length_6752_cov_324.980225	5392..6334	  Colicin B	FJ664721
+virulence_ecoli	cba	94.49	943 / 1536	NODE_92_length_6752_cov_324.980225	5392..6334	  Colicin B	FJ664738
+virulence_ecoli	cba	94.49	943 / 1536	NODE_92_length_6752_cov_324.980225	5392..6334	  Colicin B	FJ664743
+virulence_ecoli	cba	94.49	943 / 1536	NODE_92_length_6752_cov_324.980225	5392..6334	  Colicin B	FJ664745
+virulence_ecoli	cif	99.88	849 / 849	NODE_117_length_3079_cov_37.180213	996..1843	  Type III secreted effector	AY128535
+virulence_ecoli	eae	99.93	2820 / 2820	NODE_4_length_204385_cov_47.846991	25496..28315	  Intimin	ECU59503
+virulence_ecoli	efa1	100.0	9672 / 9672	NODE_4_length_204385_cov_47.846991	7706..17377	  EHEC factor for adherence	AJ277443
+virulence_ecoli	ehxA	100.0	2997 / 2997	NODE_60_length_19055_cov_61.713142	7739..10735	 Enterohaemolysin	HM138194
+virulence_ecoli	espA	100.0	579 / 579	NODE_4_length_204385_cov_47.846991	22227..22805	  Type III secretions system	FM201463
+virulence_ecoli	espB	100.0	945 / 945	NODE_4_length_204385_cov_47.846991	20107..21051	  Secreted protein B	AF054421
+virulence_ecoli	espF	100.0	624 / 624	NODE_4_length_204385_cov_47.846991	18312..18935	  Type III secretion system	AF116900
+virulence_ecoli	espJ	100.0	654 / 654	NODE_51_length_32524_cov_46.334823	1139..1792	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	espP	100.0	3903 / 3903	NODE_101_length_4937_cov_59.724691	481..4383	 Extracellular serine protease plasmid-encoded	GQ259888
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_29_length_56910_cov_43.966551	36120..38141	  Siderophore receptor	AFAI02000036
+virulence_ecoli	hlyE	99.46	918 / 918	NODE_14_length_121806_cov_47.501746	84181..85098	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.93	1533 / 2091	NODE_48_length_34212_cov_51.075846	1..1533	  Adherence protein	AE005174
+virulence_ecoli	iha	99.93	1533 / 2091	NODE_48_length_34212_cov_51.075846	1..1533	  Adherence protein	CP003289
+virulence_ecoli	irp2	99.98	6108 / 6108	NODE_29_length_56910_cov_43.966551	16846..22953	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_BDHX01000031
+virulence_ecoli	iss	100.0	294 / 294	NODE_183_length_1028_cov_91.315457	479..772	  Increased serum survival	CP001665
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_72_length_11566_cov_46.429889	5346..7088	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_72_length_11566_cov_46.429889	1811..4009	  Ferric aerobactin receptor	AAJW02000016
+virulence_ecoli	katP	100.0	2211 / 2211	NODE_59_length_19609_cov_63.360928	17193..19403	  Plasmid-encoded catalase peroxidase	AB011549
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_17_length_114093_cov_56.104819	30199..30771	  Long polar fimbriae	AP010953
+virulence_ecoli	nleA	99.85	1326 / 1326	NODE_16_length_114759_cov_41.850064	1149..2473	  Non-LEE encoded effector A	AE005174
+virulence_ecoli	nleA	100.0	1323 / 1323	NODE_12_length_127328_cov_47.457128	2027..3349	  Non-LEE encoded effector A	AM422003
+virulence_ecoli	nleB	100.0	990 / 990	NODE_4_length_204385_cov_47.846991	4116..5105	  Non-LEE encoded effector B	AF453441
+virulence_ecoli	nleC	99.9	987 / 987	NODE_114_length_3212_cov_40.311962	465..1451	  Non-LEE encoded effector C	AP010953
+virulence_ecoli	ompT	100.0	954 / 954	NODE_61_length_18874_cov_54.640847	7880..8833	  Outer membrane protease (protein protease 7)	AMVC01000243
+virulence_ecoli	stx1A	100.0	948 / 948	NODE_89_length_7245_cov_55.450753	3472..4419	  Shiga toxin 1, subunit A, variant a	AF461168
+virulence_ecoli	stx1B	100.0	270 / 270	NODE_89_length_7245_cov_55.450753	3193..3462	  Shiga toxin 1, subunit B, variant a	AM230663
+virulence_ecoli	tccP	99.8	501 / 753	NODE_162_length_1498_cov_25.289733	359..859	  Tir-cytoskeleton coupling protein	AP010953
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_48_length_34212_cov_51.075846	4128..5168	  Tellurium ion resistance protein	CP006262
+virulence_ecoli	terC	100.0	714 / 714	NODE_1_length_269356_cov_49.541242	231750..232463	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.86	966 / 966	NODE_5_length_196466_cov_52.523558	72670..73635	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.88	1617 / 1617	NODE_4_length_204385_cov_47.846991	28979..30595	  Translocated intimin receptor protein	AB426060
+virulence_ecoli	toxB	99.99	9501 / 9501	NODE_62_length_17835_cov_47.769174	4852..14352	  Toxin B	AB456530
+virulence_ecoli	traT	100.0	423 / 423	NODE_48_length_34212_cov_51.075846	33514..33936	  Outer membrane protein complement resistance	AKKX01000148
+virulence_ecoli	traT	100.0	129 / 129	NODE_48_length_34212_cov_51.075846	23582..23710	  Outer membrane protein complement resistance	AMTE01000156
+virulence_ecoli	traT	100.0	732 / 732	NODE_27_length_64750_cov_61.842098	48514..49245	  Outer membrane protein complement resistance	CXZR01000026
+stx	stx1	100.0	1227 / 1227	NODE_89_length_7245_cov_55.450753	3193..4419	O157 FLY16, variant a	AF461168

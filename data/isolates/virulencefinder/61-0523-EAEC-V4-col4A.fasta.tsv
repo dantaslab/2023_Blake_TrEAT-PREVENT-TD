@@ -1,0 +1,16 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	1569 / 1569	NODE_120_length_5701_cov_191.940612	1472..3040	  Colicin E1	LAUC01000234
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_31_length_51726_cov_23.705745	30942..32963	  Siderophore receptor	AHAX01000032
+virulence_ecoli	fyuA	92.18	2097 / 2097	NODE_67_length_22700_cov_42.905804	14792..16888	  Siderophore receptor	QOLU01000084
+virulence_ecoli	hlyE	99.89	919 / 918	NODE_58_length_26415_cov_24.560369	14691..15609	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	99.98	6108 / 6108	NODE_31_length_51726_cov_23.705745	11647..17754	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEM01000039
+virulence_ecoli	kpsE	99.91	1149 / 1149	NODE_9_length_122001_cov_29.061022	114600..115748	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsMII_K1	100.0	777 / 777	NODE_9_length_122001_cov_29.061022	100806..101582	  Polysialic acid transport protein; Group 2 capsule	UWVJ01000006
+virulence_ecoli	neuC	100.0	1176 / 1176	NODE_9_length_122001_cov_29.061022	105201..106376	  Polysialic acid capsule biosynthesis protein	NZ_UIJU01000012
+virulence_ecoli	papA_feiA_F8	99.36	466 / 531	NODE_136_length_3104_cov_35.878758	1461..1926	  Major pilin subunit F8	AF247349
+virulence_ecoli	papC	100.0	2193 / 2511	NODE_93_length_10441_cov_33.636048	8173..10365	  Outer membrane usher P fimbriae	JONC01000026
+virulence_ecoli	senB	100.0	1176 / 1176	NODE_105_length_7474_cov_53.121806	4611..5786	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sigA	99.95	3858 / 3858	NODE_115_length_6369_cov_40.854736	713..4570	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	terC	100.0	714 / 714	NODE_36_length_44424_cov_28.947775	22810..23523	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_1_length_179430_cov_29.565003	49652..50617	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	NODE_57_length_26460_cov_49.707008	12708..13442	  Outer membrane protein complement resistance	NZ_QRIX01000018

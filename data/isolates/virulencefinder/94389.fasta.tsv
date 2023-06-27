@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cdtB	99.88	810 / 810	94389_Contig_47	8534..9343	  Cytolethal distending toxin B	AB472834
+virulence_ecoli	chuA	98.94	1983 / 1983	94389_Contig_48	3908..5890	  Outer membrane hemin receptor	CYCK01000002
+virulence_ecoli	eae	92.35	2811 / 2808	94389_Contig_11	6840..9647	  Intimin	FM872418
+virulence_ecoli	espA	99.48	579 / 579	94389_Contig_11	3471..4049	  Type III secretions system	FM201463
+virulence_ecoli	espB	99.79	945 / 945	94389_Contig_11	1351..2295	  Secreted protein B	AP010958
+virulence_ecoli	espJ	97.26	656 / 654	94389_Contig_33	600..1254	  Prophage-encoded type III secretion system effector	AE005174
+virulence_ecoli	iss	90.1	303 / 309	94389_Contig_13	72404..72706	  Increased serum survival	DQ381420
+virulence_ecoli	nleA	97.89	1327 / 1326	94389_Contig_21	1519..2844	  Non-LEE encoded effector A	AE005174
+virulence_ecoli	nleC	96.65	984 / 987	94389_Contig_66	3413..4396	  Non-LEE encoded effector C	AP010960
+virulence_ecoli	terC	90.34	714 / 714	94389_Contig_5	22713..23426	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	94.47	959 / 966	94389_Contig_4	170041..170999	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	98.21	1617 / 1617	94389_Contig_11	10311..11927	  Translocated intimin receptor protein	AJ303141
+virulence_ecoli	traT	100.0	831 / 831	94389_Contig_44	16074..16904	  Outer membrane protein complement resistance	NC_007675

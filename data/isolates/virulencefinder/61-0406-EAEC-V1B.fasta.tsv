@@ -1,0 +1,12 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	98.06	1029 / 1029	NODE_55_length_2668_cov_68.112698	1348..2376	 Isoprenoid Biosynthesis	FN554767
+virulence_ecoli	ORF4	98.52	540 / 540	NODE_55_length_2668_cov_68.112698	805..1344	 Putative isopentenyl-diphosphate delta-isomerase	FN554767
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_3_length_344430_cov_18.303909	23786..24292	 Type VI secretion protein	cp003301
+virulence_ecoli	astA	99.15	117 / 117	NODE_88_length_490_cov_95.561743	207..323	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_2_length_386970_cov_15.857635	317721..319742	  Siderophore receptor	AHAX01000032
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_24_length_63682_cov_16.891895	23995..24912	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_2_length_386970_cov_15.857635	332930..339037	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEM01000039
+virulence_ecoli	iss	99.32	294 / 294	NODE_43_length_6742_cov_21.433758	1493..1786	  Increased serum survival	CP001509
+virulence_ecoli	pic	99.98	4119 / 4119	NODE_45_length_6628_cov_20.834071	195..4313	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	terC	100.0	714 / 714	NODE_13_length_144861_cov_18.026923	110518..111231	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.79	966 / 966	NODE_3_length_344430_cov_18.303909	160171..161136	  Tellurium ion resistance protein	MG591698

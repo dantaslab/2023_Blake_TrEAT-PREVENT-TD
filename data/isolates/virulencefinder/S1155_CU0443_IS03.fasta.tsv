@@ -1,0 +1,10 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_125_length_961_cov_659.583710	72..188	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_51_length_22270_cov_50.256793	18531..19619	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_16_length_82680_cov_41.716875	67653..69674	  Siderophore receptor	ADTR01000532
+virulence_ecoli	hlyE	97.82	919 / 918	NODE_17_length_76532_cov_44.588281	68728..69634	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	99.97	6108 / 6108	NODE_16_length_82680_cov_41.716875	48357..54464	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PQJF01000011
+virulence_ecoli	ompT	99.79	954 / 954	NODE_89_length_3533_cov_52.560764	2252..3205	  Outer membrane protease (protein protease 7)	UGCI01000003
+virulence_ecoli	terC	100.0	714 / 714	NODE_1_length_319856_cov_43.914422	181337..182050	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.69	959 / 966	NODE_3_length_266477_cov_43.040642	129578..130536	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	NODE_70_length_8142_cov_162.584873	3578..4312	  Outer membrane protein complement resistance	NZ_UIKU01000027

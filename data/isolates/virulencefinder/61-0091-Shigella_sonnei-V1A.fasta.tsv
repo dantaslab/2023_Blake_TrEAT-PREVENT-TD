@@ -1,0 +1,15 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	celb	100.0	144 / 144	NODE_178_length_6851_cov_106.916445	6359..6502	  Endonuclease colicin E2	HF570109
+virulence_ecoli	gad	100.0	885 / 1401	NODE_111_length_13366_cov_36.960644	12482..13366	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	885 / 1401	NODE_111_length_13366_cov_36.960644	12482..13366	  Glutamate decarboxylase	EF547385
+virulence_ecoli	gad	100.0	885 / 1401	NODE_111_length_13366_cov_36.960644	12482..13366	  Glutamate decarboxylase	FN649414
+virulence_ecoli	gad	100.0	885 / 1401	NODE_111_length_13366_cov_36.960644	12482..13366	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	98.59	567 / 918	NODE_170_length_7779_cov_25.734614	7142..7708	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iucC	99.94	1743 / 1743	NODE_122_length_11699_cov_33.250817	5415..7157	  Aerobactin synthetase	UGBG01000002
+virulence_ecoli	iutA	99.91	2199 / 2199	NODE_122_length_11699_cov_33.250817	8494..10692	  Ferric aerobactin receptor	UGBG01000002
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_301_length_1345_cov_39.359621	354..926	  Long polar fimbriae	AY646923
+virulence_ecoli	senB	100.0	1176 / 1176	NODE_168_length_7886_cov_31.684851	1065..2240	  Plasmid-encoded enterotoxin	CP000038
+virulence_ecoli	sigA	100.0	3858 / 3858	NODE_131_length_11080_cov_59.220304	6810..10667	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	sitA	100.0	915 / 915	NODE_91_length_15992_cov_23.314043	3048..3962	  Iron transport protein	UFYN01000008
+virulence_ecoli	terC	98.88	714 / 714	NODE_5_length_64963_cov_29.285620	483..1196	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.69	959 / 966	NODE_117_length_12194_cov_28.150945	11114..12072	  Tellurium ion resistance protein	MG591698

@@ -1,0 +1,15 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_113_length_1315_cov_1027.835218	412..528	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	100.0	1089 / 1089	NODE_58_length_17299_cov_129.783823	2945..4033	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	celb	100.0	141 / 141	NODE_47_length_25035_cov_114.664637	15438..15578	  Endonuclease colicin E2	CU928147
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_5_length_210934_cov_100.606809	91423..92340	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_25_length_71744_cov_113.664043	53481..55571	  Adherence protein	CU928162
+virulence_ecoli	ireA	99.95	2049 / 2049	NODE_25_length_71744_cov_113.664043	61597..63645	  Siderophore receptor	CU928162
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_11_length_126630_cov_124.256233	120117..121859	  Aerobactin synthetase	UFZP01000007
+virulence_ecoli	iutA	99.95	2199 / 2199	NODE_11_length_126630_cov_124.256233	123196..125394	  Ferric aerobactin receptor	UGFC01000006
+virulence_ecoli	sat	99.78	3670 / 3888	NODE_50_length_22409_cov_127.354827	77..3746	 Secreted autotransporter toxin	CP001671
+virulence_ecoli	sigA	98.03	3858 / 3858	NODE_8_length_183853_cov_117.428005	16330..20187	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	98.03	3858 / 3858	NODE_8_length_183853_cov_117.428005	16330..20187	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	terC	100.0	714 / 714	NODE_3_length_219280_cov_107.248404	70487..71200	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_2_length_236039_cov_113.262428	185631..186596	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	732 / 732	NODE_25_length_71744_cov_113.664043	69783..70514	  Outer membrane protein complement resistance	NZ_QRQR01000004

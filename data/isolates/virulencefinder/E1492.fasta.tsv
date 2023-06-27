@@ -1,0 +1,18 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	95.84	3825 / 4605	E1492_Contig_1	3719481..3723305	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	astA	99.15	117 / 117	E1492_Contig_1	5188304..5188420	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	chuA	99.04	1983 / 1983	E1492_Contig_1	2910550..2912532	  Outer membrane hemin receptor	UDCC01000002
+virulence_ecoli	eae	94.89	2820 / 2817	E1492_Contig_1	5012357..5015176	  Intimin	FM872421
+virulence_ecoli	eilA	97.82	1698 / 1698	E1492_Contig_1	5249437..5251134	 Salmonella HilA homolog	CP003034
+virulence_ecoli	eilA	97.82	1698 / 1698	E1492_Contig_1	5249437..5251134	 Salmonella HilA homolog	FN554766
+virulence_ecoli	espA	98.96	579 / 579	E1492_Contig_1	5017869..5018447	  Type III secretions system	AY223511
+virulence_ecoli	gad	96.5	1401 / 1401	E1492_Contig_1	4505706..4507106	  Glutamate decarboxylase	CP002167
+virulence_ecoli	gad	97.36	1401 / 1401	E1492_Contig_1	2892295..2893695	  Glutamate decarboxylase	CP003034
+virulence_ecoli	gad	97.36	1401 / 1401	E1492_Contig_1	2892295..2893695	  Glutamate decarboxylase	CU928163
+virulence_ecoli	hlyE	98.15	918 / 918	E1492_Contig_1	3132366..3133283	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	ompT	99.72	363 / 363	E1492_Contig_1	5135324..5135686	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	terC	97.34	714 / 714	E1492_Contig_1	3511706..3512419	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.34	714 / 714	E1492_Contig_1	3511706..3512419	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	94.2	966 / 966	E1492_Contig_1	1548099..1549064	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	96.26	1659 / 1659	E1492_Contig_1	5010041..5011690	  Translocated intimin receptor protein	AB036053
+virulence_ecoli	traT	100.0	735 / 735	E1492_Contig_1	4971651..4972385	  Outer membrane protein complement resistance	NZ_QXIP01000066

@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	astA	100.0	117 / 117	NODE_156_length_517_cov_1.804545	71..187	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_98_length_6186_cov_40.851694	2158..3246	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	espI	99.32	4092 / 4092	NODE_99_length_5903_cov_50.406797	749..4840	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_53_length_31835_cov_19.948359	28038..30059	  Siderophore receptor	UGBN01000001
+virulence_ecoli	hlyE	98.91	918 / 918	NODE_37_length_43435_cov_25.898058	33525..34442	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_89_length_10703_cov_34.683042	7146..9236	  Adherence protein	AE005174
+virulence_ecoli	irp2	99.95	6108 / 6108	NODE_53_length_31835_cov_19.948359	8743..14850	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PXIF01000061
+virulence_ecoli	irp2	99.95	6108 / 6108	NODE_53_length_31835_cov_19.948359	8743..14850	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UGEC01000002
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_67_length_22628_cov_31.372134	3825..5567	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	99.95	2199 / 2199	NODE_67_length_22628_cov_31.372134	290..2488	  Ferric aerobactin receptor	CXZL01000052
+virulence_ecoli	ompT	99.72	363 / 363	NODE_64_length_24966_cov_26.952308	1704..2066	  Outer membrane protease (protein protease 7)	UDHB01000050
+virulence_ecoli	terC	99.3	714 / 714	NODE_22_length_67277_cov_25.769777	538..1251	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.96	959 / 966	NODE_1_length_171232_cov_26.427636	47410..48368	  Tellurium ion resistance protein	MG591698

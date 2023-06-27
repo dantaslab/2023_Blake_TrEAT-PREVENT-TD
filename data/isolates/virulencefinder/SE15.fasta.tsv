@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	100.0	1983 / 1983	SE15_Contig_1	3601926..3603908	  Outer membrane hemin receptor	UGDM01000004
+virulence_ecoli	fyuA	100.0	2022 / 2022	SE15_Contig_1	1959444..1961465	  Siderophore receptor	ADTR01000532
+virulence_ecoli	gad	100.0	1401 / 1401	SE15_Contig_1	1512045..1513445	  Glutamate decarboxylase	AP009378
+virulence_ecoli	gad	100.0	1401 / 1401	SE15_Contig_1	3620779..3622179	  Glutamate decarboxylase	AP009378
+virulence_ecoli	irp2	100.0	6108 / 6108	SE15_Contig_1	1940148..1946255	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_QKNC01000001
+virulence_ecoli	kpsE	99.56	1149 / 1149	SE15_Contig_1	3027906..3029054	  Capsule polysaccharide export inner-membrane protein	CP011134
+virulence_ecoli	kpsMII_K5	96.78	777 / 777	SE15_Contig_1	3043538..3044314	  Polysialic acid transport protein; Group 2 capsule	UGBF01000004
+virulence_ecoli	ompT	100.0	954 / 954	SE15_Contig_1	548972..549925	  Outer membrane protease (protein protease 7)	NZ_QKNC01000001
+virulence_ecoli	sitA	99.89	915 / 915	SE15_Contig_1	1190863..1191777	  Iron transport protein	CYGJ01000009
+virulence_ecoli	terC	99.3	714 / 714	SE15_Contig_1	2894507..2895220	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.41	964 / 966	SE15_Contig_1	3205239..3206202	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	usp	94.73	1043 / 1041	SE15_Contig_1	131592..132632	  Uropathogenic specific protein	AB056437
+virulence_ecoli	yfcV	100.0	567 / 567	SE15_Contig_1	2397165..2397731	  Fimbrial protein	AP018784

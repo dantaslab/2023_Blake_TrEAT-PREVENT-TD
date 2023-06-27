@@ -1,0 +1,14 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	1569 / 1569	ECOR31_Contig_63	20598..22166	  Colicin E1	LAUC01000234
+virulence_ecoli	chuA	100.0	1983 / 1983	ECOR31_Contig_31	109772..111754	  Outer membrane hemin receptor	UGDB01000003
+virulence_ecoli	fyuA	100.0	2022 / 2022	ECOR31_Contig_3	64420..66441	  Siderophore receptor	CAY233333
+virulence_ecoli	gad	99.57	1401 / 1401	ECOR31_Contig_23	40013..41413	  Glutamate decarboxylase	CP001846
+virulence_ecoli	hlyE	98.91	918 / 918	ECOR31_Contig_8	47016..47933	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	99.95	6108 / 6108	ECOR31_Contig_3	79629..85736	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMCY01000014
+virulence_ecoli	iss	100.0	294 / 294	ECOR31_Contig_70	23775..24068	  Increased serum survival	CP001665
+virulence_ecoli	ompT	99.9	954 / 954	ECOR31_Contig_29	3009..3962	  Outer membrane protease (protein protease 7)	NZ_NOQT01000039
+virulence_ecoli	papC	99.92	2511 / 2511	ECOR31_Contig_62	75497..78007	  Outer membrane usher P fimbriae	JNPN01000012
+virulence_ecoli	sitA	100.0	915 / 915	ECOR31_Contig_7	2886..3800	  Iron transport protein	HG977190
+virulence_ecoli	terC	99.16	714 / 714	ECOR31_Contig_34	135554..136267	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.96	959 / 966	ECOR31_Contig_26	178672..179630	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	ECOR31_Contig_16	25787..26521	  Outer membrane protein complement resistance	NZ_CP032205

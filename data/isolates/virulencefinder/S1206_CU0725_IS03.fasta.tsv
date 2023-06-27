@@ -1,0 +1,17 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cif	99.88	849 / 849	NODE_2_length_357434_cov_41.094597	41921..42769	  Type III secreted effector	AF497476
+virulence_ecoli	cif	99.88	849 / 849	NODE_2_length_357434_cov_41.094597	41921..42769	  Type III secreted effector	AY128535
+virulence_ecoli	eae	99.72	2808 / 2808	NODE_32_length_33498_cov_70.778642	23040..25847	  Intimin	FM872418
+virulence_ecoli	espA	100.0	579 / 579	NODE_32_length_33498_cov_70.778642	28612..29190	  Type III secretions system	AP010960
+virulence_ecoli	espF	94.93	513 / 513	NODE_32_length_33498_cov_70.778642	32478..32972	  Type III secretion system	AF041809
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_14_length_121821_cov_46.927709	31276..32193	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	98.98	294 / 294	NODE_27_length_48484_cov_47.117896	46037..46330	  Increased serum survival	CP001509
+virulence_ecoli	iss	98.98	294 / 294	NODE_21_length_74683_cov_44.313313	16030..16323	  Increased serum survival	CP001665
+virulence_ecoli	iss	98.98	294 / 294	NODE_21_length_74683_cov_44.313313	16030..16323	  Increased serum survival	CP001846
+virulence_ecoli	nleB	100.0	981 / 981	NODE_2_length_357434_cov_41.094597	44516..45496	  Non-LEE encoded effector B	AB303062
+virulence_ecoli	nleB	100.0	990 / 990	NODE_5_length_254274_cov_45.299457	248021..249010	  Non-LEE encoded effector B	FM986650
+virulence_ecoli	ompT	100.0	954 / 954	NODE_34_length_31043_cov_42.340696	7767..8720	  Outer membrane protease (protein protease 7)	UINH01000010
+virulence_ecoli	terC	100.0	714 / 714	NODE_5_length_254274_cov_45.299457	83135..83848	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_4_length_298021_cov_41.571084	184792..185757	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.94	1656 / 1656	NODE_32_length_33498_cov_70.778642	20723..22378	  Translocated intimin receptor protein	AF025311
+virulence_ecoli	traT	100.0	735 / 735	NODE_22_length_68314_cov_114.320970	32067..32801	  Outer membrane protein complement resistance	NZ_PDAN01000020

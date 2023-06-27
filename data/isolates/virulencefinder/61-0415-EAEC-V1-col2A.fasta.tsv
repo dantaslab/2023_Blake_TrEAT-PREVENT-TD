@@ -1,0 +1,32 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	99.61	1029 / 1029	NODE_34_length_43575_cov_54.915996	42314..43342	 Isoprenoid Biosynthesis	CU928159
+virulence_ecoli	ORF4	99.63	540 / 540	NODE_34_length_43575_cov_54.915996	41771..42310	 Putative isopentenyl-diphosphate delta-isomerase	AFRH01000026
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_27_length_66565_cov_30.997458	43362..43868	 Type VI secretion protein	FN554766
+virulence_ecoli	aap	99.72	351 / 351	NODE_34_length_43575_cov_54.915996	35790..36140	 Dispersin, antiaggregation protein	Z32523
+virulence_ecoli	aar	100.0	201 / 201	NODE_34_length_43575_cov_54.915996	34859..35059	 AggR-activated regulator	SSI_AA784
+virulence_ecoli	aatA	99.84	1239 / 1239	NODE_34_length_43575_cov_54.915996	28198..29436	 Dispersin transporter protein	CU928159
+virulence_ecoli	afaD	100.0	396 / 396	NODE_63_length_5607_cov_60.863110	1150..1545	  Afimbrial adhesion	JNQU01000050
+virulence_ecoli	agg3C	100.0	2550 / 2550	NODE_63_length_5607_cov_60.863110	1604..4153	 Usher, AAF/III assembly unit	SSI_AA800
+virulence_ecoli	agg3D	99.73	753 / 753	NODE_63_length_5607_cov_60.863110	4208..4960	 Chaperone, AAF/III assembly unit	CU928159
+virulence_ecoli	agg5A	100.0	516 / 516	NODE_63_length_5607_cov_60.863110	460..975		SSI_AA800
+virulence_ecoli	aggR	99.75	798 / 798	NODE_34_length_43575_cov_54.915996	36981..37778	 AraC transcriptional activator	55989
+virulence_ecoli	astA	100.0	117 / 117	NODE_120_length_955_cov_160.584282	629..745	 EAST-1 heat-stable toxin	AB042002
+virulence_ecoli	espI	99.29	4092 / 4092	NODE_70_length_4826_cov_26.451885	582..4673	  serine protease autotransporters of Enterobacteriaceae (SPATE)	AP010958
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_31_length_51221_cov_25.383486	31040..33061	  Siderophore receptor	UGCQ01000002
+virulence_ecoli	gad	100.0	1178 / 1401	NODE_22_length_95850_cov_29.850908	94673..95850	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyA	99.9	3075 / 3075	NODE_52_length_13304_cov_30.304377	4074..7148	  Haemolysin A	CP054232
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_6_length_204483_cov_25.856658	119753..120670	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_31_length_51221_cov_25.383486	11745..17852	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NTPD01000023
+virulence_ecoli	iss	100.0	294 / 294	NODE_30_length_53994_cov_28.536992	533..826	  Increased serum survival	CP001846
+virulence_ecoli	iucC	100.0	1743 / 1743	NODE_41_length_26704_cov_29.849288	9237..10979	  Aerobactin synthetase	AAJW02000016
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_41_length_26704_cov_29.849288	5702..7900	  Ferric aerobactin receptor	UGCQ01000002
+virulence_ecoli	kpsE	100.0	1149 / 1149	NODE_24_length_82646_cov_29.628856	75971..77119	  Capsule polysaccharide export inner-membrane protein	FBVS01000076
+virulence_ecoli	kpsMII	100.0	777 / 777	NODE_24_length_82646_cov_29.628856	60974..61750	  Polysialic acid transport protein; Group 2 capsule	MG736912
+virulence_ecoli	ompT	100.0	954 / 954	NODE_40_length_26803_cov_28.515827	3526..4479	  Outer membrane protease (protein protease 7)	NZ_NKVD01000029
+virulence_ecoli	papA_fsiA_F16	99.81	537 / 537	NODE_46_length_17013_cov_29.753366	8148..8684	  Major pilin subunit F16	CU928163
+virulence_ecoli	papC	99.84	2511 / 2511	NODE_46_length_17013_cov_29.753366	9394..11904	  Outer membrane usher P fimbriae	CP002797
+virulence_ecoli	papC	99.84	2511 / 2511	NODE_46_length_17013_cov_29.753366	9394..11904	  Outer membrane usher P fimbriae	JONC01000026
+virulence_ecoli	pic	100.0	4119 / 4119	NODE_65_length_5362_cov_31.787323	918..5036	  serine protease autotransporters of Enterobacteriaceae (SPATE)	CU928145
+virulence_ecoli	sat	99.97	3888 / 3888	NODE_41_length_26704_cov_29.849288	871..4758	 Secreted autotransporter toxin	AE014075
+virulence_ecoli	terC	100.0	714 / 714	NODE_8_length_172382_cov_28.903352	148860..149573	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_3_length_256043_cov_29.791812	185315..186280	  Tellurium ion resistance protein	MG591698

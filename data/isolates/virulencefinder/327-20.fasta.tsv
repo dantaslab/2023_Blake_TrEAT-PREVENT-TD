@@ -1,0 +1,12 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	chuA	100.0	1983 / 1983	327-20_Contig_97	2480..4462	  Outer membrane hemin receptor	UINR01000007
+virulence_ecoli	gad	99.14	1049 / 1401	327-20_Contig_98	1..1049	  Glutamate decarboxylase	EF551351
+virulence_ecoli	gad	99.14	1049 / 1401	327-20_Contig_98	1..1049	  Glutamate decarboxylase	FM180568
+virulence_ecoli	iss	100.0	294 / 294	327-20_Contig_34	8704..8997	  Increased serum survival	CP001665
+virulence_ecoli	lpfA	98.95	573 / 573	327-20_Contig_106	9285..9857	  Long polar fimbriae	CP003034
+virulence_ecoli	neuC	100.0	992 / 1188	327-20_Contig_145	251..1242	  Polysialic acid capsule biosynthesis protein	NZ_UINR01000001
+virulence_ecoli	ompT	100.0	954 / 954	327-20_Contig_19	2246..3199	  Outer membrane protease (protein protease 7)	AMVC01000243
+virulence_ecoli	ompT	100.0	954 / 954	327-20_Contig_19	5614..6567	  Outer membrane protease (protein protease 7)	UGFB01000004
+virulence_ecoli	sitA	99.23	915 / 915	327-20_Contig_47	72925..73839	  Iron transport protein	UGFS01000002
+virulence_ecoli	terC	98.88	714 / 714	327-20_Contig_76	23979..24692	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	98.12	959 / 966	327-20_Contig_86	52724..53682	  Tellurium ion resistance protein	MG591698

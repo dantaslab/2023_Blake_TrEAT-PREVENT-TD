@@ -1,0 +1,21 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	ORF3	98.35	1029 / 1029	NODE_88_length_11572_cov_129.113441	9038..10066	 Isoprenoid Biosynthesis	FN554767
+virulence_ecoli	ORF4	98.7	540 / 540	NODE_88_length_11572_cov_129.113441	10070..10609	 Putative isopentenyl-diphosphate delta-isomerase	FN554767
+virulence_ecoli	aaiC	100.0	507 / 507	NODE_60_length_22866_cov_57.561674	6241..6747	 Type VI secretion protein	FN554766
+virulence_ecoli	afaA	100.0	306 / 306	NODE_321_length_655_cov_1.698962	95..400	  Transcriptional regulator	X76688
+virulence_ecoli	astA	97.44	117 / 117	NODE_240_length_865_cov_1.581218	533..649	 EAST-1 heat-stable toxin	AB042005
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_69_length_17580_cov_44.878307	2156..3244	 Hexosyltransferase homolog	CP003034
+virulence_ecoli	fyuA	99.95	2022 / 2022	NODE_36_length_44272_cov_39.051363	36396..38417	  Siderophore receptor	CAY233333
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_32_length_48777_cov_39.654353	9091..10008	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	irp2	100.0	6108 / 6108	NODE_36_length_44272_cov_39.051363	17101..23208	  High molecular weight protein 2 non-ribosomal peptide synthetase	QOEM01000039
+virulence_ecoli	iss	100.0	294 / 294	NODE_152_length_2642_cov_45.606628	498..791	  Increased serum survival	CP001665
+virulence_ecoli	iutA	100.0	2199 / 2199	NODE_16_length_82084_cov_51.744229	77567..79765	  Ferric aerobactin receptor	UGEP01000007
+virulence_ecoli	mchB	99.66	294 / 294	NODE_75_length_14842_cov_50.608601	7596..7889	  Microcin H47 part of colicin H	AJ009631
+virulence_ecoli	mchC	100.0	1551 / 1551	NODE_75_length_14842_cov_50.608601	8160..9710	  MchC protein	FN554766
+virulence_ecoli	mchF	100.0	2097 / 2097	NODE_75_length_14842_cov_50.608601	11608..13704	  ABC transporter protein MchF	FN554766
+virulence_ecoli	mcmA	100.0	222 / 222	NODE_75_length_14842_cov_50.608601	13957..14178	  Microcin M part of colicin H	FN554766
+virulence_ecoli	sat	99.82	3888 / 3888	NODE_16_length_82084_cov_51.744229	72728..76615	 Secreted autotransporter toxin	JX050263
+virulence_ecoli	sitA	97.58	579 / 648	NODE_275_length_744_cov_2.344828	1..579	  Iron transport protein	UFYX01000005
+virulence_ecoli	terC	100.0	714 / 714	NODE_28_length_57152_cov_46.159071	33630..34343	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_2_length_179139_cov_42.505093	173718..174683	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	99.34	303 / 303	NODE_149_length_2753_cov_102.012706	2055..2357	  Outer membrane protein complement resistance	UEKA01000045

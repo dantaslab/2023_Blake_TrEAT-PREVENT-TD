@@ -1,0 +1,2 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	traT	99.58	237 / 237	NODE_7_length_272412_cov_31.189201	85852..86088	  Outer membrane protein complement resistance	UGBZ01000001

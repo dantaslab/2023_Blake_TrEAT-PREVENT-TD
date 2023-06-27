@@ -1,0 +1,17 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	air	95.38	4607 / 4605	NODE_7_length_251042_cov_24.002319	209830..214435	 Enteroaggregative immunoglobulin repeat protein	CP003034
+virulence_ecoli	capU	99.91	1089 / 1089	NODE_37_length_20990_cov_25.376464	2586..3674	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	chuA	99.95	1983 / 1983	NODE_7_length_251042_cov_24.002319	17635..19617	  Outer membrane hemin receptor	UCZM01000007
+virulence_ecoli	cia	98.86	264 / 264	NODE_31_length_26961_cov_61.924937	16761..17023	  Colicin ia	UGDH01000002
+virulence_ecoli	eilA	100.0	1698 / 1698	NODE_7_length_251042_cov_24.002319	219556..221253	 Salmonella HilA homolog	FN554766
+virulence_ecoli	hlyE	98.69	918 / 918	NODE_17_length_97906_cov_28.119934	6442..7359	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	99.66	294 / 294	NODE_41_length_17672_cov_24.961012	3741..4034	  Increased serum survival	CP001846
+virulence_ecoli	kpsE	99.91	1149 / 1149	NODE_1_length_696590_cov_23.542026	362152..363300	  Capsule polysaccharide export inner-membrane protein	AM946981
+virulence_ecoli	kpsMII	99.61	777 / 777	NODE_1_length_696590_cov_23.542026	374295..375071	  Polysialic acid transport protein; Group 2 capsule	GG771940
+virulence_ecoli	kpsMII	99.61	777 / 777	NODE_1_length_696590_cov_23.542026	374295..375071	  Polysialic acid transport protein; Group 2 capsule	QOOR01000049
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_16_length_105387_cov_25.066432	29996..30568	  Long polar fimbriae	AB198066
+virulence_ecoli	terC	97.62	714 / 714	NODE_1_length_696590_cov_23.542026	192699..193412	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	97.62	714 / 714	NODE_1_length_696590_cov_23.542026	192699..193412	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	98.23	959 / 966	NODE_1_length_696590_cov_23.542026	520421..521379	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	777 / 777	NODE_45_length_13599_cov_49.881600	1152..1928	  Outer membrane protein complement resistance	CXZS01000023
+virulence_ecoli	traT	99.86	735 / 735	NODE_76_length_3391_cov_62.563066	815..1549	  Outer membrane protein complement resistance	NZ_UIKU01000027

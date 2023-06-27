@@ -1,0 +1,22 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	capU	99.72	1089 / 1089	NODE_32_length_40853_cov_24.227609	35429..36517	 Hexosyltransferase homolog	CU928145
+virulence_ecoli	cea	99.86	720 / 720	NODE_42_length_5229_cov_278.311530	4158..4877	  Colicin E1	CYDY01000022
+virulence_ecoli	cea	97.67	215 / 240	NODE_42_length_5229_cov_278.311530	3312..3526	  Colicin E1	GG772217
+virulence_ecoli	fyuA	100.0	2022 / 2022	NODE_33_length_34528_cov_19.578067	30977..32998	  Siderophore receptor	UGBN01000001
+virulence_ecoli	gad	100.0	935 / 1401	NODE_69_length_935_cov_33.241259	1..935	  Glutamate decarboxylase	AP010953
+virulence_ecoli	gad	100.0	935 / 1401	NODE_69_length_935_cov_33.241259	1..935	  Glutamate decarboxylase	CP002967
+virulence_ecoli	gad	100.0	935 / 1401	NODE_69_length_935_cov_33.241259	1..935	  Glutamate decarboxylase	EF547380
+virulence_ecoli	gad	100.0	935 / 1401	NODE_69_length_935_cov_33.241259	1..935	  Glutamate decarboxylase	U00096
+virulence_ecoli	hlyE	100.0	918 / 918	NODE_8_length_213040_cov_25.983556	145001..145918	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iha	99.95	2091 / 2091	NODE_10_length_174813_cov_27.955527	10434..12524	  Adherence protein	CP003289
+virulence_ecoli	irp2	99.93	6108 / 6108	NODE_33_length_34528_cov_19.578067	11682..17789	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_PXIF01000061
+virulence_ecoli	irp2	99.93	6108 / 6108	NODE_33_length_34528_cov_19.578067	11682..17789	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_UGEC01000002
+virulence_ecoli	iss	99.32	294 / 294	NODE_1_length_351927_cov_23.851528	29614..29907	  Increased serum survival	CP001509
+virulence_ecoli	mchB	96.39	305 / 294	NODE_10_length_174813_cov_27.955527	22723..23027	  Microcin H47 part of colicin H	AE014075
+virulence_ecoli	mchC	100.0	1551 / 1551	NODE_10_length_174813_cov_27.955527	23299..24849	  MchC protein	CP003289
+virulence_ecoli	mchF	100.0	2103 / 2103	NODE_10_length_174813_cov_27.955527	26747..28849	  ABC transporter protein MchF	CP003301
+virulence_ecoli	sigA	97.98	3858 / 3858	NODE_6_length_258432_cov_27.120075	246691..250548	 Shigella IgA-like protease homologue	AE005674
+virulence_ecoli	sigA	97.98	3858 / 3858	NODE_6_length_258432_cov_27.120075	246691..250548	 Shigella IgA-like protease homologue	CP000038
+virulence_ecoli	terC	100.0	714 / 714	NODE_6_length_258432_cov_27.120075	83135..83848	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_4_length_293385_cov_25.396600	184792..185757	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	terC	100.0	1041 / 1041	NODE_19_length_101958_cov_23.978652	22410..23450	  Tellurium ion resistance protein	UINO01000028

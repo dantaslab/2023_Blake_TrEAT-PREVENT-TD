@@ -1,0 +1,21 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cba	98.11	1109 / 1536	EC03-127_Contig_72	67..1155	  Colicin B	FJ664724
+virulence_ecoli	cba	98.11	1109 / 1536	EC03-127_Contig_72	67..1155	  Colicin B	FJ664737
+virulence_ecoli	cba	98.11	1109 / 1536	EC03-127_Contig_72	67..1155	  Colicin B	FJ664740
+virulence_ecoli	cba	98.11	1109 / 1536	EC03-127_Contig_72	67..1155	  Colicin B	FJ664743
+virulence_ecoli	cdtB	99.51	810 / 810	EC03-127_Contig_22	28741..29550	  Cytolethal distending toxin B	AB472834
+virulence_ecoli	chuA	100.0	1983 / 1983	EC03-127_Contig_9	16204..18186	  Outer membrane hemin receptor	CYCK01000002
+virulence_ecoli	cma	99.39	816 / 816	EC03-127_Contig_72	1944..2759	  Colicin M	FJ664718
+virulence_ecoli	cma	99.39	816 / 816	EC03-127_Contig_72	1944..2759	  Colicin M	FJ664720
+virulence_ecoli	cma	99.39	816 / 816	EC03-127_Contig_72	1944..2759	  Colicin M	FJ664729
+virulence_ecoli	cma	99.39	816 / 816	EC03-127_Contig_72	1944..2759	  Colicin M	FJ664744
+virulence_ecoli	eae	99.96	2847 / 2847	EC03-127_Contig_11	124464..127310	  Intimin	AJ876649
+virulence_ecoli	espA	99.83	579 / 579	EC03-127_Contig_11	130165..130743	  Type III secretions system	FM201463
+virulence_ecoli	espB	99.68	945 / 945	EC03-127_Contig_11	131919..132863	  Secreted protein B	AP010958
+virulence_ecoli	espF	99.08	870 / 885	EC03-127_Contig_11	134041..134910	  Type III secretion system	AP010958
+virulence_ecoli	iss	90.1	303 / 309	EC03-127_Contig_14	104813..105115	  Increased serum survival	DQ381420
+virulence_ecoli	nleB	92.32	990 / 990	EC03-127_Contig_6	72414..73403	  Non-LEE encoded effector B	FN543502
+virulence_ecoli	terC	90.34	714 / 714	EC03-127_Contig_13	22946..23659	  Tellurium ion resistance protein	CP000468
+virulence_ecoli	terC	94.37	959 / 966	EC03-127_Contig_4	169347..170305	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.38	1617 / 1617	EC03-127_Contig_11	122184..123800	  Translocated intimin receptor protein	AJ303141
+virulence_ecoli	traT	99.86	735 / 735	EC03-127_Contig_51	10395..11129	  Outer membrane protein complement resistance	NZ_UIIQ01000098

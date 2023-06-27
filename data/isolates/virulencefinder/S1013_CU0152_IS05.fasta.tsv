@@ -1,0 +1,19 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	cea	100.0	1525 / 1569	NODE_88_length_2505_cov_3.446870	981..2505	  Colicin E1	LAUC01000234
+virulence_ecoli	cea	100.0	1525 / 1569	NODE_88_length_2505_cov_3.446870	981..2505	  Colicin E1	QONK01000239
+virulence_ecoli	eae	100.0	2847 / 2847	NODE_31_length_41100_cov_33.338225	12316..15162	  Intimin	AJ303141
+virulence_ecoli	espA	100.0	579 / 579	NODE_31_length_41100_cov_33.338225	8987..9565	  Type III secretions system	AJ303141
+virulence_ecoli	espB	100.0	945 / 945	NODE_31_length_41100_cov_33.338225	6867..7811	  Secreted protein B	AP010958
+virulence_ecoli	espF	100.0	885 / 885	NODE_31_length_41100_cov_33.338225	4811..5695	  Type III secretion system	AP010958
+virulence_ecoli	espJ	95.11	654 / 654	NODE_35_length_38335_cov_27.781118	29022..29675	  Prophage-encoded type III secretion system effector	AB303060
+virulence_ecoli	etpD	99.89	1761 / 1761	NODE_50_length_17570_cov_85.819471	11217..12977	  Type II secretion protein	CP003111
+virulence_ecoli	hlyE	99.13	918 / 918	NODE_1_length_420814_cov_25.581934	236452..237368	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	iss	98.98	294 / 294	NODE_60_length_7162_cov_32.023147	5377..5670	  Increased serum survival	CP001509
+virulence_ecoli	lpfA	100.0	573 / 573	NODE_7_length_195169_cov_26.375187	30200..30772	  Long polar fimbriae	CP002185
+virulence_ecoli	nleA	99.55	1326 / 1326	NODE_62_length_5932_cov_98.478053	1021..2346	  Non-LEE encoded effector A	CP003111
+virulence_ecoli	nleB	99.9	981 / 981	NODE_34_length_38429_cov_27.198634	518..1498	  Non-LEE encoded effector B	AE005174
+virulence_ecoli	papA_feiA_F8	100.0	333 / 531	NODE_392_length_333_cov_1.472656	1..333	  Major pilin subunit F8	AF247349
+virulence_ecoli	terC	99.86	714 / 714	NODE_19_length_69554_cov_28.554558	37374..38087	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	99.9	966 / 966	NODE_6_length_262049_cov_25.413075	76938..77903	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	tir	99.94	1617 / 1617	NODE_31_length_41100_cov_33.338225	15826..17442	  Translocated intimin receptor protein	AJ303141
+virulence_ecoli	traT	98.52	270 / 303	NODE_196_length_547_cov_2.242553	278..547	  Outer membrane protein complement resistance	UEKA01000045

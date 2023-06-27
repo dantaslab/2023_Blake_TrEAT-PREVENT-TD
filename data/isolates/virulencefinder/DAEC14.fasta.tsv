@@ -1,0 +1,22 @@
+Database	Virulence factor	Identity	Query / Template length	Contig	Position in contig	Protein function	Accession number
+virulence_ecoli	afaA	100.0	306 / 306	DAEC14_Contig_268	6836..7141	  Transcriptional regulator	X76688
+virulence_ecoli	afaC	99.3	2583 / 2583	DAEC14_Contig_268	3184..5766	  Outer membrane usher protein	KR338832
+virulence_ecoli	afaD	99.77	435 / 435	DAEC14_Contig_281	80..514	  Afimbrial adhesion	UGAK01000003
+virulence_ecoli	afaD	100.0	444 / 444	DAEC14_Contig_268	2725..3168	  Afimbrial adhesion	X76688
+virulence_ecoli	chuA	99.8	1983 / 1983	DAEC14_Contig_142	3064..5046	  Outer membrane hemin receptor	UFZN01000003
+virulence_ecoli	fyuA	100.0	2022 / 2022	DAEC14_Contig_45	316..2337	  Siderophore receptor	ADTP01000030
+virulence_ecoli	gad	100.0	1401 / 1401	DAEC14_Contig_65	178..1578	  Glutamate decarboxylase	CP000970
+virulence_ecoli	gad	99.79	1401 / 1401	DAEC14_Contig_142	21912..23312	  Glutamate decarboxylase	CP003034
+virulence_ecoli	hlyE	98.91	918 / 918	DAEC14_Contig_71	92001..92918	  Avian E.coli haemolysin	ECU57430
+virulence_ecoli	hra	95.28	741 / 741	DAEC14_Contig_186	29187..29927	  Heat-resistant agglutinin	CP040456
+virulence_ecoli	ibeA	99.78	1371 / 1371	DAEC14_Contig_192	31937..33307	  Invasin of brain endothelial cells	AY248744
+virulence_ecoli	irp2	99.98	6108 / 6108	DAEC14_Contig_45	15525..21632	  High molecular weight protein 2 non-ribosomal peptide synthetase	NZ_NMCD01000015
+virulence_ecoli	kpsE	100.0	1149 / 1149	DAEC14_Contig_126	4742..5890	  Capsule polysaccharide export inner-membrane protein	X74567
+virulence_ecoli	kpsMII_K5	100.0	777 / 777	DAEC14_Contig_127	1308..2084	  Polysialic acid transport protein; Group 2 capsule	X53819
+virulence_ecoli	lpfA	99.83	573 / 573	DAEC14_Contig_162	10107..10679	  Long polar fimbriae	CP003034
+virulence_ecoli	nfaE	99.46	745 / 744	DAEC14_Contig_268	5859..6603	  Diffuse adherence fibrillar adhesin gene	FM955462
+virulence_ecoli	terC	98.32	714 / 714	DAEC14_Contig_112	23567..24280	  Tellurium ion resistance protein	CP007491
+virulence_ecoli	terC	97.3	964 / 966	DAEC14_Contig_130	20543..21506	  Tellurium ion resistance protein	MG591698
+virulence_ecoli	traT	100.0	735 / 735	DAEC14_Contig_235	4187..4921	  Outer membrane protein complement resistance	NZ_CP032202
+virulence_ecoli	usp	98.08	1041 / 1041	DAEC14_Contig_1	100877..101917	  Uropathogenic specific protein	AB056439
+virulence_ecoli	yfcV	100.0	567 / 567	DAEC14_Contig_93	34503..35069	  Fimbrial protein	UFZN01000001
