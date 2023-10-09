@@ -539,21 +539,20 @@ TrEAT.subs <- e00.isolates.main %>%
   select(sample_seqID)
 
 sample_seqID <- TrEAT.subs$sample_seqID
-
 amrfinder_args <- filter(amrfinder_args, sample %in% sample_seqID)
 
 main <- data.frame(sample_seqID)
 num_sampl <- length(sample_seqID)
 
 TrEAT.arg_prev <- amrfinder_args %>%
-  dplyr::group_by(Gene_name) %>%
+  dplyr::group_by(Gene_name, Class) %>%
   dplyr::summarise(Cnt = n(),
                    prev = round(Cnt/num_sampl, 4)) %>%
   dplyr::ungroup() %>%
   dplyr::arrange(desc(Cnt))
 
 # ARG presence/absence (1 = present, 0 = absent)
-sample_args.TrEAT <- sample_args.TrEAT %>%
+sample_args.TrEAT <- amrfinder_args %>% #sample_args.TrEAT
   filter(Gene_name %in% TrEAT.arg_prev$Gene_name) %>% 
   inner_join(main, by=c("sample" = "sample_seqID")) %>%
   group_by(sample, Gene_name) %>%
@@ -561,30 +560,350 @@ sample_args.TrEAT <- sample_args.TrEAT %>%
   reshape2::dcast(data = ., sample ~ Gene_name, value.var = "Cnt", fill=0, fun.aggregate = sum) %>% 
   mutate_if(is.numeric, ~1 * (. > 0))
 
-# Make heatmap matrix
-args.heatmap <- column_to_rownames(sample_args.TrEAT, "sample")
-args.heatmap.mat <- t(as.matrix.noquote(args.heatmap))
+# Rename seqID to labID
+TrEAT.args.rename <- e00.isolates.main %>%
+  filter(cohort == "TrEAT") %>%
+  select(sample_seqID, sample_labID) %>%
+  left_join(sample_args.TrEAT, by=c("sample_seqID" = "sample"))
 
-# Annotations
-annot_row.df <- data.frame("pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
+TrEAT.args.rename[,1] <- NULL
+
+args.heatmap <- column_to_rownames(TrEAT.args.rename, "sample_labID")
+
+# Re-order based on ABX class
+args.heatmap.t <- as.data.frame(t(as.matrix(args.heatmap))) # transpose
+args.heatmap.t <- tibble::rownames_to_column(args.heatmap.t, "ABX")
+
+abx.order <- c("aac(3)_IIe","ant(3'')","aadA1","aadA2","aadA5","aph(3'')_Ib","aph(3')_Ia","aph(6)_Id","aac(6')_Ib_cr5","blaTEM","blaTEM_1","blaCTX_M_15","blaEC","blaOXA_1","mdtM","emrD","acrF","erm(B)","mph(A)","floR","catA1","catB3","qepA4","qnrB19","qnrS1","arr","sat2","sul1","sul2","tet(A)","tet(B)","tet(D)","dfrA12","dfrA14","dfrA15","dfrA17","dfrA7","dfrA8","dfrA1")
+
+args.heatmap.df <- left_join(data.frame(ABX = abx.order), args.heatmap.t, by = "ABX")
+args.heatmap.df <- tibble::column_to_rownames(args.heatmap.df, "ABX")
+
+# Make heatmap matrix
+args.heatmap.mat <- as.matrix.noquote(args.heatmap.df)
+
+
+# Isolate annotations
+annot_col.df <- data.frame("sample_labID" = e00.isolates.main$sample_labID,
+                           "pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
                            "phylogroup" = e00.isolates.main$phylogroup,
-                           "treatment" = e00.isolates.main$subject_TRT#,
-                           #"cluster" = e00.isolates.main$cluster
+                           "treatment" = e00.isolates.main$subject_TRT,
+                           "cohort" = e00.isolates.main$cohort
                            )
 
+annot_col.sub.df <- annot_col.df %>%
+  filter(cohort == "TrEAT") # remove non-TrEAT cohort isolates
+
+rownames(annot_col.sub.df) <- annot_col.sub.df[,1] # Make rowname column name
+    annot_col.sub.df[,1] <- NULL
+    annot_col.sub.df$cohort <- NULL
+    
+# ARG annotations
+annot_row.df <- data.frame("Class"=TrEAT.arg_prev$Class)
+  rownames(annot_row.df) <- TrEAT.arg_prev$Gene_name
+  annot_row.df$Class[annot_row.df$Class == "AMINOGLYCOSIDE/QUINOLONE"] <- "AMINOGLYCOSIDE"
+    
+  
+# Make heatmap
 tmp.heatmap.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-heatmap_v1.pdf")
 
 heatmap.plot2 <- pheatmap(args.heatmap.mat,
          color=c("white", "gray10"), 
          cluster_rows=FALSE,
-         #annotation_col = tmp.annot_col.df,
-         #annotation_row = annot_row.df,
-         #annotation_colors=heatmap.colors,
-         #legend=FALSE,
+         annotation_col = annot_col.sub.df,
+         annotation_row = annot_row.df,
+         annotation_colors=heatmap.colors,
+         legend=FALSE,
          filename=tmp.heatmap.fname,
          cellheight=12, cellwidth=12
          )
 
+###---SUBSET BASED ON TREATMENT GROUP-------------------------------------------
+
+####---AZI----------------------------------------------------------------------
+# AZI.annot_col.df <- annot_col.df %>%
+#   filter(treatment == "AZI" | treatment == "PLA" | treatment == "LOP") # Get list of isolates in treatment group
+
+AZI.annot_col.df <- annot_col.df %>%
+  filter(treatment == "AZI") # Get list of isolates in treatment group
+
+AZI.args <- subset(TrEAT.args.rename, sample_labID %in% AZI.annot_col.df$sample_labID) # subset pres / abs based on above list
+
+args.heatmap <- column_to_rownames(AZI.args, "sample_labID")
+
+# Re-order based on ABX class
+args.heatmap.t <- as.data.frame(t(as.matrix(args.heatmap))) # transpose
+args.heatmap.t <- tibble::rownames_to_column(args.heatmap.t, "ABX")
+
+abx.order <- c("aac(3)_IIe","ant(3'')","aadA1","aadA2","aadA5","aph(3'')_Ib","aph(3')_Ia","aph(6)_Id","aac(6')_Ib_cr5","blaTEM","blaTEM_1","blaCTX_M_15","blaEC","blaOXA_1","mdtM","emrD","acrF","erm(B)","mph(A)","floR","catA1","catB3","qepA4","qnrB19","qnrS1","arr","sat2","sul1","sul2","tet(A)","tet(B)","tet(D)","dfrA12","dfrA14","dfrA15","dfrA17","dfrA7","dfrA8","dfrA1")
+
+args.heatmap.df <- left_join(data.frame(ABX = abx.order), args.heatmap.t, by = "ABX")
+args.heatmap.df <- tibble::column_to_rownames(args.heatmap.df, "ABX")
+
+# Make heatmap matrix
+args.heatmap.mat <- as.matrix.noquote(args.heatmap.df)
+
+
+# Isolate annotations
+annot_col.df <- data.frame("sample_labID" = e00.isolates.main$sample_labID,
+                           "pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
+                           "phylogroup" = e00.isolates.main$phylogroup,
+                           "treatment" = e00.isolates.main$subject_TRT,
+                           "cohort" = e00.isolates.main$cohort
+                           )
+
+annot_col.sub.df <- annot_col.df %>%
+  filter(cohort == "TrEAT") # remove non-TrEAT cohort isolates
+
+rownames(annot_col.sub.df) <- annot_col.sub.df[,1] # Make rowname column name
+    annot_col.sub.df[,1] <- NULL
+    annot_col.sub.df$cohort <- NULL
+    
+# ARG annotations
+annot_row.df <- data.frame("Class"=TrEAT.arg_prev$Class)
+  rownames(annot_row.df) <- TrEAT.arg_prev$Gene_name
+  annot_row.df$Class[annot_row.df$Class == "AMINOGLYCOSIDE/QUINOLONE"] <- "AMINOGLYCOSIDE"
+    
+  
+# Make heatmap
+tmp.heatmap.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-AZI_isolates-heatmap_v1.pdf")
+
+heatmap.plot2 <- pheatmap(args.heatmap.mat,
+         color=c("white", "gray10"), 
+         cluster_rows=FALSE,
+         annotation_col = annot_col.sub.df,
+         annotation_row = annot_row.df,
+         annotation_colors=heatmap.colors,
+         legend=FALSE,
+         filename=tmp.heatmap.fname,
+         cellheight=12, cellwidth=12
+         )
+
+####---PLA----------------------------------------------------------------------
+
+PLA.annot_col.df <- annot_col.df %>%
+  filter(treatment == "PLA") # Get list of isolates in treatment group
+
+PLA.args <- subset(TrEAT.args.rename, sample_labID %in% PLA.annot_col.df$sample_labID) # subset pres / abs based on above list
+
+args.heatmap <- column_to_rownames(PLA.args, "sample_labID")
+
+# Re-order based on ABX class
+args.heatmap.t <- as.data.frame(t(as.matrix(args.heatmap))) # transpose
+args.heatmap.t <- tibble::rownames_to_column(args.heatmap.t, "ABX")
+
+abx.order <- c("aac(3)_IIe","ant(3'')","aadA1","aadA2","aadA5","aph(3'')_Ib","aph(3')_Ia","aph(6)_Id","aac(6')_Ib_cr5","blaTEM","blaTEM_1","blaCTX_M_15","blaEC","blaOXA_1","mdtM","emrD","acrF","erm(B)","mph(A)","floR","catA1","catB3","qepA4","qnrB19","qnrS1","arr","sat2","sul1","sul2","tet(A)","tet(B)","tet(D)","dfrA12","dfrA14","dfrA15","dfrA17","dfrA7","dfrA8","dfrA1")
+
+args.heatmap.df <- left_join(data.frame(ABX = abx.order), args.heatmap.t, by = "ABX")
+args.heatmap.df <- tibble::column_to_rownames(args.heatmap.df, "ABX")
+
+# Make heatmap matrix
+args.heatmap.mat <- as.matrix.noquote(args.heatmap.df)
+
+
+# Isolate annotations
+annot_col.df <- data.frame("sample_labID" = e00.isolates.main$sample_labID,
+                           "pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
+                           "phylogroup" = e00.isolates.main$phylogroup,
+                           "treatment" = e00.isolates.main$subject_TRT,
+                           "cohort" = e00.isolates.main$cohort
+                           )
+
+annot_col.sub.df <- annot_col.df %>%
+  filter(cohort == "TrEAT") # remove non-TrEAT cohort isolates
+
+rownames(annot_col.sub.df) <- annot_col.sub.df[,1] # Make rowname column name
+    annot_col.sub.df[,1] <- NULL
+    annot_col.sub.df$cohort <- NULL
+    
+# ARG annotations
+annot_row.df <- data.frame("Class"=TrEAT.arg_prev$Class)
+  rownames(annot_row.df) <- TrEAT.arg_prev$Gene_name
+  annot_row.df$Class[annot_row.df$Class == "AMINOGLYCOSIDE/QUINOLONE"] <- "AMINOGLYCOSIDE"
+    
+  
+# Make heatmap
+tmp.heatmap.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-PLA_isolates-heatmap_v1.pdf")
+
+heatmap.plot2 <- pheatmap(args.heatmap.mat,
+         color=c("white", "gray10"), 
+         cluster_rows=FALSE,
+         annotation_col = annot_col.sub.df,
+         annotation_row = annot_row.df,
+         annotation_colors=heatmap.colors,
+         legend=FALSE,
+         filename=tmp.heatmap.fname,
+         cellheight=12, cellwidth=12
+         )
+
+####---LOP----------------------------------------------------------------------
+
+LOP.annot_col.df <- annot_col.df %>%
+  filter(treatment == "LOP") # Get list of isolates in treatment group
+
+LOP.args <- subset(TrEAT.args.rename, sample_labID %in% LOP.annot_col.df$sample_labID) # subset pres / abs based on above list
+
+args.heatmap <- column_to_rownames(LOP.args, "sample_labID")
+
+# Re-order based on ABX class
+args.heatmap.t <- as.data.frame(t(as.matrix(args.heatmap))) # transpose
+args.heatmap.t <- tibble::rownames_to_column(args.heatmap.t, "ABX")
+
+abx.order <- c("aac(3)_IIe","ant(3'')","aadA1","aadA2","aadA5","aph(3'')_Ib","aph(3')_Ia","aph(6)_Id","aac(6')_Ib_cr5","blaTEM","blaTEM_1","blaCTX_M_15","blaEC","blaOXA_1","mdtM","emrD","acrF","erm(B)","mph(A)","floR","catA1","catB3","qepA4","qnrB19","qnrS1","arr","sat2","sul1","sul2","tet(A)","tet(B)","tet(D)","dfrA12","dfrA14","dfrA15","dfrA17","dfrA7","dfrA8","dfrA1")
+
+args.heatmap.df <- left_join(data.frame(ABX = abx.order), args.heatmap.t, by = "ABX")
+args.heatmap.df <- tibble::column_to_rownames(args.heatmap.df, "ABX")
+
+# Make heatmap matrix
+args.heatmap.mat <- as.matrix.noquote(args.heatmap.df)
+
+
+# Isolate annotations
+annot_col.df <- data.frame("sample_labID" = e00.isolates.main$sample_labID,
+                           "pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
+                           "phylogroup" = e00.isolates.main$phylogroup,
+                           "treatment" = e00.isolates.main$subject_TRT,
+                           "cohort" = e00.isolates.main$cohort
+                           )
+
+annot_col.sub.df <- annot_col.df %>%
+  filter(cohort == "TrEAT") # remove non-TrEAT cohort isolates
+
+rownames(annot_col.sub.df) <- annot_col.sub.df[,1] # Make rowname column name
+    annot_col.sub.df[,1] <- NULL
+    annot_col.sub.df$cohort <- NULL
+    
+# ARG annotations
+annot_row.df <- data.frame("Class"=TrEAT.arg_prev$Class)
+  rownames(annot_row.df) <- TrEAT.arg_prev$Gene_name
+  annot_row.df$Class[annot_row.df$Class == "AMINOGLYCOSIDE/QUINOLONE"] <- "AMINOGLYCOSIDE"
+    
+  
+# Make heatmap
+tmp.heatmap.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-LOP_isolates-heatmap_v1.pdf")
+
+heatmap.plot2 <- pheatmap(args.heatmap.mat,
+         color=c("white", "gray10"), 
+         cluster_rows=FALSE,
+         annotation_col = annot_col.sub.df,
+         annotation_row = annot_row.df,
+         annotation_colors=heatmap.colors,
+         legend=FALSE,
+         filename=tmp.heatmap.fname,
+         cellheight=12, cellwidth=12
+         )
+
+####---LEV----------------------------------------------------------------------
+LEV.annot_col.df <- annot_col.df %>%
+  filter(treatment == "LEV") # Get list of isolates in treatment group
+
+LEV.args <- subset(TrEAT.args.rename, sample_labID %in% LEV.annot_col.df$sample_labID) # subset pres / abs based on above list
+
+args.heatmap <- column_to_rownames(LEV.args, "sample_labID")
+
+# Re-order based on ABX class
+args.heatmap.t <- as.data.frame(t(as.matrix(args.heatmap))) # transpose
+args.heatmap.t <- tibble::rownames_to_column(args.heatmap.t, "ABX")
+
+abx.order <- c("aac(3)_IIe","ant(3'')","aadA1","aadA2","aadA5","aph(3'')_Ib","aph(3')_Ia","aph(6)_Id","aac(6')_Ib_cr5","blaTEM","blaTEM_1","blaCTX_M_15","blaEC","blaOXA_1","mdtM","emrD","acrF","erm(B)","mph(A)","floR","catA1","catB3","qepA4","qnrB19","qnrS1","arr","sat2","sul1","sul2","tet(A)","tet(B)","tet(D)","dfrA12","dfrA14","dfrA15","dfrA17","dfrA7","dfrA8","dfrA1")
+
+args.heatmap.df <- left_join(data.frame(ABX = abx.order), args.heatmap.t, by = "ABX")
+args.heatmap.df <- tibble::column_to_rownames(args.heatmap.df, "ABX")
+
+# Make heatmap matrix
+args.heatmap.mat <- as.matrix.noquote(args.heatmap.df)
+
+
+# Isolate annotations
+annot_col.df <- data.frame("sample_labID" = e00.isolates.main$sample_labID,
+                           "pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
+                           "phylogroup" = e00.isolates.main$phylogroup,
+                           "treatment" = e00.isolates.main$subject_TRT,
+                           "cohort" = e00.isolates.main$cohort
+                           )
+
+annot_col.sub.df <- annot_col.df %>%
+  filter(cohort == "TrEAT") # remove non-TrEAT cohort isolates
+
+rownames(annot_col.sub.df) <- annot_col.sub.df[,1] # Make rowname column name
+    annot_col.sub.df[,1] <- NULL
+    annot_col.sub.df$cohort <- NULL
+    
+# ARG annotations
+annot_row.df <- data.frame("Class"=TrEAT.arg_prev$Class)
+  rownames(annot_row.df) <- TrEAT.arg_prev$Gene_name
+  annot_row.df$Class[annot_row.df$Class == "AMINOGLYCOSIDE/QUINOLONE"] <- "AMINOGLYCOSIDE"
+    
+  
+# Make heatmap
+tmp.heatmap.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-LEV_isolates-heatmap_v1.pdf")
+
+heatmap.plot2 <- pheatmap(args.heatmap.mat,
+         color=c("white", "gray10"), 
+         cluster_rows=FALSE,
+         annotation_col = annot_col.sub.df,
+         annotation_row = annot_row.df,
+         annotation_colors=heatmap.colors,
+         legend=FALSE,
+         filename=tmp.heatmap.fname,
+         cellheight=12, cellwidth=12
+         )
+
+####---RIF----------------------------------------------------------------------
+RIF.annot_col.df <- annot_col.df %>%
+  filter(treatment == "RIF") # Get list of isolates in treatment group
+
+RIF.args <- subset(TrEAT.args.rename, sample_labID %in% RIF.annot_col.df$sample_labID) # subset pres / abs based on above list
+
+args.heatmap <- column_to_rownames(RIF.args, "sample_labID")
+
+# Re-order based on ABX class
+args.heatmap.t <- as.data.frame(t(as.matrix(args.heatmap))) # transpose
+args.heatmap.t <- tibble::rownames_to_column(args.heatmap.t, "ABX")
+
+abx.order <- c("aac(3)_IIe","ant(3'')","aadA1","aadA2","aadA5","aph(3'')_Ib","aph(3')_Ia","aph(6)_Id","aac(6')_Ib_cr5","blaTEM","blaTEM_1","blaCTX_M_15","blaEC","blaOXA_1","mdtM","emrD","acrF","erm(B)","mph(A)","floR","catA1","catB3","qepA4","qnrB19","qnrS1","arr","sat2","sul1","sul2","tet(A)","tet(B)","tet(D)","dfrA12","dfrA14","dfrA15","dfrA17","dfrA7","dfrA8","dfrA1")
+
+args.heatmap.df <- left_join(data.frame(ABX = abx.order), args.heatmap.t, by = "ABX")
+args.heatmap.df <- tibble::column_to_rownames(args.heatmap.df, "ABX")
+
+# Make heatmap matrix
+args.heatmap.mat <- as.matrix.noquote(args.heatmap.df)
+
+
+# Isolate annotations
+annot_col.df <- data.frame("sample_labID" = e00.isolates.main$sample_labID,
+                           "pathotype" = e00.isolates.main$pathotype2, # in reverse order, top to bottom
+                           "phylogroup" = e00.isolates.main$phylogroup,
+                           "treatment" = e00.isolates.main$subject_TRT,
+                           "cohort" = e00.isolates.main$cohort
+                           )
+
+annot_col.sub.df <- annot_col.df %>%
+  filter(cohort == "TrEAT") # remove non-TrEAT cohort isolates
+
+rownames(annot_col.sub.df) <- annot_col.sub.df[,1] # Make rowname column name
+    annot_col.sub.df[,1] <- NULL
+    annot_col.sub.df$cohort <- NULL
+    
+# ARG annotations
+annot_row.df <- data.frame("Class"=TrEAT.arg_prev$Class)
+  rownames(annot_row.df) <- TrEAT.arg_prev$Gene_name
+  annot_row.df$Class[annot_row.df$Class == "AMINOGLYCOSIDE/QUINOLONE"] <- "AMINOGLYCOSIDE"
+    
+  
+# Make heatmap
+tmp.heatmap.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-RIF_isolates-heatmap_v1.pdf")
+
+heatmap.plot2 <- pheatmap(args.heatmap.mat,
+         color=c("white", "gray10"), 
+         cluster_rows=FALSE,
+         annotation_col = annot_col.sub.df,
+         annotation_row = annot_row.df,
+         annotation_colors=heatmap.colors,
+         legend=FALSE,
+         filename=tmp.heatmap.fname,
+         cellheight=12, cellwidth=12
+         )
 ```
 
 ## PATHOTYPE
@@ -662,3 +981,37 @@ Cusco_D.patho_prev <- Cusco_D.patho %>%
 head(Cusco_D.patho_prev)
 
 ```
+
+```{r AST}
+
+### Get summary stats of isolates have AST data for
+TrEAT.ast <- e00.isolates.main %>%
+  filter(AST == "Y")
+
+num_sampl.ast <- length(TrEAT.ast$sample_seqID)
+
+TrEAT.ast_timepoint.treat.prev <- TrEAT.ast %>%
+  unite(TRT_timepoint, c(subject_TRT, sample_timepoint), sep="-", remove=FALSE) %>%
+  group_by(TRT_timepoint) %>% 
+  summarise(Cnt = n(), 
+     prev = round(Cnt/num_sampl.ast, 3)) %>%
+  ungroup()
+
+head(TrEAT.ast_timepoint.treat.prev)
+
+### Make heatmap
+ast.heatmap.df <- e00.isolates.main %>%
+  inner_join(e00.isolates.ast, by=c("sample_seqID" = "sample_seqID")) %>%
+  select(sample_labID, AZI, LEV, RIF)
+
+# Make heatmap matrix
+ast.heatmap.mat <- melt(ast.heatmap.df, id="sample_labID")
+
+p01.ast.heatmap <- ggplot(ast.heatmap.mat, aes(x=sample_labID, y=variable, fill=value)) + 
+  theme_pub() + 
+  geom_tile() +
+  scale_fill_manual(values=c("I"="yellow", "R" = "red", "S" = "green"))
+
+print(p01.ast.heatmap)
+```
+

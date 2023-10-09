@@ -48,6 +48,29 @@ print(TrEAT.timepoint.p01)
 
 ```
 
+```{r sampling ARG clusters}
+e01.isolates.main <- e00.isolates.main %>%
+  filter(arg_cluster == "Y") %>%
+  mutate(sample_date = as.Date(sample_date))
+
+p01.arg_cluster <- ggplot(e01.isolates.main, aes(x=sample_date, y=subject_ID, color=subject_TRT)) +
+   theme_pub() +
+   theme(aspect.ratio = 1,
+        axis.text.x = element_text(angle=45, hjust=1),
+        legend.position = "right") +
+        scale_color_manual(values=TRT.colors) +
+        scale_x_date(date_breaks="months", date_labels="%b %Y") +
+        scale_size(range=c(1,2)) +
+        #scale_size(range=c(2, 5)) +
+        scale_shape_manual(values=c(16, 1, 1)) +
+   geom_count()
+
+print(p01.arg_cluster)
+
+tmp.fname <- stringr::str_interp("${fig.path}/${fln.prfx}-isolates-arg_clusters_v1_KSB.pdf")
+ggsave2(p01.arg_cluster, filename = tmp.fname, device=cairo_pdf, height=3)
+```
+
 # snp distances 54
 
 ```{r SNP distances post-derep (54 samples), echo=FALSE}

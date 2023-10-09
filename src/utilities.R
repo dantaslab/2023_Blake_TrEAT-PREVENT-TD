@@ -106,14 +106,15 @@ var.colors <- c(    "Exclude"  = "#a42b16",
 )
 
 
-heatmapx.colors <- list(pathotype = c(
+heatmap.colors <- list(
+                    pathotype = c("DAEC" = "#75A43A",
                     "EAEC" = "#D95F03",
                     "EHEC" = "#E7AA02",
                     "EIEC" = "#E72A8A",
-                    "EPEC" = "#1E9E78",
+                    "EPEC" = "#006279",
                     "ETEC" = "#7570B4",
-                    "none" = "#C0BEC0"
-                    ),
+                     "hybrid" = "#CB4B40",
+                     "none" = "#C0BEC0"),
                     cluster = c(
                     "cluster1" = "#F1EEF6",
                     "cluster2" = "#D4B9DA",
@@ -151,10 +152,6 @@ heatmapx.colors <- list(pathotype = c(
                       "RIF" = "#D4E5F0",
                       "PLA" = "#A32A31",
                       "LOP" = "#F5A582"
-                    ),
-                    none_group = c(
-                      "none_high" =	"#6e6e6e",
-                      "none_low" =	"e8e8e8"
                     )
 )
 

@@ -117,6 +117,7 @@ e00.isolates.assembly <- read_excel(isolates.file, sheet="Tab-01_assembly", skip
 e00.isolates.mlst <- read_csv("data/isolates/mlst/mlst_results.csv", na="NA", col_names=c("sample_seqID", "scheme", "ST", "adk",	"fumC",	"gyrB",	"icd",	"mdh",	"purA",	"recA"), show_col_types = FALSE)
 e00.isolates.clonal <- read_excel(isolates.file, sheet="Tab_07-Ecoli_clonal", skip=1, na="NA")
 e00.isolates.snpdists <- read_excel(isolates.file, sheet="Tab08_snp-dists", skip=1, na="NA")
+e00.isolates.ast <- read_excel(isolates.file, sheet="Tab09_AST", skip=1, na="NA")
 
 #tree <- ape::read.tree("data/isolates/fasttree/TrEAT-54_Cusco-189_ref-40_fasttree_core_genome_tree.newick")
 
