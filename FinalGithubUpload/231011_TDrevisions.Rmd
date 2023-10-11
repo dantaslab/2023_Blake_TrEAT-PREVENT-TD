@@ -1,0 +1,379 @@
+---
+title: "230901_TD revisions"
+author: "Sri Paruthiyil"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("GitHub/2023_Blake_TrEAT-PREVENT-TD/src/utilities.R")
+source("GitHub/TrEAT-PREVENT-TD/src/utilities.R")
+```
+
+```{r}
+library(lmerTest)
+library(ggplot2)
+library(vegan)
+library(plyr)
+library(dplyr)
+library(viridis)
+library(reshape2)
+library(RColorBrewer)
+library(multcomp)
+library(readr)
+library(gtools)
+library(lme4)
+library(sjPlot)
+library(lsmeans)
+library(labdsv)
+library(data.table)
+library(extrafont)
+library(cowplot)
+
+metadata <- read.delim(sep=',',"PreventTD_sample_metadata.csv",header=TRUE,stringsAsFactors = F)
+metadata$TRT<-metadata$Randomisation
+metadata$treatmentvisit<-paste(metadata$Visit,"_",metadata$Randomisation)
+metaphlan3alpha<-read.delim(sep='',"/220415_alphaDiv_metaphlanStandard_species.txt", header=TRUE)
+metaphlan3bray<-read.delim(sep='',"/220415_betaDivLong_metaphlanStandard_species.txt", header=TRUE)
+metadataalpha<-join(metadata, metaphlan3alpha, by = "Sample")
+metadataalpha<-subset(metadataalpha, Visit!="NA")
+metadataalpha$Study<-"PreventTD"
+
+Shortbredlong<-read.delim("220421_PreventTDshortbred.txt", header=TRUE)
+
+
+#LOTS of typos in the medication1 column, gotta fix them here
+metadataalpha[, 'medication1CLEAN'] = NA
+metadataalpha[, 'medication1atova'] = NA
+metadataalpha[, 'medication1doxy'] = NA
+metadataalpha[, 'medication1malerone'] = NA
+metadataalpha[, 'medication1depo'] = NA
+metadataalpha[, 'medication1allo'] = NA
+
+metadataalpha$medication1atova <- ifelse(	metadataalpha$medication1 =="Arovaquone"|	metadataalpha$medication1=="Atavoquone"|	metadataalpha$medication1=="Atoraquone"|	metadataalpha$medication1=="Atovaquone"|	metadataalpha$medication1=="ATOVAQUONE", "Other", '')
+
+metadataalpha$medication1doxy <-ifelse(	metadataalpha$medication1 =="doxycycline"|	metadataalpha$medication1=="Doxycycline"|	metadataalpha$medication1=="DOXYCYCLINE", "Doxycyline", '')
+
+metadataalpha$medication1malerone <-ifelse(metadataalpha$medication1 =="malarone"|	metadataalpha$medication1=="Malarone"|	metadataalpha$medication1=="MALARONE"|	metadataalpha$medication1=="maleroe"|	metadataalpha$medication1=="malerone", "Other",'')
+
+metadataalpha$medication1allo <-ifelse(metadataalpha$medication1 =="Allopurinol", "Other",'')
+
+metadataalpha$medication1depo <-ifelse(metadataalpha$medication1 =="depo injection", "Other",'')
+
+metadataalpha$medication1CLEAN <- gsub(" ", "",paste(metadataalpha$medication1atova,metadataalpha$medication1doxy,metadataalpha$medication1malerone,metadataalpha$medication1depo,metadataalpha$medication1allo))
+
+#Azithromycin, Ciprofloxacin, Metronidazole, Co-amoxiclav, AMOXICILLIN, CIPROFLOXACIN, FLUCLOXACILLON 500MG QDS, Flucloxacillin
+
+metadataalpha$antibacterial <- ifelse(metadataalpha$medication1doxy =="Doxycyline"|	metadataalpha$medication2=="Azithromycin"|	metadataalpha$medication3=="Ciprofloxacin"|	metadataalpha$medication4=="Metronidazole"|	metadataalpha$medication2=="Co-amoxiclav"|	metadataalpha$medication5=="Co-amoxiclav"|	metadataalpha$medication3=="AMOXICILLIN"|	metadataalpha$medication3=="Ciprofloxacin"|	metadataalpha$medication2=="FLUCLOXACILLON 500MG QDS"|	metadataalpha$medication4=="Flucloxacillin", "Yes",'No')
+
+
+metadataalpha<-subset(metadataalpha, COMP_PPX!='NO')
+
+
+metadataalpha$d_stool1_new <- as.Date(metadataalpha$d_stool1, format = "%d-%b-%Y")
+metadataalpha$d_stool2_new <- as.Date(metadataalpha$d_stool2, format = "%d-%b-%Y")
+
+# Calculate the number of days between the two dates
+metadataalpha$days_between <- as.numeric(as.character(metadataalpha$d_stool2_new - metadataalpha$d_stool1_new))
+
+
+metadataalpha_T2 <- subset(metadataalpha, Visit == 2)
+#metadataalpha_T2 <- subset(metadataalpha_T2, !is.na(metadataalpha_T2$days_between))
+#linear mixed effect model, first with only medication as variable, then with TRT and Visit included
+#Cannot use patient id as the random variable since it has the same n, using date of first stool as the new random variable
+fitrich<- lmer(richness~days_between + (1|d_stool1_new), data=metadataalpha_T2)
+anova(fitrich)
+
+#####################################
+
+mappingPrevent<- read.csv("PreventTD_sample_metadata.csv", header = TRUE)
+mappingPrevent[, 'Study'] = "Prevent"
+LongmetaspeciesPrevent<-read.delim(sep='',header=T,'/220415_metaphlanStandard_species.txt',stringsAsFactors = F)
+#mappingPrevent <- mappingPrevent %>% dplyr::rename(Sample = SAMPLE_ID)
+LongmetaspeciesPrevent<-join(LongmetaspeciesPrevent,mappingPrevent, by ='Sample')
+LongmetaspeciesPrevent<- subset(LongmetaspeciesPrevent, COMP_PPX == 'YES')
+
+
+mappingTreat<- read.csv("220524_TreatTDmetadata.csv", header = TRUE)
+mappingTreat[, 'Study'] = "Treat"
+LongmetaspeciesTreat<-read.delim(sep='',header=T,'/220502_metaphlanStandard_species.txt',stringsAsFactors = F)
+mappingTreat <- mappingTreat %>% dplyr::rename(Sample = SAMPLE_ID)
+LongmetaspeciesTreat<-join(LongmetaspeciesTreat,mappingTreat, by ='Sample')
+LongmetaspeciesTreat<- subset(LongmetaspeciesTreat, DIAR_CLASS != "Acute Dysentery/Fever")
+LongmetaspeciesTreat<- subset(LongmetaspeciesTreat, PAIREDFF == "n")
+
+
+LongmetaspeciesPrevent_escher<- subset(LongmetaspeciesPrevent, taxa == "s__Escherichia_coli")
+LongmetaspeciesTreat_escher<- subset(LongmetaspeciesTreat, taxa == "s__Escherichia_coli")
+
+
+
+# Define the directory containing the TSV files
+directory <- "Strainge_v3/Prevent"
+
+# Get a list of TSV files in the directory
+tsv_files <- list.files(directory, pattern = "\\.strains.tsv$", full.names = TRUE)
+
+# Create an empty list to store data frames
+data_list <- list()
+
+# Loop through each TSV file in the directory
+for (tsv_file in tsv_files) {
+  # Read the TSV file
+  data <- fread(tsv_file)  # You can also use read.table(tsv_file, sep = "\t", header = TRUE) if you don't want to use data.table
+  
+  # Extract the filename without the path and extension
+  filename <- tools::file_path_sans_ext(basename(tsv_file))
+  
+  # Add a new column with the filename
+  data$Filename <- filename
+  
+  # Append the data frame to the list
+  data_list[[filename]] <- data
+}
+
+# Combine all data frames into a single data frame (if needed)
+combined_data <- do.call(rbind, data_list)
+
+
+prevent_strains<-combined_data
+
+
+directory <- "Strainge_v3/Treat"
+
+# Get a list of TSV files in the directory
+tsv_files <- list.files(directory, pattern = "\\.strains.tsv$", full.names = TRUE)
+
+# Create an empty list to store data frames
+data_list <- list()
+
+# Loop through each TSV file in the directory
+for (tsv_file in tsv_files) {
+  # Read the TSV file
+  data <- fread(tsv_file)  # You can also use read.table(tsv_file, sep = "\t", header = TRUE) if you don't want to use data.table
+  
+  # Extract the filename without the path and extension
+  filename <- tools::file_path_sans_ext(basename(tsv_file))
+  
+  # Add a new column with the filename
+  data$Filename <- filename
+  
+  # Append the data frame to the list
+  data_list[[filename]] <- data
+}
+
+# Combine all data frames into a single data frame (if needed)
+combined_data <- do.call(rbind, data_list)
+
+
+treat_strains<-combined_data
+
+
+string_to_remove <- "_.strains"
+
+# Using base R sub function
+treat_strains$Filename <- sub(paste0(string_to_remove, "$"), "", treat_strains$Filename)
+prevent_strains$Filename <- sub(paste0(string_to_remove, "$"), "", prevent_strains$Filename)
+
+counts <- table(unlist(strsplit(treat_strains$Filename, " ")))
+
+# Convert counts to a data frame and rename columns
+counts_treat_strains <- as.data.frame(counts)
+colnames(counts_treat_strains) <- c("Sample", "strain_count")
+
+counts <- table(unlist(strsplit(prevent_strains$Filename, " ")))
+
+# Convert counts to a data frame and rename columns
+counts_prevent_strains <- as.data.frame(counts)
+colnames(counts_prevent_strains) <- c("Sample", "strain_count")
+
+
+LongmetaspeciesTreat_strain<-join(LongmetaspeciesTreat,counts_treat_strains, by ='Sample')
+LongmetaspeciesTreat_strain <- LongmetaspeciesTreat_strain %>% distinct(Sample, .keep_all = TRUE)
+
+p1<- ggplot(LongmetaspeciesTreat_strain, aes(x = as.character(TIMEPOINT), y = strain_count)) +
+  geom_boxplot() +
+  labs(x = "Timepoints", y = "Strain Count") +
+  #ggtitle("Box Plot of TrEAT TD Strain Count by Timepoints")+
+  theme_pub() + 
+  scale_x_discrete(limits=c('0','7','21')) + theme(axis.text.x=element_text(size=15)) + theme(axis.text.y=element_text(size=15))
+
+tmp.fname <- stringr::str_interp("Strainge_v3/230927_treatstrainsbytimepoint.pdf")
+
+ggsave2(p1, filename = tmp.fname, device=pdf, height = 5, width = 5)
+
+
+fitstrain<- lmer(strain_count~ (TIMEPOINT) + (1|STUDY_ID), data=LongmetaspeciesTreat_strain)
+anova(fitstrain)
+
+# Type III Analysis of Variance Table with Satterthwaite's method
+#           Sum Sq Mean Sq NumDF DenDF F value  Pr(>F)  
+# TIMEPOINT 3.1159  3.1159     1    43  6.9801 0.01145 *
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+LongmetaspeciesPrevent_strain<-join(LongmetaspeciesPrevent,counts_prevent_strains, by ='Sample')
+LongmetaspeciesPrevent_strain <- LongmetaspeciesPrevent_strain %>% distinct(Sample, .keep_all = TRUE)
+
+
+p2<- ggplot(LongmetaspeciesPrevent_strain, aes(x = as.character(Visit), y = strain_count)) +
+  geom_boxplot() +
+  labs(x = "Timepoints", y = "Strain Count") +
+  theme_pub() + 
+  ggtitle("Box Plot of PREVENT TD Strain Count by Timepoints")
+tmp.fname <- stringr::str_interp("Strainge_v3/230925_preventstrainsbytimepoint.pdf")
+ggsave2(p2, filename = tmp.fname, device=pdf, height = 10, width = 10)
+
+fitstrain<- lmer(strain_count~ (Visit) + (1|studyid), data=LongmetaspeciesPrevent_strain)
+anova(fitstrain)
+# Type III Analysis of Variance Table with Satterthwaite's method
+#        Sum Sq Mean Sq NumDF DenDF F value Pr(>F)
+# Visit 0.71252 0.71252     1    64  1.9073 0.1721
+
+
+p3<- ggplot(LongmetaspeciesTreat_strain, aes(x = as.character(TRT), y = strain_count)) +
+  geom_boxplot() +
+  labs(x = "Treatment", y = "Strain Count") +
+  ggtitle("Box Plot of TrEAT Strain Count by Treatment")+
+  theme_pub() 
+tmp.fname <- stringr::str_interp("Strainge_v3/230925_treatstrainsbytreatment.pdf")
+ggsave2(p3, filename = tmp.fname, device=pdf, height = 10, width = 10)
+
+fitstrain<- lmer(strain_count~ (TRT) + (1|STUDY_ID), data=LongmetaspeciesTreat_strain)
+anova(fitstrain)
+# Type III Analysis of Variance Table with Satterthwaite's method
+#     Sum Sq Mean Sq NumDF DenDF F value Pr(>F)
+# TRT  1.473 0.73651     2    42  1.4845 0.2383
+
+p4<- ggplot(LongmetaspeciesPrevent_strain, aes(x = as.character(Randomisation), y = strain_count)) +
+  geom_boxplot() +
+  labs(x = "Treatment", y = "Strain Count") +
+  theme_pub() + 
+  ggtitle("Box Plot of PREVENT Strain Count by Treatment")
+
+tmp.fname <- stringr::str_interp("Strainge_v3/230925_preventstrainsbytreatment.pdf")
+ggsave2(p4, filename = tmp.fname, device=pdf, height = 10, width = 10)
+fitstrain<- lmer(strain_count~ (Randomisation) + (1|studyid), data=LongmetaspeciesPrevent_strain)
+anova(fitstrain)
+# Type III Analysis of Variance Table with Satterthwaite's method
+#                Sum Sq Mean Sq NumDF DenDF F value Pr(>F)
+# Randomisation 0.92068 0.46034     2    63  1.2237  0.301
+
+
+LongmetaspeciesPrevent_strain[, 'treatmenttime'] = NA
+LongmetaspeciesPrevent_strain$treatmenttime <- paste(LongmetaspeciesPrevent_strain$Visit,LongmetaspeciesPrevent_strain$Randomisation)
+
+p5<- ggplot(LongmetaspeciesPrevent_strain, aes(x = as.character(treatmenttime), y = strain_count)) +
+  geom_boxplot() +
+  labs(x = "TreatmentXTime", y = "Strain Count") +
+  theme_pub() + 
+  ggtitle("Box Plot of PREVENT Strain Count by TreatmentXTime")
+
+tmp.fname <- stringr::str_interp("Strainge_v3/230925_preventstrainsbyTreatmentXTime.pdf")
+ggsave2(p5, filename = tmp.fname, device=pdf, height = 10, width = 10)
+
+fitstrain<- lmer(strain_count~ (treatmenttime) + (1|studyid), data=LongmetaspeciesPrevent_strain)
+anova(fitstrain)
+
+# Type III Analysis of Variance Table with Satterthwaite's method
+#               Sum Sq Mean Sq NumDF DenDF F value Pr(>F)
+# treatmenttime 1.9305 0.38609     5    60  1.0209 0.4135
+
+############################AMR finder
+
+directory <- "TrEAT-PREVENT-TD/data/isolates/amrfinder/bakta"
+
+# Get a list of TSV files in the directory
+tsv_files <- list.files(directory, pattern = "\\.tsv$", full.names = TRUE)
+
+# Create an empty list to store data frames
+data_list <- list()
+
+# Loop through each TSV file in the directory
+for (tsv_file in tsv_files) {
+  # Read the TSV file
+  data <- fread(tsv_file)  # You can also use read.table(tsv_file, sep = "\t", header = TRUE) if you don't want to use data.table
+  
+  # Extract the filename without the path and extension
+  filename <- tools::file_path_sans_ext(basename(tsv_file))
+  
+  # Add a new column with the filename
+  data$Filename <- filename
+  
+  # Append the data frame to the list
+  data_list[[filename]] <- data
+}
+
+# Combine all data frames into a single data frame (if needed)
+combined_data <- do.call(rbind, data_list)
+
+
+amrfinder<-combined_data
+
+counts <- table(unlist(strsplit(amrfinder$Filename, " ")))
+counts_all_AMR <- as.data.frame(counts)
+colnames(counts_all_AMR) <- c("strain", "AMR_virulence_count")
+
+
+
+
+
+
+
+LongmetaspeciesPrevent_allamr<-join(prevent_strains,counts_all_AMR, by ='strain')
+LongmetaspeciesPrevent_allamr <- LongmetaspeciesPrevent_allamr %>% distinct(strain, .keep_all = TRUE)
+
+
+Longmetaspeciestreat_allamr<-join(treat_strains,counts_all_AMR, by ='strain')
+Longmetaspeciestreat_allamr <- Longmetaspeciestreat_allamr %>% distinct(strain, .keep_all = TRUE)
+
+
+
+Prevent_AMRbySample <- LongmetaspeciesPrevent_allamr %>%
+  group_by(Filename) %>%
+  summarise(total_AMR_virulence_count = sum(ifelse(is.na(AMR_virulence_count), 0, AMR_virulence_count)))
+
+Treat_AMRbySample <- Longmetaspeciestreat_allamr %>%
+  group_by(Filename) %>%
+  summarise(total_AMR_virulence_count = sum(ifelse(is.na(AMR_virulence_count), 0, AMR_virulence_count)))
+
+prevent_sample_strain_amr <- merge (Prevent_AMRbySample, counts_prevent_strains, by.x = "Filename", by.y = "Sample")
+
+treat_sample_strain_amr <- merge (Treat_AMRbySample, counts_treat_strains, by.x = "Filename", by.y = "Sample")
+
+
+treatpreventamrcounts <- bind_rows(
+  mutate(LongmetaspeciesPrevent_allamr, Origin = "Prevent"),
+  mutate(Longmetaspeciestreat_allamr, Origin = "Treat")
+)
+
+p7 <- ggplot(treatpreventamrcounts, aes(x = Origin, y = AMR_virulence_count, fill = Origin)) +
+  geom_boxplot() +
+  labs(x = "Origin", y = "AMR_virulence_count") +
+  theme_pub() + theme(axis.text.x=element_text(size=15)) + theme(axis.text.y=element_text(size=15))
+  #ggtitle("Box plot of AMR count in metagenomes specific to E. coli strains by trial")
+
+tmp.fname <- stringr::str_interp("Strainge_v3/230927_strainAMRbystudy.pdf")
+ggsave2(p7, filename = tmp.fname, device=pdf, height = 5, width = 5)
+
+pairwise.wilcox.test(treatpreventamrcounts$AMR_virulence_count,treatpreventamrcounts$Origin)
+
+# Pairwise comparisons using Wilcoxon rank sum test with continuity correction 
+# 
+# data:  treatpreventamrcounts$AMR_virulence_count and treatpreventamrcounts$Origin 
+# 
+#       Prevent
+# Treat 0.88   
+
+
+
+merged_AMR_all <- merge(amrfinder, treatpreventamrcounts, by.x = "Filename",by.y = "strain", all.y = TRUE)
+
+p8<-ggplot(merged_AMR_all, aes(x = `Element subtype`, fill = Origin)) +
+  geom_bar(position = "dodge") +
+  labs(x = "Category", y = "Count") +
+  theme_pub() + theme(axis.text.x=element_text(size=15)) + theme(axis.text.y=element_text(size=15))
+tmp.fname <- stringr::str_interp("Strainge_v3/230927_strainAMRtypesbystudy.pdf")
+ggsave2(p8, filename = tmp.fname, device=pdf, height = 5, width = 8)
+
+```
